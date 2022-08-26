@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button from 'react-bootstrap/Button'
+// import Button from 'react-bootstrap/Button'
 // import Form from 'react-bootstrap/Form'
 
 
@@ -10,8 +10,8 @@ import Button from 'react-bootstrap/Button'
 const API = process.env.REACT_APP_API_URL;
 function ProductNew() {
     const navigate = useNavigate();
-    const addProduct = () => {
-        axios.post(`${API}/products`, product)
+    const addProduct = (newProduct) => {
+        axios.post(`${API}/products`, newProduct)
           .then(response => navigate(`/products`)) 
           .catch(error => console.error(error)) 
       };
@@ -21,6 +21,7 @@ function ProductNew() {
         image: "",
         category: "",
         is_favorite: false,
+        blockchain: "",
         
       });
      const handleTextChange = (event) => {
@@ -34,7 +35,6 @@ function ProductNew() {
       };
       return (
         <div className="New">
-        <form onSubmit={handleSubmit}>
             <h2>Add New NFT</h2>
           <form onSubmit={handleSubmit}>
             <label htmlFor="name">Nαɱҽ: </label>
@@ -95,8 +95,6 @@ function ProductNew() {
             <br></br>
             <hr></hr>
             <input type="submit"/>
-          </form>
-        
         </form>
         </div>
       )

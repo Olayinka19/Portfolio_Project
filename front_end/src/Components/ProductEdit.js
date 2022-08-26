@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import {Button, Form} from 'react-bootstrap'
+import {Button} from 'react-bootstrap';
 const API = process.env.REACT_APP_API_URL;
 
 function ProductEdit() {
@@ -13,13 +13,13 @@ const [product, setProduct] = useState({
     price: '',
     image: '',
     category: '',
+    blockchain_id: '',
     is_favorite: false,
   });
   const updateProduct = (updatedProduct) => {
     axios
        .put(`${API}/products/${id}`, updatedProduct)
-      .then((response) => {
-        setProduct(response.data.payload);
+      .then(() => {
         navigate(`/products/${id}`);
       })
       .catch((error) => console.log(error));
@@ -30,12 +30,12 @@ const [product, setProduct] = useState({
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    updateProduct(product.id);
+    updateProduct(product, id);
   };
   useEffect(() => {
     axios.get(`${API}/products/${id}`).then(
       (res) => setProduct(res.data.payload),
-      (error) => navigate(`/not found`)
+      (error) => navigate(`/not-found`)
     );
   }, [id, navigate]);
   return (

@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import Product from '../Components/Product';
 import axios from 'axios';
-import Table from 'react-bootstrap/Table'
+// import Table from 'react-bootstrap/Table'
 import Button from 'react-bootstrap/Button'
 
 
@@ -29,8 +29,8 @@ function Products() {
     }
     useEffect(() => {
         axios.get(`${API}/products`)
-          .then((response) => {setProducts(response.data.payload);
-          })
+          .then((response) => setProducts(response.data.payload)
+          )
           .catch((error) => {
             console.error(error);
           });
@@ -39,7 +39,7 @@ function Products() {
         <div className='Products'>
         <section>
              
-                <h2>Available Products</h2>
+                <h2>ShowRoom</h2>
                 <th onClick={() => sorting('name')}>
                   {' '}
                   <Button variant="success">
@@ -66,7 +66,12 @@ function Products() {
                     Category
                   </Button>
                 </th>
-            
+                <th onClick={() => sorting('blockchain_id')}>
+                  <Button variant="warning">
+                    <i className="bi bi-arrow-down-up"></i>
+                  BlockChain_id
+                  </Button>
+                </th>
           
 
               {/* {products.map((product, id) => {
