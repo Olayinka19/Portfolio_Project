@@ -10,56 +10,56 @@ function ProductDetails() {
   const { id } = useParams();
 
   const nav = useNavigate();
-  const [product, setProduct] = useState({});
-  useEffect(() => {
-    axios
-      .get(`${API}/products/${id}`)
-      .then((response) => {
-        setProduct(response.data.payload);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, [id]);
 
+  const [product, setProduct] = useState({});
+
+ 
+  useEffect(() => {
+    axios.get(`${API}/products/${id}`).then((response) => {
+      setProduct(response.data.payload);
+    });
+  }, [id, nav, API]);
   const handleDelete = () => {
-    axios.delete(`${API}/products/${id}`).then(() => nav('/products'));
+    axios.delete(`${API}/products/${id}`).then(() => nav('/products'))
+    .catch((c) => console.error("catch", c));
   };
   return <div>
-    <Card>
+    <article>
+          <h1>NFT SHOW PAGE</h1>
 
-      <Card.Body>
-        <Card.Title>
-          <h1>Ahead Shopping</h1>
-        </Card.Title>
-        <Card.Text>
-      
             <h3>
-              {product.is_favorite ? <span>⭐️</span> : null} {product.name}
+              {product.is_favorite ? <span>⭐️</span> : null} Name: {product.name}
             </h3>
             <h3>
-              <span>{product.price}</span>
+              <span>FloorPrice:${product.price}</span>
             </h3>
             <img src={product.image} alt={product.name} height={200} width={200} />
-            {/* <h3>{product.image}</h3> */}
-            <h3>{product.category}</h3>
+            <h3>NftUrl: {product.image}</h3>
+            <h3>Category: {product.category}</h3>
             <h3>{product.is_favorite}</h3>
-      
-        </Card.Text>
+            <h3>Blockchain_id: {product.blockchain_id}</h3>
+    <div>
+    {' '}
         <Link to={`/products`}>
-          <Button>Back</Button>{' '}
-        </Link>{' '}
+          <Button>Back</Button>
+        </Link>
+        </div>
+        <div>
+        {' '}
         <Link to={`/products/${id}/edit`}>
-          <Button>Edit</Button>{' '}
-        </Link>{' '}
+          <Button>Edit</Button>
+        </Link>
+        </div>
+        <div>
+          {' '}
         <Link to={`/products`}>
           <Button onClick={handleDelete}>Delete</Button>{' '}
         </Link>
-      </Card.Body>
-    </Card>
+        </div>
+    
+   
 
-
-
+        </article>
   </div>;
 }
 

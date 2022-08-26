@@ -8,5 +8,5 @@ const PORT = process.env.PORT;
 
 // LISTEN
 app.listen(PORT, () => {
-  console.log(`🥤 🍿 Shopping' on port ${PORT} 🥨 🌰 `);
+  console.log(`🥤 🍿 Crypto$Nft' on port ${PORT} 🥨 🌰 `);
 });

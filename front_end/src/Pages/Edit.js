@@ -1,9 +1,9 @@
 import React from 'react'
-// import ProductEditForm from '../Components/ProductEditForm'
+import ProductEdit from '../Components/ProductEdit'
 function Edit() {
   return (
     <div>
-      {/* <ProductEditForm /> */}
+      <ProductEdit />
     </div>
   )
 }

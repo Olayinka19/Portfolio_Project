@@ -12,6 +12,7 @@ function Products() {
     const [products, setProducts] = useState([]);
     const [order, setOrder] = useState('ASC')
     const sorting = (col) => {
+  
       if (order === 'ASC') {
         const sorted = [...products].sort((a, b) =>
           a[col] > b[col] ? 1 : -1)
@@ -24,6 +25,7 @@ function Products() {
         setProducts(sorted)
         setOrder('ASC')
       }
+      
     }
     useEffect(() => {
         axios.get(`${API}/products`)
@@ -79,7 +81,7 @@ function Products() {
               />
             ))} */}
             <div>
-              <section>
+              <section className='ola'>
             {products.map((product) => {
               return <Product key={product.id} product={product} />;
             })}

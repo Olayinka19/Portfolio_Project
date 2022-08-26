@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: #9f9c71;
+/* background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png"); */
 }
 
 code {
@@ -44,12 +47,14 @@ a {
   color: #05050a;
 }
 .Products{
+  
   display: grid;
   grid-template-areas: 
-      "h h h"
+      "h h h "
+      "s s s "
       "s s s"
       "s s s"
-      "s s s"
+      
       ;
 }
 .Nav {
@@ -60,16 +65,15 @@ a {
   min-height: 10vh;
   /* background: #09BC84; */
   /* background: #9AB87A; */
-  background:#444B6E;
+  background:#554d0a;
   color: white;
   font-family: VT323-Regular;
   /* text-decoration: none; */
 
 }
-.home2{
-   width:100%; 
-  height:100%; 
-  background-position: center;
+.home2{ 
+  width:100%;
+  height:100%;
 /* background-repeat: no-repeat; */
 background-size: cover;
 }
@@ -81,4 +85,58 @@ background-size: cover;
 .home5 {
   width:150px;
   height:40px;
+}
+.home12{
+ width:80px;
+ height:40px;
+}
+.Link2 {
+  width: 120px;
+  height: 40px;
+  background-color: gold;
+}
+main {
+  padding: 0;
+} 
+header {
+  position: sticky;
+  top:0;
+  padding:40px;
+  background: lightblue;
+  text-align: center;
+}
+.link:hover {
+  background: rgb(186, 210, 6);
+  color:rgb(238, 243, 243)
+}
+.Link.hover {
+  background-color: black;
+}
+.Link:hover {
+  transform: scale(1.2);
+  transition-duration: 2.5s;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.New {
+  border: 5px solid #4e4b4b;
+  text-align: center;
+  font-size: 25px;
+}
+.ola {
+    grid-area: s ;
+    display: grid;
+    gap: 35px;
+    border: 4px solid gold;
+    grid-template-columns: repeat(2, 1fr);
+  
+}
+.ole {
+  border: 5px solid black;
+  background-color: #554d0a;
+}
+h1{
+  text-align:center;
 }

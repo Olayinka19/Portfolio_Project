@@ -8,6 +8,7 @@ CREATE TABLE products (
     name TEXT NOT NULL,
     price INT,
     image TEXT,
+    blockchain_id TEXT,
     category TEXT,
     is_favorite BOOLEAN
 );
