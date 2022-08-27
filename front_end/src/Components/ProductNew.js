@@ -8,20 +8,33 @@ import { useNavigate } from 'react-router-dom';
 
 
 const API = process.env.REACT_APP_API_URL;
+
 function ProductNew() {
     const navigate = useNavigate();
+
+    // const addProduct = (newProduct) => {
+    //     axios.post(`${API}/products`, newProduct)
+    //       .then((res) => navigate(`/products`)) 
+    //       .catch(error => console.error(error)) 
+    //   };
     const addProduct = (newProduct) => {
-        axios.post(`${API}/products`, newProduct)
-          .then(response => navigate(`/products`)) 
-          .catch(error => console.error(error)) 
+        axios
+          .post(`${API}/products`, newProduct)
+          .then(
+            () => {
+              navigate(`/products`);
+            },
+            (error) => console.error(error)
+          )
+          .catch((c) => console.warn("catch", c));
       };
     const [product, setProduct] = useState({
-        name: "",
-        price: "",
-        image: "",
-        category: "",
+        name: '',
+        price: '',
+        image: '',
+        category: '',
         is_favorite: false,
-        blockchain: "",
+        blockchain: '',
         
       });
      const handleTextChange = (event) => {
@@ -94,10 +107,10 @@ function ProductNew() {
             />
             <br></br>
             <hr></hr>
-            <input type="submit"/>
+            <input type="submit" />
         </form>
         </div>
       )
 }
 
-export default ProductNew
+export default ProductNew;

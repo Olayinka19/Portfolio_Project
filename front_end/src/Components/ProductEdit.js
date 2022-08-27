@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import {Button} from 'react-bootstrap';
+
 const API = process.env.REACT_APP_API_URL;
 
 function ProductEdit() {
@@ -20,7 +21,7 @@ const [product, setProduct] = useState({
     axios
        .put(`${API}/products/${id}`, updatedProduct)
       .then(() => {
-        navigate(`/products/${id}`);
+        navigate(`/products/`);
       })
       .catch((error) => console.log(error));
   
@@ -47,7 +48,7 @@ const [product, setProduct] = useState({
           value={product.name}
           type="text"
           onChange={handleTextChange}
-          placeholder="Name of your NFT"
+          // placeholder="Name of your NFT"
           required
         />
         <br/>
@@ -57,7 +58,7 @@ const [product, setProduct] = useState({
           value={product.price}
           type="text"
           onChange={handleTextChange}
-          placeholder="Price"
+          // placeholder="Price"
           required
         />
         <br></br>
@@ -68,7 +69,7 @@ const [product, setProduct] = useState({
           name="image"
           pattern="http[s]*://.+"
           value={product.image}
-          placeholder="http://"
+          // placeholder="http://"
           onChange={handleTextChange}
         />
         <br/>
@@ -78,11 +79,19 @@ const [product, setProduct] = useState({
           type="text"
           required
           value={product.category}
-          placeholder="Category"
+          // placeholder="Category"
           onChange={handleTextChange}
         />
         <br/>
-
+        <label for="blockchain_id">Blockchain_id": </label>
+        <input
+          id="blockchain_id"
+          type="text"
+          required
+          value={product.blockchain_id}
+          onChange={handleTextChange}
+        />
+            <br></br>
         <input type="submit" />
       </form>
       <Link to={`/products/${id}`}>

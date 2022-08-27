@@ -27,18 +27,22 @@ function ProductDetails() {
     <article>
           <h1>NFT SHOW PAGE</h1>
 
-            <h3>
+            {/* <h3>
               {product.is_favorite ? <span>⭐️</span> : null} Name: {product.name}
-            </h3>
-            <h3>
-              <span>FloorPrice:${product.price}</span>
-            </h3>
+            </h3> */}
+            
             <img src={product.image} alt={product.name} height={200} width={200} />
+            <h3>
+              <span>FloorPrice: ${product.price}</span>
+            </h3>
             <h3>NftUrl: {product.image}</h3>
-            <h3>Category: {product.category}</h3>
+            <h3>Market: {product.category}</h3>
             <h3>{product.is_favorite}</h3>
             <h3>Blockchain_id: {product.blockchain_id}</h3>
-    <div>
+
+  
+            <div className="showNavigation">
+   <div>
     {' '}
         <Link to={`/products`}>
           <Button>Back</Button>
@@ -55,6 +59,7 @@ function ProductDetails() {
         <Link to={`/products`}>
           <Button onClick={handleDelete}>Delete</Button>{' '}
         </Link>
+        </div>
         </div>
     
    
