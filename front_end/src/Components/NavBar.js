@@ -1,36 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import home11 from "../images/home11.png";
-import home12 from "../images/home12.png";
-import home13 from "../images/home13.png";
+import homee from "../images/homee.png";
+// import home12 from "../images/home12.png";
+// import home13 from "../images/home13.png";
 
 export default function NavBar() {
-    const imgUrl4 = home11;
-    const imgUrl5 = home12;
-    const imgUrl6 = home13;
+  const imgUrl4 = homee;
+  // const imgUrl5 = home12;
+  // const imgUrl6 = home13;
   return (
     // <div className="Nav">
     <div class="Nav">
-       
-        <Link to="/"><img className='home12' src={imgUrl5} /></Link>
+      <Link to="/" className="Link">
+        <img className="homee" src={imgUrl4}></img>
+      </Link>
       <h1>
-        <Link to="/products" className="Link">꧁༺My items ༻꧂</Link>
+        <Link to="/products" className="Link">
+          NFTs
+        </Link>
       </h1>
-      <Button className="Link2">
-        <Link to="/products/new" >
+
+      <Link to="/products/new" className="Link">
         NewNFt
-        </Link>
-      </Button>
-      <Button>
+      </Link>
+
+      {/* <Button>
         <Link to="/products/Edit" className="Link">
-        <img className='home4' src={imgUrl4} />
+        ShowPage
         </Link>
-      </Button>
-      <Button>
-        <img className='home4' src={imgUrl6}/>
-      </Button>
-      </div>
-     
+      </Button> */}
+
+      <Link to="/Flex" className="Link">
+        ConnectWallet
+      </Link>
+
+      <Link to="/ConnectWallet" className="Link">
+        About
+      </Link>
+    </div>
   );
 }

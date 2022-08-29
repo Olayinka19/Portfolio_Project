@@ -2,7 +2,8 @@ import React from 'react'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import {Button} from 'react-bootstrap';
+import {Button, Form} from 'react-bootstrap';
+
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -16,12 +17,15 @@ const [product, setProduct] = useState({
     category: '',
     blockchain_id: '',
     is_favorite: false,
+    
   });
   const updateProduct = (updatedProduct) => {
+    
     axios
        .put(`${API}/products/${id}`, updatedProduct)
-      .then(() => {
-        navigate(`/products/`);
+      .then((response) => {
+        setProduct(response.data.payload)
+        navigate(`/products/${id}`);
       })
       .catch((error) => console.log(error));
   
@@ -41,19 +45,22 @@ const [product, setProduct] = useState({
   }, [id, navigate]);
   return (
     <div className="Edit">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">NFT_𝕹𝖆𝖒𝖊:</label>
-        <input
+      <Form onSubmit={handleSubmit}>
+        <Form.Group>
+        <Form.Label htmlFor="name">NFT_𝕹𝖆𝖒𝖊:</Form.Label>
+        <Form.Control
           id="name"
           value={product.name}
           type="text"
           onChange={handleTextChange}
-          // placeholder="Name of your NFT"
+          placeholder="Name of your NFT"
           required
         />
+        </Form.Group>
         <br/>
-        <label htmlFor="price">Price:</label>
-        <input
+        <Form.Group>
+        <Form.Label htmlFor="price">Price:</Form.Label>
+        <Form.Control
           id="price"
           value={product.price}
           type="text"
@@ -61,9 +68,11 @@ const [product, setProduct] = useState({
           // placeholder="Price"
           required
         />
+        </Form.Group>
         <br></br>
-        <label htmlFor="image">NFT_Image: </label>
-        <input
+        <Form.Group>
+        <Form.Label htmlFor="image">NFT_Image: </Form.Label>
+        <Form.Control
           id="image"
           type="text"
           name="image"
@@ -72,9 +81,11 @@ const [product, setProduct] = useState({
           // placeholder="http://"
           onChange={handleTextChange}
         />
+        </Form.Group>
         <br/>
-        <label for="category">Category: </label>
-        <input
+        <Form.Group>
+        <Form.Label for="category">Category: </Form.Label>
+        <Form.Control
           id="category"
           type="text"
           required
@@ -82,18 +93,21 @@ const [product, setProduct] = useState({
           // placeholder="Category"
           onChange={handleTextChange}
         />
+        </Form.Group>
         <br/>
-        <label for="blockchain_id">Blockchain_id": </label>
-        <input
+        <Form.Group>
+        <Form.Label for="blockchain_id">Blockchain_id": </Form.Label>
+        <Form.Control
           id="blockchain_id"
           type="text"
           required
           value={product.blockchain_id}
           onChange={handleTextChange}
         />
+        </Form.Group>
             <br></br>
-        <input type="submit" />
-      </form>
+        <Button type ="submit"> Submit </Button>
+      </Form>
       <Link to={`/products/${id}`}>
         <Button variant="info">Nevermind!</Button>
       </Link>

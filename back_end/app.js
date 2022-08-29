@@ -8,8 +8,9 @@ const app = express();
 
 const productController = require('./controllers/productController.js')
 // MIDDLEWARE
-app.use(express.json())
+app.use(express.json());
 app.use(cors());
+// var cors = require('cors');
 app.use('/products', productController);
 // ROUTES
 app.get('/', (req, res) => {

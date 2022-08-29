@@ -39,19 +39,21 @@ function Products() {
         <div className='Products'>
         <section>
              
-                <h2>ShowRoom</h2>
+                <h2 className='nepa'> NFT ShowRoom</h2>
+               
+                <div className='ope'>
                 <th onClick={() => sorting('name')}>
                   {' '}
                   <Button variant="success">
                     {' '}
-                    <i className="bi bi-arrow-down-up"></i> Name{' '}
+                    <i className="bi bi-arrow-down-up"></i> Degen_Name {' '}
                   </Button>{' '}
-                </th>
+                </th> 
                 <th onClick={() => sorting('price')}>
                   {' '}
                   <Button variant="secondary">
                     <i className="bi bi-arrow-down-up"></i>
-                    Price
+                    FloorPrice
                   </Button>
                 </th>
                 <th onClick={() => sorting('image')}>
@@ -61,9 +63,9 @@ function Products() {
                   </Button>
                 </th>
                 <th onClick={() => sorting('category')}>
-                  <Button variant="warning">
+                  <Button variant="secondary">
                     <i className="bi bi-arrow-down-up"></i>
-                    Category
+                    Market
                   </Button>
                 </th>
                 <th onClick={() => sorting('blockchain_id')}>
@@ -86,6 +88,8 @@ function Products() {
               />
             ))} */}
             <div>
+              </div>
+              <hr></hr>
               <section className='ola'>
             {products.map((product) => {
               return <Product key={product.id} product={product} />;

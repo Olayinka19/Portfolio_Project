@@ -6,6 +6,8 @@ import Index from "./Pages/IndexPage";
 import New from "./Pages/New";
 import Show from "./Pages/Show";
 import NavBar from "./Components/NavBar";
+import Wallet from "./Pages/Wallet";
+
 import './App.css';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <Route path="/products/:id" element={<Show />} />
         <Route path="/products/:id/edit" element={<Edit />} />
         <Route path="/products/new" element={<New />} />
+        <Route path="/connectWallet" element={<Wallet />} />
+      
         <Route path="*" element={<FourOFour />} />
       </Routes>
     </main>

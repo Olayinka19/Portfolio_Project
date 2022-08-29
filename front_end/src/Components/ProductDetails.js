@@ -45,13 +45,13 @@ function ProductDetails() {
    <div>
     {' '}
         <Link to={`/products`}>
-          <Button>Back</Button>
+          <Button variant="success">Back</Button>
         </Link>
         </div>
         <div>
         {' '}
         <Link to={`/products/${id}/edit`}>
-          <Button>Edit</Button>
+          <Button variant="secondary">Edit</Button>
         </Link>
         </div>
         <div>

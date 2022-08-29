@@ -2,8 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import Button from 'react-bootstrap/Button'
-// import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
+import './New.css'
 
 
 
@@ -18,6 +19,7 @@ function ProductNew() {
     //       .catch(error => console.error(error)) 
     //   };
     const addProduct = (newProduct) => {
+      console.log(newProduct)
         axios
           .post(`${API}/products`, newProduct)
           .then(
@@ -33,8 +35,8 @@ function ProductNew() {
         price: '',
         image: '',
         category: '',
-        is_favorite: false,
         blockchain: '',
+        is_favorite: false,
         
       });
      const handleTextChange = (event) => {
@@ -47,11 +49,12 @@ function ProductNew() {
         navigate(`/products`);
       };
       return (
+          <article className='wrapper'>
         <div className="New">
             <h2>Add New NFT</h2>
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Nαɱҽ: </label>
-            <input
+          <Form onSubmit={handleSubmit}>
+            {/* <Form.Label htmlFor="name">Nαɱҽ </Form.Label> */}
+            <Form.Control
               id="name"
               value={product.name}
               type="text"
@@ -59,10 +62,11 @@ function ProductNew() {
               placeholder="Name"
               required
             />
-            <br />
-            <hr></hr>
-            <label htmlFor="price">Price: </label>
-            <input
+  
+<hr/>
+            <Form.Group>
+            {/* <label htmlFor="price">Price: </label> */}
+            <Form.Control
               id="price"
               value={product.price}
               type="text"
@@ -70,21 +74,25 @@ function ProductNew() {
               placeholder="price"
               required
             />
-            <br></br>
-            <hr></hr>
-             <label htmlFor="image">image: </label>
-            <input
+            </Form.Group>
+            <hr/>
+            <Form.Group>
+             {/* <label htmlFor="image">image: </label> */}
+            <Form.Control
               id="image"
               type="text"
               name="image"
               value={product.image}
               placeholder="http://"
               onChange={handleTextChange}
+              required
             />
-            <br />
-            <hr></hr>
-            <label for="category">Category:  </label>
-            <input
+            </Form.Group>
+           
+            <hr/>
+            <Form.Group>
+            {/* <Form.Label for="category">Category:  </Form.Label> */}
+            <Form.Control
               id="category"
               type="text"
               required
@@ -94,10 +102,11 @@ function ProductNew() {
               max = "5"
               onChange={handleTextChange}
             />
-            <br></br>
-            <hr></hr>
-            <label for="blockchain_id">BlockChain_id:  </label>
-            <input
+            </Form.Group>
+            <hr/>
+            {/* <label for="blockchain_id">BlockChain_id:  </label> */}
+            <Form.Group>
+            <Form.Control
               id="blockchain_id"
               type="text"
               required
@@ -105,11 +114,13 @@ function ProductNew() {
               placeholder="Hash_Link"
               onChange={handleTextChange}
             />
+            </Form.Group>
             <br></br>
             <hr></hr>
-            <input type="submit" />
-        </form>
+            <Button variant="info" type="submit">Submit</Button>
+        </Form>
         </div>
+        </article>
       )
 }
 
