@@ -5,11 +5,13 @@ import { useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import './New.css'
+import home26 from "../images/home26.png";
 
 
 
 const API = process.env.REACT_APP_API_URL;
 
+const imgUrl6 = home26;
 function ProductNew() {
     const navigate = useNavigate();
 
@@ -51,7 +53,8 @@ function ProductNew() {
       return (
           <article className='wrapper'>
         <div className="New">
-            <h2>Add New NFT</h2>
+      
+           <img className='robo' src={imgUrl6}></img>
           <Form onSubmit={handleSubmit}>
             {/* <Form.Label htmlFor="name">Nαɱҽ </Form.Label> */}
             <Form.Control

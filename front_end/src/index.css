@@ -157,12 +157,12 @@ header {
     grid-area: s;
     display: grid;
     gap: 35px;
-    border: 4px solid gold;
+    /* border: 4px solid gold; */
     grid-template-columns: repeat(2, 1fr);
   
 } 
 .ole {
-  border: 5px solid black;
+  border: 5px solid rgb(226, 224, 224);
   background-color: rgb(249, 248, 244);
 }
 h1{
@@ -387,4 +387,10 @@ h1 {
 .animenn{
   margin-left:80%;
   margin-top: -14%;
+}
+.robo{
+  width:80px;
+}
+.hoy{
+  width:90px;
 }

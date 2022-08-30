@@ -25,8 +25,8 @@ function About() {
       <div class="cube"></div>
       <section class="header-content">
         <img  width="150px" height="150px" src="https://media-exp1.licdn.com/dms/image/C4D03AQEX7M24PHpBoA/profile-displayphoto-shrink_800_800/0/1640898970691?e=1667433600&v=beta&t=-uH_kOf34zA3k5en7pLZoKe18PuVclW1OWFk_bGy4NQ"></img>
-         <h1>Olayinka Fakanbi</h1>
-        <p> 8.4 Pursuit Fellow </p>
+        <marquee direction ="right"><h1>Olayinka </h1></marquee> <marquee direction ="left"><h1>Hendrix</h1></marquee> 
+        
            <p>Full stack Web Developer | Web3 and NFT Developer for @Project Hestia | Aspiring Data Scientist |</p>
         <button a href='https://www.linkedin.com/in/olayinka-f-2a46a6229/'>Linkedin</button>
         <button><a href="https://github.com/Olayinka19">GitHub</a></button>
