@@ -31,11 +31,11 @@ export default function NavBar() {
         </Link>
       </Button> */}
 
-      <Link to="/Flex" className="Link">
+      <Link to="/FlexConnect" className="Link">
         ConnectWallet
       </Link>
 
-      <Link to="/ConnectWallet" className="Link">
+      <Link to="/About" className="Link">
         About
       </Link>
     </div>

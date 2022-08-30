@@ -40,10 +40,12 @@ const deleteProduct = async (id) => {
     }
 }
 const updateProduct = async (product, id) => {
+    // console.log(product )
+    // console.log(id)
     const {name , price , image , category, blockchain_id, is_favorite } = product
      try {
         const product = await db.one (
-            'UPDATE products SET name=$1, price=$2, image=$3, category=$4, blockchain_id=$5, is_favorite=$6, WHERE id=$7 RETURNING *',
+            'UPDATE products SET name=$1, price=$2, image=$3, category=$4, blockchain_id=$5, is_favorite=$6 WHERE id=$7 RETURNING *',
             [name , price , image , category, blockchain_id,  is_favorite , id]
         );
         return product;

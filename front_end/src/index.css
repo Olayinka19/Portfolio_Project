@@ -301,7 +301,7 @@ h1 {
   top: 10vh;
 }
 .header-content{
-  margin-top:25%;
+  margin-top:8%;
   text-align: center;
   color:  #EFEEF5;
 }
@@ -373,3 +373,11 @@ h1 {
   background-size: 100% 100%;
   mix-blend-mode: difference;
   } */
+.anime {
+  width:120px;
+  margin-top: 20%;
+}
+.animenn{
+  margin-left:80%;
+  margin-top: -14%;
+}

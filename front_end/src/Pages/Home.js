@@ -1,7 +1,8 @@
 import React from 'react';
 // import home14 from "../images/home14.jpeg";
-// import Animation from '../Components/Animation';
+import Animation from '../Components/Animation';
 import Transition from '../Components/Transition';
+import Transition2 from '../Components/Transition2';
 
 
 function Home() {
@@ -12,13 +13,16 @@ function Home() {
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 <div class="content">
-  <h1>Olayinka Fakanbi 8.4</h1>
+  <h1>8.4 Pursuit Fellow </h1>
 </div>
-      {/* < Animation / > */}
-        <marquee direction="Up"><h1> WELCOME TO MY NFT PAGE</h1></marquee>
+      < Animation / >
+        <marquee direction="Up">Olayinka</marquee>
+        <marquee direction="down">Hendrix</marquee>
         
        {/* <marquee><img className='home2' src={imgUrl1} /></marquee>  */}
         <Transition />
+        <Transition2 />
+       
     </div>
   )
 }

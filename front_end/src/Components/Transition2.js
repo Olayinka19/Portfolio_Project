@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import { Link } from "react-router-dom";
 
 
-function Transition() {
+function Transition2() {
     const styles = useSpring({
       loop: true,
       from: { rotateZ: 1000 },
@@ -11,7 +11,7 @@ function Transition() {
     })
   
     return (
-      <animated.div className="anime"
+      <animated.div className="animenn"
         style={{
           width: 180,
           height: 180,
@@ -22,4 +22,4 @@ function Transition() {
       />
     )
   }
-export default Transition;
+export default Transition2;

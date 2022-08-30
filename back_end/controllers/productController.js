@@ -53,6 +53,7 @@ products.delete('/:id', async (req, res) => {
 products.put('/:id', async (req, res) => {
     const {id} = req.params;
     const product = await updateProduct(req.body, id);
+    // console.log(product);
     if(product.id) {
         res.json(product);
     } else {
