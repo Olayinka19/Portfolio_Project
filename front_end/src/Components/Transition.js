@@ -15,7 +15,7 @@ function Transition() {
         style={{
           width: 180,
           height: 180,
-          backgroundColor: 'white',
+          backgroundColor: 'green',
           borderRadius: 70,
           ...styles,
         }}

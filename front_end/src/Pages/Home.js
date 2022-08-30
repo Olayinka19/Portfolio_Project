@@ -16,8 +16,8 @@ function Home() {
   <h1>8.4 Pursuit Fellow </h1>
 </div>
       < Animation / >
-        <marquee direction="Up">Olayinka</marquee>
-        <marquee direction="down">Hendrix</marquee>
+        {/* <marquee direction="Up">Olayinka</marquee>
+        <marquee direction="down">Hendrix</marquee> */}
         
        {/* <marquee><img className='home2' src={imgUrl1} /></marquee>  */}
         <Transition />

@@ -76,7 +76,7 @@ a {
   /* color: white; */
   /* font-family: VT323-Regular;  */
   /* text-decoration: none; */
-  background-color: #76b469;
+  background-color: #c7d2c5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -144,7 +144,7 @@ header {
   /* color: white; */
   padding-top: 30px;
   margin-top: -30px;
- background: #34229a;
+ background: #086a37;
   text-decoration: none;
   transform: skew(15deg);
 }
@@ -183,8 +183,15 @@ tbody td:not(td:first-of-type):hover {
   opacity: 0.9;
 }
 .wallet {
-  background-color: purple;
+  background-color: rgb(11, 107, 64);
   color:white;
+  width:100px;
+  border-radius: 8%;
+  -webkit-border-radius: 8%;
+  -moz-border-radius: 8%;
+  -ms-border-radius: 8%;
+  -o-border-radius: 8%;
+  text-align: center;
 }
 .ope {
   text-align: center;
@@ -199,7 +206,7 @@ body {
 
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  background-image: linear-gradient(-60deg, rgb(81, 187, 20) 50%, rgb(229, 232, 235) 50%);
   bottom:0;
   left:-50%;
   opacity:.5;
@@ -251,7 +258,7 @@ h1 {
   background: #FFF;
 }
 .background {
-  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background: linear-gradient(132deg, white, green, green);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
