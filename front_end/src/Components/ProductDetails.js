@@ -32,16 +32,18 @@ function ProductDetails() {
             </h3> */}
             
             <img src={product.image} alt={product.name} height={200} width={200} />
-            <h3>
-              <span>FloorPrice: ${product.price}</span>
-            </h3>
-            <h3>NftUrl: {product.image}</h3>
-            <h3>Market: {product.category}</h3>
-            <h3>{product.is_favorite}</h3>
-            <h3>Blockchain_id: {product.blockchain_id}</h3>
-
-  
+            <hr></hr>
+            <u>Name: </u><h3>{product.name}</h3>
+            <hr></hr>
+              <span><u>FloorPrice: </u></span> <h3>${product.price}</h3>
+              <hr></hr>
+            <u>ImageLink:</u> <h3> {product.image}</h3>
+            <hr></hr>
+            <p>Market: <h2>{product.category}</h2></p>
+            <hr></hr>
+            Blockchain_id: <h3>{product.blockchain_id}</h3>
             <div className="showNavigation">
+              <hr></hr>
    <div>
     {' '}
         <Link to={`/products`}>
