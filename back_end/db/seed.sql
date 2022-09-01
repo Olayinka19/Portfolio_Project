@@ -2,6 +2,11 @@
 
 INSERT INTO products (name , price , image , category, blockchain_id,  is_favorite ) VALUES
 ('MJ' , 1687 , 'https://lh3.googleusercontent.com/hj76DEKMqGxf9-OMpVXnnZF4WDa7H1Xx7eryztyGJNph5hZ_wxKIhAl_lM_-ngp-X0EHNYnJ3nhsZxsv80yEtt5-cDyttnErIok7IQ=w600', 'OpenSea' , '00027f7ff73daa204d637c19cb0441060f4a1efb24c2e7ac00c818d58034ee3c',  false),
+('Dreamer' , 167 , 'https://bafybeictbtl6aocc77shjxruhvt33jqanv3zmu3dlc3bcdrqgo5r5wjd54.ipfs.dweb.link/3300.png?ext=png', 'MagicEden' , 'GskMQ49Aq5g1h2UCtCdCRnoRWNHhpYuri883wddsAmFQ',  false),
+('Geto' , 34.27, 'https://lh3.googleusercontent.com/Q3VgM4sJc-_JHRMvjPoDmL5-jXQ_I3o816GspB2UFCngwGbHVjGBPLCuGRuIdY2JHr6MzAo208VBerdg06f_dVtv3i9aO4AQGfcKbIw=w190', 'MagicEden' , '0x869353152046343556130c4393b8acf418cafb0b',  false),
+('Geto143' , 34.27, 'https://lh3.googleusercontent.com/ED9Op3_5RqlJpvc4FP4QujKpZIu1tbQVPwMmBy0rawzxHRmBFkvZ_98KQW8hGsSTw7gntV9gFtMsFlryCuFRmS9QoQWeiktJeNHg0-s=w190', 'MagicEden' , '0x869353152046343556130c4393b8acf418cafb0b',  false),
+('Kongz' , 1196, 'https://img.seadn.io/files/9e09808d0888a97b6f59915ef38a34b4.png?fit=max&w=600', 'MagicEden' , '0x46FdfCb3Cd89A1C54D36EE83a4ADC184747B40D9',  false),
+
 ('DeGods' , 15225 , 'https://img-cdn.magiceden.dev/rs:fill:640:640:0:0/plain/https://metadata.degods.com/g/8264-dead.png' , 'MagicEden' , '000bb1fea9eb6af184b9c98e39c94741f8ea1fbc5ae1729df1f1b83750c8e443' , false),
 ('BlockSmith' , 2590 , 'https://img-cdn.magiceden.dev/rs:fill:640:640:0:0/plain/https%3A%2F%2Fbafybeids525qqimhpjzgzr4pzjfzod2fxig7wtpo46h374f7wtd5bxegmm.ipfs.dweb.link%2F1185.png%3Fext%3Dpng' , 'MagicEden' , '000a6a27fb57f679d11a962b9c15f01b300dd020e665fc4bc99bcca1588474c8',  false),
 ('YorubaDemons' , 3.5 , 'https://arweave.net/25m3IK89WIM98TAMEUobgrk1lYTLG7Ji9Nm76N4CufI', 'MagicEden' , '000328362d0514d950c64ea6c2e07f0166f751b7a56209acfd66641b6756bc0b

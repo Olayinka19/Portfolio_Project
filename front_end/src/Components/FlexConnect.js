@@ -16,7 +16,7 @@ function FlexConnect() {
     
 
     <div >
-      <h1>{!currentAccount? "connect your Wallet" : <p>{currentAccount}</p>}</h1>
+      <h1>{!currentAccount? "Connect your Wallet" : <p>WalletID: {currentAccount}</p>}</h1>
       <br></br>
       <button className='wallet' onClick={connectWallet}>Connect</button>
     </div>

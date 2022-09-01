@@ -23,6 +23,7 @@ function Product({product}) {
 
       </a>
       </div>
+
      {/* <h4> {product.category ? <span> 🍀</span> ): ( null } </h4>  */}
     </div>
   );

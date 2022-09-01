@@ -44,6 +44,7 @@ function ProductDetails() {
             Blockchain_id: <h3>{product.blockchain_id}</h3>
             <div className="showNavigation">
               <hr></hr>
+              
    <div>
     {' '}
         <Link to={`/products`}>
