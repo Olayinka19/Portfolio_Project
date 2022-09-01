@@ -10,5 +10,6 @@ CREATE TABLE products (
     image TEXT,
     blockchain_id TEXT,
     category TEXT,
+    description TEXT,
     is_favorite BOOLEAN
 );

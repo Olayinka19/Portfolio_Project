@@ -1,7 +1,7 @@
 const express = require('express');
 const products = express.Router();
 const {getAllProducts , getProduct , createProduct , deleteProduct, updateProduct} = require('../queries/products.js')
-const {checkName, checkPrice,  checkImage , checkCategory , checkBlockChain_id, checkIs_favorite} = require('../validations/checkProducts.js');
+const {checkName, checkPrice,  checkImage , checkCategory , checkBlockChain_id, checkDescription , checkIs_favorite} = require('../validations/checkProducts.js');
 // INDEX PAGE
 products.get('/', async (req, res) => {
     const allProducts = await getAllProducts();
@@ -27,7 +27,7 @@ products.get('/:id', async (req, res) => {
 })
 // CREATE
 products.post('/', checkName, async (req, res) => {
-    let { name, price , image , category, blockchain_id , is_favorite } = req.body;
+    let { name, price , image , category, blockchain_id , description , is_favorite } = req.body;
     try{
         const product = await createProduct(req.body);
         res.json({payload: product,success: true});

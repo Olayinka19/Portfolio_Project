@@ -26,10 +26,6 @@ function ProductDetails() {
   return <div>
     <article>
           <h1>NFT SHOW PAGE</h1>
-
-            {/* <h3>
-              {product.is_favorite ? <span>⭐️</span> : null} Name: {product.name}
-            </h3> */}
             
             <img src={product.image} alt={product.name} height={200} width={200} />
             <hr></hr>
@@ -42,9 +38,11 @@ function ProductDetails() {
             <p>Market: <h2>{product.category}</h2></p>
             <hr></hr>
             Blockchain_id: <h3>{product.blockchain_id}</h3>
+            <hr></hr>
+            Description: <h5>{product.description}</h5>
             <div className="showNavigation">
               <hr></hr>
-              
+
    <div>
     {' '}
         <Link to={`/products`}>

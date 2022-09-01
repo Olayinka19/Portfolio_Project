@@ -38,6 +38,7 @@ function ProductNew() {
         image: '',
         category: '',
         blockchain: '',
+        description: '',
         is_favorite: false,
         
       });
@@ -108,6 +109,19 @@ function ProductNew() {
             </Form.Group>
             <hr/>
             {/* <label for="blockchain_id">BlockChain_id:  </label> */}
+            <Form.Group>
+            <Form.Control
+              id="description"
+              type="text"
+              required
+              value={product.description}
+              placeholder="Description"
+              onChange={handleTextChange}
+            />
+            </Form.Group>
+
+<hr></hr>
+
             <Form.Group>
             <Form.Control
               id="blockchain_id"

@@ -16,6 +16,7 @@ const [product, setProduct] = useState({
     image: '',
     category: '',
     blockchain_id: '',
+    description: '',
     is_favorite: false,
     
   });
@@ -91,6 +92,18 @@ const [product, setProduct] = useState({
           required
           value={product.category}
           // placeholder="Category"
+          onChange={handleTextChange}
+        />
+        </Form.Group>
+        <hr></hr>
+        <Form.Group>
+        <Form.Label for="description">Description": </Form.Label>
+        <Form.Control
+          id="description"
+          type="text"
+          required
+          value={product.description}
+          placeholder="Project Description"
           onChange={handleTextChange}
         />
         </Form.Group>

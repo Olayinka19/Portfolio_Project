@@ -15,6 +15,9 @@ import home21 from "../images/home21.png";
 import home22 from "../images/home22.png";
 import home24 from "../images/home24.png";
 import home27 from "../images/home27.png";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const imgUrl5 = home16;
 const imgUrl6 = home17;
@@ -100,7 +103,7 @@ function Products() {
         <div className="ope">
           <th onClick={() => sorting("name")}>
             {" "}
-            <Button variant="success">
+            <Button variant="outline-primary">
               {" "}
               <i className="bi bi-arrow-down-up"></i> Degen_Name{" "}
             </Button>{" "}
@@ -108,25 +111,25 @@ function Products() {
 
           <th onClick={() => sorting("price")}>
             {" "}
-            <Button variant="success">
+            <Button variant="outline-secondary">
               <i className="bi bi-arrow-down-up"></i>
               FloorPrice
             </Button>
           </th>
           <th onClick={() => sorting("image")}>
-            <Button variant="success">
+            <Button variant="outline-dark">
               <i className="bi bi-arrow-down-up"></i>
               image
             </Button>
           </th>
           <th onClick={() => sorting("category")}>
-            <Button variant="success">
+            <Button variant="outline-success">
               <i className="bi bi-arrow-down-up"></i>
               Market
             </Button>
           </th>
           <th onClick={() => sorting("blockchain_id")}>
-            <Button variant="success">
+            <Button variant="outline-warning">
               <i className="bi bi-arrow-down-up"></i>
               BlockChain_id
             </Button>

@@ -43,6 +43,15 @@ const checkName = (req, res, next) => {
       res.status(400).json({ error: 'We need a blockchain_id...' });
     }
   };
+  const checkDescription = (req, res, next) => {
+    console.log('description is being checked');
+    if (req.body.description) {
+      console.log("we've got a block here!");
+      next();
+    } else {
+      res.status(400).json({ error: 'We need a description...' });
+    }
+  };
 
   const checkIs_favorite = (req, res, next) => {
     console.log('is_favorite is being checked');
@@ -53,4 +62,4 @@ const checkName = (req, res, next) => {
       res.status(400).json({ error: 'We need a name...' });
     }
   };
-  module.exports = {checkName, checkPrice,  checkImage , checkCategory , checkBlockChain_id , checkIs_favorite}
+  module.exports = {checkName, checkPrice,  checkImage , checkCategory , checkBlockChain_id , checkDescription , checkIs_favorite}

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import homee from "../images/homee.png";
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 // import home12 from "../images/home12.png";
 // import home13 from "../images/home13.png";
 
@@ -25,11 +26,11 @@ export default function NavBar() {
         NewNFt
       </Link>
 
-      {/* <Button>
-        <Link to="/products/Edit" className="Link">
-        ShowPage
-        </Link>
-      </Button> */}
+    <Breadcrumb>
+    <Breadcrumb.Item href="https://discord.com/channels/995129548876296213/1004797057057444005">Discord</Breadcrumb.Item>
+    
+    </Breadcrumb>
+
 
       <Link to="/FlexConnect" className="Link">
         ConnectWallet

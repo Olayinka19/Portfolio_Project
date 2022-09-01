@@ -13,10 +13,10 @@ function Transition() {
     return (
       <animated.div className="anime"
         style={{
-          width: 18,
+          width: 180,
           height: 200,
           backgroundColor: 'green',
-          borderRadius: 70,
+          borderRadius: 20,
           ...styles,
         }}
       />
