@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+
 import { useState, useEffect } from 'react';
 function FlexConnect() {
     const [currentAccount, setCurrentAccount] = useState();
