@@ -80,8 +80,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:  2em;
-    box-shadow: 2px 2px 4px grey;
+     padding:  2em; 
+    box-shadow: 4px 4px 4px grey;
     padding-top: 15px;
     margin-bottom: 1em;
     gap: 2rem;
@@ -203,6 +203,12 @@ html {
 
 body {
   margin:0;
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
 }
 
 .bg {
@@ -393,4 +399,14 @@ h1 {
 }
 .hoy{
   width:90px;
+}
+.wallett{
+  margin-left:47%;
+  margin-top: 10%;
+  width:150px;
+  height:200px;
+}
+.wallett1 {
+  width:80px;
+  height:220px;
 }
