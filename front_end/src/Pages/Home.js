@@ -1,8 +1,9 @@
 import React from 'react';
 // import home14 from "../images/home14.jpeg";
 import Animation from '../Components/Animation';
-import Transition from '../Components/Transition';
-import Transition2 from '../Components/Transition2';
+import 'animate.css';
+// import Transition from '../Components/Transition';
+// import Transition2 from '../Components/Transition2';
 
 
 function Home() {
@@ -13,15 +14,16 @@ function Home() {
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 <div class="content">
-  <h1>8.4 Pursuit Fellow </h1>
+  <h1 className='animate__animated animate__hinge'>8.4 Pursuit Fellow</h1>
+  < Animation / >
 </div>
-      < Animation / >
+      
         {/* <marquee direction="Up">Olayinka</marquee>
         <marquee direction="down">Hendrix</marquee> */}
         
        {/* <marquee><img className='home2' src={imgUrl1} /></marquee>  */}
-        <Transition />
-        <Transition2 />
+        {/* <Transition /> */}
+        {/* <Transition2 /> */}
        
     </div>
   )
