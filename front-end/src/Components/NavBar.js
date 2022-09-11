@@ -25,7 +25,7 @@ export default function NavBar() {
       
     {/* <div class="Nav"> */}
       <Link to="/" className="Link">
-        <img className="homee" src={imgUrl4}></img>
+        <img className="homee" src={imgUrl4} alt="loggo"></img>
       </Link>
       <h1>
         <Link to="/products" className="Link">

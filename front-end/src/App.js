@@ -6,7 +6,7 @@ import Index from "./Pages/IndexPage";
 import New from "./Pages/New";
 import Show from "./Pages/Show";
 import NavBar from "./Components/NavBar";
-import Wallet from "./Pages/AboutPage";
+// import Wallet from "./Pages/AboutPage";
 import FlexConn from "./Pages/FlexConn";
 import AboutPage from "./Pages/AboutPage";
 
