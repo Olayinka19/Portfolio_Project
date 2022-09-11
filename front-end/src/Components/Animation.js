@@ -11,7 +11,7 @@ function Animation() {
       from: { opacity: 0, color: 'white' },
     })
     // ...
-    return <animated.div style={styles}><h1>Olayinka's Personal Portfolio Project 2022</h1></animated.div>
+    return <animated.div style={styles}><h1>Olayinka.Fakanbi</h1></animated.div>
   }
 
 
