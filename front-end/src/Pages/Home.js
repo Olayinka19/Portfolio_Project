@@ -1,7 +1,7 @@
 import React from 'react';
 // import home14 from "../images/home14.jpeg";
 import Animation from '../Components/Animation';
-import 'animate.css';
+// import 'animate.css';
 // import Transition from '../Components/Transition';
 // import Transition2 from '../Components/Transition2';
 
