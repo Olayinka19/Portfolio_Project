@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 // import Dropdown from 'react-bootstrap/Dropdown';
 import Accordion from 'react-bootstrap/Accordion';
-import 'animate.css';
+// import 'animate.css';
 
 function Product({product}) {
   return (
