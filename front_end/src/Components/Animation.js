@@ -6,12 +6,12 @@ function Animation() {
       loop: true,
       to: [
         { opacity: 7, color: 'white' },
-        { opacity: 5, color: '#76b469' },
+        { opacity: 1, color: '#76b469' },
       ],
       from: { opacity: 0, color: 'white' },
     })
     // ...
-    return <animated.div style={styles}><h1>░P░e░r░s░o░n░a░l░ ░P░o░r░t░f░o░l░i░o░</h1></animated.div>
+    return <animated.div style={styles}><h1>Olayinka's Personal Portfolio Project 2022</h1></animated.div>
   }
 
 

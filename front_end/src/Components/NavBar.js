@@ -16,7 +16,8 @@ export default function NavBar() {
   // const imgUrl5 = home12;
   // const imgUrl6 = home13;
   return (
-  <Navbar bg="light" expand="lg" fixed="bottom" >
+    // <header>
+  <Navbar bg="light" expand="lg" >
     <Container>
     {/* <Navbar.Brand href="#">Page</Navbar.Brand> */}
     {/* <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} /> */}
@@ -61,5 +62,6 @@ export default function NavBar() {
           </Form>
     </Container>
     </Navbar>
+    // </header>
   );
 }
