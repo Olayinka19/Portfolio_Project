@@ -1,19 +1,21 @@
 {
-  "name": "portfolio_project",
+  "name": "bookmarks-mono-repo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "cd back-end && npm i && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Olayinka19/Portfolio_Project.git"
+    "url": "git+https://github.com/joinpursuit/bookmarks-mono-repo.git"
   },
-  "author": "Olayinka Fakanbi",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Olayinka19/Portfolio_Project/issues"
+    "url": "https://github.com/joinpursuit/bookmarks-mono-repo/issues"
   },
-  "homepage": "https://github.com/Olayinka19/Portfolio_Project#readme"
+  "homepage": "https://github.com/joinpursuit/bookmarks-mono-repo#readme"
 }
