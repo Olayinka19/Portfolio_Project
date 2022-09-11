@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { Button, Card } from "react-bootstrap";
+import { Button} from "react-bootstrap";
 
 
 const API = process.env.REACT_APP_API_URL;
@@ -18,7 +18,7 @@ function ProductDetails() {
     axios.get(`${API}/products/${id}`).then((response) => {
       setProduct(response.data.payload);
     });
-  }, [id, nav, API]);
+  }, [id, nav]);
   const handleDelete = () => {
     axios.delete(`${API}/products/${id}`).then(() => nav('/products'))
     .catch((c) => console.error("catch", c));

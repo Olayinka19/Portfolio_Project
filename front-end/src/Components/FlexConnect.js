@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 
 function FlexConnect() {
     const [currentAccount, setCurrentAccount] = useState();
@@ -19,7 +19,7 @@ function FlexConnect() {
     <div >
       <h1>{!currentAccount? "Connect your Wallet" : <p>WalletID: {currentAccount}</p>}</h1>
       <br></br>
-      <button className='wallet' onClick={connectWallet}>Connect</button>
+      <button onClick={connectWallet}>Connect</button>
     </div>
   )
 }

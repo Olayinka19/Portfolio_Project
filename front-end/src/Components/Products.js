@@ -15,9 +15,9 @@ import Button from "react-bootstrap/Button";
 // import home22 from "../images/home22.png";
 // import home24 from "../images/home24.png";
 // import home27 from "../images/home27.png";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 
 // const imgUrl5 = home16;
 // const imgUrl6 = home17;

@@ -55,7 +55,7 @@ function ProductNew() {
           <article className='wrapper'>
         <div className="New">
       
-           <img className='robo' src={imgUrl6}></img>
+           <img className='robo' src={imgUrl6} alt="newFile"></img>
           <Form onSubmit={handleSubmit}>
             {/* <Form.Label htmlFor="name">Nαɱҽ </Form.Label> */}
             <Form.Control

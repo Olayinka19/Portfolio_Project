@@ -5,9 +5,9 @@ import homee from "../images/homee.png";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+// import Offcanvas from 'react-bootstrap/Offcanvas';
 // import home12 from "../images/home12.png";
 // import home13 from "../images/home13.png";
 
@@ -38,17 +38,17 @@ export default function NavBar() {
       </Link>
 
     <Breadcrumb>
-    <Breadcrumb.Item href="https://discord.com/channels/995129548876296213/1004797057057444005">Discord</Breadcrumb.Item>
+    <Breadcrumb.Item href="https://discord.com/channels/995129548876296213/1004797057057444005" alt="discord">Discord</Breadcrumb.Item>
     
     </Breadcrumb>
 
 
       <Link to="/FlexConnect" className="Link">
-        ConnectWallet
+        Wallet
       </Link>
 
       <Link to="/About" className="Link">
-        About
+        AboutMe
       </Link>
     {/* </div> */}
     <Form className="d-flex">
