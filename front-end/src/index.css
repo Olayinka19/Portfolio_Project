@@ -1,17 +1,20 @@
-/* body { */
-  /* margin: 0; */
+ body { 
+   margin: 0; 
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', */
     /* 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', */
     /* sans-serif; */
   /* -webkit-font-smoothing: antialiased; */
   /* -moz-osx-font-smoothing: grayscale; */
   /* color: white; */
-  /* line-height: 1.5; */
+  /* line-height: 1.5; 
   /* font-size: 0.875rem; */
-  /* background-color: #9f9c71; */
-  /* padding: 0; */
-/* background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png"); */
-/* } */
+  @media screen and (max-width: 680px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  
+ } 
 .img {
   display: block;
      position: relative;
@@ -213,7 +216,7 @@ body {
 
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, rgb(81, 187, 20) 50%, rgb(229, 232, 235) 50%);
+  background-image: linear-gradient(-60deg, rgb(15, 29, 7) 50%, rgb(28, 14, 158) 50%);
   bottom:0;
   left:-50%;
   opacity:.5;
@@ -410,3 +413,4 @@ h1 {
   width:80px;
   height:220px;
 }
+
