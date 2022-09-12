@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Products from '../Components/Products'
 // import home3 from "../images/home3.jpeg";
 function Index() {
