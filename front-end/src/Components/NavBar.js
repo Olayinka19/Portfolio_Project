@@ -38,7 +38,7 @@ export default function NavBar() {
       </Link>
 
     <Breadcrumb>
-    <Breadcrumb.Item href="https://discord.com/channels/995129548876296213/1004797057057444005" alt="discord">Discord</Breadcrumb.Item>
+    <Breadcrumb.Item href="https://discord.com/" alt="discord">Discord</Breadcrumb.Item>
     
     </Breadcrumb>
 
