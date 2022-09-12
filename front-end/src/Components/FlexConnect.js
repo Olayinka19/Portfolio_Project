@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState} from 'react';
 import Button from 'react-bootstrap/Button';
-import './Flex.css';
-<div></div>
+// import './Flex.css';
+
 function FlexConnect() {
     const [currentAccount, setCurrentAccount] = useState();
     const connectWallet = async() => {
