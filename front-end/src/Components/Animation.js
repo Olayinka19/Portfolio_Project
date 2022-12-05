@@ -5,7 +5,7 @@ function Animation() {
     const styles = useSpring({
       loop: true,
       to: [
-        { opacity: 7, color: 'white' },
+        { opacity: 7, color: 'gold' },
         { opacity: 1, color: '#76b469' },
       ],
       from: { opacity: 0, color: 'white' },
