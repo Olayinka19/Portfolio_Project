@@ -136,22 +136,22 @@ header {
   background: lightblue;
   text-align: center;
 }
-.Link:hover {
+/* .Link:hover {
   background: rgb(186, 210, 6);
   color:rgb(238, 243, 243)
-}
+} */
 /* .Link.hover {
   background-color: black;
 } */
-.Link:hover {
+/* .Link:hover {
   height: 45px;
   /* color: white; */
-  padding-top: 30px;
+  /* padding-top: 30px;
   margin-top: -30px;
  background: #086a37;
   text-decoration: none;
-  transform: skew(15deg);
-}
+  transform: skew(15deg); */
+/* }  */
 .New {
   border: 5px solid #4e4b4b;
   text-align: center;
