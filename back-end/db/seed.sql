@@ -1,4 +1,4 @@
-\c ahead_shoping;
+\c products_dev;
 
 INSERT INTO products (name , price , image , category, blockchain_id, description,  is_favorite ) VALUES
 ('MJ' , 1687 , 'https://lh3.googleusercontent.com/hj76DEKMqGxf9-OMpVXnnZF4WDa7H1Xx7eryztyGJNph5hZ_wxKIhAl_lM_-ngp-X0EHNYnJ3nhsZxsv80yEtt5-cDyttnErIok7IQ=w600', 'OpenSea' , '00027f7ff73daa204d637c19cb0441060f4a1efb24c2e7ac00c818d58034ee3c', 'Michael Joseph Jackson was an American singer, songwriter, dancer, and philanthropist. Dubbed the King of Pop, he is regarded as one of the most significant cultural figures of the 20th century.' ,  false),

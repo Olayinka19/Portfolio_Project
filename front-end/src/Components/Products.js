@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { useState, useEffect } from "react";
 import Product from "./Product";
 import axios from "axios";
@@ -24,11 +24,11 @@ function Products() {
     }
   };
   useEffect(() => {
-    axios
-      .get(`${API}/products`)
-      .then((response) => setProducts(response.data.payload))
+    axios.get(`${API}/products`)
+      .then((response) => {setProducts(response.data.payload)})
+      // console.log(response)
       .catch((error) => {
-        console.error(error);
+        console.log(error);
       });
   }, []);
   return (
@@ -85,8 +85,8 @@ function Products() {
           <div></div>
           <hr></hr>
           <section className="ola">
-            {products.map((product) => {
-              return <Product key={product.id} product={product} />;
+            {products.map((product, index) => {
+              return <Product key={index} product={product} index={index} />;
             })}
           </section>
         </div>

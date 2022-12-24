@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS ahead_shoping;
-CREATE DATABASE ahead_shoping;
+DROP DATABASE IF EXISTS products_dev;
+CREATE DATABASE products_dev;
 
-\c ahead_shoping;
+\c products_dev;
 
 CREATE TABLE products (
     id SERIAL PRIMARY KEY,
