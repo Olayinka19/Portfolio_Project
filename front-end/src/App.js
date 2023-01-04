@@ -10,7 +10,7 @@ import Footer from "./Components/Footer";
 // import Wallet from "./Pages/AboutPage";
 import FlexConn from "./Pages/FlexConn";
 import AboutPage from "./Pages/AboutPage";
-
+import Profile from "./Components/Profile";
 import './App.css';
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
         <Route path="/products/new" element={<New />} />
         <Route path="/FlexConnect" element={<FlexConn />} />
         <Route path="/About" element={<AboutPage />} />
+        <Route path="/Profile" element={<Profile />} />
       
         <Route path="*" element={<FourOFour />} />
       </Routes>
