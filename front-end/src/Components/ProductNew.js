@@ -15,11 +15,6 @@ const imgUrl6 = home26;
 function ProductNew() {
     const navigate = useNavigate();
 
-    // const addProduct = (newProduct) => {
-    //     axios.post(`${API}/products`, newProduct)
-    //       .then((res) => navigate(`/products`)) 
-    //       .catch(error => console.error(error)) 
-    //   };
     const addProduct = (newProduct) => {
       console.log(newProduct)
         axios

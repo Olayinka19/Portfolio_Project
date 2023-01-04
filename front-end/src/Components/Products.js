@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import Product from "./Product";
 import axios from "axios";
@@ -23,19 +23,14 @@ function Products() {
       setOrder("ASC");
     }
   };
-  useEffect(() => {
-    axios.get(`${API}/products`)
-      .then((response) => {setProducts(response.data.payload)})
-      // console.log(response)
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+useEffect(() => {
+  axios.get(`${API}/products`)
+  .then((response) => { setProducts(response.data.payload) })
+  .catch((error) => { console.error(error) })
+},[])
   return (
     <div className="Products">
       <section>
-        
-
         <div className="ope">
           <th onClick={() => sorting("name")}>
             {" "}

@@ -45,3 +45,12 @@ background-image: url("https://www.transparenttextures.com/patterns/back-pattern
     font-size: 5rem;
   }
 }
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+  .gfg-div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: #fff;
+  }
+}

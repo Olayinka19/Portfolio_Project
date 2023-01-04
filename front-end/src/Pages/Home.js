@@ -1,7 +1,7 @@
 import React from 'react';
 // import home14 from "../images/home14.jpeg";
 import Animation from '../Components/Animation';
-// import 'animate.css';
+import 'animate.css';
 // import Transition from '../Components/Transition';
 // import Transition2 from '../Components/Transition2';
 
@@ -10,12 +10,12 @@ function Home() {
     // const imgUrl1 = home14;
   return (
     <div>
-      <div class="bg"></div>
+      {/* <div class="bg"></div>
 <div class="bg bg2"></div>
-<div class="bg bg3"></div>
+<div class="bg bg3"></div> */}
 <div class="content">
-  <h1 className='animate__animated animate__hinge'>8.4 Pursuit Fellow</h1>
-  < Animation / >
+  <h1 className=''>PortFolio Project</h1>
+  {/* < Animation / > */}
 </div>
       
         {/* <marquee direction="Up">Olayinka</marquee>
