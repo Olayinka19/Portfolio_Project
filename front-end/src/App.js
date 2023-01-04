@@ -6,6 +6,7 @@ import Index from "./Pages/IndexPage";
 import New from "./Pages/New";
 import Show from "./Pages/Show";
 import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
 // import Wallet from "./Pages/AboutPage";
 import FlexConn from "./Pages/FlexConn";
 import AboutPage from "./Pages/AboutPage";
@@ -29,6 +30,7 @@ function App() {
         <Route path="*" element={<FourOFour />} />
       </Routes>
     </main>
+        <Footer />
   </Router>
   );
 }

@@ -20,6 +20,12 @@
      position: relative;
     
  }
+ .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -414,3 +420,8 @@ h1 {
   height:220px;
 }
 
+.container {
+  width:100%;
+  height:100%;
+  margin:0px auto;
+}

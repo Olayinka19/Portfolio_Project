@@ -1,24 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
-// import homee from "../images/homee.png";
-// import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from'react-bootstrap/Nav';
+import { NavDropdown } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
-
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+} from "react-bootstrap/";
 
 export default function NavBar() {
 
 
   return (
     // <header>
-  <Navbar bg="light" expand="lg" >
+  <Navbar collapseOnSelect expand="lg" bg="light" variant ="dark" >
     <Container>
-
-      <Link to="/" className="Link">
-        Home
+      <Navbar.Brand>
+        {/* <Link to="/">Logo</Link> */}
+        <Link to="/" className="Link">
+        Logo
       </Link>
+      </Navbar.Brand>
      
         <Link to="/products" className="Link">
           Explore
@@ -30,11 +37,6 @@ export default function NavBar() {
       <Link to="/products/new" className="Link">
        Create
       </Link>
-
-{/* <Link to="c/community"> Community</Link> */}
-
-
-
 
       <Link to="/FlexConnect" className="Link">
         Wallet

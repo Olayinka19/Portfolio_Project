@@ -28,7 +28,7 @@ function About() {
         <h2>Olayinka Hendrix</h2> 
         
            <p>Full stack Web Developer | Web3 and NFT Developer for @Project Hestia | Aspiring Data Scientist |</p>
-        <button a href='https://www.linkedin.com/in/olayinka-f-2a46a6229/'>Linkedin</button>
+        <button a href='https://www.linkedin.com/in/olayinka-f-2a46a6229/' >Linkedin</button>
         <button><a href="https://github.com/Olayinka19">GitHub</a></button>
         <button><a href="www.instagram.com">Instagram</a></button>
         
