@@ -18,7 +18,7 @@ export default function NavBar() {
 
   return (
     // <header>
-  <Navbar collapseOnSelect expand="lg" bg="light" variant ="dark" >
+  <Navbar collapseOnSelect expand="lg" bg="dark" variant ="dark"  className="Nav">
     <Container>
       <Navbar.Brand>
         {/* <Link to="/">Logo</Link> */}
@@ -26,13 +26,23 @@ export default function NavBar() {
         Logo
       </Link>
       </Navbar.Brand>
-     
-        <Link to="/products" className="Link">
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="me-auto">
+    
+        <Nav.Link href="/products" className="Link">
           Explore
-        </Link>
+        </Nav.Link>
+        
+        <Nav.Link to="/about" className="Link">
+          About
+        </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+  
+       
      
-        <Link to="/about" className="Link">
-          About </Link>
+        
 
       <Link to="/products/new" className="Link">
        Create

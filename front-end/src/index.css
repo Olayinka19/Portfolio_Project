@@ -74,6 +74,8 @@ a {
       ;
 }
 .Nav {
+  color: #05050a;
+  background: #641da1;
 
   /* display:flex;
   justify-content: space-around;
@@ -85,8 +87,8 @@ a {
   /* color: white; */
   /* font-family: VT323-Regular;  */
   /* text-decoration: none; */
-  background-color: #c7d2c5;
-    display: flex;
+  /* background-color: #c7d2c5; */
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
      padding:  2em; 
@@ -95,7 +97,7 @@ a {
     margin-bottom: 1em;
     gap: 2rem;
     font-size: 18px;
-    position: sticky;
+    position: sticky; */
   
 
 }
@@ -141,6 +143,10 @@ header {
   padding:40px;
   background: lightblue;
   text-align: center;
+}
+.Link{
+  color: rgb(10, 10, 10);
+  text-decoration: none;
 }
 /* .Link:hover {
   background: rgb(186, 210, 6);
