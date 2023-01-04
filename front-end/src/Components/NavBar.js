@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from'react-bootstrap/Nav';
 import { NavDropdown } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
+import About from "./About";
 import Container from 'react-bootstrap/Container';
 import {
   Card,
@@ -34,25 +35,24 @@ export default function NavBar() {
           Explore
         </Nav.Link>
         
-        <Nav.Link to="/about" className="Link">
+        <Nav.Link href="/about" className="Link">
           About
         </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-  
-       
-     
-        
 
-      <Link to="/products/new" className="Link">
-       Create
-      </Link>
-
-      <Link to="/FlexConnect" className="Link">
+        <NavDropdown title="Menu" id="basic-nav-dropdown"> 
+        <NavDropdown.Item>
+          <Link to="/products/new">Create</Link>
+        </NavDropdown.Item>
+        <NavDropdown.Item>
+        <Link to="/FlexConnect" className="Link">
         Wallet
       </Link>
-      
-    <Form className="d-flex">
+        </NavDropdown.Item>
+        
+        </NavDropdown>
+        </Nav>
+        <Nav.Link eventKey={2}>
+        <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Search"
@@ -61,6 +61,21 @@ export default function NavBar() {
             />
             <Button variant="outline-success">🔍</Button>
           </Form>
+
+        </Nav.Link>
+      </Navbar.Collapse>
+  
+       
+     
+        
+
+      {/* <Link to="/products/new" className="Link">
+       Create
+      </Link> */}
+
+      
+      
+   
     </Container>
     </Navbar>
     // </header>

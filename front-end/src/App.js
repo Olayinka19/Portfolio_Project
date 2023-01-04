@@ -25,7 +25,7 @@ function App() {
         <Route path="/products/:id/edit" element={<Edit />} />
         <Route path="/products/new" element={<New />} />
         <Route path="/FlexConnect" element={<FlexConn />} />
-        <Route path="About" element={<AboutPage />} />
+        <Route path="/About" element={<AboutPage />} />
       
         <Route path="*" element={<FourOFour />} />
       </Routes>
