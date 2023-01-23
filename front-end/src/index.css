@@ -63,17 +63,7 @@ a {
   text-decoration: none;
   color: #05050a;
 }
-.Products{
-  
-  display: grid;
-  grid-template-areas: 
-      "h h h"
-      "s s "
-      "s s s"
-      "s s s"
-      
-      ;
-}
+
 .Nav {
   color: #05050a;
   background: #641da1;
@@ -84,33 +74,7 @@ a {
   justify-content: center;
   align-items: center;
   }
-.home2{ 
-  width:150px;
-  height:150px;
-/* background-repeat: no-repeat; */
-background-size: cover;
-}
-.home4{
-  width:50px;
-  height:30px;
-}
-.homee {
-  width:50px;
-  height:55px;
-}
-.home5 {
-  width:150px;
-  height:40px;
-}
-.home12{
- width:80px;
- height:40px;
-}
-.Link2 {
-  width: 120px;
-  height: 40px;
-  background-color: gold;
-}
+
 .displaypic {
   width: 250px;
   height: 250px;
@@ -125,10 +89,10 @@ header {
   background: lightblue;
   text-align: center;
 }
-.Link{
+/* .Link{
   color: rgb(10, 10, 10);
   text-decoration: none;
-}
+} */
 /* .Link:hover {
   background: rgb(186, 210, 6);
   color:rgb(238, 243, 243)
@@ -158,11 +122,12 @@ header {
   -o-border-radius: 50%;
 }
 .profile {
- background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.entrepreneur.com%2Fcontent%2F3x2%2F2000%2F1661266965-shutterstock-2144631851.jpg&f=1&nofb=1&ipt=ebcb035da714baf9d88a8c5caabe617d577d0b612b253a2fa60a6e9d72e4e014&ipo=images');
-  background-size: cover;
-  background-position: center;
+ /* background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.entrepreneur.com%2Fcontent%2F3x2%2F2000%2F1661266965-shutterstock-2144631851.jpg&f=1&nofb=1&ipt=ebcb035da714baf9d88a8c5caabe617d577d0b612b253a2fa60a6e9d72e4e014&ipo=images'); */
+  /* background-size: cover; */
+  /* background-position: center; */
   /* background-repeat: no-repeat; */
   width: 100%;
+  
   color: #D7D4E4;
 }
 .pof {
@@ -455,3 +420,7 @@ h1 {
   height:100%;
   margin:0px auto;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

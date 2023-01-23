@@ -1,18 +1,20 @@
 import { React } from "react";
 import "animate.css";
+
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 // import CardGroup from 'react-bootstrap/CardGroup';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ImageList from '@mui/material/ImageList';
+import Form from 'react-bootstrap/Form';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-
+import Button from 'react-bootstrap/Button';
+import Animation from "../Components/Animation";
 function Home() {
   return (
     <div>
-      <h1>NFTs</h1>
       <Carousel slide={false}>
         <Carousel.Item>
           <img
@@ -216,11 +218,11 @@ function Home() {
       {/* render(<ControlledCarousel />); */}
       <br />
       <br />
-
+<Animation />
       {/* React Boostrap image Cardd */}
       {/*  */}
-      {/* <Row xs={10} md={2} className="g-4">
-      {Array.from({ length: 4 }).map((_, idx) => (
+      <Row xs={10} md={2} className="g-4">
+      {Array.from({ length: 2 }).map((_, idx) => (
         <Col>
           <Card>
             <Card.Img variant="top" src="https://i.seadn.io/gcs/files/d4594fc1685dc8fc31be55a1652ff0f2.png?auto=format&w=1000" />
@@ -235,7 +237,7 @@ function Home() {
           </Card>
         </Col>
       ))}
-    </Row> */}
+    </Row>
  <h3>Collections</h3>
     <ImageList md={{ width: 200, height: 250 }}>
       {itemData.map((item) => (
@@ -257,6 +259,7 @@ function Home() {
         </ImageListItem>
       ))}
     </ImageList>
+    
   
 
     </div>
@@ -266,24 +269,29 @@ function Home() {
 
 const itemData = [
   {
-  img: 'https://i.seadn.io/gae/xlTiRF60IuNOYj-MZNJbWNG1lLlNhbZvKu-xARt-VoLeIbrkqA6NWo81BqLYZbye8UoezRBQtdvIa9cLV9scLdFuPTtyBZS5vI9_?',
+  img: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59102194/1/?bust=1670563214',
   title: 'Kobe Byrant #9385',
   link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/88773762375852173183414282271947564872720544888992087052403817795220452409345',
   creator: '@Mesmerizer',
   owner: 'BeliverR'
 },
 {
-  img: 'https://i.seadn.io/gae/he8qT1XI9qxy_6e0wqkwBVETj3cfjLvBhrh167taPfLygt6N5fxQrdwPwc1yB6C5AECngSe0y7mqDuBZ217v-T7UjSJ2d9w6OlJ7?',
+  img: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59140872/1/?bust=1670912051',
   title: 'Crazy Bored Ape Club',
   creator: '@D23DE7',
 },
 {
-  img: 'https://i.seadn.io/gae/gDwIvKKSqRvtzZSvl0AbCQ1nNg4_tKtMcS7Ww7sdGHuRWpUs5BwDfSq5Otr0DtoScxWYEu3ZUo3goPysTxchvhF57lK77DxamoE9oA?',
+  img: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59135216/1/?bust=1670872915',
   title: 'Dwayne Johnson',
   creator: '@rollelflex_graphy726',
 },
 {
-  img: 'https://i.seadn.io/gae/TVx1lNPoUphE8EgexDpim_3iNTWsaHRCf35dy4xM_r0mvKI7MmQQcfb4cP5AkHqNBwSLveXVTwo3aUkqcfHWvNYQz7xKkGUEkycJmVo?auto=format&w=384',
+  img: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59047802/1/?bust=1670144357',
+  title: 'Burger',
+  creator: '@rollelflex_graphy726',
+},
+{
+  img: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59140794/1/?bust=1670911215',
   title: 'Burger',
   creator: '@rollelflex_graphy726',
 },
