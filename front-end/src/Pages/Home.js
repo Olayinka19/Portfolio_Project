@@ -1,301 +1,254 @@
 import { React } from "react";
 import "animate.css";
+import "./Home.css";
 
+import ListGroup from "react-bootstrap/ListGroup";
 import Carousel from "react-bootstrap/Carousel";
+import CardGroup from 'react-bootstrap/CardGroup';
 import Card from "react-bootstrap/Card";
-// import CardGroup from 'react-bootstrap/CardGroup';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import ImageList from '@mui/material/ImageList';
-import Form from 'react-bootstrap/Form';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import Button from 'react-bootstrap/Button';
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import Animation from "../Components/Animation";
+
 function Home() {
   return (
     <div>
-      <Carousel slide={false}>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+    <Card className="home-container text-center">
+      <Card.Header>Featured</Card.Header>
+      <Card.Body>
+        <Card.Title>Special title treatment</Card.Title>
+        <Card.Text>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus viverra adipiscing at in tellus. Phasellus faucibus scelerisque eleifend donec. Montes nascetur ridiculus mus mauris vitae. Luctus accumsan tortor posuere ac ut consequat. Integer enim neque volutpat ac tincidunt vitae. Porttitor massa id neque aliquam vestibulum morbi
+        
+        </Card.Text>
+        
+        <Carousel fade>
+      <Carousel.Item interval={2000}>
+        <img
+          className="first-image" 
+          src="https://m.media-amazon.com/images/I/611kQoDpXfL._AC_UL640_FMwebp_QL65_.jpg"
+          alt="First slide"
+        />
+        
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="first-image" 
+          src="https://m.media-amazon.com/images/I/714s4ksW5GL._AC_SL1500_.jpg"
+          alt="Second slide"
+        />
 
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+        
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="first-image" 
+          src="https://m.media-amazon.com/images/I/51d7aXIXJ9L._SL1000_.jpg"
+          alt="Third slide"
+        />
 
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="hhttps://opensea.io/static/images/learn-center//what-are-gas-fees.png"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//how-to-buy-nft.png"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//what-is-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://opensea.io/static/images/learn-center//how-to-create-nft.png"
-            alt="first Slide"
-          ></img>
-          <Carousel.Caption>
-            <h3>First Slide</h3>
-            <p>Floor: 1.2 Sol </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-      {/* render(<ControlledCarousel />); */}
+       
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="first-image" 
+          src="https://m.media-amazon.com/images/I/51d7aXIXJ9L._SL1000_.jpg"
+          alt="Third slide"
+        />
+
+       
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="first-image" 
+          src="https://m.media-amazon.com/images/I/81BMDuDevnL._AC_SX679_.jpg"
+          alt="Third slide"
+        />
+
+       
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="first-image" 
+          src="https://m.media-amazon.com/images/I/41nfehGeONL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
+          alt="Third slide"
+        />
+
+       
+      </Carousel.Item>
+    </Carousel>
+      </Card.Body>
+    </Card>
+      <Animation />
+
+      <br/>
+      <div className="wrapper">
+      <CardGroup>
+      
+      
+      <Card className="display-flex container">
+        <Card.Img className="card-container" variant="top" src="https://m.media-amazon.com/images/I/51fvNqvlFCL._AC_SL1500_.jpg" />
+        <Card.Body>
+          <Card.Title>Surge Protector, Outlet Extender with Night Light USB.</Card.Title>
+          <Card.Text>
+          You get 4 USB charging ports (1 USB C) and 5 wide-spaced outlets.
+          </Card.Text>
+          <Card.Link href="https://www.amazon.com/Protector-Extender-Addtam-5-Outlet-Splitter/dp/B09XMMZSWW/ref=sr_1_13?keywords=gadgets&qid=1674539969&sr=8-13"><Button>Buy Now</Button></Card.Link>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
+     
+
+        
+      <Card>
+        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71O++mDl2LL._AC_SL1452_.jpg" target="_blank" rel="noopener"/>
+        <Card.Body>
+          <Card.Title>Monocular Telescope High Power 8x42 Monoculars Scope Compact Portable Waterproof Fogproof Shockproof.</Card.Title>
+          <Card.Text>
+          High quality precision design featuring all glass high end optics, (FMC Superior BAK-4 Green Film Prism).{' '}
+          </Card.Text>
+          <Card.Link href="https://www.amazon.com/Monocular-Telescope-Monoculars-Waterproof-Shockproof/dp/B075WNJGCQ/ref=sr_1_28?crid=2M2104K1VLEBL&keywords=coding%2Bgadgets%2Bfor%2Bmen&qid=1674543035&sprefix=Coding%2Bgadgets%2Caps%2C116&sr=8-28&th=1" target="_blank" rel="noopener"><Button variant="primary">Buy Now</Button></Card.Link>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
+      
+
+      <Card>
+        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71H3miSK4BL._AC_UL640_FMwebp_QL65_.jpg" />
+        <Card.Body>
+          <Card.Title>Red Heart Brown Teddy Bear </Card.Title>
+          <Card.Text>
+          🎀Cute Valentines gifts for her: Handmade with high quality soft plush cover and stuffed with healthy material, create with extra-strong stitching,maintaining permanent elastic extrusion prevention. 
+          </Card.Text>
+          <Card.Link href="https://www.amazon.com/Fianc%C3%A9e-Girlfriend-Friends-Birthday-Valentines/dp/B09JW319PP/ref=sr_1_11?crid=2L5A2OZEFURT&keywords=valentines+day+gifts&qid=1674554720&sprefix=valenti%2Caps%2C132&sr=8-11" target="_blank" rel="noopener" ><Button>Buy Now</Button></Card.Link>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
+      
+      
+    </CardGroup>
+    <Card className="text-center">
+      <Card.Header>Featured</Card.Header>
+      <Card.Body>
+        <Card.Title>Special Sales Ending Soon!!</Card.Title>
+        <Card.Text>
+          With supporting text below as a natural lead-in to additional content.
+        </Card.Text>
+        <Button variant="warning">Sales</Button>
+      </Card.Body>
+      <Card.Footer className="text-muted">2 days ago</Card.Footer>
+    </Card>
+    </div>
+
+
+   <div className="container">
+   <div>
+   <Card>
+        <Card.Body>
+          <Card.Text>
+            20% off Gaming Laptop on Sale!!!
+          </Card.Text>
+        </Card.Body>
+      </Card>
       <br />
-      <br />
-<Animation />
-      {/* React Boostrap image Cardd */}
-      {/*  */}
-      <Row xs={10} md={2} className="g-4">
-      {Array.from({ length: 2 }).map((_, idx) => (
-        <Col>
-          <Card>
-            <Card.Img variant="top" src="https://i.seadn.io/gcs/files/d4594fc1685dc8fc31be55a1652ff0f2.png?auto=format&w=1000" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
- <h3>Collections</h3>
-    <ImageList md={{ width: 200, height: 250 }}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}?w=148&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-            link={item.link}
-            alt={item.title}
-            loading="lazy"
-          />
-          <ImageListItemBar
-            title={item.title}
-            subtitle={<span>by: {item.creator}</span>}
-            link={item.link}
-            
-            position="below"
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
-    
+      <Card>
+        <Card.Body>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </Card.Text>
+        </Card.Body>
+        <Card.Img variant="bottom" src="https://m.media-amazon.com/images/I/71FpaWQCVHL._AC_SL1500_.jpg" />
+      </Card>
+   </div>
+   <Card className="text-center">
+      <Card.Header>Top Deal</Card.Header>
+      <Card.Body>
+        <Card.Title>50% off Special Offer for Just You!!</Card.Title>
+        <Card.Text>
+          With supporting text below as a natural lead-in to additional content.
+        </Card.Text>
+        <Button variant="warning">Sales</Button>
+      </Card.Body>
+      {/* <Card.Footer className="text-muted">2 days ago</Card.Footer> */}
+      
+    </Card>
   
 
+   </div>
+   <hr></hr>
+   <Card className="text-center">
+      <Card.Header>Featured</Card.Header>
+      <Card.Body>
+        <Card.Title>Valentine's day Gift</Card.Title>
+        <Card.Text>
+        <Carousel fade>
+      <Carousel.Item interval={2000}>
+        <img
+          className="first-image" 
+          src="https://m.media-amazon.com/images/I/71Zib7chKVS._AC_UY879_.jpg"
+          alt="First slide"
+        />
+        
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="first-image" 
+          src="https://m.media-amazon.com/images/I/71H3miSK4BL._AC_UL640_FMwebp_QL65_.jpg"
+          alt="Second slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="first-image" 
+          src="https://m.media-amazon.com/images/I/81dPXWkTSUL._AC_SX679_.jpg"
+          alt="Third slide"
+        />
+
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="first-image" 
+          src="https://m.media-amazon.com/images/I/719rjcpbx1L._AC_UL640_FMwebp_QL65_.jpg"
+          alt="Third slide"
+        />
+
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="first-image" 
+          src="https://m.media-amazon.com/images/I/816Y55gzX-L._SL1500_.jpg"
+          alt="Third slide"
+        />
+
+      </Carousel.Item>
+    </Carousel>
+        </Card.Text>
+        <Button variant="danger">Explore</Button>
+      </Card.Body>
+      <Card.Footer className="text-muted">2 days ago</Card.Footer>
+    </Card>
+
+    <div className="footer-wrapper" >
+    <h3>Frequently asked questions</h3>
+    <div>
+      How to contact me?
     </div>
-    
+    <hr></hr>
+    <p>For general questions, contact me at <a href="mailto:olayinkafakanbi@pursuit.org" target="_blank" rel="noopener"><b>Olayinkafakanbi@oursuit.org</b></a> I'll get back to you within 1 business day. For business refereral and ther professional purposes.</p>
+    </div>
+    </div>
   );
 }
 
-const itemData = [
-  {
-  img: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59102194/1/?bust=1670563214',
-  title: 'Kobe Byrant #9385',
-  link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/88773762375852173183414282271947564872720544888992087052403817795220452409345',
-  creator: '@Mesmerizer',
-  owner: 'BeliverR'
-},
-{
-  img: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59140872/1/?bust=1670912051',
-  title: 'Crazy Bored Ape Club',
-  creator: '@D23DE7',
-},
-{
-  img: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59135216/1/?bust=1670872915',
-  title: 'Dwayne Johnson',
-  creator: '@rollelflex_graphy726',
-},
-{
-  img: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59047802/1/?bust=1670144357',
-  title: 'Burger',
-  creator: '@rollelflex_graphy726',
-},
-{
-  img: 'https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59140794/1/?bust=1670911215',
-  title: 'Burger',
-  creator: '@rollelflex_graphy726',
-},
 
-];
 
 export default Home;

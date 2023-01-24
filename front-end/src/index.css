@@ -8,6 +8,7 @@
   /* color: white; */
   /* line-height: 1.5;  */
   /* font-size: 0.875rem; */
+  background-color: #10172A;
   @media screen and (max-width: 680px) {
     body {
       background-color: lightgreen;
@@ -269,7 +270,7 @@ h1 {
   background: #FFF;
 }
 .background {
-  background: linear-gradient(132deg, white, green, green);
+  background: linear-gradient(132deg, #A11211, #0A0907, #c0b9b6);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
@@ -420,6 +421,8 @@ h1 {
   height:100%;
   margin:0px auto;
 }
+
+
 
 @tailwind base;
 @tailwind components;
