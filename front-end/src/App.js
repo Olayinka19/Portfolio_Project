@@ -11,11 +11,14 @@ import Footer from "./Components/Footer";
 import FlexConn from "./Pages/FlexConn";
 import AboutPage from "./Pages/AboutPage";
 import Profile from "./Components/Profile";
+import Signin from "./Pages/Signin";
+import {AuthContextProvider} from './Context/AuthContext';
 import './App.css';
 
 function App() {
   return (
     <Router>
+    <AuthContextProvider>
     <NavBar />
     <main>
       <Routes>
@@ -27,11 +30,14 @@ function App() {
         <Route path="/FlexConnect" element={<FlexConn />} />
         <Route path="/About" element={<AboutPage />} />
         <Route path="/Profile" element={<Profile />} />
+        <Route path="/Signin" element={<Signin />} />
       
         <Route path="*" element={<FourOFour />} />
       </Routes>
+      
     </main>
         <Footer />
+        </AuthContextProvider>
   </Router>
   );
 }

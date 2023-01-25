@@ -113,8 +113,8 @@ header {
 
 
 .img-logo{
-  width:45px;
-  height:45px;
+  width:35px!important;
+  height:35px!important;
   border-radius: 50%;
   margin-top: -5px;
   -webkit-border-radius: 50%;

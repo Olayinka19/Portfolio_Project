@@ -19,6 +19,7 @@ function Profile() {
     <h5 id="displaypicchange">
       Displaypic Change
     </h5>
+  
     <img className="displaypic" src="http://" ></img>
     <input className="uploader" type="file" name="file"></input>
 

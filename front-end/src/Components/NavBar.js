@@ -7,11 +7,22 @@ import { NavDropdown } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import About from "./About";
 import Profile from "./Profile";
+import Signin from "../Pages/Signin";
+import FlexConnect from "./FlexConnect";
 import Container from "react-bootstrap/Container";
+import { UserAuth } from "../Context/AuthContext";
 import { Card, CardHeader, CardBody, CardFooter } from "react-bootstrap/";
 
 
 export default function NavBar() {
+  const {user, logOut} = UserAuth();
+  const handleSignOut = async () => {
+    try {
+      await logOut()
+    } catch(err) {
+      console.log(err);
+    }
+  }
   return (
     // <header>
 
@@ -31,7 +42,10 @@ export default function NavBar() {
               alt="logo"
               className="img-logo"
             />
+            
+
           </Link>
+          
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -52,21 +66,27 @@ export default function NavBar() {
 
             <NavDropdown title="Menu" id="basic-nav-dropdown">
               <NavDropdown.Item>
-                <Link
-                  to="/products/new"
-                  
-                >
-                  Create
-                </Link>
+              {user?.displayName ? (
+        <button onClick={handleSignOut}><Button>LogOut</Button></button>
+      ) : (
+        <Link to='/signin'>Log In</Link>
+      )}
               </NavDropdown.Item>
               <NavDropdown.Item>
                 <Link to="/FlexConnect" className="Link">
-                  Wallet
+                 <img width="45px" height="45px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Qd_PyuUdp9Se1AGdWWhXVwHaHa%26pid%3DApi&f=1&ipt=33b7eb916f31f77bd6dd76a51cb4d109caca8056b91d1f5c3d5b88bb42b30c0f&ipo=images"></img>
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
                 <Link to="/Profile" className="Link">
                   Profile
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/Profile" className="Link">
+                {user?.displayName ? ( 
+        <img src={user.photoURL} alt="pfp" width="35px" height="35px" border-radius="50%" />
+      ) : null} 
                 </Link>
               </NavDropdown.Item>
             </NavDropdown>
