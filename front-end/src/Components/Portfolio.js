@@ -5,23 +5,22 @@ const API = process.env.REACT_APP_API_URL;
 
 function Porfolio({ portfolio }) {
   return (
-    <tr>
-      <td>
-        {portfolio.is_favorite ? (
+   <div>
+       <p>
+       {portfolio.is_favorite ? (
           <span>⭐️</span>
         ) : (
-          <span>&nbsp; &nbsp; &nbsp;</span>
+          <span>Try Again</span>
         )}
-      </td>
-      <td>
-        <a href={portfolio.url} target="_blank" rel="noreferrer">
+       </p>
+       <div>
+       <a href={portfolio.url} target="_blank" rel="noreferrer">
           {portfolio.name}
         </a>
-      </td>
-      <td>
         <Link to={`/portfolios/${portfolio.id}`}>✏️</Link>
-      </td>
-    </tr>
+       </div>
+   </div>
+   
   );
 }
 

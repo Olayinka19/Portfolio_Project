@@ -16,20 +16,17 @@ function Portfolios() {
   return (
     <div className="portfolios">
       <section className="portfolio">
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>Take me there</th>
-              <th>See this portfolio</th>
-            </tr>
-          </thead>
-          <tbody>
+        
+           
+              <button>Take me there</button>
+              <p>See this portfolio</p>
+           
+         
             {portfolios.map((portfolio) => {
-              return <portfolio key={portfolio.id} portfolio={portfolio} />;
+              return <Portfolio key={portfolio.id} portfolio={portfolio} />;
             })}
-          </tbody>
-        </table>
+          
+       
       </section>
     </div>
   );

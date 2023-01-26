@@ -27,8 +27,8 @@ function App() {
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/portfolios" element={<Portfolios />} />
-        <Route path="/portfoliosDetails" element={<PortfolioDetails />} />
+        <Route path="/Portfolios" element={<Portfolios />} />
+        <Route path="/PortfoliosDetails" element={<PortfolioDetails />} />
         <Route path="/products/:id/edit" element={<Edit />} />
         <Route path="/products/new" element={<New />} />
         <Route path="/FlexConnect" element={<FlexConn />} />
