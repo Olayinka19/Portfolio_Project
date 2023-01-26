@@ -1,23 +1,23 @@
-// DEPENDENCIES
-
 const express = require("express");
 const cors = require("cors");
-
-// CONFIGURATION
 const app = express();
 
-const productController = require('./controllers/productController.js')
-// MIDDLEWARE
-app.use(express.json());
+// const bookmarksController = require("./controllers/bookmarksController.js");
+
+const portfolioController = require("./controllers/portfolioController.js");
+
+// CONFIGURATION
 app.use(cors());
-// var cors = require('cors');
-app.use('/products', productController);
-// ROUTES
-app.get('/', (req, res) => {
-    res.send("Get the Products' at Ahead_Online_shopping!")
+app.use(express.json());
+
+
+app.use("/portfolios", portfolioController);
+app.get("/", (req, res) => {
+    res.send("Welcome to the bookmarks app !@#!@#!@")
+});
+
+app.get("*", (req, res) => {
+    res.status(404).json({error: "page not found"})
 })
-app.get('*', (req, res) => {
-    res.status(404).send('page not found')
-})
-// EXPORT
+
 module.exports = app;

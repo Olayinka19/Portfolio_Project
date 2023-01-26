@@ -11,9 +11,13 @@ import Footer from "./Components/Footer";
 import FlexConn from "./Pages/FlexConn";
 import AboutPage from "./Pages/AboutPage";
 import Profile from "./Components/Profile";
+import portfolioDetails from "./Components/PortfolioDetails";
+import Portfolios from "./Components/Portfolios";
+import Porfolio from "./Components/Portfolio";
 import Signin from "./Pages/Signin";
 import {AuthContextProvider} from './Context/AuthContext';
 import './App.css';
+import PortfolioDetails from "./Components/PortfolioDetails";
 
 function App() {
   return (
@@ -23,8 +27,8 @@ function App() {
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Index />} />
-        <Route path="/products/:id" element={<Show />} />
+        <Route path="/portfolios" element={<Portfolios />} />
+        <Route path="/portfoliosDetails" element={<PortfolioDetails />} />
         <Route path="/products/:id/edit" element={<Edit />} />
         <Route path="/products/new" element={<New />} />
         <Route path="/FlexConnect" element={<FlexConn />} />

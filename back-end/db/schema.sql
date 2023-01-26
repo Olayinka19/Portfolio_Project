@@ -1,26 +1,12 @@
--- DROP DATABASE IF EXISTS pets_developer;
--- CREATE DATABASE pets_developer;
+DROP DATABASE IF EXISTS portfolios_dev;
+CREATE DATABASE portfolios_dev;
 
--- \c pets_developer;
+\c portfolios_dev;
 
--- DROP TABLE IF EXISTS users ;
-
--- CREATE TABLE users (
---     id SERIAL, 
---     name TEXT,
---     income INT,
---     age INT,
---     sex TEXT,
---     household_size INT,
---     residence_type TEXT, 
---     free_time TEXT, 
---     preferences TEXT, 
---     pet_type TEXT, 
---     address TEXT,
---     proof_of_residence TEXT, 
---     photo_id TEXT, 
---     proof_pets_allowed TEXT, 
---     phone_number TEXT, 
---     email TEXT, 
---     PRIMARY KEY(id)
--- );
+CREATE TABLE portfolios (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    url TEXT NOT NULL,
+    category TEXT,
+    is_favorite BOOLEAN
+);

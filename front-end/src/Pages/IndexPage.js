@@ -1,15 +1,15 @@
-import React from 'react'
+// import React from 'react'
 
-import Products from '../Components/Products'
+// import Products from '../Components/Products'
 
-function Index() {
+// function Index() {
 
-  return (
-    <div className='Products'>
+//   return (
+//     <div className='Products'>
 
-      <Products />
-    </div>
-  )
-}
+//       <Products />
+//     </div>
+//   )
+// }
 
-export default Index
+// export default Index

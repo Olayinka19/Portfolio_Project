@@ -4,7 +4,7 @@ import GoogleButton from 'react-google-button'
 // import { UserAuth } from '../context/AuthContext';
 import { UserAuth } from '../Context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+// import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 const Signin = () => {
   const { googleSignIn, user } = UserAuth();

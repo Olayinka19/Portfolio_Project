@@ -12,8 +12,8 @@ import FlexConnect from "./FlexConnect";
 import Container from "react-bootstrap/Container";
 import { UserAuth } from "../Context/AuthContext";
 import { Card, CardHeader, CardBody, CardFooter } from "react-bootstrap/";
-
-
+import Portfolios from "./Portfolios";
+import PortfolioDetails from "./PortfolioDetails";
 export default function NavBar() {
   const {user, logOut} = UserAuth();
   const handleSignOut = async () => {
@@ -51,7 +51,7 @@ export default function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
-              href="/products"
+              href="/portfolios"
     
             >
               Explore
