@@ -63,6 +63,7 @@ export default function NavBar() {
             >
               About
             </Nav.Link>
+            
             <Link to="/Profile" className="Link">
                 {user?.displayName ? ( 
         <img src={user.photoURL} alt="pfp" width="35px" height="35px"/>
@@ -103,6 +104,7 @@ export default function NavBar() {
         <Link to='/signin'>Log In</Link>
       )}
               </NavDropdown.Item>
+              {/* {user?.displayName} */}
             </Form>
           </Nav.Link>
         </Navbar.Collapse>
