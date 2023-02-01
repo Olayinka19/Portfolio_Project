@@ -11,8 +11,12 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Animation from "../Components/Animation";
+import PortfolioDetails from "../Components/PortfolioDetails";
+// import portfolios from "../../../back-end/controllers/portfolioController";
+
 
 function Home() {
+  
   return (
     <div>
     <Card className="home-container text-center">
@@ -96,6 +100,7 @@ function Home() {
           You get 4 USB charging ports (1 USB C) and 5 wide-spaced outlets.
           </Card.Text>
           <Card.Link href="https://www.amazon.com/Protector-Extender-Addtam-5-Outlet-Splitter/dp/B09XMMZSWW/ref=sr_1_13?keywords=gadgets&qid=1674539969&sr=8-13"><Button>Buy Now</Button></Card.Link>
+        
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
@@ -149,6 +154,7 @@ function Home() {
     </div>
 
 
+
    <div className="container">
    <div>
    <Card>
@@ -181,6 +187,8 @@ function Home() {
       {/* <Card.Footer className="text-muted">2 days ago</Card.Footer> */}
       
     </Card>
+
+
   
 
    </div>
@@ -236,6 +244,9 @@ function Home() {
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
+    
+    
+    
 
     <div className="footer-wrapper" >
     <h3>Frequently asked questions</h3>
@@ -243,7 +254,7 @@ function Home() {
       How to contact me?
     </div>
     <hr></hr>
-    <p>For general questions, contact me at <a href="mailto:olayinkafakanbi@pursuit.org" target="_blank" rel="noopener"><b>Olayinkafakanbi@oursuit.org</b></a> I'll get back to you within 1 business day. For business refereral and ther professional purposes.</p>
+    <p>For general questions, contact me at <a href="mailto:olayinkafakanbi@pursuit.org" target="_blank" rel="noopener"><b>Olayinkafakanbi@pursuit.org</b></a> I'll get back to you within 1 business day. For business refereral and ther professional purposes.</p>
     </div>
     </div>
   );

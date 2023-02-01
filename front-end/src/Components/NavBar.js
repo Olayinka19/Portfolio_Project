@@ -63,15 +63,15 @@ export default function NavBar() {
             >
               About
             </Nav.Link>
+            <Link to="/Profile" className="Link">
+                {user?.displayName ? ( 
+        <img src={user.photoURL} alt="pfp" width="35px" height="35px"/>
+      ) : null} 
+                </Link>
+            
 
             <NavDropdown title="Menu" id="basic-nav-dropdown">
-              <NavDropdown.Item>
-              {user?.displayName ? (
-        <button onClick={handleSignOut}><Button>LogOut</Button></button>
-      ) : (
-        <Link to='/signin'>Log In</Link>
-      )}
-              </NavDropdown.Item>
+              
               <NavDropdown.Item>
                 <Link to="/FlexConnect" className="Link">
                  <img width="45px" height="45px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Qd_PyuUdp9Se1AGdWWhXVwHaHa%26pid%3DApi&f=1&ipt=33b7eb916f31f77bd6dd76a51cb4d109caca8056b91d1f5c3d5b88bb42b30c0f&ipo=images"></img>
@@ -83,11 +83,7 @@ export default function NavBar() {
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/Profile" className="Link">
-                {user?.displayName ? ( 
-        <img src={user.photoURL} alt="pfp" width="35px" height="35px" border-radius="50%" />
-      ) : null} 
-                </Link>
+               
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
@@ -100,6 +96,13 @@ export default function NavBar() {
                 aria-label="Search"
               />
               <Button variant="outline-success">🔍</Button>
+              <NavDropdown.Item>
+              {user?.displayName ? (
+        <button onClick={handleSignOut}>LogOut</button>
+      ) : (
+        <Link to='/signin'>Log In</Link>
+      )}
+              </NavDropdown.Item>
             </Form>
           </Nav.Link>
         </Navbar.Collapse>
