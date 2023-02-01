@@ -11,7 +11,7 @@ function Animation() {
       from: { opacity: 0, color: 'white' },
     })
     // ...
-    return <animated.div style={styles}><h1>Olayinka.Hendrix</h1></animated.div>
+    return <animated.div style={styles}><h2>Olayinka.Hendrix</h2></animated.div>
   }
 
 
