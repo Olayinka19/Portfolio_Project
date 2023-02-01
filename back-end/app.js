@@ -4,7 +4,7 @@ const app = express();
 
 
 
-const portfolioController = require("./controllers/portfolioController.js");
+const portfolioController = require("./controllers/portfolioController");
 
 // CONFIGURATION
 app.use(cors());

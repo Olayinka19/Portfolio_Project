@@ -32,8 +32,8 @@ function App() {
       </Routes>
       
     </main>
-        <Footer />
         </AuthContextProvider>
+        <Footer />
   </Router>
   );
 }
