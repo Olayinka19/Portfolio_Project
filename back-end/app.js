@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-// const bookmarksController = require("./controllers/bookmarksController.js");
+
 
 const portfolioController = require("./controllers/portfolioController.js");
 
@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use("/portfolios", portfolioController);
 app.get("/", (req, res) => {
-    res.send("Welcome to the bookmarks app !@#!@#!@")
+    res.send("Welcome to my portfolio website!")
 });
 
 app.get("*", (req, res) => {
