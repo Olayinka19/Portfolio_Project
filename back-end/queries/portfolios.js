@@ -30,11 +30,11 @@ const getPortfolio = async (id) => {
 };
 
 const createPortfolio = async (portfolio) => {
-  const { name, url, category, is_favorite } = portfolio;
+  const { name, url,  image, category, is_favorite } = portfolio;
   try {
     const newPortfolio = await db.one(
-      "INSERT INTO portfolios (name, url, category, is_favorite) VALUES ($1, $2, $3, $4) RETURNING *",
-      [name, url, category, is_favorite]
+      "INSERT INTO portfolios (name, url, image, category, is_favorite) VALUES ($1, $2, $3, $4 , $5) RETURNING *",
+      [name, url , image, category, is_favorite]
     );
     return newPortfolio;
   } catch (error) {
@@ -53,14 +53,14 @@ const deletePortfolio = async (id) => {
 // We need to pass in the portfolio - the information to change
 // && the ID of the portfolio to access it in the DB
 const updatePortfolio = async (portfolio, id) => {
-  const { name, url, category, is_favorite } = portfolio;
+  const { name, url , image, category, is_favorite } = portfolio;
   try {
     // first argument is the QUERY string
     // second argument is the actual DATA 
-    const updatedPortfolio = await db.one("UPDATE portfolios SET name = $1, url = $2, category = $3, is_favorite = $4 WHERE id = $5 RETURNING *",
+    const updatedPortfolio = await db.one("UPDATE portfolios SET name = $1, url=$2 , image = $3, category = $4, is_favorite = $5 WHERE id = $6 RETURNING *",
     // remember the order MATTERS here 
     // $1  $2   $3        $4           $5
-    [name, url, category, is_favorite, id]);
+    [name, url , image, category, is_favorite, id]);
     return updatedPortfolio;
   } catch (err) {
     return err;

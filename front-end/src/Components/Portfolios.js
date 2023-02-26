@@ -14,14 +14,14 @@ function Portfolios() {
       .catch((c) => console.warn("catch", c));
   }, []);
   return (
-    <div className="portfolios">
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
       <section className="portfolio">
         
            
               <button>Take me there</button>
               <p>See this portfolio</p>
            
-         
+          {/* <img src={porfolio.image} /> */}
             {portfolios.map((portfolio) => {
               return <Portfolio key={portfolio.id} portfolio={portfolio} />;
             })}

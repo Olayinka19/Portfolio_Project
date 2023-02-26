@@ -1,6 +1,6 @@
 \c portfolios_dev
 
-INSERT INTO portfolios (name, url, category, is_favorite) VALUES
-('MDN', 'https://developer.mozilla.org/en-US/', 'educational', true),
-('Apartment Therapy', 'https://www.apartmenttherapy.com', 'inspirational', true),
-('DMV', 'https://dmv.ny.gov', 'adulting', true);
+INSERT INTO portfolios (name, url, image, category, is_favorite) VALUES
+('Interview', 'https://www.freepik.com/free-photo/business-people-holding-linkedin-logo_3682499.htm#query=linkedin%20logo&position=6&from_view=keyword', 'https://img.freepik.com/free-photo/business-people-holding-linkedin-logo_53876-71128.jpg?w=1800&t=st=1675462221~exp=1675462821~hmac=22f0c2fe3f67602c714536dff36da80ee7e19d576fb3d44bb9df9372b9d6159a', 'educational', true),
+('Pizza Delivery', 'https://www.freepik.com/free-psd/3d-illustration-delivery-man-character-holding-pizza_29014092.htm#&position=0&from_view=collections', 'https://img.freepik.com/free-psd/3d-illustration-delivery-man-character-holding-pizza_23-2149507170.jpg?w=2000&t=st=1675462742~exp=1675463342~hmac=194744fcefb7b5c8249e8b7622f0469dabc1015def81b98898f38d4ed9aadc68', 'inspirational', true),
+('DMV', 'https://img.freepik.com/premium-photo/black-family-riding-car-traveling-summer-smiling-camera_116547-25033.jpg?w=2000', 'https://dmv.ny.gov', 'adulting', true);

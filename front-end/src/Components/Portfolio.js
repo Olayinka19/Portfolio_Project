@@ -5,7 +5,7 @@ const API = process.env.REACT_APP_API_URL;
 
 function Porfolio({ portfolio }) {
   return (
-   <div>
+   <div style={{ display: 'flex', justifyContent: 'center' }}>
        <p>
        {portfolio.is_favorite ? (
           <span>⭐️</span>
@@ -19,6 +19,9 @@ function Porfolio({ portfolio }) {
         </a>
         <Link to={`/portfolios/${portfolio.id}`}>✏️</Link>
        </div>
+       <h3>{portfolio.category}</h3>
+       <p>{portfolio.is_favorite}</p>
+       
    </div>
    
   );

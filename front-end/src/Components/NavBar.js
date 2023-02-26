@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
+import Button from '@mui/material/Button';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { NavDropdown } from "react-bootstrap";
@@ -14,7 +15,12 @@ import { UserAuth } from "../Context/AuthContext";
 import { Card, CardHeader, CardBody, CardFooter } from "react-bootstrap/";
 import Portfolios from "./Portfolios";
 import PortfolioDetails from "./PortfolioDetails";
+import Account from "../Pages/Account"
+import DocsNeeded from "../Pages/DocsNeeded";
+import { useState } from "react";
 export default function NavBar() {
+
+
   const {user, logOut} = UserAuth();
   const handleSignOut = async () => {
     try {
@@ -35,8 +41,10 @@ export default function NavBar() {
     >
       <Container>
         <Navbar.Brand>
-          {/* <Link to="/">Logo</Link> */}
-          <Link to="/" className="Link">
+          <Link to="/"><Button variant="contained" color="success" to="/">
+  Home
+</Button></Link>
+          {/* <Link to="/" className="Link">
             <img
               src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F312b1033-01d7-4b1c-a075-64ca0c79b05c%2FOlayinka_Fakanbi.jpg?table=block&id=a5b8ac40-ed54-464d-9702-7dd5c24a0e22&spaceId=e2735e9b-8fe9-4c16-bdc1-be142cd1014e&width=2000&userId=1db7092b-3ec4-4da8-985b-7b836b0a69ad&cache=v2"
               alt="logo"
@@ -44,12 +52,14 @@ export default function NavBar() {
             />
             
 
-          </Link>
+          </Link> */}
           
         </Navbar.Brand>
+        <br></br>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
+          
             <Nav.Link
               href="/portfolios"
     
@@ -61,15 +71,23 @@ export default function NavBar() {
               href="/about"
               
             >
-              About
+              Blog
             </Nav.Link>
+            <Nav.Link
+              href="/portfolioDetails"
+              
+            >
+              PortfolioDetails
+            </Nav.Link>
+            <form>
+      
+    </form>
             
-            <Link to="/Profile" className="Link">
+    <Link to="/Account" className="Link">
                 {user?.displayName ? ( 
-        <img src={user.photoURL} alt="pfp" width="35px" height="35px"/>
-      ) : null} 
+        <img src={user.photoURL} alt="pfp" className="img-logo"/>
+      ) : null} <span className="displayname"> Hi,{user.displayName} </span> 
                 </Link>
-            
 
             <NavDropdown title="Menu" id="basic-nav-dropdown">
               
@@ -83,6 +101,17 @@ export default function NavBar() {
                   Profile
                 </Link>
               </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/Account" className="Link">
+                  Account
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/DocsNeeded" className="Link">
+                  Documents
+                </Link>
+              </NavDropdown.Item>
+
               <NavDropdown.Item>
                
               </NavDropdown.Item>

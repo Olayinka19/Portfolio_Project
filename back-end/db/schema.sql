@@ -7,6 +7,7 @@ CREATE TABLE portfolios (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
     url TEXT NOT NULL,
+    image TEXT NOT NULL,
     category TEXT,
     is_favorite BOOLEAN
 );

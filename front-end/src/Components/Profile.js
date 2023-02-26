@@ -2,16 +2,22 @@ import React from 'react'
 import { Form } from 'react-bootstrap';
 import Button from 'react-bootstrap';
 import './Profile.css';
+import { useState } from 'react';
+
 
 function Profile() {
+    const [file, setFile] = useState();
+    function handleChange(e) {
+        console.log(e.target.files);
+        // console.log(e.target.files);
+        setFile(URL.createObjectURL(e.target.files[0]));
+    }
+
   return (
     <div className='profile'>
     <h1>Edit Your </h1>
     <h1>Web3 Profile</h1>
     <div className='profile__content'>
-    {/* <img className=""
-    src="" width="160" height="130" alt="image">
-    </img> */}
 
     <h3 className='pof'>Profile</h3>
     <form>
@@ -20,15 +26,15 @@ function Profile() {
       Displaypic Change
     </h5>
   
-    <img className="displaypic" src="http://" ></img>
-    <input className="uploader" type="file" name="file"></input>
+    <img className="displaypic" src={file} ></img>
+    <input className="uploader" type="file" name="file" onChange={handleChange}></input>
 
     <h5 className='pof'>Update Profile Avatar</h5>
     </form>
 
     <h4 className='rank'>
         <span className="rank-item">Rank</span>
-        <span class="bg-primary rounded-pill">69</span>
+        <span className="bg-primary rounded-pill">69</span>
     </h4>
     <ul className="list-group">
         <li className="list-group-item d-flex justify-content-between">

@@ -6,12 +6,15 @@ import Footer from "./Components/Footer";
 // import Wallet from "./Pages/AboutPage";
 import FlexConn from "./Pages/FlexConn";
 import AboutPage from "./Pages/AboutPage";
+import Account from "./Pages/Account";
 import Profile from "./Components/Profile";
 import Portfolios from "./Components/Portfolios";
 import Signin from "./Pages/Signin";
 import {AuthContextProvider} from './Context/AuthContext';
+import UserAddressForm from "./Pages/UserAddressForm";
 import './App.css';
 import PortfolioDetails from "./Components/PortfolioDetails";
+import DocsNeeded from "./Pages/DocsNeeded";
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
         <Route path="/PortfoliosDetails" element={<PortfolioDetails />} />
         <Route path="/FlexConnect" element={<FlexConn />} />
         <Route path="/About" element={<AboutPage />} />
+        <Route path="/Account" element={<Account />} />
+        <Route path="/DocsNeeded" element={<DocsNeeded />} />
+        <Route path="/UserAddressForm" element={<UserAddressForm/>} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Signin" element={<Signin />} />
       
