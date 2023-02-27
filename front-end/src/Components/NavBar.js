@@ -133,9 +133,9 @@ export default function NavBar() {
               <Button variant="outline-success">🔍</Button>
               <NavDropdown.Item>
               {user && user.displayName ? (
-        <button onClick={handleSignOut}>LogOut</button>
+        <Button onClick={handleSignOut}>LogOut</Button>
       ) : (
-        <Link to='/signin'>Log In</Link>
+        <Link to='/signin'><Button variant="warning">Log In</Button></Link>
       )}
               </NavDropdown.Item>
     
