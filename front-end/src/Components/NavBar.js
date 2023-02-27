@@ -84,7 +84,7 @@ export default function NavBar() {
     </form>
             
     <Link to="/Account" className="Link">
-                {user?.displayName ? ( 
+                {user && user?.displayName ? ( 
         <img src={user.photoURL} alt="pfp" className="img-logo"/>
       ) : null} <span className="displayname"> Hi,{user.displayName} </span> 
                 </Link>
@@ -127,7 +127,7 @@ export default function NavBar() {
               />
               <Button variant="outline-success">🔍</Button>
               <NavDropdown.Item>
-              {user?.displayName ? (
+              {user && user?.displayName ? (
         <button onClick={handleSignOut}>LogOut</button>
       ) : (
         <Link to='/signin'>Log In</Link>
