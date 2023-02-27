@@ -29,7 +29,7 @@ function Home() {
     <Card className="home-container text-center">
       <Card.Header>AheadShoping</Card.Header>
       <Card.Body>
-        <Card.Title>Shop Smarter, Not Harder: Your Ultimate Guide to Tech Products on Amazon!</Card.Title>
+        <Card.Text>Shop Smarter, Not Harder: Your Ultimate Guide to Tech Products on Amazon!</Card.Text>
         
         <Carousel fade>
       <Carousel.Item interval={2000}>
