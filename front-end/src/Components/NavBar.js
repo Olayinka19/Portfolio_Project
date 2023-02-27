@@ -68,7 +68,7 @@ export default function NavBar() {
             </Nav.Link>
 
             <Nav.Link
-              href="/About"
+              href="/about"
               
             >
               About
