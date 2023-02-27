@@ -68,12 +68,12 @@ export default function NavBar() {
               Explore
             </Nav.Link>
 
-            <Nav.Link
-              href="/About"
+            <Link
+              to="/About"
               
             >
               About
-            </Nav.Link>
+            </Link>
             {/* {user && user.displayName ? ( 
                   
                   <span className="displayname">   
