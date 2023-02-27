@@ -20,6 +20,7 @@ const API = process.env.REACT_APP_API_URL;
 function Home() {
   
   return (
+    <>
     <div>
     {/* ========>Animation */}
 
@@ -376,9 +377,10 @@ function Home() {
       </Card>
     </div>
     <hr></hr>
-    <p>For general questions, contact me at <a href="mailto:olayinkafakanbi@pursuit.org" target="_blank" rel="noreferrer"><b>Olayinkafakanbi@pursuit.org</b></a> I'll get back to you within 1 business day. For business refereral and ther professional purposes.</p>
+    {/* <p>For general questions, contact me at <a href="mailto:olayinkafakanbi@pursuit.org" target="_blank" rel="noreferrer"><b>Olayinkafakanbi@pursuit.org</b></a> I'll get back to you within 1 business day. For business refereral and ther professional purposes.</p> */}
     </div>
     </div>
+    </>
   );
 }
 

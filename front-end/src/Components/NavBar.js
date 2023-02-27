@@ -83,11 +83,16 @@ export default function NavBar() {
       
     </form>
             
-    <Link to="/Account" className="Link">
+    
                 {user && user.displayName ? ( 
-        <img src={user.photoURL} alt="pfp" className="img-logo"/>
-      ) : null} <span className="displayname"> Hi,{user.displayName} </span> 
-                </Link>
+                  
+                  <span className="displayname">   
+                  <img src={user.photoURL} alt="pfp" className="img-logo"/>
+                    <p className="displayN">Hi,{user.displayName}</p>
+                  </span>
+      ) : null} 
+    
+               
 
             <NavDropdown title="Menu" id="basic-nav-dropdown">
               
@@ -133,7 +138,7 @@ export default function NavBar() {
         <Link to='/signin'>Log In</Link>
       )}
               </NavDropdown.Item>
-              {/* {user?.displayName} */}
+    
             </Form>
           </Nav.Link>
         </Navbar.Collapse>

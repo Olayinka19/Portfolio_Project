@@ -17,10 +17,11 @@ function Porfolio({ portfolio }) {
        <a href={portfolio.url} target="_blank" rel="noreferrer">
           {portfolio.name}
         </a>
-        <Link to={`/portfolios/${portfolio.id}`}>✏️</Link>
-       </div>
-       <h3>{portfolio.category}</h3>
+        <a href={`/portfolios/${portfolio.id}`}>✏️</a>
+        <h3>{portfolio.category}</h3>
        <p>{portfolio.is_favorite}</p>
+       </div>
+       
        
    </div>
    
