@@ -5,7 +5,8 @@ import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 // import Wallet from "./Pages/AboutPage";
 import FlexConn from "./Pages/FlexConn";
-import AboutPage from "./Pages/AboutPage";
+// import About from "./Pages/About";
+import About from "./Components/About"
 import Account from "./Pages/Account";
 import Profile from "./Components/Profile";
 import Portfolios from "./Components/Portfolios";
@@ -27,7 +28,7 @@ function App() {
         <Route path="/Portfolios" element={<Portfolios />} />
         <Route path="/PortfoliosDetails" element={<PortfolioDetails />} />
         <Route path="/FlexConnect" element={<FlexConn />} />
-        <Route path="/About" element={<AboutPage />} />
+        <Route path="/About" element={<About />} />
         <Route path="/Account" element={<Account />} />
         <Route path="/DocsNeeded" element={<DocsNeeded />} />
         <Route path="/UserAddressForm" element={<UserAddressForm/>} />
