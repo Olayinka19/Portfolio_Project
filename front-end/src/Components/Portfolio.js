@@ -8,7 +8,7 @@ function Porfolio({ portfolio }) {
    <div style={{ display: 'flex', justifyContent: 'center' }}>
        <p>
        {portfolio.is_favorite ? (
-          <span>⭐️</span>
+          <span>⭐️⭐️⭐️⭐️⭐️⭐️⭐️</span>
         ) : (
           <span>Try Again</span>
         )}
