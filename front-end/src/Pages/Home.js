@@ -97,54 +97,17 @@ function Home() {
       <br/>
 
 
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-
-      <br></br>
-
-      <Card style={{ width: '18rem' , padding:'10px'}}>
-      <Card.Img  width="150px" heigth="200px" variant="top" src="https://m.media-amazon.com/images/I/71KlwCsb7nL._AC_SX679_.jpg" />
-      <Card.Body>
-        <Card.Title>Apple iPad (8th Generation)</Card.Title>
-        <Card.Text>
-        The Apple iPad (8th Generation) is a versatile tablet that can be used for everything from browsing the web to playing games to creating art.
-        </Card.Text>
-        
-        <Button variant="primary"><a href="/">LEARN MORE</a></Button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img width="150px" heigth="200px" variant="top" src="https://img.freepik.com/free-vector/food-offer-banner-with-photo_23-2148108354.jpg?w=1060&t=st=1675668975~exp=1675669575~hmac=bf8539b29d2244ed88a22206b13e0ca4ec89dc71510ecc30eeb017f25a9f3f33" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img width="150px" heigth="200px" variant="top" src="https://img.freepik.com/free-psd/delicious-burger-food-menu-social-media-banner-template_120329-3326.jpg?w=1060&t=st=1675669035~exp=1675669635~hmac=aeca023b1f03b00f19523da0c86be33f321d520edcf60acd4e6b39f4c58e5fca" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-    </div>
+  
       <hr/>
 
       <div style ={{display: 'flex', justifyContent: 'center' }}>
    <Card style={{ width: '48rem' }}>
-      <Card.Img variant="top" src="https://img.freepik.com/premium-photo/roasted-river-carp-with-fruits-berries-spices_75924-26321.jpg?w=2000" />
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91y1S6m0+JS._AC_SL1500_.jpg" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>MerryColor Pillow</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          
+Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         </Card.Text>
       </Card.Body>
       {/* <ListGroup className="list-group-flush">
@@ -162,12 +125,12 @@ function Home() {
       <div style={{ display: 'flex', justifyContent: 'center' }}>
     <Card className="text-center">
       <Card.Header>Featured</Card.Header>
-      <Card.Img variant="top" src="https://img.freepik.com/free-vector/shiny-podium-stage-with-spotlight-focus-background_1017-27228.jpg?w=1060&t=st=1675708699~exp=1675709299~hmac=091aea79eae58b4546fd424acb312ce199ac5cdb1ff1168e4aa454670cb40b8e" />
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/8101kmkFW0L._AC_SL1500_.jpg" />
       <Card.Body>
         <Card.Title>Special Sales Ending Soon!!</Card.Title>
-        <Card.Text>
+        {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
-        </Card.Text>
+        </Card.Text> */}
         <Button variant="warning">Sales</Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
@@ -176,12 +139,12 @@ function Home() {
 
     <Card className="text-center">
       <Card.Header>Featured</Card.Header>
-      <Card.Img variant="top" src="https://img.freepik.com/free-psd/new-collection-fashion-sale-web-banner-template_120329-1507.jpg?w=1060&t=st=1675668801~exp=1675669401~hmac=8628d2547aa0004878fc9b3af53c0f6c8f3f11c6055afa69ab50b2b28640f0f8" />
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/61s7RGRwSoL._AC_SL1500_.jpg" />
       <Card.Body>
-        <Card.Title>Special Sales Ending Soon!!</Card.Title>
-        <Card.Text>
+        <Card.Title>BOHON LED Desk Lamp</Card.Title>
+        {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
-        </Card.Text>
+        </Card.Text> */}
         <Button variant="warning">Sales</Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
@@ -189,12 +152,12 @@ function Home() {
 
     <Card className="text-center">
       <Card.Header>Featured</Card.Header>
-      <Card.Img variant="top" src="https://img.freepik.com/free-psd/new-collection-fashion-sale-web-banner-template_120329-1507.jpg?w=1060&t=st=1675668801~exp=1675669401~hmac=8628d2547aa0004878fc9b3af53c0f6c8f3f11c6055afa69ab50b2b28640f0f8" />
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71IuBrKaiAL._AC_SL1500_.jpg" />
       <Card.Body>
         <Card.Title>Special Sales Ending Soon!!</Card.Title>
-        <Card.Text>
+        {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
-        </Card.Text>
+        </Card.Text> */}
         <Button variant="warning">Sales</Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
@@ -204,9 +167,9 @@ function Home() {
 
 <marquee> 50% Special Sale Ending Soon!!</marquee>
 <Card>
-        <Card.Img variant="top" src="https://img.freepik.com/free-vector/blue-spot-light-pathway-perspective-background_1017-39225.jpg?w=1060&t=st=1675708749~exp=1675709349~hmac=fb812d9b6d9db3d0d93def3a923f9fffae00937135a65d5676dcca61db6e94ca" />
+        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91pEkoBJiwL._AC_SX679_.jpg" />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>NSdirect 36 inches Round Coffee Table</Card.Title>
           <Card.Text>
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This content is a little bit longer.
@@ -260,7 +223,7 @@ function Home() {
    <hr></hr>
 <div style ={{display: 'flex', justifyContent: 'center' }}>
    <Card style={{ width: '48rem' }}>
-      <Card.Img variant="top" src="https://img.freepik.com/premium-photo/roasted-river-carp-with-fruits-berries-spices_75924-26321.jpg?w=2000" />
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71+Uwfg5yjL._AC_SL1500_.jpg" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -332,25 +295,25 @@ function Home() {
     </Card>
 <div style ={{display: 'flex', justifyContent: 'center' }}>
     <Card className="bg-dark text-white" style={{ width: '48rem' }}>
-      <Card.Img src="https://as2.ftcdn.net/v2/jpg/05/41/41/67/1000_F_541416719_rRWwECYjpVQBaYteuZHalvrptQD1nTG2.jpg" alt="Card image" />
+      <Card.Img src="https://m.media-amazon.com/images/I/81rHiF5V2mL._AC_SL1500_.jpg" alt="Card image" />
       <Card.ImgOverlay>
-        <Card.Title>Card title</Card.Title>
-        <Card.Text>
+        {/* <Card.Title>Card title</Card.Title> */}
+        {/* <Card.Text>
           This is a wider card with supporting text below as a natural lead-in
           to additional content. This content is a little bit longer.
-        </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
+        </Card.Text> */}
+        {/* <Card.Text>Last updated 3 mins ago</Card.Text> */}
       </Card.ImgOverlay>
     </Card>
     <Card className="bg-dark text-white" style={{ width: '48rem' }}>
-      <Card.Img src="https://as2.ftcdn.net/v2/jpg/05/62/70/67/1000_F_562706732_IzqWUxOb9vbuaTDTm0Z09WXGpdC2YFTi.jpg" alt="Card image" />
+      <Card.Img src="https://m.media-amazon.com/images/I/81ZU4ARUwQL._AC_SX679_.jpg" alt="Card image" />
       <Card.ImgOverlay>
-        <Card.Title>Card title</Card.Title>
-        <Card.Text>
+        {/* <Card.Title>Card title</Card.Title> */}
+        {/* <Card.Text>
           This is a wider card with supporting text below as a natural lead-in
           to additional content. This content is a little bit longer.
-        </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
+        </Card.Text> */}
+        {/* <Card.Text>Last updated 3 mins ago</Card.Text> */}
       </Card.ImgOverlay>
     </Card>
     </div>
@@ -363,7 +326,7 @@ function Home() {
     <div>
       How to contact me?
       <Card>
-        <Card.Img variant="top" src="https://img.freepik.com/free-psd/summer-fashion-sale-instagram-post-template_120329-1502.jpg?w=1060&t=st=1675668597~exp=1675669197~hmac=cbb212200f79ebaa8d96eef095fb7c7e5f136ddd47fbcc70d5b351fc9b179f64" />
+        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/81iBdT+lttL._AC_UL1500_.jpg" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>

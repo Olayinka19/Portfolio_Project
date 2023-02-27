@@ -35,10 +35,11 @@ export default function NavBar() {
     <Navbar
       collapseOnSelect
       expand="lg"
-      bg="dark"
-      variant="dark"
+      // bg="dark"
+      // variant="dark"
       className="Nav"
     >
+    
       <Container>
         <Navbar.Brand>
           <Link to="/"><Button variant="contained" color="success" to="/">
@@ -68,13 +69,21 @@ export default function NavBar() {
             </Nav.Link>
 
             <Nav.Link
-              href="/about"
+              href="/About"
               
             >
               About
             </Nav.Link>
+            {/* {user && user.displayName ? ( 
+                  
+                  <span className="displayname">   
+                  
+                  <img src={user.photoURL} alt="pfp" className="img-logo"/> 
+                  <p className="displayN">Hi,{user.displayName}</p>
+                  </span>
+      ) : null} */}
             <Nav.Link
-              href="/portfolioDetails"
+              href="/PortfolioDetails"
               
             >
               PortfolioDetails
@@ -84,18 +93,19 @@ export default function NavBar() {
     </form>
             
     
-                {user && user.displayName ? ( 
-                  
-                  <span className="displayname">   
-                  <img src={user.photoURL} alt="pfp" className="img-logo"/>
-                    <p className="displayN">Hi,{user.displayName}</p>
-                  </span>
-      ) : null} 
+              
     
                
-
-            <NavDropdown title="Menu" id="basic-nav-dropdown">
-              
+<img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" width="30px" height="30px" />
+            <NavDropdown title="Account" id="basic-nav-dropdown">
+            {user && user.displayName ? ( 
+                  
+                  <span className="displayname">   
+                  
+                  <img src={user.photoURL} alt="pfp" className="img-logo"/> 
+                  <p className="displayN">Hi,{user.displayName}</p>
+                  </span>
+      ) : null}  
               <NavDropdown.Item>
                 <Link to="/FlexConnect" className="Link">
                  <img alt="pfp" width="45px" height="45px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Qd_PyuUdp9Se1AGdWWhXVwHaHa%26pid%3DApi&f=1&ipt=33b7eb916f31f77bd6dd76a51cb4d109caca8056b91d1f5c3d5b88bb42b30c0f&ipo=images"></img>
@@ -122,7 +132,9 @@ export default function NavBar() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+           
           <Nav.Link eventKey={2}>
+          
             <Form className="d-flex">
               <Form.Control
                 type="search"

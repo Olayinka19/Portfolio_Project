@@ -9,7 +9,7 @@
     background-color: #4b4b4b;
 } */
 .home-container {
-    background-color: #0C4A3D;
+    background-color: #2F5061;
     color: white!important;
     align-items: center!important;
 }
@@ -46,8 +46,8 @@
     -moz-border-radius: 17px;
     -ms-border-radius: 17px;
     -o-border-radius: 17px;
-    width: 450px !important;
-    height: 250px!important;
+    width: 350px ;
+    height: 250px;
 }
 
 .footer-wrapper{

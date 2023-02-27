@@ -71,8 +71,8 @@ a {
   background-color: #4e4b4b;
 } */
 .Nav {
-  color: #36369e;
-  background: #61536d;
+  color: #ededf1;
+  background: #4297A0;
 }
 .Nav-list {
   width: 40%;
@@ -436,16 +436,86 @@ h1 {
   margin:0px auto;
 }
 @media only screen and (min-device-width: 375px) and (max-device-height: 600px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
-
+  .first-image{
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+    width: 250px ;
+    height: 250px;
 }
-@media only screen and (min-device-width: 600px) and (max-device-height: 768px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
-  
+}
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) { 
+      .first-image{
+        border-radius: 17px;
+        -webkit-border-radius: 17px;
+        -moz-border-radius: 17px;
+        -ms-border-radius: 17px;
+        -o-border-radius: 17px;
+        width: 250px ;
+        height: 250px;
+    }
+
+    }
+@media only screen and (min-device-width: 380px) and (max-device-height: 768px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+  .first-image{
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+    width: 250px ;
+    height: 250px;
+}
 }
 @media only screen and (min-device-width: 768px) and (max-device-height: 992px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
-  
+  .first-image{
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+    width: 250px ;
+    height: 250px;
+}
 }
 @media only screen and (min-device-width: 992px) and (max-device-height: 1200px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
-  
+  .first-image{
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+    width: 250px;
+    height: 250px;
+}
+}
+/* .products{
+  white-space: nowrap; 
+  width: 70px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  border: 1px solid #000000;
+} */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 
