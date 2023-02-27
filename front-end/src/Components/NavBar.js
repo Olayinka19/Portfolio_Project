@@ -68,10 +68,10 @@ export default function NavBar() {
             </Nav.Link>
 
             <Nav.Link
-              href="/about"
+              href="/About"
               
             >
-              Blog
+              About
             </Nav.Link>
             <Nav.Link
               href="/portfolioDetails"

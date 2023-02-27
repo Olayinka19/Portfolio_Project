@@ -25,8 +25,10 @@ function Profile() {
     <h5 id="displaypicchange">
       Displaypic Change
     </h5>
-  
-    <img alt="pfp" className="displaypic" src={file} alt="pfp" ></img>
+  <div>
+  <img className="displaypic" src={file} alt="pfp" /> 
+  </div>
+   
     <input className="uploader" type="file" name="file" onChange={handleChange}></input>
 
     <h5 className='pof'>Update Profile Avatar</h5>
