@@ -279,7 +279,7 @@ h1 {
   background: #ffffff;
 }
 .background {
-  background: linear-gradient(132deg, #11a14b, #00a896, #8ecae6,#219ebc  , #9bf6ff, #0077b6);
+  background: linear-gradient(132deg, #11a14b, #00a896, #8ecae6,#219ebc , #023e8a , #9bf6ff, #0077b6);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
@@ -435,7 +435,18 @@ h1 {
   height:100%;
   margin:0px auto;
 }
+@media only screen and (min-device-width: 375px) and (max-device-height: 600px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
 
+}
+@media only screen and (min-device-width: 600px) and (max-device-height: 768px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+  
+}
+@media only screen and (min-device-width: 768px) and (max-device-height: 992px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+  
+}
+@media only screen and (min-device-width: 992px) and (max-device-height: 1200px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+  
+}
 
 
 
