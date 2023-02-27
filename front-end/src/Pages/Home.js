@@ -2,15 +2,15 @@ import { React } from "react";
 // import "animate.css";
 import "./Home.css";
 
-import axios from "axios";
-import { ListGroup } from "react-bootstrap";
+// import axios from "axios";
+// import { ListGroup } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import CardGroup from 'react-bootstrap/CardGroup';
+// import CardGroup from 'react-bootstrap/CardGroup';
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Animation from "../Components/Animation";
-import PortfolioDetails from "../Components/PortfolioDetails";
-import Portfolios from "../Components/Portfolios";
+// import PortfolioDetails from "../Components/PortfolioDetails";
+// import Portfolios from "../Components/Portfolios";
 // import { useState, useEffect } from "react";
 
 
@@ -108,7 +108,7 @@ function Home() {
         The Apple iPad (8th Generation) is a versatile tablet that can be used for everything from browsing the web to playing games to creating art.
         </Card.Text>
         
-        <Button variant="primary"><a href="">LEARN MORE</a></Button>
+        <Button variant="primary"><a href="/">LEARN MORE</a></Button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
@@ -152,8 +152,8 @@ function Home() {
         <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
       </ListGroup> */}
       <Card.Body>
-         <Card.Link href="#">Card Link</Card.Link>
-        {/* <Card.Link href="#">Another Link</Card.Link>  */}
+        {/* <Card.Link href="#">Card Link</Card.Link>
+        <Card.Link href="#">Another Link</Card.Link> */}
       </Card.Body>
     </Card>
     </div>
@@ -376,7 +376,7 @@ function Home() {
       </Card>
     </div>
     <hr></hr>
-    <p>For general questions, contact me at <a href="mailto:olayinkafakanbi@pursuit.org" target="_blank" rel="noopener"><b>Olayinkafakanbi@pursuit.org</b></a> I'll get back to you within 1 business day. For business refereral and ther professional purposes.</p>
+    <p>For general questions, contact me at <a href="mailto:olayinkafakanbi@pursuit.org" target="_blank" rel="noreferrer"><b>Olayinkafakanbi@pursuit.org</b></a> I'll get back to you within 1 business day. For business refereral and ther professional purposes.</p>
     </div>
     </div>
   );

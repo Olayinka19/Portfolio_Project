@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form } from 'react-bootstrap';
-import Button from 'react-bootstrap';
+// import Button from 'react-bootstrap';
 import './Profile.css';
 import { useState } from 'react';
 
@@ -26,7 +26,7 @@ function Profile() {
       Displaypic Change
     </h5>
   
-    <img className="displaypic" src={file} ></img>
+    <img alt="pfp" className="displaypic" src={file} alt="pfp" ></img>
     <input className="uploader" type="file" name="file" onChange={handleChange}></input>
 
     <h5 className='pof'>Update Profile Avatar</h5>
@@ -106,24 +106,24 @@ function Profile() {
             <div className="col-lg-4">
                 <div className="row mb-1">
                     <div className="col-md-3">
-                        <img width="60px" heigth="60px" className="img-fluid" src="https://img.icons8.com/plasticine/512/png.png" />
+                        <img width="60px" alt="pfp" heigth="60px" className="img-fluid" src="https://img.icons8.com/plasticine/512/png.png" />
 
                     </div>
                 </div>
             </div>
             <div className="col-lg-4">
                 <h4 className="mb-2">Balance</h4>
-                <h3 className="mt-1"></h3>
+                {/* <h3 className="mt-1"></h3> */}
             </div>
             <label className="">Internal Wallet</label>
             <h5>Transfer NFT to Personal Wallet</h5>
             <button className="btn btn-secondary mt-2">
                 Transfer N2DR
             </button>
-            <h6 id="displayransfer" />
+            {/* <h6 id="displayransfer" /> */}
 
 
-          <hr className='my-hr'/>
+          {/* <hr className='my-hr'/> */}
 
             
     </Form>

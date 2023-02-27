@@ -6,18 +6,18 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { NavDropdown } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
-import About from "./About";
-import Profile from "./Profile";
-import Signin from "../Pages/Signin";
-import FlexConnect from "./FlexConnect";
+// import About from "./About";
+// import Profile from "./Profile";
+// import Signin from "../Pages/Signin";
+// import FlexConnect from "./FlexConnect";
 import Container from "react-bootstrap/Container";
 import { UserAuth } from "../Context/AuthContext";
-import { Card, CardHeader, CardBody, CardFooter } from "react-bootstrap/";
-import Portfolios from "./Portfolios";
-import PortfolioDetails from "./PortfolioDetails";
-import Account from "../Pages/Account"
-import DocsNeeded from "../Pages/DocsNeeded";
-import { useState } from "react";
+// import { Card, CardHeader, CardBody, CardFooter } from "react-bootstrap/";
+// import Portfolios from "./Portfolios";
+// import PortfolioDetails from "./PortfolioDetails";
+// import Account from "../Pages/Account"
+// import DocsNeeded from "../Pages/DocsNeeded";
+// import { useState } from "react";
 export default function NavBar() {
 
 
@@ -93,7 +93,7 @@ export default function NavBar() {
               
               <NavDropdown.Item>
                 <Link to="/FlexConnect" className="Link">
-                 <img width="45px" height="45px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Qd_PyuUdp9Se1AGdWWhXVwHaHa%26pid%3DApi&f=1&ipt=33b7eb916f31f77bd6dd76a51cb4d109caca8056b91d1f5c3d5b88bb42b30c0f&ipo=images"></img>
+                 <img alt="pfp" width="45px" height="45px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Qd_PyuUdp9Se1AGdWWhXVwHaHa%26pid%3DApi&f=1&ipt=33b7eb916f31f77bd6dd76a51cb4d109caca8056b91d1f5c3d5b88bb42b30c0f&ipo=images"></img>
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
