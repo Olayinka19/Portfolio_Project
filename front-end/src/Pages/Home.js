@@ -326,7 +326,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     <div>
       How to contact me?
       <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/81iBdT+lttL._AC_UL1500_.jpg" />
+        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/61I3kfBACML._AC_UL1500_.jpg" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>

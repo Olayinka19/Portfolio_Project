@@ -6,18 +6,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { NavDropdown } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
-// import About from "./About";
-// import Profile from "./Profile";
-// import Signin from "../Pages/Signin";
-// import FlexConnect from "./FlexConnect";
 import Container from "react-bootstrap/Container";
 import { UserAuth } from "../Context/AuthContext";
-// import { Card, CardHeader, CardBody, CardFooter } from "react-bootstrap/";
-// import Portfolios from "./Portfolios";
-// import PortfolioDetails from "./PortfolioDetails";
-// import Account from "../Pages/Account"
-// import DocsNeeded from "../Pages/DocsNeeded";
-// import { useState } from "react";
 export default function NavBar() {
 
 
@@ -60,28 +50,15 @@ export default function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-          
-            <Nav.Link
-              href="/portfolios"
-    
-            >
-              Explore
-            </Nav.Link>
-
-            <Link
-              to="/About"
-              
-            >
-              About
-            </Link>
-            {/* {user && user.displayName ? ( 
-                  
-                  <span className="displayname">   
-                  
-                  <img src={user.photoURL} alt="pfp" className="img-logo"/> 
-                  <p className="displayN">Hi,{user.displayName}</p>
-                  </span>
-      ) : null} */}
+        
+            <Nav.Link href="/About">Blog</Nav.Link>
+            <Nav.Link href="/Explore">Explore</Nav.Link>
+            <Nav.Link href="/Men">Men</Nav.Link>
+            <Nav.Link href="/Women">Women</Nav.Link>
+            <Nav.Link href="/Electronics">Electronics</Nav.Link>
+            <Nav.Link href="/porfolios">Porfolio</Nav.Link>
+            <Nav.Link href="/About">Blog</Nav.Link>
+        
             <Nav.Link
               href="/PortfolioDetails"
               
@@ -142,7 +119,7 @@ export default function NavBar() {
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">🔍</Button>
+              <Button variant="outline-success">Search</Button>
               <NavDropdown.Item>
               {user && user.displayName ? (
         <Button onClick={handleSignOut}>LogOut</Button>

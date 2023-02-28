@@ -6,6 +6,10 @@ import Footer from "./Components/Footer";
 // import Wallet from "./Pages/AboutPage";
 import FlexConn from "./Pages/FlexConn";
 // import About from "./Pages/About";
+import Men from './Components/Men';
+import Women from './Components/Women';
+import Developer from './Components/Developer'
+import Electronics from './Components/Electronics';
 import About from "./Components/About"
 import Account from "./Pages/Account";
 import Profile from "./Components/Profile";
@@ -30,6 +34,10 @@ function App() {
         <Route path="/FlexConnect" element={<FlexConn />} />
         <Route path="/About" element={<About />} />
         <Route path="/Account" element={<Account />} />
+        <Route path="/Men" element={<Men />} />
+        <Route path="/Developer" element={<Developer />} />
+        <Route path="/Women" element={<Women />} />
+        <Route path="/Electronics" element={<Electronics />} />
         <Route path="/DocsNeeded" element={<DocsNeeded />} />
         <Route path="/UserAddressForm" element={<UserAddressForm/>} />
         <Route path="/Profile" element={<Profile />} />
