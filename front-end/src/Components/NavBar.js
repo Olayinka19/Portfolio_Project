@@ -57,7 +57,7 @@ export default function NavBar() {
             <Nav.Link href="/Women">Women</Nav.Link>
             <Nav.Link href="/Electronics">Electronics</Nav.Link>
             <Nav.Link href="/porfolios">Porfolio</Nav.Link>
-            <Nav.Link href="/About">Blog</Nav.Link>
+            <Nav.Link href="/Developer">Developer</Nav.Link>
         
             <Nav.Link
               href="/PortfolioDetails"
@@ -119,7 +119,7 @@ export default function NavBar() {
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-success">SEARCH</Button>
               <NavDropdown.Item>
               {user && user.displayName ? (
         <Button onClick={handleSignOut}>LogOut</Button>
