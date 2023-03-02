@@ -245,7 +245,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
    <Card className="text-center">
       <Card.Header>Featured</Card.Header>
       <Card.Body>
-        <Card.Title>Valentine's day Gift</Card.Title>
+        <Card.Title>Explore <Animation/></Card.Title>
         <Card.Text>
         <Carousel fade>
       <Carousel.Item interval={2000}>
