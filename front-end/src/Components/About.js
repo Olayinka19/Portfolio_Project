@@ -24,6 +24,9 @@ function About() {
       <div className="cube"></div>
       <div className="cube"></div>
       <div className="cube"></div>
+      {/* <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div> */}
       <section className="header-content">
       <div>
       <h3>The Top 5 Best-selling Tech Products on Amazon Right Now.

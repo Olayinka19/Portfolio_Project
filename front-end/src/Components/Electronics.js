@@ -2,7 +2,8 @@ import React from 'react'
 
 function Electronics() {
   return (
-    <div>Electronics</div>
+    <div>Coming Soon!!!</div>
+    
   )
 }
 

@@ -72,12 +72,13 @@ export default function NavBar() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Link to="/">Home</Link>
+                  <Link to="/About">Blog</Link>
                   {/* <Link to="/Developer">Developer</Link> */}
                   {/* <Link to="/Explore">Explore</Link> */}
                   {/* <link href="/Developer">Developer</link> */}
                   <Link to="/Developer">Developer</Link>
                   <Link to="/Men">Men</Link>
-                  <Link to="/About">About</Link>
+                  
                   <Link to="/Women">Women</Link>
                   <Link to="/Electronics">Electronics</Link>
 
@@ -90,7 +91,7 @@ export default function NavBar() {
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="/Account">Account</NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/Account">Account</Link></NavDropdown.Item>
                     <NavDropdown.Item href="/Profile">
                       Profile
                     </NavDropdown.Item>
