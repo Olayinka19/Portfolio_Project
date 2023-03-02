@@ -298,8 +298,8 @@ h1 {
   top: 80vh;
   left: 45vw;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 4px;
+  height: 4px;
   border: solid 1px #2f19d1;
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
@@ -318,7 +318,7 @@ h1 {
   top: 40vh;
 }
 .cube:nth-child(3) {
-  animation-delay: 14s;
+  animation-delay: 6s;
   left: 75vw;
   top: 50vh;
 }
