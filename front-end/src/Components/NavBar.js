@@ -69,9 +69,9 @@ export default function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="/Explore">Explore</Nav.Link>
-                  <Nav.Link href="/Developer">Developer</Nav.Link>
+                  <a href="/">Home</a>
+                  <a href="/Explore">Explore</a>
+                  <a href="/Developer">Developer</a>
                   <Nav.Link href="/Men">Men</Nav.Link>
                   <Nav.Link href="/About">About</Nav.Link>
                   <Nav.Link href="/Women">Women</Nav.Link>
