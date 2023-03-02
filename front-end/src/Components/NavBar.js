@@ -11,6 +11,7 @@ import { UserAuth } from "../Context/AuthContext";
 // import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Ahead from './Images/Ahead.png'
+import logo6 from './Images/logo6.png'
 
 
 
@@ -57,11 +58,12 @@ export default function NavBar() {
                         <p>Hi, {user.displayName}</p>
                       </div>
                     ) : (
-                      <Link to="/user/1/explore">
+                      <Link to="/">
                         <img
-                          src="https://cdn-icons-png.flaticon.com/512/5267/5267467.png"
-                          width="55px"
-                          height="55px"
+                          src={Ahead}
+                          width="65px"
+                          height="40px"
+                          border-radius= "17px"
                         ></img>{" "}
                       </Link>
                     )}
@@ -69,16 +71,18 @@ export default function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <a href="/">Home</a>
-                  <a href="/Explore">Explore</a>
-                  <a href="/Developer">Developer</a>
-                  <Nav.Link href="/Men">Men</Nav.Link>
-                  <Nav.Link href="/About">About</Nav.Link>
-                  <Nav.Link href="/Women">Women</Nav.Link>
-                  <Nav.Link href="/Electronics">Electronics</Nav.Link>
+                  <Nav.Link href="/">Home</Nav.Link>
+                  {/* <Link to="/Developer">Developer</Link> */}
+                  {/* <Nav.Link href="/Explore">Explore</Nav.Link> */}
+                  {/* <link href="/Developer">Developer</link> */}
+                  <Nav.Link href="/developer">Developer</Nav.Link>
+                  <Nav.Link href="/men">Men</Nav.Link>
+                  <Nav.Link href="/about">About</Nav.Link>
+                  <Nav.Link href="/women">Women</Nav.Link>
+                  <Nav.Link href="/electronics">Electronics</Nav.Link>
 
                   {user && user.displayName ? (
-        <Button onClick={handleSignOut}>LogOut</Button>
+        <Button onClick={handleSignOut} variant="primary">LogOut</Button>
       ) : (
         <Link to='/signin'><Button variant="warning">Log In</Button></Link>
       )}

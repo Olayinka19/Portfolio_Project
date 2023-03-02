@@ -29,7 +29,7 @@ function App() {
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Portfolios" element={<Portfolios />} />
+        {/* <Route path="/Portfolios" element={<Index />} /> */}
         <Route path="/PortfoliosDetails" element={<PortfolioDetails />} />
         <Route path="/FlexConnect" element={<FlexConn />} />
         <Route path="/About" element={<About />} />
