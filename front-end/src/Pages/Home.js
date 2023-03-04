@@ -160,7 +160,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         </Card.Text> */}
         <Button variant="success"><b>$350 </b><span font-size="5px"><del>200</del></span></Button>
       </Card.Body>
-      <Card.Footer className="text-muted">2 days ago</Card.Footer>
+      <Card.Footer className="text-muted">7 days ago</Card.Footer>
     </Card>
 
 
@@ -176,6 +176,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
+    <iframe width="100%" height="251" src="https://www.youtube.com/embed/pz88bqPocWI" title="Amazon Best Kitchen Gadgets For Every Home #18 🏠Appliances, Makeup, Smart Inventions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <Card className="text-center">
       <Card.Header>Featured</Card.Header>
@@ -207,6 +208,8 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
 
 
 </marquee>
+ <br/>
+ <br/>
 <Card>
         <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91pEkoBJiwL._AC_SX679_.jpg" />
         <Card.Body>
@@ -217,7 +220,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+          <small className="text-muted">Last updated 30 mins ago</small>
         </Card.Footer>
       </Card>
     <hr></hr>
@@ -226,7 +229,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
    <Card>
         <Card.Body>
           <Card.Text>
-            20% off Gaming Laptop on Sale!!!
+            20% off  Sale!!!
           </Card.Text>
         </Card.Body>
         <Card.Img variant="bottom" src="https://m.media-amazon.com/images/I/71m-r6CHobL._AC_UL1500_.jpg" />
