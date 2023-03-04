@@ -26,7 +26,8 @@ function Home() {
     <Card className="home-container text-center">
       <Card.Header>AheadShoping</Card.Header>
       <Card.Body>
-        <Card.Text>Shop Smarter, Not Harder: Your Ultimate Guide to Tech Products on Amazon!</Card.Text>
+        <Card.Text>Why spend more when you can purchase it at a lower cost?</Card.Text>
+        <Card.Text><Button variant="contained">Shop smarter, shop Ahead!</Button></Card.Text>
         
         <Carousel fade>
       <Carousel.Item interval={2000}>
@@ -146,7 +147,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       <br/>
       <div style={{ justifyContent: 'center' }}>
     <Card className="text-center">
-      <Card.Header>Featured</Card.Header>
+      <Card.Header>Limited Time Offers</Card.Header>
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/8101kmkFW0L._AC_SL1500_.jpg" />
       <Card.Body>
         <Card.Title>Special Sales Ending Soon!!</Card.Title>
@@ -160,7 +161,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
 
 
     <Card className="text-center">
-      <Card.Header>Featured</Card.Header>
+      <Card.Header>Flash Sale Frenzy</Card.Header>
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71rtUgIGEhL._AC_SX679_.jpg" />
       <Card.Body>
         <Card.Title>BOHON LED Desk Lamp</Card.Title>
@@ -224,6 +225,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
    <Card>
         <Card.Body>
           <Card.Text>
+          Deal of the Day
             20% off  Sale!!!
           </Card.Text>
         </Card.Body>
@@ -247,7 +249,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         Men's Firm Ground Soccer Cleats
         </Card.Text>
         <Card.Img variant="bottom" src="https://m.media-amazon.com/images/I/81-QcRvPZlL._AC_UL1500_.jpg" />
-        <Button variant="success"><b>$37.99 </b><span fontSize="10px"><del>$42.99</del></span></Button>
+        <Button variant="outlined"><b>$37.99 </b><span fontSize="10px"><del>$42.99</del></span></Button>
       </Card.Body>
       <Card.Img variant="bottom" src="https://m.media-amazon.com/images/I/61BeIFQYb+L._AC_SX679_.jpg" />
       {/* <Card.Footer className="text-muted">2 days ago</Card.Footer> */} 
