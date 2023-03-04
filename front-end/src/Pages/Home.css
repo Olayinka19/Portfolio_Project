@@ -49,7 +49,18 @@
     width: 350px ;
     height: 250px;
 }
-
+.adidas-image{
+    height: 100%;
+}
+.figure {
+    border-radius: "50%";
+    display:grid;
+    justify-content: center;
+    -webkit-border-radius: "50%";
+    -moz-border-radius: "50%";
+    -ms-border-radius: "50%";
+    -o-border-radius: "50%";
+}
 .footer-wrapper{
     border: 3px solid grey;
     text-align: center;

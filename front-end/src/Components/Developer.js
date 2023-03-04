@@ -11,7 +11,13 @@ function Developer() {
           />
          
           <Figure.Caption>
-            Nulla vitae elit libero, a pharetra augue mollis interdum.
+          <p>Meet <u>Olayinka</u>, a talented software developer 👨🏽‍💻with a passion for creating innovative 🤯 solutions to complex problems. With over 1 years of experience in the industry, I have developed a deep understanding of various programming languages👾, frameworks🤖, and tools👾.</p>
+
+<p>My 🐪journey in software development started when I was in high school🏘️. Fascinated by the power of technology, I started exploring the world of coding by teaching myself how to build simple websites👨🏽‍💻(www.waptrick.com, wappage.com). my passion for coding only grew stronger when I joined a programming bootcamp called Pursuit, where I worked on several projects that gave me valuable experience in software development.</p>
+
+<p> My skills in multiple programming languages, including JavaScript,  Express.js   and Animations. I have become an expert in several popular frameworks such as React, Angular, and Node.js, Tailwind CSS, React-Bootsrap. My expertise extends to software development methodologies such as Agile and Scrum</p>
+
+<p>In my free time, I love to work on personal projects, which allow me to explore new technologies and put my creativity to the test. I also enjoys mentoring aspiring developers and participating in hackathons and coding competitions.</p>
           </Figure.Caption>
         </Figure>
         

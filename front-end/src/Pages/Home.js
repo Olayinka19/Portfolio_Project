@@ -158,7 +158,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="warning"><b>$350 </b><span font-size="5px"><del>200</del></span></Button>
+        <Button variant="success"><b>$350 </b><span font-size="5px"><del>200</del></span></Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
@@ -172,7 +172,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="warning"><b>$46.67 </b><span fontSize="10px"><del>$49.99</del></span></Button>
+        <Button variant="success"><b>$46.67 </b><span fontSize="10px"><del>$49.99</del></span></Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
@@ -185,7 +185,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="warning"><b>$350 </b><span fontSize="10px"><del>200</del></span></Button>
+        <Button variant="success"><b>$350 </b><span fontSize="10px"><del>200</del></span></Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
@@ -235,7 +235,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         Men's Firm Ground Soccer Cleats
         </Card.Text>
         <Card.Img variant="bottom" src="https://m.media-amazon.com/images/I/81-QcRvPZlL._AC_UL1500_.jpg" />
-        <Button variant="warning"><b>$37.99 </b><span fontSize="10px"><del>$42.99</del></span></Button>
+        <Button variant="success"><b>$37.99 </b><span fontSize="10px"><del>$42.99</del></span></Button>
       </Card.Body>
       <Card.Img variant="bottom" src="https://m.media-amazon.com/images/I/61BeIFQYb+L._AC_SX679_.jpg" />
       {/* <Card.Footer className="text-muted">2 days ago</Card.Footer> */} 
@@ -248,12 +248,11 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
    <hr></hr>
 <div style ={{display: 'flex', justifyContent: 'center' }}>
    <Card style={{ width: '28rem' }}>
-      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71+Uwfg5yjL._AC_SL1500_.jpg" />
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/81c7cWWOycL._AC_SL1500_.jpg" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Queen Size Platform Bed Frame</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Fabric Upholstered Headboard and Wooden Slats Support
         </Card.Text>
       </Card.Body>
       {/* <ListGroup className="list-group-flush">
@@ -262,8 +261,8 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
       </ListGroup> */}
       <Card.Body>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
+        <Card.Link href="https://amzn.to/3ZALVva"><Button variant="success">Learn More</Button></Card.Link>
+        <Card.Link href="#">TOP🔝</Card.Link>
       </Card.Body>
     </Card>
     </div>
@@ -314,13 +313,13 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       </Carousel.Item>
     </Carousel>
         </Card.Text>
-        <Button variant="danger">Explore</Button>
+        <Button variant="success">Explore</Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
 <div style ={{display: 'flex', justifyContent: 'center' }}>
     <Card className="bg-dark text-white" style={{ width: '48rem' }}>
-      <Card.Img src="https://m.media-amazon.com/images/I/81rHiF5V2mL._AC_SL1500_.jpg" alt="Card image" />
+      <Card.Img className="adidas-image" src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/48f8cd8e-e36e-4c10-8090-93b6028923f6._SL850_FMjpg_.jpg" alt="Card image" />
       <Card.ImgOverlay>
         {/* <Card.Title>Card title</Card.Title> */}
         {/* <Card.Text>
@@ -331,7 +330,8 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       </Card.ImgOverlay>
     </Card>
     <Card className="bg-dark text-white" style={{ width: '48rem' }}>
-      <Card.Img src="https://m.media-amazon.com/images/I/81ZU4ARUwQL._AC_SX679_.jpg" alt="Card image" />
+      <Card.Img  src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/bef41244-8c29-416d-a142-11fcc1605b8e._SL850_FMjpg_.jpg" alt="Card image" />
+      <Card.Img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/82a41677-a4de-42a8-9213-b38516fb452f._SL850_FMjpg_.jpg" alt="Card image" />
       <Card.ImgOverlay>
         {/* <Card.Title>Card title</Card.Title> */}
         {/* <Card.Text>
@@ -347,22 +347,27 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     
 
     <div className="footer-wrapper" >
-    <h3>Frequently asked questions</h3>
+    <Button variant="contained"><h3>Adidas Sportswear</h3></Button>
+    {/* <Button variant="contained">All that you are.</Button>
+     */}
+     <img height="50px"  width="100%" src="https://m.media-amazon.com/images/S/stores-image-uploads-na-prod/1/AmazonStores/ATVPDKIKX0DER/2e9daadbb920e616d81468b2d3457db1.w3000.h600._CR0%2C0%2C3000%2C600_SX3000_.jpg"></img>
+    {/* <p></p> */}
     <div>
-      How to contact me?
+      
       <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/61I3kfBACML._AC_UL1500_.jpg" />
+        <Card.Img variant="top" src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/72f3d7a7-6557-4a45-8bb3-a1cf9f1d8c9b._SL850_FMjpg_.png" />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          {/* <Card.Title>Card title</Card.Title>
           <Card.Text>
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This content is a little bit longer.
-          </Card.Text>
+          </Card.Text> */}
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
+      <Card.Link href="#"><Button variant="success">TOP🔝</Button></Card.Link>
     </div>
     <hr></hr>
     

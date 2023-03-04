@@ -294,12 +294,22 @@ h1 {
   margin:0px;
 }
 .cube {
-  position: absolute;
+  /* position: absolute;
   top: 80vh;
   left: 45vw;
-  border-radius: 50%;
-  width: 4px;
-  height: 4px;
+  border-radius: 50%; */
+  position: absolute; 
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 50px; 
+  height: 80px; 
+  background: #06d6a0; 
+  border-radius: 50px 50px 0 0; 
+  transform: rotate(-45deg); 
+  transform-origin: 0 100%;
+  width: 14px;
+  height: 14px;
   border: solid 1px #2f19d1;
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);

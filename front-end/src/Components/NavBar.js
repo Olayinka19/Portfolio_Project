@@ -56,6 +56,7 @@ export default function NavBar() {
                         />
 
                         <p>Hi, {user.displayName}</p>
+                        Welcome back☺️
                       </div>
                     ) : (
                       <Link to="/">
@@ -72,7 +73,7 @@ export default function NavBar() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Link to="/">Home</Link>
-                  <Link to="/About">Blog</Link>
+                  <Link to="/About"><Button variant="contained">Explore</Button></Link>
                   {/* <Link to="/Developer">Developer</Link> */}
                   {/* <Link to="/Explore">Explore</Link> */}
                   {/* <link href="/Developer">Developer</link> */}
@@ -83,17 +84,17 @@ export default function NavBar() {
                   <Link to="/Electronics">Electronics</Link>
 
                   {user && user.displayName ? (
-        <Button onClick={handleSignOut} variant="primary">LogOut</Button>
+        <Button onClick={handleSignOut} variant="contained">LogOut</Button>
       ) : (
-        <Link to='/signin'><Button variant="warning">Log In</Button></Link>
+        <Link to='/signin'><Button variant="contained">Log In</Button></Link>
       )}
                   <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
                     <NavDropdown.Item ><Link to="/Account">Account</Link></NavDropdown.Item>
-                    <NavDropdown.Item href="/Profile">
-                      Profile
+                    <NavDropdown.Item>
+                    <Link to="/Profile">Profile</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action5">
