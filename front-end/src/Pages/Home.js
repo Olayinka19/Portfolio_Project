@@ -191,8 +191,22 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </Card>
     </div>
     <br></br>
+    <h4>Amazon Prime Videos</h4>
+<marquee direction="left"> 
 
-<marquee> 50% Special Sale Ending Soon!!</marquee>
+<img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/bcc3ac778d99441f9e736b800f5a79fd80ef8bbe1e620e6d690a369ef6fc928c._UY500_UX667_RI_V_TTW_SX658_.jpg" width="190px" height="190px"></img>
+
+<img src="https://m.media-amazon.com/images/I/511WjJ8gjwL.jpg" width="190px" height="190px"></img>
+<img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/5ca7154c02b0f7da7e0eaad7162c44a0a88299e56e2a9fc205ef1fb246988458._UY500_UX667_RI_V_TTW_SX532_.jpg" width="190px" height="190px"></img>
+<img src="https://m.media-amazon.com/images/I/51YWDJl1bkL.jpg" width="190px" height="190px"></img>
+<img src="https://m.media-amazon.com/images/I/51Mc--F6zGL.jpg" width="190px" height="190px"></img>
+{/* <img src="https://m.media-amazon.com/images/I/71oxAUe02WL._AC_SX679_.jpg" width="190px" height="190px"></img>
+<img src="https://m.media-amazon.com/images/I/81sAVGJu8ZL._AC_SX679_.jpg" width="190px" height="190px"></img>
+<img src="https://m.media-amazon.com/images/I/71L08j1yhSL._AC_SX679_.jpg" width="190px" height="190px"></img> */}
+
+
+
+</marquee>
 <Card>
         <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91pEkoBJiwL._AC_SX679_.jpg" />
         <Card.Body>
@@ -267,9 +281,9 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </Card>
     </div>
    <Card className="text-center">
-      <Card.Header>Featured</Card.Header>
+      <Card.Header>Deli Store</Card.Header>
       <Card.Body>
-        <Card.Title>Explore <Animation/></Card.Title>
+        <Card.Title><Animation/></Card.Title>
         <Card.Text>
         <Carousel fade>
       <Carousel.Item interval={2000}>
