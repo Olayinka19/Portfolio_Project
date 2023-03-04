@@ -72,17 +72,21 @@ export default function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Link to="/">Home</Link>
-                  <Link to="/About"><Button variant="contained">Explore</Button></Link>
+                  <Link to="/"><Button variant="outlined">Home</Button></Link>
+                  <hr/>
+                  <Link to="/About"><Button variant="outlined">Explore</Button></Link>
+                  <hr/>
                   {/* <Link to="/Developer">Developer</Link> */}
                   {/* <Link to="/Explore">Explore</Link> */}
                   {/* <link href="/Developer">Developer</link> */}
-                  <Link to="/Developer">Developer</Link>
-                  <Link to="/Men">Men</Link>
-                  
-                  <Link to="/Women">Women</Link>
-                  <Link to="/Electronics">Electronics</Link>
-
+                  <Link to="/Developer"><Button variant="outlined">Developer</Button></Link>
+                  <hr/>
+                  <Link to="/Men"><Button variant="outlined">Men</Button></Link>
+                  <hr/>
+                  <Link to="/Women"><Button variant="outlined">Women</Button></Link>
+                  <hr/>
+                  <Link to="/Electronics"><Button variant="outlined">Electronics</Button></Link>
+                  <hr/>
                   {user && user.displayName ? (
         <Button onClick={handleSignOut} variant="contained">LogOut</Button>
       ) : (

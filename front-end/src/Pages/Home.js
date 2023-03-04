@@ -7,7 +7,7 @@ import "./Home.css";
 import Carousel from "react-bootstrap/Carousel";
 // import CardGroup from 'react-bootstrap/CardGroup';
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import Button from '@mui/material/Button';
 import Animation from "../Components/Animation";
 // import PortfolioDetails from "../Components/PortfolioDetails";
 // import Portfolios from "../Components/Portfolios";
@@ -153,7 +153,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="success"><a href="https://amzn.to/3SRUBLG"><b>$350 </b><span font-size="5px"><del>200</del></span></a></Button>
+        <Button variant="contained"><a href="https://amzn.to/3SRUBLG"><b>$350 </b><span font-size="5px"><del>200</del></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">7 days ago</Card.Footer>
     </Card>
@@ -167,7 +167,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="success"><a href="https://amzn.to/3muOPU8"><b>$46.97 </b><span font-size="5px"><del></del></span></a></Button>
+        <Button variant="contained"><a href="https://amzn.to/3muOPU8"><b>$46.97 </b><span font-size="5px"><del></del></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
@@ -181,7 +181,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="success"><a href="https://amzn.to/3EWMebG"><b>$56.08 </b><span font-size="5px"><del>65.98</del></span></a></Button>
+        <Button variant="contained"><a href="https://amzn.to/3EWMebG"><b>$56.08 </b><span font-size="5px"><del>65.98</del></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
@@ -379,7 +379,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
-      <Card.Link href="#"><Button variant="success">TOP🔝</Button></Card.Link>
+      <Card.Link href="#"><Button variant="contained">TOP🔝</Button></Card.Link>
     </div>
     <hr></hr>
     
