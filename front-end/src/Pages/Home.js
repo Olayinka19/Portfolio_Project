@@ -23,11 +23,6 @@ function Home() {
   return (
     <>
     <div>
-    {/* ========>Animation */}
-
-
-
-    {/* =====================>Animations */}
     <Card className="home-container text-center">
       <Card.Header>AheadShoping</Card.Header>
       <Card.Body>
@@ -158,7 +153,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="success"><b>$350 </b><span font-size="5px"><del>200</del></span></Button>
+        <Button variant="success"><a href="https://amzn.to/3SRUBLG"><b>$350 </b><span font-size="5px"><del>200</del></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">7 days ago</Card.Footer>
     </Card>
@@ -172,21 +167,21 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="success"><b>$46.67 </b><span fontSize="10px"><del>$49.99</del></span></Button>
+        <Button variant="success"><a href="https://amzn.to/3muOPU8"><b>$46.97 </b><span font-size="5px"><del></del></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
     <iframe width="100%" height="251" src="https://www.youtube.com/embed/pz88bqPocWI" title="Amazon Best Kitchen Gadgets For Every Home #18 🏠Appliances, Makeup, Smart Inventions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <Card className="text-center">
-      <Card.Header>Featured</Card.Header>
+      <Card.Header>15% Off </Card.Header>
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71IuBrKaiAL._AC_SL1500_.jpg" />
       <Card.Body>
-        <Card.Title>Special Sales Ending Soon!!</Card.Title>
+        <Card.Title>Levotar LED Desk Lamp for Home Office</Card.Title>
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="success"><b>$350 </b><span fontSize="10px"><del>200</del></span></Button>
+        <Button variant="success"><a href="https://amzn.to/3EWMebG"><b>$56.08 </b><span font-size="5px"><del>65.98</del></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>

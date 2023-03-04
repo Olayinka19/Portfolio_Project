@@ -52,6 +52,13 @@
 .adidas-image{
     height: 100%;
 }
+.men{
+    scroll-behavior: auto;
+}
+.top-container{
+    /* justify-content: center; */
+    
+}
 .figure {
     border-radius: "50%";
     display:grid;
