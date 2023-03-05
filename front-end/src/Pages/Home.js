@@ -92,7 +92,7 @@ function Home() {
       </div>
       
       <br/>
-
+<div className="first-image-container">
       <ImageList sx={{ width: 390, height: 450 }} cols={3} variant="woven" rowHeight={164}>
       {itemData2.map((item) => (
         <ImageListItem key={item.img}>
@@ -105,6 +105,7 @@ function Home() {
         </ImageListItem>
       ))}
     </ImageList>
+    </div>
 
     
   
@@ -172,8 +173,10 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
-    <iframe width="100%" height="251" src="https://www.youtube.com/embed/pz88bqPocWI" title="Amazon Best Kitchen Gadgets For Every Home #18 🏠Appliances, Makeup, Smart Inventions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <hr/>
 
+    <iframe width="100%" height="251" src="https://www.youtube.com/embed/pz88bqPocWI" title="Amazon Best Kitchen Gadgets For Every Home #18 🏠Appliances, Makeup, Smart Inventions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <hr/>
     <Card className="text-center">
       <Card.Header>15% Off </Card.Header>
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71IuBrKaiAL._AC_SL1500_.jpg" />
@@ -186,6 +189,8 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
+    <hr/>
+
     </div>
     <br></br>
     <h4>Amazon Prime Videos</h4>
@@ -281,7 +286,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </Card>
     </div>
    <Card className="text-center">
-      <Card.Header>Deli Store</Card.Header>
+      <Card.Header><Button variant="outlined">Shop Smart, Shop Ahead!</Button></Card.Header>
       <Card.Body>
         <Card.Title><Animation/></Card.Title>
         <Card.Text>
@@ -329,30 +334,20 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         </Card.Text>
         <Button variant="success">Explore</Button>
       </Card.Body>
-      <Card.Footer className="text-muted">2 days ago</Card.Footer>
+      <Card.Footer className="text-muted">12 days ago</Card.Footer>
     </Card>
 <div style ={{display: 'flex', justifyContent: 'center' }}>
     <Card className="bg-dark text-white" style={{ width: '48rem' }}>
       <Card.Img className="adidas-image" src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/48f8cd8e-e36e-4c10-8090-93b6028923f6._SL850_FMjpg_.jpg" alt="Card image" />
       <Card.ImgOverlay>
-        {/* <Card.Title>Card title</Card.Title> */}
-        {/* <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </Card.Text> */}
-        {/* <Card.Text>Last updated 3 mins ago</Card.Text> */}
+      
       </Card.ImgOverlay>
     </Card>
     <Card className="bg-dark text-white" style={{ width: '48rem' }}>
       <Card.Img  src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/bef41244-8c29-416d-a142-11fcc1605b8e._SL850_FMjpg_.jpg" alt="Card image" />
       <Card.Img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/82a41677-a4de-42a8-9213-b38516fb452f._SL850_FMjpg_.jpg" alt="Card image" />
       <Card.ImgOverlay>
-        {/* <Card.Title>Card title</Card.Title> */}
-        {/* <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </Card.Text> */}
-        {/* <Card.Text>Last updated 3 mins ago</Card.Text> */}
+      
       </Card.ImgOverlay>
     </Card>
     </div>
@@ -371,11 +366,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       <Card>
         <Card.Img variant="top" src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/72f3d7a7-6557-4a45-8bb3-a1cf9f1d8c9b._SL850_FMjpg_.png" />
         <Card.Body>
-          {/* <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text> */}
+          
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>

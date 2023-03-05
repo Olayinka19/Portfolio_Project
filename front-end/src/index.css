@@ -495,7 +495,45 @@ h1 {
     -o-border-radius: 17px;
     width: 250px ;
     height: 250px;
+    
 }
+.first-image-container{
+  width: fit-content;
+}
+@media only screen and (min-width: 414px) and (max-width: 767px) { 
+
+  .first-image-container{
+    width: fit-content;
+  }
+
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .first-image-container{
+      width: fit-content;
+    }
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .first-image-container{
+      width: fit-content;
+    }
+
+}
+@media 
+  (max-device-width: 218px)
+  and (max-device-height: 281px) { 
+    .first-image-container{
+      width: fit-content;
+    }
+
+}
+
+
 }
 @media only screen and (min-device-width: 992px) and (max-device-height: 1200px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
   .first-image{
