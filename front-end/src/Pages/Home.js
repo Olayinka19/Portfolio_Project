@@ -11,9 +11,7 @@ import Card from "react-bootstrap/Card";
 // import Button from "react-bootstrap/Button";
 import Button from 'react-bootstrap/Button';
 import Animation from "../Components/Animation";
-// import PortfolioDetails from "../Components/PortfolioDetails";
-// import Portfolios from "../Components/Portfolios";
-// import { useState, useEffect } from "react";
+
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
@@ -26,13 +24,13 @@ function Home() {
     <>
     <div>
     <Card className="home-container text-center">
-      <Card.Header><div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
-      </div></Card.Header>
+      
       <Card.Body>
-        <Card.Text>Why spend more 🤔 when you can purchase it at a lower cost? 🤯</Card.Text>
+        <Card.Text>Looking for great deals on high-quality<img src="https://cdn-icons-png.flaticon.com/512/9756/9756673.png" width="30px" height="30px"></img> products? Look no further than<img width="30px" height="30px" src="https://cdn-icons-png.flaticon.com/512/324/324999.png"></img>  <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Button variant="success"><Animation /></Button>
+      </div></Card.Text>
         <hr/>
-        <Card.Text><Button className="header-button" variant="outlined">Shop smarter, shop Ahead🤩</Button></Card.Text>
+        <Card.Text><Button className="header-button" variant="success">Shop smarter, shop Ahead <img src="https://cdn-icons-png.flaticon.com/512/9485/9485813.png" width="30px" height="30px"></img> </Button></Card.Text>
         <hr/>
         <Carousel fade>
       <Carousel.Item interval={2000}>
@@ -93,7 +91,7 @@ function Home() {
     </Card>
     <br/>
     <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
+    <Button variant="success"><Animation /></Button>
       </div>
       
       <br/>
@@ -116,7 +114,7 @@ function Home() {
   
       <hr/>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
+      <Button variant="success"><Animation /></Button>
       </div>
       <div style ={{display: 'flex', justifyContent: 'center' }}>
    <Card style={{ width: '48rem' }}>
@@ -159,7 +157,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       <br/>
       <div style={{ justifyContent: 'center' }}>
     <Card className="text-center">
-      <Card.Header><h1><Button variant="success"><h2>Limited Time Offers 50% off all items!!🤯</h2></Button></h1></Card.Header>
+      <Card.Header><h1><Button variant="success"><h2>Limited Time Offer 10 - 50% off all items!!🤯</h2></Button></h1></Card.Header>
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/8101kmkFW0L._AC_SL1500_.jpg" />
       <Card.Body>
         <Card.Title>Special Sales Ending Soon!!</Card.Title>
@@ -172,7 +170,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </Card>
 
     <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
+    <Button variant="success"><Animation /></Button>
       </div>
     <Card className="text-center">
       <Card.Header><h1>50% Flash Sale Frenzy</h1></Card.Header>
@@ -189,7 +187,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </Card>
     <hr/>
     <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
+    <Button variant="success"><Animation /></Button>
       </div>
 
     <iframe width="100%" height="251" src="https://www.youtube.com/embed/pz88bqPocWI" title="Amazon Best Kitchen Gadgets For Every Home #18 🏠Appliances, Makeup, Smart Inventions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -212,7 +210,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     <br></br>
     <hr/>
     <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
+    <Button variant="success"><Animation /></Button>
       </div>
    
     <hr/>
@@ -248,7 +246,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         </Card.Footer>
       </Card>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
+      <Button variant="success"><Animation /></Button>
       </div>
     <hr></hr>
    <div className="container">
@@ -289,7 +287,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
    </div>
    <hr></hr>
    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
+   <Button variant="success"><Animation /></Button>
       </div>
 <div style ={{display: 'flex', justifyContent: 'center' }}>
    <Card style={{ width: '28rem' }}>
@@ -314,7 +312,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
    <Card className="text-center">
       <Card.Header><Button variant="success">Shop Smart, Shop Ahead 🤩!</Button></Card.Header>
       <Card.Body>
-        <Card.Title><Animation/></Card.Title>
+        <Card.Title><Button variant="success"><Animation /></Button></Card.Title>
         <Card.Text>
         <Carousel fade>
       <Carousel.Item interval={2000}>

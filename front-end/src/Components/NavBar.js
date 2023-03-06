@@ -73,29 +73,48 @@ export default function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Link to="/"><Button variant="outlined">Home</Button></Link>
+                  <Link to="/"><Button variant="success">Home</Button></Link>
                   <hr/>
-                  <Link to="/About"><Button variant="outlined">Explore</Button></Link>
-                  <hr/>
-                  <Link to="/Electronics"><Button variant="outlined">Electronics</Button></Link>
-                  <hr/>
-                  <Link to="/Food"><Button variant="outlined">Food</Button></Link>
+                  <Link to="/About"><Button variant="success">Explore</Button></Link>
+                  <NavDropdown
+                    title="Categories"
+                    id={`offcanvasNavbarDropdown-expand-${expand}`}
+                  >
+                    <NavDropdown.Item ><Link to="/Women">Women</Link></NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Developer"><Button variant="outlined">Developer</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Men"><Button variant="outlined">Men</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Food"><Button variant="outlined">Food</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Electronics"><Button variant="outlined">Electronics</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action5">
+                      Something else here
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                  {/* <Link to="/Food"><Button variant="outlined">Food</Button></Link>
                   <hr/>
                   <Link to="/Developer"><Button variant="outlined">Developer</Button></Link>
                   <hr/>
-                  <Link to="/Men"><Button variant="outlined">Men</Button></Link>
+                  
                   <hr/>
                   <Link to="/Women"><Button variant="outlined">Women</Button></Link>
                   <hr/>
                   <Link to="/Electronics"><Button variant="outlined">Electronics</Button></Link>
-                  <hr/>
+                  <hr/> */}
                   {user && user.displayName ? (
-        <Button onClick={handleSignOut} variant="contained">LogOut</Button>
+        <Button onClick={handleSignOut} variant="success">LogOut</Button>
       ) : (
-        <Link to='/signin'><Button variant="contained">Log In</Button></Link>
+        <Link to='/signin'><Button variant="success">Log In</Button></Link>
       )}
                   <NavDropdown
-                    title="Dropdown"
+                    title="Account Settings"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
                     <NavDropdown.Item ><Link to="/Account">Account</Link></NavDropdown.Item>
