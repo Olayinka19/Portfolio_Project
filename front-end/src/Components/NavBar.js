@@ -80,13 +80,16 @@ export default function NavBar() {
                     title="Categories"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item ><Link to="/Women">Women</Link></NavDropdown.Item>
+                    
                     <NavDropdown.Item>
                     <Link to="/Developer"><Button variant="outlined">Developer</Button></Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
                     <Link to="/Men"><Button variant="outlined">Men</Button></Link>
                     </NavDropdown.Item>
+                    <NavDropdown.Item >
+                    <Link to="/Women"><Button variant="outlined">Women</Button></Link></NavDropdown.Item>
+        
                     <NavDropdown.Item>
                     <Link to="/Food"><Button variant="outlined">Food</Button></Link>
                     </NavDropdown.Item>
@@ -94,9 +97,7 @@ export default function NavBar() {
                     <Link to="/Electronics"><Button variant="outlined">Electronics</Button></Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/Kitchen">kitchen & Utensils</Link></NavDropdown.Item> 
                   </NavDropdown>
                   {/* <Link to="/Food"><Button variant="outlined">Food</Button></Link>
                   <hr/>
@@ -123,7 +124,7 @@ export default function NavBar() {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action5">
-                      Something else here
+                      Settings
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>

@@ -13,6 +13,7 @@ import Electronics from './Components/Electronics';
 import About from "./Components/About"
 import Account from "./Pages/Account";
 import Food from "./Components/Food";
+import Kitchen from "./Components/Kitchen"
 import Profile from "./Components/Profile";
 import Portfolios from "./Components/Portfolios";
 import Signin from "./Pages/Signin";
@@ -45,6 +46,7 @@ function App() {
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Food" element={<Food/>} />
+        <Route path="/kitchen" element={<Kitchen/>} />
         {/* <Route path="/Food" element={<Food />} /> */}
       
         <Route path="*" element={<FourOFour />} />

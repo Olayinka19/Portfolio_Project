@@ -310,7 +310,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </Card>
     </div>
    <Card className="text-center">
-      <Card.Header><Button variant="success">Shop Smart, Shop Ahead 🤩!</Button></Card.Header>
+      {/* <Card.Header><Button variant="success">Shop Smart, Shop Ahead 🤩!</Button></Card.Header> */}
       <Card.Body>
         <Card.Title><Button variant="success"><Animation /></Button></Card.Title>
         <Card.Text>

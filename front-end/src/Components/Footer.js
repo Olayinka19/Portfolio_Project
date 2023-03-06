@@ -18,10 +18,11 @@ const Footer = () => (
       <a href="https://github.com/" target="_blank" rel="noreferrer" style={{ margin: '0 10px' }}><img width="35px" height="35px"  src="https://cdn-icons-png.flaticon.com/512/2504/2504911.png"></img>
         <i className="fab fa-linkedin" style={{ fontSize: '24px' }} />
       </a>
-    <p style={{ textAlign: 'center', fontSize: '14px', marginTop: '20px' }}>
-      &copy; {new Date().getFullYear()} Olayinka Fakanbi | All rights reserved
-    </p>
+   
     </div>
+    <p style={{ textAlign: 'center', fontSize: '14px', marginTop: '20px' }}>
+      &copy; {new Date().getFullYear()} Ahead Shopping | All rights reserved
+    </p>
   </footer>
 );
 
