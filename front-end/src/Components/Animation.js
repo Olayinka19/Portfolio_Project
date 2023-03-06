@@ -11,7 +11,7 @@ function Animation() {
       from: { opacity: 0, color: 'white' },
     })
     // ...
-    return <animated.div style={styles}><h2>AheadShopping</h2></animated.div>
+    return <animated.div style={styles}><h2>AheadShopping<img src="https://cdn-icons-png.flaticon.com/512/9485/9485813.png" width="40px" height="30px"></img></h2></animated.div>
   }
 
 

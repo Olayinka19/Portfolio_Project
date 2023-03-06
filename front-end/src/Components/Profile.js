@@ -3,6 +3,7 @@ import { Form } from 'react-bootstrap';
 // import Button from 'react-bootstrap';
 import './Profile.css';
 import { useState } from 'react';
+import Animation from "../Components/Animation";
 
 
 function Profile() {

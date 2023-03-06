@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '@mui/material/Button';
 import Accordion from 'react-bootstrap/Accordion';
-
+import Animation from "../Components/Animation";
 function About() {
   // const imgUrl6 = home18;
   // https://m.media-amazon.com/images/I/71seY2ns8oL._AC_SL1500_.jpg
@@ -29,6 +29,9 @@ function About() {
       <div className="cube"></div> */}
       <section className="header-content">
       <div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Animation />
+      </div>
       <h3>The Top 5 Best-selling Tech Products on Amazon Right Now.
 </h3>
 <Accordion>

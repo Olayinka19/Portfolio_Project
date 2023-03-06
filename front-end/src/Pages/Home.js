@@ -1,13 +1,15 @@
 import { React } from "react";
 // import "animate.css";
 import "./Home.css";
-
+import Accordion from 'react-bootstrap/Accordion';
 // import axios from "axios";
 // import { ListGroup } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 // import CardGroup from 'react-bootstrap/CardGroup';
 import Card from "react-bootstrap/Card";
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
+// import Button from "react-bootstrap/Button";
+import Button from 'react-bootstrap/Button';
 import Animation from "../Components/Animation";
 // import PortfolioDetails from "../Components/PortfolioDetails";
 // import Portfolios from "../Components/Portfolios";
@@ -24,11 +26,14 @@ function Home() {
     <>
     <div>
     <Card className="home-container text-center">
-      <Card.Header>AheadShoping</Card.Header>
+      <Card.Header><div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Animation />
+      </div></Card.Header>
       <Card.Body>
-        <Card.Text>Why spend more when you can purchase it at a lower cost?</Card.Text>
-        <Card.Text><Button variant="contained">Shop smarter, shop Ahead!</Button></Card.Text>
-        
+        <Card.Text>Why spend more 🤔 when you can purchase it at a lower cost? 🤯</Card.Text>
+        <hr/>
+        <Card.Text><Button className="header-button" variant="outlined">Shop smarter, shop Ahead🤩</Button></Card.Text>
+        <hr/>
         <Carousel fade>
       <Carousel.Item interval={2000}>
         <img
@@ -110,7 +115,9 @@ function Home() {
     
   
       <hr/>
-
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Animation />
+      </div>
       <div style ={{display: 'flex', justifyContent: 'center' }}>
    <Card style={{ width: '48rem' }}>
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91y1S6m0+JS._AC_SL1500_.jpg" />
@@ -121,17 +128,21 @@ function Home() {
 Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         </Card.Text>
       </Card.Body>
-      {/* <ListGroup className="list-group-flush">
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-      </ListGroup> */}
+     
       <Card.Body>
-        {/* <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link> */}
+     
       </Card.Body>
     </Card>
     </div>
+    <Button variant="success"><h1>10-50% off all Items!!!!🤯</h1></Button>
+    <hr/>
+    <div style ={{display: 'flex', justifyContent: 'center' }}>
+    
+   <Button variant="success"><Animation /></Button> 
+    </div>
+    <hr/>
+    
+
     <ImageList sx={{ width: 390, height: 450 }}  cols={3} gap={8}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
@@ -148,32 +159,38 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       <br/>
       <div style={{ justifyContent: 'center' }}>
     <Card className="text-center">
-      <Card.Header>Limited Time Offers</Card.Header>
+      <Card.Header><h1><Button variant="success"><h2>Limited Time Offers 50% off all items!!🤯</h2></Button></h1></Card.Header>
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/8101kmkFW0L._AC_SL1500_.jpg" />
       <Card.Body>
         <Card.Title>Special Sales Ending Soon!!</Card.Title>
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="contained"><a href="https://amzn.to/3SRUBLG"><b>$350 </b><span font-size="5px"><del>200</del></span></a></Button>
+        <Button variant="success"><a href="https://amzn.to/3SRUBLG"><b>$350 </b><span font-size="5px"><del>200</del></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">7 days ago</Card.Footer>
     </Card>
 
-
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Animation />
+      </div>
     <Card className="text-center">
-      <Card.Header>Flash Sale Frenzy</Card.Header>
+      <Card.Header><h1>50% Flash Sale Frenzy</h1></Card.Header>
+      
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71rtUgIGEhL._AC_SX679_.jpg" />
       <Card.Body>
         <Card.Title>BOHON LED Desk Lamp</Card.Title>
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="contained"><a href="https://amzn.to/3muOPU8"><b>$46.97 </b><span font-size="5px"><del></del></span></a></Button>
+        <Button variant="success"><a href="https://amzn.to/3muOPU8"><b>$46.97 </b><span font-size="5px"><del></del></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
     <hr/>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Animation />
+      </div>
 
     <iframe width="100%" height="251" src="https://www.youtube.com/embed/pz88bqPocWI" title="Amazon Best Kitchen Gadgets For Every Home #18 🏠Appliances, Makeup, Smart Inventions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <hr/>
@@ -185,15 +202,20 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="contained"><a href="https://amzn.to/3EWMebG"><b>$56.08 </b><span font-size="5px"><del>65.98</del></span></a></Button>
+        <Button variant="success"><a href="https://amzn.to/3EWMebG"><b>$56.08 </b><span font-size="5px"><del>65.98</del></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
-    <hr/>
+
 
     </div>
     <br></br>
-    <h4>Amazon Prime Videos</h4>
+    <hr/>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Animation />
+      </div>
+   
+    <hr/>
 <marquee direction="left"> 
 
 <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/bcc3ac778d99441f9e736b800f5a79fd80ef8bbe1e620e6d690a369ef6fc928c._UY500_UX667_RI_V_TTW_SX658_.jpg" width="190px" height="190px"></img>
@@ -202,14 +224,15 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
 <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/5ca7154c02b0f7da7e0eaad7162c44a0a88299e56e2a9fc205ef1fb246988458._UY500_UX667_RI_V_TTW_SX532_.jpg" width="190px" height="190px"></img>
 <img src="https://m.media-amazon.com/images/I/51YWDJl1bkL.jpg" width="190px" height="190px"></img>
 <img src="https://m.media-amazon.com/images/I/51Mc--F6zGL.jpg" width="190px" height="190px"></img>
-{/* <img src="https://m.media-amazon.com/images/I/71oxAUe02WL._AC_SX679_.jpg" width="190px" height="190px"></img>
+ {/* <img src="https://m.media-amazon.com/images/I/71oxAUe02WL._AC_SX679_.jpg" width="190px" height="190px"></img> 
 <img src="https://m.media-amazon.com/images/I/81sAVGJu8ZL._AC_SX679_.jpg" width="190px" height="190px"></img>
-<img src="https://m.media-amazon.com/images/I/71L08j1yhSL._AC_SX679_.jpg" width="190px" height="190px"></img> */}
+<img src="https://m.media-amazon.com/images/I/71L08j1yhSL._AC_SX679_.jpg" width="190px" height="190px"></img>  */}
 
 
 
 </marquee>
- <br/>
+<hr></hr>
+ {/* <br/> */}
  <br/>
 <Card>
         <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91pEkoBJiwL._AC_SX679_.jpg" />
@@ -224,6 +247,9 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
           <small className="text-muted">Last updated 30 mins ago</small>
         </Card.Footer>
       </Card>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Animation />
+      </div>
     <hr></hr>
    <div className="container">
    <div>
@@ -254,17 +280,17 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         Men's Firm Ground Soccer Cleats
         </Card.Text>
         <Card.Img variant="bottom" src="https://m.media-amazon.com/images/I/81-QcRvPZlL._AC_UL1500_.jpg" />
-        <Button variant="outlined"><b>$37.99 </b><span fontSize="10px"><del>$42.99</del></span></Button>
+        <Button variant="success"><b>$37.99 </b><span fontSize="10px"><del>$42.99</del></span></Button>
       </Card.Body>
       <Card.Img variant="bottom" src="https://m.media-amazon.com/images/I/61BeIFQYb+L._AC_SX679_.jpg" />
       {/* <Card.Footer className="text-muted">2 days ago</Card.Footer> */} 
     </Card>
 
-
-  
-
    </div>
    <hr></hr>
+   <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Animation />
+      </div>
 <div style ={{display: 'flex', justifyContent: 'center' }}>
    <Card style={{ width: '28rem' }}>
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/81c7cWWOycL._AC_SL1500_.jpg" />
@@ -286,7 +312,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </Card>
     </div>
    <Card className="text-center">
-      <Card.Header><Button variant="outlined">Shop Smart, Shop Ahead!</Button></Card.Header>
+      <Card.Header><Button variant="success">Shop Smart, Shop Ahead 🤩!</Button></Card.Header>
       <Card.Body>
         <Card.Title><Animation/></Card.Title>
         <Card.Text>
@@ -356,7 +382,10 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     
 
     <div className="footer-wrapper" >
-    <Button variant="contained"><h3>Adidas Sportswear</h3></Button>
+    <Button variant="success"><h3>Adidas Sportswear</h3></Button>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Animation />
+      </div>
     {/* <Button variant="contained">All that you are.</Button>
      */}
      <img height="50px"  width="100%" src="https://m.media-amazon.com/images/S/stores-image-uploads-na-prod/1/AmazonStores/ATVPDKIKX0DER/2e9daadbb920e616d81468b2d3457db1.w3000.h600._CR0%2C0%2C3000%2C600_SX3000_.jpg"></img>
@@ -372,7 +401,10 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
-      <Card.Link href="#"><Button variant="contained">TOP🔝</Button></Card.Link>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Animation />
+      </div>
+      <Card.Link href="#"><Button variant="success">TOP🔝</Button></Card.Link>
     </div>
     <hr></hr>
     

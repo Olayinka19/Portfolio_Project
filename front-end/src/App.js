@@ -12,6 +12,7 @@ import Developer from './Components/Developer'
 import Electronics from './Components/Electronics';
 import About from "./Components/About"
 import Account from "./Pages/Account";
+import Food from "./Components/Food";
 import Profile from "./Components/Profile";
 import Portfolios from "./Components/Portfolios";
 import Signin from "./Pages/Signin";
@@ -20,6 +21,7 @@ import UserAddressForm from "./Pages/UserAddressForm";
 import './App.css';
 import PortfolioDetails from "./Components/PortfolioDetails";
 import DocsNeeded from "./Pages/DocsNeeded";
+// import Food from "./Components/Food";
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
         <Route path="/UserAddressForm" element={<UserAddressForm/>} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Signin" element={<Signin />} />
+        <Route path="/Food" element={<Food/>} />
+        {/* <Route path="/Food" element={<Food />} /> */}
       
         <Route path="*" element={<FourOFour />} />
       </Routes>

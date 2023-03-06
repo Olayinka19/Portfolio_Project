@@ -8,6 +8,14 @@
     border-radius: 12px;
     background-color: #4b4b4b;
 } */
+.header-button{
+    color: white!important;
+    font-size: 20px;
+    font-family:Roboto;
+}
+.buttons{
+    background-color: hsla(151, 92%, 10%, 0.939);
+}
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -20,9 +28,11 @@
     width: fit-content!important;
 }
 .home-container {
-    background-color: #0177BD;
+    background-color: hsla(151, 92%, 10%, 0.939);
+    font-size: 30px;
     color: white!important;
     align-items: center!important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .card-image {
     align-items: flex-end;

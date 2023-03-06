@@ -283,7 +283,7 @@ h1 {
   background: #ffffff;
 }
 .background {
-  background: linear-gradient(132deg, #11a14b, #00a896, #8ecae6,#219ebc , #0c7e51 , #9bf6ff, #0077b6);
+  background: linear-gradient(132deg, #11a14b, #588157, #3a5a40, #0c7e51 , #344e41);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;

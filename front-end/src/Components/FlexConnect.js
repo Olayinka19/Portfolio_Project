@@ -2,6 +2,7 @@ import React from 'react';
 import { useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import { Card } from 'react-bootstrap';
+import Animation from "../Components/Animation";
 // import './Flex.css';
 
 function FlexConnect() {

@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // import { Button } from "react-bootstrap";
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
+import Button from "react-bootstrap/Button";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { NavDropdown } from "react-bootstrap";
@@ -76,9 +77,10 @@ export default function NavBar() {
                   <hr/>
                   <Link to="/About"><Button variant="outlined">Explore</Button></Link>
                   <hr/>
-                  {/* <Link to="/Developer">Developer</Link> */}
-                  {/* <Link to="/Explore">Explore</Link> */}
-                  {/* <link href="/Developer">Developer</link> */}
+                  <Link to="/Electronics"><Button variant="outlined">Electronics</Button></Link>
+                  <hr/>
+                  <Link to="/Food"><Button variant="outlined">Food</Button></Link>
+                  <hr/>
                   <Link to="/Developer"><Button variant="outlined">Developer</Button></Link>
                   <hr/>
                   <Link to="/Men"><Button variant="outlined">Men</Button></Link>
@@ -113,7 +115,7 @@ export default function NavBar() {
                     className="me-2"
                     aria-label="Search"
                   />
-                  <Button variant="outline-success">Search</Button>
+                  <Button variant="success">Search</Button>
                 </Form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

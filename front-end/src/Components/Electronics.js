@@ -1,10 +1,15 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
+import Button from "react-bootstrap/Button";
+import Animation from "../Components/Animation";
 function Electronics() {
   return (
-    <div>Coming Soon!!!
+    <div>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Animation />
+      </div>
     
     <CardGroup>
       <Card>
@@ -14,7 +19,7 @@ function Electronics() {
           <Card.Text>
           Hand Warmer Rechargeable, MKG 10000mAh Electric Handwarmers, 15 Hours Long Lasting
           </Card.Text>
-          <Button variant="outlined"><a href="https://amzn.to/3INQawx"><b>$17.99 </b><span font-size="5px"><del>49.98</del></span></a></Button>
+          <Button variant="success"><a href="https://amzn.to/3INQawx"><b>$17.99 </b><span font-size="5px"><del>49.98</del></span></a></Button>
 
         </Card.Body>
         <Card.Footer>
@@ -28,7 +33,7 @@ function Electronics() {
           <Card.Text>
           Airpods Pro Cleaning Pen,Multi-Function Cleaner Kit Soft Brush for Phone Charging Port,Earbuds,Earpods
           </Card.Text>
-          <Button variant="outlined"><a href="https://amzn.to/3IQwsjZ"><b>$9.99 </b><span font-size="5px"><del>19.99</del></span></a></Button>
+          <Button variant="success"><a href="https://amzn.to/3IQwsjZ"><b>$9.99 </b><span font-size="5px"><del>19.99</del></span></a></Button>
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 20 mins ago</small>
@@ -41,7 +46,7 @@ function Electronics() {
           <Card.Text>
           LCD Display Battery Pack Compatible with Android Phone/Samsung Galaxy S22,S21/Note/Moto/LG/Pixel /Nexus/OnePlus 9 etc
           </Card.Text>
-          <Button variant="outlined"><a href="https://amzn.to/3SN1kGC"><b>$19.95 </b><span font-size="5px"><del>23.95</del></span></a></Button>
+          <Button variant="success"><a href="https://amzn.to/3SN1kGC"><b>$19.95 </b><span font-size="5px"><del>23.95</del></span></a></Button>
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 13 mins ago</small>
@@ -54,7 +59,7 @@ function Electronics() {
           <Card.Text>
           Charger Organizer with Watch Bracket Equipped for iPhone iPad Android Tablet Watch and Other Electronics(6 Cables Included)
           </Card.Text>
-          <Button variant="outlined"><a href="https://amzn.to/3mvT1Te"><b>$31.99 </b><span font-size="5px"></span></a></Button>
+          <Button variant="success"><a href="https://amzn.to/3mvT1Te"><b>$31.99 </b><span font-size="5px"></span></a></Button>
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 13 mins ago</small>
@@ -67,14 +72,16 @@ function Electronics() {
           <Card.Text>
           
           Therapy Merídiān-Energy-Pulse-Massage-Pen 5-in-1 USB-Energy-Pen-Pain-Relief-Tools Gifts-for-Women-and-Men          </Card.Text>
-          <Button variant="outlined"><a href="https://amzn.to/3ZdxaP7"><b>$23.97 </b><span font-size="5px"><del>26.97</del></span></a></Button>
+          <Button variant="success"><a href="https://amzn.to/3ZdxaP7"><b>$23.97 </b><span font-size="5px"><del>26.97</del></span></a></Button>
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 13 mins ago</small>
         </Card.Footer>
       </Card>
     </CardGroup>
-    <Card.Link href="#"><Button variant="contained">TOP🔝</Button></Card.Link>
+    <hr/>
+        <Card.Link href="#" style={{ display: 'flex', justifyContent: 'center' }} ><Button className='top-container' variant="success" >TOP🔝</Button></Card.Link>
+        <hr/>
     
     
     
