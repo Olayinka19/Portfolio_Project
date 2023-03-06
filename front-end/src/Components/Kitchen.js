@@ -9,7 +9,7 @@ import Animation from "../Components/Animation";
 function Kitchen() {
   return (
     <div>
-    Kitchen and Utensils
+    <h2>Kitchen and Utensils</h2>
     
     <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Animation />

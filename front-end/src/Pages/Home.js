@@ -90,12 +90,12 @@ function Home() {
       </Card.Body>
     </Card>
     <br/>
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
+    {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
     <Button variant="success"><Animation /></Button>
-      </div>
+      </div> */}
       
       <br/>
-<div className="first-image-container">
+<div style={{ display: 'flex', justifyContent: 'center' }}>
       <ImageList sx={{ width: 390, height: 450 }} cols={3} variant="woven" rowHeight={164}>
       {itemData2.map((item) => (
         <ImageListItem key={item.img}>
@@ -140,7 +140,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </div>
     <hr/>
     
-
+<div style={{ display: 'flex', justifyContent: 'center' }}>
     <ImageList sx={{ width: 390, height: 450 }}  cols={3} gap={8}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
@@ -153,6 +153,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         </ImageListItem>
       ))}
     </ImageList>
+    </div>
  
       <br/>
       <div style={{ justifyContent: 'center' }}>
@@ -183,17 +184,17 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         </Card.Text> */}
         <Button variant="success"><a href="https://amzn.to/3muOPU8"><b>$46.97 </b><span font-size="5px"><del></del></span></a></Button>
       </Card.Body>
-      <Card.Footer className="text-muted">2 days ago</Card.Footer>
+      <Card.Footer className="text-muted">Free delivery</Card.Footer>
     </Card>
     <hr/>
     <div style={{ display: 'flex', justifyContent: 'center' }}>
     <Button variant="success"><Animation /></Button>
       </div>
-
+<hr/>
     <iframe width="100%" height="251" src="https://www.youtube.com/embed/pz88bqPocWI" title="Amazon Best Kitchen Gadgets For Every Home #18 🏠Appliances, Makeup, Smart Inventions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <hr/>
     <Card className="text-center">
-      <Card.Header>15% Off </Card.Header>
+      <Card.Header>Up to 15% Off all items!! </Card.Header>
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71IuBrKaiAL._AC_SL1500_.jpg" />
       <Card.Body>
         <Card.Title>Levotar LED Desk Lamp for Home Office</Card.Title>
@@ -289,6 +290,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
    <div style={{ display: 'flex', justifyContent: 'center' }}>
    <Button variant="success"><Animation /></Button>
       </div>
+      <hr/>
 <div style ={{display: 'flex', justifyContent: 'center' }}>
    <Card style={{ width: '28rem' }}>
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/81c7cWWOycL._AC_SL1500_.jpg" />
@@ -313,6 +315,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       {/* <Card.Header><Button variant="success">Shop Smart, Shop Ahead 🤩!</Button></Card.Header> */}
       <Card.Body>
         <Card.Title><Button variant="success"><Animation /></Button></Card.Title>
+        <hr/>
         <Card.Text>
         <Carousel fade>
       <Carousel.Item interval={2000}>
@@ -381,9 +384,9 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
 
     <div className="footer-wrapper" >
     <Button variant="success"><h3>Adidas Sportswear</h3></Button>
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
+    {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Animation />
-      </div>
+      </div> */}
     {/* <Button variant="contained">All that you are.</Button>
      */}
      <img height="50px"  width="100%" src="https://m.media-amazon.com/images/S/stores-image-uploads-na-prod/1/AmazonStores/ATVPDKIKX0DER/2e9daadbb920e616d81468b2d3457db1.w3000.h600._CR0%2C0%2C3000%2C600_SX3000_.jpg"></img>
@@ -400,7 +403,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         </Card.Footer>
       </Card>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
+      <Card.Title><Button variant="success"><Animation /></Button></Card.Title>
       </div>
       <Card.Link href="#"><Button variant="success">TOP🔝</Button></Card.Link>
     </div>
