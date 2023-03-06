@@ -27,11 +27,11 @@ function Home() {
       
       <Card.Body>
         <Card.Text>Looking for great deals on high-quality<img src="https://cdn-icons-png.flaticon.com/512/9756/9756673.png" width="30px" height="30px"></img> products? Look no further than<img width="30px" height="30px" src="https://cdn-icons-png.flaticon.com/512/324/324999.png"></img>  <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Button variant="success"><Animation /></Button>
+      {/* <Button variant="success"><Animation /></Button> */}
       </div></Card.Text>
-        <hr/>
+        
         <Card.Text><Button className="header-button" variant="success">Shop smarter, shop Ahead <img src="https://cdn-icons-png.flaticon.com/512/9485/9485813.png" width="30px" height="30px"></img> </Button></Card.Text>
-        <hr/>
+        
         <Carousel fade>
       <Carousel.Item interval={2000}>
         <img
