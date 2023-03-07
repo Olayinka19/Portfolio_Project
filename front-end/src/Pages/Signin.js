@@ -7,7 +7,8 @@ import GoogleButton from 'react-google-button'
 // import { UserAuth } from '../context/AuthContext';
 import { UserAuth } from '../Context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-// import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import Animation from "../Components/Animation";
+
 
 const Signin = () => {
   const { googleSignIn, user } = UserAuth();
@@ -31,17 +32,19 @@ const Signin = () => {
     <div className='p-2'>
             <div className="container">
   
-    <div lassName="border border-dark">
+    <div className="border border-dark">
       {/* <h1>Sign in</h1> */}
       <br></br>
-      <Card>
-      <Card.Header as="h5">Sign In</Card.Header>
+      <Card className="container">
+      <Card.Header as="h5"><div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Animation />
+      </div></Card.Header>
       <Card.Body>
-        <Card.Title>Create an Account </Card.Title>
-        <Card.Text>
-          With supporting text below as a natural lead-in to additional content.
-        </Card.Text>
-        <Button variant="primary"><GoogleButton onClick={handleGoogleSignIn} /></Button>
+        <Card.Title>Shop smarter, Shop Ahead</Card.Title>
+        {/* <Card.Text>
+          Shop smart Shop Ahead
+        </Card.Text> */}
+        <Button variant="success"><GoogleButton onClick={handleGoogleSignIn} /></Button>
       </Card.Body>
     </Card>
       <div className='signin'>

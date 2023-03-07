@@ -11,6 +11,7 @@ import Container from "react-bootstrap/Container";
 import { UserAuth } from "../Context/AuthContext";
 // import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Ahead6 from './Images/Ahead6.png'
 import Ahead from './Images/Ahead.png'
 import logo6 from './Images/logo6.png'
 
@@ -62,7 +63,7 @@ export default function NavBar() {
                     ) : (
                       <Link to="/">
                         <img
-                          src={Ahead}
+                          src={Ahead6}
                           width="65px"
                           height="40px"
                           border-radius= "17px"

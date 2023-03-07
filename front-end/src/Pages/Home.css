@@ -43,6 +43,7 @@
 }
 .container{
     display: flex;
+    background-color: #DDE1DE;
     color:rgb(14, 14, 14)!important;
     justify-content: space-evenly;
     -o-table-baseline: inherit;
