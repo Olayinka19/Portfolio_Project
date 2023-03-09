@@ -551,6 +551,10 @@ h1 {
 .first-image-container{
   width: fit-content;
 }
+.card-img-top{
+  width:"50px";
+  height:"50px";
+}
 }
 /* .products{
   white-space: nowrap; 

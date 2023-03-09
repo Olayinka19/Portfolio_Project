@@ -11,7 +11,7 @@ function Women() {
       <Animation />
       </div>
     <Card>
-      <Card.Header as="h5" style={{ display: 'flex', justifyContent: 'center' }}>Womens Collection</Card.Header>
+      <Card.Header as="h5" style={{ display: 'flex', justifyContent: 'center' }}>Womens's Fashion</Card.Header>
       <Card.Body>
         {/* <Card.Title>Higly Rated and well-priced </Card.Title> */}
         <Figure>

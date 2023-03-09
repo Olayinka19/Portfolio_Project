@@ -40,7 +40,7 @@ export default function NavBar() {
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="side" className="offCanavNav"
+              placement="end" className="offCanavNav"
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
@@ -74,31 +74,58 @@ export default function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Link to="/"><Button variant="success">Home</Button></Link>
+                  <Link to="/"><img src="https://img.freepik.com/free-vector/eco-leaf-house-outline_78370-651.jpg?w=1060&t=st=1678330740~exp=1678331340~hmac=ec9d23707321d650bc4576993fc1540bab66f315bda05b641fc2d0bdd4334166" width="45px" height="45px"></img>Home</Link>
                   <hr/>
-                  <Link to="/About"><Button variant="success">Explore</Button></Link>
+                  <Link to="/About"><img src="https://img.freepik.com/free-vector/illustration-binocular_53876-5600.jpg?w=1380&t=st=1678339096~exp=1678339696~hmac=fb460f8807a08c479c79a3ff512a70cd3cfdf5087018a66df18ee15d547ba999" width="45px" height="45px"></img>Explore</Link>
                   <NavDropdown
                     title="Categories"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
                     
                     <NavDropdown.Item>
-                    <Link to="/Developer"><Button variant="outlined">Developer</Button></Link>
+                    <Link to="/Developer"><Button variant="outlined"><img src="https://img.freepik.com/free-vector/coding-round-composition_1284-40752.jpg?w=1060&t=st=1678332608~exp=1678333208~hmac=bcc617f8837143a1bb138a33c7c3481d81510689b16f5afc0f765a1066578b5d" width="45px" height="45px"></img>Developer</Button></Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                    <Link to="/Men"><Button variant="outlined">Men</Button></Link>
+                    <Link to="/Men"><Button variant="outlined"><img src="https://img.freepik.com/premium-psd/workwear-mockup_353595-243.jpg?w=1060" width="45px" height="45px"></img>Men Clothes</Button></Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item >
-                    <Link to="/Women"><Button variant="outlined">Women</Button></Link></NavDropdown.Item>
+                    <Link to="/Women"><Button variant="outlined"><img src="https://img.freepik.com/premium-psd/apparel-mockup_353595-198.jpg?w=1060" width="45px" height="45px"></img>Women</Button></Link></NavDropdown.Item>
         
                     <NavDropdown.Item>
-                    <Link to="/Food"><Button variant="outlined">Food</Button></Link>
+                    <Link to="/Food"><Button variant="outlined"><img src=" https://img.freepik.com/free-vector/flat-background-with-double-burger-tasty-ingredients_23-2147635675.jpg?w=1060&t=st=1678332132~exp=1678332732~hmac=7fd25af3c65efc62882ff3150a57df02d16e3792cafa70d4a069397841481fdf" width="45px" height="45px"></img>Food</Button></Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                    <Link to="/Electronics"><Button variant="outlined">Electronics</Button></Link>
+                    <Link to="/Electronics"><Button variant="outlined"><img src="https://img.freepik.com/premium-psd/3d-render-low-poly-compute-4k-resolution_517414-5.jpg?w=1060" width="45px" height="45px"></img>Electronics</Button></Link>
                     </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Bags"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/58/58047.png?w=1380&t=st=1678335615~exp=1678336215~hmac=fdd0e95503de02f7a5d86fa247aec79ea548b7df8099a0c8320f798d4e5cff7f" width="45px" height="45px"></img>Bags</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Education_office"><Button variant="outlined"><img src="https://img.freepik.com/free-vector/isometric-building-white-background_1308-92994.jpg?w=1060&t=st=1678336001~exp=1678336601~hmac=100c333e0e8cc099f258290b54cdd4ef9ec194d49b320133963b6f8ffe0f4e3e" width="45px" height="45px"></img>Education_Office</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Health_beauty"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/107/107780.png?w=1380&t=st=1678336344~exp=1678336944~hmac=ea28fccd1f594bc6451d92787534aa41e728df5310911f004a998f87676b915c" width="45px" height="45px"></img>Health , Beauty & Hair</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Jewelry_accessories"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/68/68458.png?w=1380&t=st=1678336613~exp=1678337213~hmac=05c6e620394a6c41b312a33fb1f64d30b4fdc905c9ef026975c7280fce3418da" width="45px" height="45px"></img>Jewelry_accessories</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Sports_outdoor"><Button variant="outlined"><img src="https://img.freepik.com/free-vector/box-full-sport-equipments_1308-37207.jpg?w=2000&t=st=1678336868~exp=1678337468~hmac=eb8a28d74ca9bd954dc2c8a2ffc49097be2ef006ca647471b72af062cbe5e9bf" width="45px" height="45px"></img>Outdoor Fun & Sports</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Travel"><Button variant="outlined"><img src="https://img.freepik.com/free-vector/travel-background_23-2148042977.jpg?w=1380&t=st=1678337206~exp=1678337806~hmac=b16ce99d0f6d733cf83092d6a9bc83a85bcef5f1d9e0a2f8c15337ca8a8e31e1" width="45px" height="45px"></img>Travels</Button></Link>
+                    </NavDropdown.Item>
+                    {/* <NavDropdown.Item>
+                    <Link to="/Electronics"><Button variant="outlined"><img src="https://img.freepik.com/premium-psd/3d-render-low-poly-compute-4k-resolution_517414-5.jpg?w=1060" width="45px" height="45px"></img>Electronics</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Electronics"><Button variant="outlined"><img src="https://img.freepik.com/premium-psd/3d-render-low-poly-compute-4k-resolution_517414-5.jpg?w=1060" width="45px" height="45px"></img>Electronics</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Electronics"><Button variant="outlined"><img src="https://img.freepik.com/premium-psd/3d-render-low-poly-compute-4k-resolution_517414-5.jpg?w=1060" width="45px" height="45px"></img>Electronics</Button></Link>
+                    </NavDropdown.Item> */}
                     <NavDropdown.Divider />
-                    <NavDropdown.Item ><Link to="/Kitchen">kitchen & Utensils</Link></NavDropdown.Item> 
+                    <NavDropdown.Item ><Link to="/Kitchen"><img src="https://img.freepik.com/free-vector/casserole-pot_1284-11444.jpg?w=1060&t=st=1678332411~exp=1678333011~hmac=08540d0ce9eea7b3102ff22b10f0740f5288eab590d021c936e30b7b6b94438a" width="45px" height="45px"></img>kitchen & Utensils</Link></NavDropdown.Item> 
                   </NavDropdown>
                   {/* <Link to="/Food"><Button variant="outlined">Food</Button></Link>
                   <hr/>
@@ -119,6 +146,7 @@ export default function NavBar() {
                     title="Account Settings"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
+                  <img src="https://img.freepik.com/premium-vector/human-symbol-3d-icon-user-business-symbology-website-profile_593228-130.jpg?w=1380" width="45px" height="45px"></img>
                     <NavDropdown.Item ><Link to="/Account">Account</Link></NavDropdown.Item>
                     <NavDropdown.Item>
                     <Link to="/Profile">Profile</Link>

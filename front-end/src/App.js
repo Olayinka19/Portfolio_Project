@@ -7,6 +7,15 @@ import Footer from "./Components/Footer";
 import FlexConn from "./Pages/FlexConn";
 // import About from "./Pages/About";
 import Men from './Components/Men';
+import Bags from './Components/Bags';
+// import Education_office from './Components/Education_office';
+import Education_office from './Components/Education_office';
+import Health_beauty from './Components/Health_beauty';
+import Jewelry_accessories from './Components/Jewelry_accessories';
+import Sports_outdoor from './Components/Sports_outdoor';
+import Travel from './Components/Travel';
+import Watches from './Components/Watches';
+// import Men from './Components/Men';
 import Women from './Components/Women';
 import Developer from './Components/Developer'
 import Electronics from './Components/Electronics';
@@ -37,7 +46,14 @@ function App() {
         <Route path="/FlexConnect" element={<FlexConn />} />
         <Route path="/About" element={<About />} />
         <Route path="/Account" element={<Account />} />
+        <Route path="/Bags" element={<Bags />} />
         <Route path="/Men" element={<Men />} />
+        <Route path="/Sports_outdoor" element={<Sports_outdoor />} />
+        <Route path="/Travel" element={<Travel />} />
+        <Route path="/Watches" element={<Watches />} />
+        <Route path="/Education_office" element={<Education_office />} />
+        <Route path="/Health_beauty" element={<Health_beauty />} />
+        <Route path="/Jewelry_accessories" element={<Jewelry_accessories />} />
         <Route path="/Developer" element={<Developer />} />
         <Route path="/Women" element={<Women />} />
         <Route path="/Electronics" element={<Electronics />} />

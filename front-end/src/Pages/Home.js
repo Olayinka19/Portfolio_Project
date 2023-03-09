@@ -157,6 +157,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
  
       <br/>
       <div style={{ justifyContent: 'center' }}>
+      <div>
     <Card className="text-center">
       <Card.Header><h1><Button variant="success"><h2>Limited Time Offer 10 - 50% off all items!!🤯</h2></Button></h1></Card.Header>
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/8101kmkFW0L._AC_SL1500_.jpg" />
@@ -165,10 +166,11 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="success"><a href="https://amzn.to/3SRUBLG"><b>$350 </b><span font-size="5px"><del>200</del></span></a></Button>
+        <Button variant="success"><a href="https://amzn.to/3SRUBLG"><b>$350 </b><span font-size="5px"></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">7 days ago</Card.Footer>
     </Card>
+    </div>
 
     <div style={{ display: 'flex', justifyContent: 'center' }}>
     <Button variant="success"><Animation /></Button>
@@ -314,7 +316,8 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
    <Card className="text-center">
       {/* <Card.Header><Button variant="success">Shop Smart, Shop Ahead 🤩!</Button></Card.Header> */}
       <Card.Body>
-        <Card.Title><Button variant="success"><Animation /></Button></Card.Title>
+        {/* <Card.Title><Button variant="success"><Animation /></Button></Card.Title> */}
+        <h2>Trending Now</h2>
         <hr/>
         <Card.Text>
         <Carousel fade>
@@ -359,7 +362,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       </Carousel.Item>
     </Carousel>
         </Card.Text>
-        <Button variant="success">Explore</Button>
+        <Button variant="success"><a href="https://amzn.to/3ypXAkY"><h3>Explore</h3></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">12 days ago</Card.Footer>
     </Card>
@@ -383,7 +386,8 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     
 
     <div className="footer-wrapper" >
-    <Button variant="success"><h3>Adidas Sportswear</h3></Button>
+    <Button variant="success"><a href="https://amzn.to/3YvhG7T"><h3>Adidas Sportswear</h3></a></Button>
+    
     {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Animation />
       </div> */}

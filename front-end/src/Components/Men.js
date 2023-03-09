@@ -35,7 +35,7 @@ function Men() {
             src="https://m.media-amazon.com/images/I/61N9w7ta6gL._AC_UL1500_.jpg"
           />
           <Figure.Caption style={{ display: 'flex', justifyContent: 'center' }}>
-          <Button variant="success"><a href="https://amzn.to/3EXLKlK"><b>$18.99 </b><span font-size="5px"><del>75.00</del></span></a></Button>
+          <Button variant="success"><a href="https://amzn.to/3EXLKlK"><b>$18.99 </b><span font-size="5px"><del>20.00</del></span></a></Button>
           </Figure.Caption>
       </Card.Body>
     </Card>
@@ -151,7 +151,7 @@ function Men() {
           />
          
           <Figure.Caption>
-          <Button variant="success"><a href="https://amzn.to/3yczMRr"><b>$31.92 </b><span font-size="5px"><del>60.00</del></span></a></Button>
+          <Button variant="success"><a href="https://amzn.to/3yczMRr"><b>$31.92 </b><span font-size="5px"><del>40.00</del></span></a></Button>
           </Figure.Caption>
         </Figure>
         <hr/>
@@ -178,7 +178,7 @@ function Men() {
           />
          
           <Figure.Caption>
-          <Button variant="success"><a href="https://amzn.to/3Jar3W9"><b>$117.50 </b><span font-size="5px"><del>210.49</del></span></a></Button>
+          <Button variant="success"><a href="https://amzn.to/3Jar3W9"><b>$117.50 </b><span font-size="5px"><del>120.49</del></span></a></Button>
           </Figure.Caption>
         </Figure>
         <hr/>
