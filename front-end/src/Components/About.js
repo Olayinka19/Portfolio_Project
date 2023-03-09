@@ -32,7 +32,7 @@ function About() {
       <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Animation />
       </div>
-      <h3>The Top 5 Best-selling Tech Products on Amazon Right Now.
+      <h3> Best-selling Products on Amazon Right Now.
 </h3>
 <Accordion>
       <Accordion.Item eventKey="0">
@@ -75,6 +75,54 @@ function About() {
         <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
         </Accordion.Body>
       </Accordion.Item>
+      <Accordion.Item eventKey="5">
+        <Accordion.Header>VMSTR 8 Pack Travel Vacuum Storage Bags<img src="https://m.media-amazon.com/images/I/71yiv-PTFbL._AC_SL1500_.jpg" width="40px" height="40px"></img></Accordion.Header>
+        <Accordion.Body>
+        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
+        <img src="https://m.media-amazon.com/images/I/71yiv-PTFbL._AC_SL1500_.jpg" width="120px" height="120px"></img>
+        <Button><a href="https://amzn.to/3ZT4KtH" target="_blank" rel="noopener">Learn More</a></Button>
+        </Accordion.Body>
+      </Accordion.Item>
+      {/* <Accordion.Item eventKey="4">
+        <Accordion.Header>Logitech C920s HD Pro Webcam<img src="https://cdn-icons-png.flaticon.com/512/3037/3037951.png" width="40px" height="40px"></img></Accordion.Header>
+        <Accordion.Body>
+        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
+        <img src="https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SX679_.jpg" width="120px" height="120px"></img>
+        <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="4">
+        <Accordion.Header>Logitech C920s HD Pro Webcam<img src="https://cdn-icons-png.flaticon.com/512/3037/3037951.png" width="40px" height="40px"></img></Accordion.Header>
+        <Accordion.Body>
+        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
+        <img src="https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SX679_.jpg" width="120px" height="120px"></img>
+        <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="4">
+        <Accordion.Header>Logitech C920s HD Pro Webcam<img src="https://cdn-icons-png.flaticon.com/512/3037/3037951.png" width="40px" height="40px"></img></Accordion.Header>
+        <Accordion.Body>
+        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
+        <img src="https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SX679_.jpg" width="120px" height="120px"></img>
+        <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="4">
+        <Accordion.Header>Logitech C920s HD Pro Webcam<img src="https://cdn-icons-png.flaticon.com/512/3037/3037951.png" width="40px" height="40px"></img></Accordion.Header>
+        <Accordion.Body>
+        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
+        <img src="https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SX679_.jpg" width="120px" height="120px"></img>
+        <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="4">
+        <Accordion.Header>Logitech C920s HD Pro Webcam<img src="https://cdn-icons-png.flaticon.com/512/3037/3037951.png" width="40px" height="40px"></img></Accordion.Header>
+        <Accordion.Body>
+        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
+        <img src="https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SX679_.jpg" width="120px" height="120px"></img>
+        <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
+        </Accordion.Body>
+      </Accordion.Item> */}
       {/* <Accordion.Item eventKey="5">
         <Accordion.Header>Sonos One<img src="https://cdn-icons-png.flaticon.com/512/3162/3162383.png" width="40px" height="40px"></img></Accordion.Header>
         <Accordion.Body>

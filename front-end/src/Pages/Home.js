@@ -166,7 +166,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="success"><a href="https://amzn.to/3SRUBLG"><b>$350 </b><span font-size="5px"></span></a></Button>
+        <Button variant="success"><a href="https://amzn.to/3YBfgEG"><b>$22.99 </b><span font-size="5px"></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">7 days ago</Card.Footer>
     </Card>
@@ -176,15 +176,15 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     <Button variant="success"><Animation /></Button>
       </div>
     <Card className="text-center">
-      <Card.Header><h1>50% Flash Sale Frenzy</h1></Card.Header>
+      <Card.Header><h1>10-50% Flash Sale Frenzy</h1></Card.Header>
       
-      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71rtUgIGEhL._AC_SX679_.jpg" />
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/81tr1QG9brL._AC_SL1500_.jpg" />
       <Card.Body>
-        <Card.Title>BOHON LED Desk Lamp</Card.Title>
+        <Card.Title>Shopping Bags Large 50LBS</Card.Title>
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="success"><a href="https://amzn.to/3muOPU8"><b>$46.97 </b><span font-size="5px"><del></del></span></a></Button>
+        <Button variant="success"><a href="https://amzn.to/3ZUFlzL"><b>$16.99 </b><span font-size="5px"><del>$22.99</del></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">Free delivery</Card.Footer>
     </Card>
@@ -196,14 +196,14 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     <iframe width="100%" height="251" src="https://www.youtube.com/embed/pz88bqPocWI" title="Amazon Best Kitchen Gadgets For Every Home #18 🏠Appliances, Makeup, Smart Inventions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <hr/>
     <Card className="text-center">
-      <Card.Header>Up to 15% Off all items!! </Card.Header>
-      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71IuBrKaiAL._AC_SL1500_.jpg" />
+      <Card.Header> -58% Off Deal! </Card.Header>
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71jT+q-9oXL._AC_SL1500_.jpg" />
       <Card.Body>
-        <Card.Title>Levotar LED Desk Lamp for Home Office</Card.Title>
+        <Card.Title>MegaWise 80kpa Powerful but Compact Vacuum Sealer Machine</Card.Title>
         {/* <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text> */}
-        <Button variant="success"><a href="https://amzn.to/3EWMebG"><b>$56.08 </b><span font-size="5px"><del>65.98</del></span></a></Button>
+        <Button variant="warning"><a href="https://amzn.to/3EWMebG"><b>$37.99 </b><span font-size="5px"><del>$89.99</del></span></a></Button>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
@@ -324,7 +324,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       <Carousel.Item interval={2000}>
         <img
           className="first-image" 
-          src="https://img.freepik.com/free-photo/side-view-meat-kebab-with-grilled-potatoes-vegetables-with-sauce-fire-board_141793-5006.jpg?t=st=1675670177~exp=1675670777~hmac=e3d7d0194af5a99fe30e2474a4f5abb051c2126e4db8b5bd51252ca8bf440327"
+          src="https://m.media-amazon.com/images/I/718RFxZmX9L._SL1000_.jpg"
           alt="First slide"
         />
         
