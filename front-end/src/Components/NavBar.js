@@ -86,6 +86,36 @@ export default function NavBar() {
                     <Link to="/Developer"><Button variant="outlined"><img src="https://img.freepik.com/free-vector/coding-round-composition_1284-40752.jpg?w=1060&t=st=1678332608~exp=1678333208~hmac=bcc617f8837143a1bb138a33c7c3481d81510689b16f5afc0f765a1066578b5d" width="45px" height="45px"></img>Developer</Button></Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
+                    <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" width="45px" height="45px"></img>Computers</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" width="45px" height="45px"></img>Computers</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" width="45px" height="45px"></img>Computers</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" width="45px" height="45px"></img>Computers</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" width="45px" height="45px"></img>Computers</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" width="45px" height="45px"></img>Computers</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" width="45px" height="45px"></img>Computers</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" width="45px" height="45px"></img>Computers</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" width="45px" height="45px"></img>Computers</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                    <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" width="45px" height="45px"></img>Computers</Button></Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
                     <Link to="/Men"><Button variant="outlined"><img src="https://img.freepik.com/premium-psd/workwear-mockup_353595-243.jpg?w=1060" width="45px" height="45px"></img>Men Clothes</Button></Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item >

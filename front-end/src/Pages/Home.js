@@ -22,7 +22,7 @@ function Home() {
     <Card className="home-container text-center">
       
       <Card.Body>
-        <Card.Text>Looking for great deals on high-quality<img src="https://cdn-icons-png.flaticon.com/512/9756/9756673.png" width="30px" height="30px"></img> products? Look no further than<img width="30px" height="30px" src="https://cdn-icons-png.flaticon.com/512/324/324999.png"></img>  <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <Card.Text>Looking for great Tech deals on high-quality<img src="https://cdn-icons-png.flaticon.com/512/9756/9756673.png" width="30px" height="30px"></img> products? Look no further than<img width="30px" height="30px" src="https://cdn-icons-png.flaticon.com/512/324/324999.png"></img>  <div style={{ display: 'flex', justifyContent: 'center' }}>
       {/* <Button variant="success"><Animation /></Button> */}
       </div></Card.Text>
         

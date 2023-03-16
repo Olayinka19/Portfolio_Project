@@ -31,6 +31,14 @@ import UserAddressForm from "./Pages/UserAddressForm";
 import './App.css';
 import PortfolioDetails from "./Components/PortfolioDetails";
 import DocsNeeded from "./Pages/DocsNeeded";
+import Computers from "./Components/Computers";
+import SmartHome from "./Components/SmartHome";
+import Gaming from "./Components/Gaming";
+import Software from "./Components/Software";
+import Mobile_devices from "./Components/Mobile_devices";
+import Networking_devices from "./Components/Networking_devices";
+import Home_devices from "./Components/Home_devices";
+import Audio_videos from "./Components/Audio_videos";
 // import Food from "./Components/Food";
 
 function App() {
@@ -63,6 +71,14 @@ function App() {
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Food" element={<Food/>} />
         <Route path="/kitchen" element={<Kitchen/>} />
+        <Route path="/Computers" element={<Computers/>} />
+        <Route path="/Audio_videos" element={<Audio_videos/>} />
+        <Route path="/Gaming" element={<Gaming/>} />
+        <Route path="/Home_devices" element={<Home_devices/>} />
+        <Route path="/Networking_devices" element={<Networking_devices/>} />
+        <Route path="/Software" element={<Software/>} />
+        <Route path="/Mobile_devices" element={<Mobile_devices/>} />
+        <Route path="/Computers" element={<Computers/>} />
         {/* <Route path="/Food" element={<Food />} /> */}
       
         <Route path="*" element={<FourOFour />} />
