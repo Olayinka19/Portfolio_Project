@@ -2,13 +2,9 @@ import { React } from "react";
 // import "animate.css";
 import "./Home.css";
 import Accordion from 'react-bootstrap/Accordion';
-// import axios from "axios";
-// import { ListGroup } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 // import CardGroup from 'react-bootstrap/CardGroup';
 import Card from "react-bootstrap/Card";
-// import Button from '@mui/material/Button';
-// import Button from "react-bootstrap/Button";
 import Button from 'react-bootstrap/Button';
 import Animation from "../Components/Animation";
 
@@ -116,6 +112,7 @@ function Home() {
       <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Button variant="success"><Animation /></Button>
       </div>
+      <br />
       <div style ={{display: 'flex', justifyContent: 'center' }}>
    <Card style={{ width: '48rem' }}>
       <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91y1S6m0+JS._AC_SL1500_.jpg" />
@@ -132,7 +129,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       </Card.Body>
     </Card>
     </div>
-    <Button variant="success"><h1>10-50% off all Items!!!!🤯</h1></Button>
+    {/* <Button variant="success"><h1>10-50% off all Items!!!!🤯</h1></Button> */}
     <hr/>
     <div style ={{display: 'flex', justifyContent: 'center' }}>
     
@@ -156,11 +153,12 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </div>
  
       <br/>
-      <div style={{ justifyContent: 'center' }}>
       <div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
     <Card className="text-center">
       <Card.Header><h1><Button variant="success"><h2>Limited Time Offer 10 - 50% off all items!!🤯</h2></Button></h1></Card.Header>
-      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/8101kmkFW0L._AC_SL1500_.jpg" />
+      {/* <Card.Img variant="top" src="https://m.media-amazon.com/images/I/8101kmkFW0L._AC_SL1500_.jpg" /> */}
+      <img width="100%" height="400px" className='blog' src="https://m.media-amazon.com/images/I/8101kmkFW0L._AC_SL1500_.jpg"></img>
       <Card.Body>
         <Card.Title>Special Sales Ending Soon!!</Card.Title>
         {/* <Card.Text>
@@ -171,47 +169,26 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       <Card.Footer className="text-muted">7 days ago</Card.Footer>
     </Card>
     </div>
+    <br/>
+      <br/>
 
+  
     <div style={{ display: 'flex', justifyContent: 'center' }}>
     <Button variant="success"><Animation /></Button>
       </div>
-    <Card className="text-center">
-      <Card.Header><h1>10-50% Flash Sale Frenzy</h1></Card.Header>
-      
-      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/81tr1QG9brL._AC_SL1500_.jpg" />
-      <Card.Body>
-        <Card.Title>Shopping Bags Large 50LBS</Card.Title>
-        {/* <Card.Text>
-          With supporting text below as a natural lead-in to additional content.
-        </Card.Text> */}
-        <Button variant="success"><a href="https://amzn.to/3ZUFlzL"><b>$16.99 </b><span font-size="5px"><del>$22.99</del></span></a></Button>
-      </Card.Body>
-      <Card.Footer className="text-muted">Free delivery</Card.Footer>
-    </Card>
-    <hr/>
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <Button variant="success"><Animation /></Button>
-      </div>
-<hr/>
-    <iframe width="100%" height="251" src="https://www.youtube.com/embed/pz88bqPocWI" title="Amazon Best Kitchen Gadgets For Every Home #18 🏠Appliances, Makeup, Smart Inventions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <hr/>
-    <Card className="text-center">
-      <Card.Header> -58% Off Deal! </Card.Header>
-      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71jT+q-9oXL._AC_SL1500_.jpg" />
-      <Card.Body>
-        <Card.Title>MegaWise 80kpa Powerful but Compact Vacuum Sealer Machine</Card.Title>
-        {/* <Card.Text>
-          With supporting text below as a natural lead-in to additional content.
-        </Card.Text> */}
-        <Button variant="warning"><a href="https://amzn.to/3EWMebG"><b>$37.99 </b><span font-size="5px"><del>$89.99</del></span></a></Button>
-      </Card.Body>
-      <Card.Footer className="text-muted">2 days ago</Card.Footer>
-    </Card>
+      <marquee direction="up" style={{ display: 'flex', justifyContent: 'center',  borderRadius: '50%' }}>
+      <img
+            width="171"
+            height="180"
+            alt="171x180"
+            src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F312b1033-01d7-4b1c-a075-64ca0c79b05c%2FOlayinka_Fakanbi.jpg?id=a5b8ac40-ed54-464d-9702-7dd5c24a0e22&table=block&spaceId=e2735e9b-8fe9-4c16-bdc1-be142cd1014e&width=2000&userId=1c56301b-4ffe-419f-b2c0-5424d42c657c&cache=v2"
+          />
+      </marquee>
 
 
     </div>
     <br></br>
-    <hr/>
+   
     <div style={{ display: 'flex', justifyContent: 'center' }}>
     <Button variant="success"><Animation /></Button>
       </div>
@@ -235,57 +212,18 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
 <hr></hr>
  {/* <br/> */}
  <br/>
-<Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91pEkoBJiwL._AC_SX679_.jpg" />
-        <Card.Body>
-          <Card.Title>NSdirect 36 inches Round Coffee Table</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 30 mins ago</small>
-        </Card.Footer>
-      </Card>
+
       <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Button variant="success"><Animation /></Button>
       </div>
     <hr></hr>
    <div className="container">
    <div>
-   <Card>
-        <Card.Body>
-          <Card.Text>
-          Deal of the Day
-            20% off  Sale!!!
-          </Card.Text>
-        </Card.Body>
-        <Card.Img variant="bottom" src="https://m.media-amazon.com/images/I/71m-r6CHobL._AC_UL1500_.jpg" />
-      </Card>
+  
       <br />
-      <Card>
-        <Card.Body>
-          <Card.Text>
-            Adidas
-          </Card.Text>
-        </Card.Body>
-        <Card.Img variant="bottom" src="https://m.media-amazon.com/images/S/mms-media-storage-prod/final/BrandPosts/brandPosts/b13c180d-c494-4596-b5c6-9ddd1f83ccf7/bc145784-3faf-4242-8788-4c25e2c3937f/media._SL850_FMjpg_.jpeg" />
-      </Card>
+    
    </div>
-   <Card className="text-center">
-      <Card.Header>DREAM PAIRS</Card.Header>
-      <Card.Body>
-        <Card.Title>Soccer Shoes</Card.Title>
-        <Card.Text>
-        Men's Firm Ground Soccer Cleats
-        </Card.Text>
-        <Card.Img variant="bottom" src="https://m.media-amazon.com/images/I/81-QcRvPZlL._AC_UL1500_.jpg" />
-        <Button variant="success"><b>$37.99 </b><span fontSize="10px"><del>$42.99</del></span></Button>
-      </Card.Body>
-      <Card.Img variant="bottom" src="https://m.media-amazon.com/images/I/61BeIFQYb+L._AC_SX679_.jpg" />
-      {/* <Card.Footer className="text-muted">2 days ago</Card.Footer> */} 
-    </Card>
+
 
    </div>
    <hr></hr>
@@ -302,11 +240,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
         Fabric Upholstered Headboard and Wooden Slats Support
         </Card.Text>
       </Card.Body>
-      {/* <ListGroup className="list-group-flush">
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-      </ListGroup> */}
+      
       <Card.Body>
         <Card.Link href="https://amzn.to/3ZALVva"><Button variant="success">Learn More</Button></Card.Link>
         <Card.Link href="#">TOP🔝</Card.Link>
@@ -366,42 +300,18 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
       </Card.Body>
       <Card.Footer className="text-muted">12 days ago</Card.Footer>
     </Card>
-<div style ={{display: 'flex', justifyContent: 'center' }}>
-    <Card className="bg-dark text-white" style={{ width: '48rem' }}>
-      <Card.Img className="adidas-image" src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/48f8cd8e-e36e-4c10-8090-93b6028923f6._SL850_FMjpg_.jpg" alt="Card image" />
-      <Card.ImgOverlay>
-      
-      </Card.ImgOverlay>
-    </Card>
-    <Card className="bg-dark text-white" style={{ width: '48rem' }}>
-      <Card.Img  src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/bef41244-8c29-416d-a142-11fcc1605b8e._SL850_FMjpg_.jpg" alt="Card image" />
-      <Card.Img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/82a41677-a4de-42a8-9213-b38516fb452f._SL850_FMjpg_.jpg" alt="Card image" />
-      <Card.ImgOverlay>
-      
-      </Card.ImgOverlay>
-    </Card>
-    </div>
+
     
     
     
 
-    <div className="footer-wrapper" >
-    <Button variant="success"><a href="https://amzn.to/3YvhG7T"><h3>Adidas Sportswear</h3></a></Button>
-    
-    {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
-      </div> */}
-    {/* <Button variant="contained">All that you are.</Button>
-     */}
-     <img height="50px"  width="100%" src="https://m.media-amazon.com/images/S/stores-image-uploads-na-prod/1/AmazonStores/ATVPDKIKX0DER/2e9daadbb920e616d81468b2d3457db1.w3000.h600._CR0%2C0%2C3000%2C600_SX3000_.jpg"></img>
-    {/* <p></p> */}
+   
+   
     <div>
       
       <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/72f3d7a7-6557-4a45-8bb3-a1cf9f1d8c9b._SL850_FMjpg_.png" />
-        <Card.Body>
-          
-        </Card.Body>
+       
+        
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
@@ -413,8 +323,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </div>
     <hr></hr>
     
-    {/* <p>For general questions, contact me at <a href="mailto:olayinkafakanbi@pursuit.org" target="_blank" rel="noreferrer"><b>Olayinkafakanbi@pursuit.org</b></a> I'll get back to you within 1 business day. For business refereral and ther professional purposes.</p> */}
-    </div>
+  
     </div>
     </>
   );
