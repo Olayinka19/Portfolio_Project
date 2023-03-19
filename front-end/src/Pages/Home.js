@@ -4,10 +4,12 @@ import "./Home.css";
 import Accordion from 'react-bootstrap/Accordion';
 import Carousel from "react-bootstrap/Carousel";
 // import CardGroup from 'react-bootstrap/CardGroup';
-import Card from "react-bootstrap/Card";
+// import Card from "react-bootstrap/Card";
 import Button from 'react-bootstrap/Button';
+import { Card } from 'react-bootstrap';
 import Animation from "../Components/Animation";
-
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
@@ -91,6 +93,49 @@ function Home() {
       </div> */}
       
       <br/>
+
+      <div className='metaMask' style={{ display: 'flex', padding: "10px 10px" ,justifyContent: 'center' }}>
+    
+    {/* <Card>
+    <img src="https://m.media-amazon.com/images/I/614l-+dfoYL._AC_SL1200_.jpg"></img>
+    <Card.Header as="h5">Echo Show 10 (3rd Gen) | HD smart display with motion and Alexa | Charcoal</Card.Header>
+      
+  
+      <Button variant="success" className="connect">Click to learn more </Button>
+      </Card> */}
+      {/* <Card style={{ width: '28rem' }}>
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71iEZty7r2L._AC_SX679_.jpg" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+
+    <Card style={{ width: '28rem' }}>
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71iEZty7r2L._AC_SX679_.jpg" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card> */}
+      
+      
+    </div>
+
+    <br/>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Button variant="success"><Animation /></Button>
+      </div>
+      <br/>
+      <br/>
 <div style={{ display: 'flex', justifyContent: 'center' }}>
       <ImageList sx={{ width: 390, height: 450 }} cols={3} variant="woven" rowHeight={164}>
       {itemData2.map((item) => (
@@ -130,7 +175,7 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </Card>
     </div>
     {/* <Button variant="success"><h1>10-50% off all Items!!!!🤯</h1></Button> */}
-    <hr/>
+  <br/>
     <div style ={{display: 'flex', justifyContent: 'center' }}>
     
    <Button variant="success"><Animation /></Button> 
@@ -153,12 +198,19 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </div>
  
       <br/>
+      <Card>
+    <img src="https://m.media-amazon.com/images/I/71aARXewm6L._AC_SL1500_.jpg"></img>
+    <Card.Header as="h5">Echo Show 10 (3rd Gen) | HD smart display with motion and Alexa | Charcoal</Card.Header>
+      
+  
+      <Button variant="success" className="connect">Click to learn more </Button>
+      </Card>
       <div>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
     <Card className="text-center">
       <Card.Header><h1><Button variant="success"><h2>Limited Time Offer 10 - 50% off all items!!🤯</h2></Button></h1></Card.Header>
       {/* <Card.Img variant="top" src="https://m.media-amazon.com/images/I/8101kmkFW0L._AC_SL1500_.jpg" /> */}
-      <img width="100%" height="400px" className='blog' src="https://m.media-amazon.com/images/I/8101kmkFW0L._AC_SL1500_.jpg"></img>
+      <img width="100%" height="400px" className='blog' src="https://m.media-amazon.com/images/I/51FvlmhrF3L._AC_SL1500_.jpg"></img>
       <Card.Body>
         <Card.Title>Special Sales Ending Soon!!</Card.Title>
         {/* <Card.Text>

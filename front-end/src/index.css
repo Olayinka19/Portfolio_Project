@@ -488,7 +488,9 @@ h1 {
 .first-image-container{
   width: fit-content;
 }
-
+.card {
+  width:"10px !important"
+}
 }
 @media only screen and (min-device-width: 768px) and (max-device-height: 992px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
   .first-image{
@@ -578,6 +580,89 @@ h1 {
   content: "";
   clear: both;
   display: table;
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+.card {
+  width: 300px;
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'center';
+  position: relative;
+  flex-direction: 'column';
+  background-color: 'white';
+  border-radius: 10px;
+  box-shadow: '0px 0px 10px rgba(0, 0, 0, 0.1)';
+  height: 400px !important;
+  justify-content: center !important;
+  /*background-color: #de3163;
+  */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+
+}
+}
+
+
+
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  .card {
+    width: 100px;
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+    position: relative;
+    flex-direction: 'column';
+    background-color: 'white';
+    border-radius: 10px;
+    box-shadow: '0px 0px 10px rgba(0, 0, 0, 0.1)';
+    height: 400px !important;
+    justify-content: center !important;
+     background-color: #26054e;
+   
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  
+  }
+  
+  }
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+  /* .affiliate {
+    width: 500px !important;
+    height: 300px !important;
+  }
+   */
+   .card {
+    width: 500px;
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+    position: relative;
+    flex-direction: 'column';
+    background-color: 'white';
+    border-radius: 10px;
+    box-shadow: '0px 0px 10px rgba(0, 0, 0, 0.1)';
+    height: 400px !important;
+    justify-content: center !important;
+    background-color: #de3163;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  
+  }
 }
 
 
