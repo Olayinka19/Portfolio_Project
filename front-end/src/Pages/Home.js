@@ -12,12 +12,24 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import { styled } from '@mui/material/styles';
 
 
 const API = process.env.REACT_APP_API_URL;
 
 function Home() {
   
+
+  const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  }));
   return (
     <>
     <div>
@@ -93,7 +105,95 @@ function Home() {
       </div> */}
       
       <br/>
+{/* 
+      <Box
+      sx={{
+        width: 300,
+        height: 300,
+        backgroundColor: 'success.dark',
+        src="https://m.media-amazon.com/images/I/61LTZxSAhpL._AC_SX569_.jpg",
+        '&:hover': {
+          // backgroundColor: 'primary.main',
+          // opacity: [0.9, 0.8, 0.7],
+        },
+      }}
+    /> */}
+    <Card>
+      <Card.Body><h1>Featured Products</h1></Card.Body>
+    </Card>
+    {/* <Box
+      sx={{
+        display: 'flex',
+        '& > :not(style)': {
+          m: 1,
+          width: 128,
+          height: 128,
+          
+        },
+        
+      }}
+    >
+      <Paper variant="outlined" />
+      <Paper variant="outlined" square />
+    </Box> */}
+  
 
+
+
+    {/* <Grid container spacing={2}>
+  <Grid item xs={8}>
+    <Item>xs=8</Item>
+  </Grid>
+  <Grid item xs={4}>
+    <Item>xs=4</Item>
+  </Grid>
+  <Grid item xs={4}>
+    <Item>xs=4</Item>
+  </Grid>
+  <Grid item xs={8}>
+    <Item>xs=8</Item>
+  </Grid>
+</Grid> */}
+
+
+    <Box
+        component="img"
+        sx={{
+          height: 233,
+          display: 'flex',
+          width: 350,
+          maxHeight: { xs: 233, md: 167 },
+          maxWidth: { xs: 350, md: 250 },
+        }}
+        alt="The house from the offer."
+        src="https://m.media-amazon.com/images/I/71m2M+K5bqL._AC_SX679_.jpg"
+      />
+      <br/>
+        <Box
+        component="img"
+        sx={{
+          height: 233,
+          display: 'flex',
+          width: 350,
+          maxHeight: { xs: 233, md: 167 },
+          maxWidth: { xs: 350, md: 250 },
+        }}
+        alt="The house from the offer."
+        src="https://m.media-amazon.com/images/I/71iEZty7r2L._AC_SL1500_.jpg"
+      />
+      <br/>
+        <Box
+        component="img"
+        sx={{
+          height: 233,
+          display: 'flex',
+          width: 350,
+          maxHeight: { xs: 233, md: 167 },
+          maxWidth: { xs: 350, md: 250 },
+        }}
+        alt="The house from the offer."
+        src="https://m.media-amazon.com/images/I/51hs93VBL7L._AC_SL1000_.jpg"
+      />
       <div className='metaMask' style={{ display: 'flex', padding: "10px 10px" ,justifyContent: 'center' }}>
     
     {/* <Card>
@@ -135,6 +235,7 @@ function Home() {
       <Button variant="success"><Animation /></Button>
       </div>
       <br/>
+      
       <br/>
 <div style={{ display: 'flex', justifyContent: 'center' }}>
       <ImageList sx={{ width: 390, height: 450 }} cols={3} variant="woven" rowHeight={164}>
@@ -154,6 +255,39 @@ function Home() {
     
   
       <hr/>
+
+      {/* <div class="row">
+  <div class="column">
+    <img src="https://m.media-amazon.com/images/I/61LTZxSAhpL._AC_SL1000_.jpg" alt="Snow" style="width:100%"> </img>
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%"> </img>
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%"> </img>
+  </div>
+</div> */}
+<Box
+      sx={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        '& > :not(style)': {
+          m: 1,
+          width: 128,
+          height: 128,
+        },
+      }}
+    >
+      <Paper elevation={0} />
+      <Paper />
+      <Paper elevation={3} />
+    </Box>
+
+
+
+
+
+
       <div style={{ display: 'flex', justifyContent: 'center' }}>
       <Button variant="success"><Animation /></Button>
       </div>
