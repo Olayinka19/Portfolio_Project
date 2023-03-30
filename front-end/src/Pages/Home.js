@@ -16,12 +16,37 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
-
+// import Swiper, { Navigation, Pagination } from 'swiper';
+// import { SwiperSlide } from 'swiper/react';
+// import { EffectFade } from 'swiper';
+// import { styled } from '@mui/material/styles';
+// import Grid from '@mui/material/Grid';
+// import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
+import ButtonBase from '@mui/material/ButtonBase';
+import Rating from '@mui/material/Rating';
+// import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+// import { styled } from '@mui/material/styles';
 
 const API = process.env.REACT_APP_API_URL;
 
 function Home() {
   
+  const ItemFirst = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  }));
+  const ItemSecond = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  }));
 
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -100,24 +125,10 @@ function Home() {
       </Card.Body>
     </Card>
     <br/>
-    {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <Button variant="success"><Animation /></Button>
-      </div> */}
+ 
       
       <br/>
-{/* 
-      <Box
-      sx={{
-        width: 300,
-        height: 300,
-        backgroundColor: 'success.dark',
-        src="https://m.media-amazon.com/images/I/61LTZxSAhpL._AC_SX569_.jpg",
-        '&:hover': {
-          // backgroundColor: 'primary.main',
-          // opacity: [0.9, 0.8, 0.7],
-        },
-      }}
-    /> */}
+
     <Card>
       <Card.Body><h1>Featured Products</h1></Card.Body>
     </Card>
@@ -156,7 +167,17 @@ function Home() {
 </Grid> */}
 
 
-    <Box
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+      <Stack direction="row" spacing={2}>
+        <Item><img src="https://m.media-amazon.com/images/I/71m2M+K5bqL._AC_SX679_.jpg" width='120px' height="120px"></img></Item>
+        <Item><img src="https://m.media-amazon.com/images/I/71iEZty7r2L._AC_SL1500_.jpg" width='120px' height="120px"></img></Item>
+        <Item><img src="https://m.media-amazon.com/images/I/71m2M+K5bqL._AC_SX679_.jpg" width='120px' height="120px"></img></Item>
+      </Stack>
+      
+
+    </div>
+
+    {/* <Box
         component="img"
         sx={{
           height: 233,
@@ -193,7 +214,7 @@ function Home() {
         }}
         alt="The house from the offer."
         src="https://m.media-amazon.com/images/I/51hs93VBL7L._AC_SL1000_.jpg"
-      />
+      /> */}
       <div className='metaMask' style={{ display: 'flex', padding: "10px 10px" ,justifyContent: 'center' }}>
     
     {/* <Card>
@@ -267,7 +288,7 @@ function Home() {
     <img src="img_mountains.jpg" alt="Mountains" style="width:100%"> </img>
   </div>
 </div> */}
-<Box
+{/* <Box
       sx={{
         display: 'flex',
         flexWrap: 'wrap',
@@ -281,7 +302,7 @@ function Home() {
       <Paper elevation={0} />
       <Paper />
       <Paper elevation={3} />
-    </Box>
+    </Box> */}
 
 
 
@@ -332,28 +353,29 @@ Merrycolor Boho Lumbar Throw Pillow Cover 12x20
     </div>
  
       <br/>
-      <Card>
-    <img src="https://m.media-amazon.com/images/I/71aARXewm6L._AC_SL1500_.jpg"></img>
-    <Card.Header as="h5">Echo Show 10 (3rd Gen) | HD smart display with motion and Alexa | Charcoal</Card.Header>
+      {/* <Card>
+    <img src="https://m.media-amazon.com/images/I/71aARXewm6L._AC_SL1500_.jpg" width="220px"  height="120px"></img>
+    <Card.Header as="h5">Echo Show 10 (3rd Gen) | HD smart display with motion and Alexa | Charcoal</Card.Header> */}
       
   
-      <Button variant="success" className="connect">Click to learn more </Button>
-      </Card>
+      {/* <Button variant="success" className="connect">Click to learn more </Button>
+      </Card> */}
       <div>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <Card className="text-center">
-      <Card.Header><h1><Button variant="success"><h2>Limited Time Offer 10 - 50% off all items!!🤯</h2></Button></h1></Card.Header>
-      {/* <Card.Img variant="top" src="https://m.media-amazon.com/images/I/8101kmkFW0L._AC_SL1500_.jpg" /> */}
-      <img width="100%" height="400px" className='blog' src="https://m.media-amazon.com/images/I/51FvlmhrF3L._AC_SL1500_.jpg"></img>
-      <Card.Body>
-        <Card.Title>Special Sales Ending Soon!!</Card.Title>
-        {/* <Card.Text>
-          With supporting text below as a natural lead-in to additional content.
-        </Card.Text> */}
-        <Button variant="success"><a href="https://amzn.to/3YBfgEG"><b>$22.99 </b><span font-size="5px"></span></a></Button>
-      </Card.Body>
-      <Card.Footer className="text-muted">7 days ago</Card.Footer>
-    </Card>
+      <div>
+      <Stack
+        direction={{ xs: 'column', sm: 'row' }}
+        spacing={{ xs: 1, sm: 2, md: 4 }}
+      >
+        <Item> <img
+          className="first-image" 
+          src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71ZPHI10awL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+          alt="Third slide"
+        /></Item>
+        <Item><img src="https://m.media-amazon.com/images/I/511WjJ8gjwL.jpg" width="190px" height="190px" /></Item>
+        <Item>Item 3</Item>
+      </Stack>
+    </div>
     </div>
     <br/>
       <br/>

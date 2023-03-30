@@ -8,6 +8,14 @@
     border-radius: 12px;
     background-color: #4b4b4b;
 } */
+
+
+
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
 .header-button{
     color: white!important;
     font-size: 20px;
