@@ -1,641 +1,200 @@
 import { React } from "react";
 // import "animate.css";
 import "./Home.css";
-import Accordion from 'react-bootstrap/Accordion';
+import Accordion from "react-bootstrap/Accordion";
 import Carousel from "react-bootstrap/Carousel";
-// import CardGroup from 'react-bootstrap/CardGroup';
-// import Card from "react-bootstrap/Card";
-import Button from 'react-bootstrap/Button';
-import { Card } from 'react-bootstrap';
+import Button from "react-bootstrap/Button";
+import { Card } from "react-bootstrap";
 import Animation from "../Components/Animation";
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import { styled } from '@mui/material/styles';
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// import { SwiperSlide } from 'swiper/react';
-// import { EffectFade } from 'swiper';
-// import { styled } from '@mui/material/styles';
-// import Grid from '@mui/material/Grid';
-// import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-import ButtonBase from '@mui/material/ButtonBase';
-import Rating from '@mui/material/Rating';
-// import Paper from '@mui/material/Paper';
-import Stack from '@mui/material/Stack';
-// import { styled } from '@mui/material/styles';
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import ImageList from "@mui/material/ImageList";
+// import ImageListItem from "@mui/material/ImageListItem";
+// import Box from "@mui/material/Box";
+// import Paper from "@mui/material/Paper";
+// import Grid from "@mui/material/Grid";
+// import { styled } from "@mui/material/styles";
+// import Typography from "@mui/material/Typography";
+// import ButtonBase from "@mui/material/ButtonBase";
+// import Rating from "@mui/material/Rating";
+// import Stack from "@mui/material/Stack";
 
 const API = process.env.REACT_APP_API_URL;
 
 function Home() {
-  
-  const ItemFirst = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  }));
-  const ItemSecond = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  }));
 
-  const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  }));
   return (
     <>
-    <div>
-    <Card className="home-container text-center">
-      
-      <Card.Body>
-        <Card.Text>Looking for great Tech deals on high-quality<img src="https://cdn-icons-png.flaticon.com/512/9756/9756673.png" width="30px" height="30px"></img> products? Look no further than<img width="30px" height="30px" src="https://cdn-icons-png.flaticon.com/512/324/324999.png"></img>  <div style={{ display: 'flex', justifyContent: 'center' }}>
-      {/* <Button variant="success"><Animation /></Button> */}
-      </div></Card.Text>
-        
-        <Card.Text><Button className="header-button" variant="success">Shop smarter, shop Ahead <img src="https://cdn-icons-png.flaticon.com/512/9485/9485813.png" width="30px" height="30px"></img> </Button></Card.Text>
-        
-        <Carousel fade>
-      <Carousel.Item interval={2000}>
-        <img
-          className="first-image" 
-          src="https://img.freepik.com/free-photo/handheld-shot-african-american-streamer-talking-headset-while-online-playing-first-person-shooter-gaming-pc-setup-gamer-girl-streaming-while-sitting-gaming-chair-explaining-gameplay_482257-46568.jpg?w=1060&t=st=1675669717~exp=1675670317~hmac=74d4100866287487a15fcd751e688a2f6cca59c339da640dfaa5798c8ef8b723"
-          alt="First slide"
-        />
-        
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="first-image" 
-          src="https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SL1500_.jpg"
-          alt="Second slide"
-        />
-
-        
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="first-image" 
-          src="https://m.media-amazon.com/images/I/61SWl0bpXaL._AC_SL1500_.jpg"
-          alt="Third slide"
-        />
-
-       
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="first-image" 
-          src="https://m.media-amazon.com/images/I/71PXusfITyL._AC_SX679_.jpg"
-          alt="Third slide"
-        />
-
-       
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="first-image" 
-          src="https://m.media-amazon.com/images/I/611eCV2eTDL._AC_UL800_FMwebp_QL65_.jpg"
-          alt="Third slide"
-        />
-
-       
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="first-image" 
-          src="https://m.media-amazon.com/images/I/710yeNqefxL._AC_UY436_FMwebp_QL65_.jpg"
-          alt="Third slide"
-        />
-
-       
-      </Carousel.Item>
-    </Carousel>
-      </Card.Body>
-    </Card>
-    <br/>
- 
-      
-      <br/>
-
-    <Card>
-      <Card.Body><h1>Featured Products</h1></Card.Body>
-    </Card>
-    {/* <Box
-      sx={{
-        display: 'flex',
-        '& > :not(style)': {
-          m: 1,
-          width: 128,
-          height: 128,
-          
-        },
-        
-      }}
-    >
-      <Paper variant="outlined" />
-      <Paper variant="outlined" square />
-    </Box> */}
-  
-
-
-
-    {/* <Grid container spacing={2}>
-  <Grid item xs={8}>
-    <Item>xs=8</Item>
-  </Grid>
-  <Grid item xs={4}>
-    <Item>xs=4</Item>
-  </Grid>
-  <Grid item xs={4}>
-    <Item>xs=4</Item>
-  </Grid>
-  <Grid item xs={8}>
-    <Item>xs=8</Item>
-  </Grid>
-</Grid> */}
-
-
-<div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Stack direction="row" spacing={2}>
-        <Item><img src="https://m.media-amazon.com/images/I/71m2M+K5bqL._AC_SX679_.jpg" width='120px' height="120px"></img></Item>
-        <Item><img src="https://m.media-amazon.com/images/I/71iEZty7r2L._AC_SL1500_.jpg" width='120px' height="120px"></img></Item>
-        <Item><img src="https://m.media-amazon.com/images/I/71m2M+K5bqL._AC_SX679_.jpg" width='120px' height="120px"></img></Item>
-      </Stack>
-      
-
-    </div>
-
-    {/* <Box
-        component="img"
-        sx={{
-          height: 233,
-          display: 'flex',
-          width: 350,
-          maxHeight: { xs: 233, md: 167 },
-          maxWidth: { xs: 350, md: 250 },
-        }}
-        alt="The house from the offer."
-        src="https://m.media-amazon.com/images/I/71m2M+K5bqL._AC_SX679_.jpg"
-      />
-      <br/>
-        <Box
-        component="img"
-        sx={{
-          height: 233,
-          display: 'flex',
-          width: 350,
-          maxHeight: { xs: 233, md: 167 },
-          maxWidth: { xs: 350, md: 250 },
-        }}
-        alt="The house from the offer."
-        src="https://m.media-amazon.com/images/I/71iEZty7r2L._AC_SL1500_.jpg"
-      />
-      <br/>
-        <Box
-        component="img"
-        sx={{
-          height: 233,
-          display: 'flex',
-          width: 350,
-          maxHeight: { xs: 233, md: 167 },
-          maxWidth: { xs: 350, md: 250 },
-        }}
-        alt="The house from the offer."
-        src="https://m.media-amazon.com/images/I/51hs93VBL7L._AC_SL1000_.jpg"
-      /> */}
-      <div className='metaMask' style={{ display: 'flex', padding: "10px 10px" ,justifyContent: 'center' }}>
-    
-    {/* <Card>
-    <img src="https://m.media-amazon.com/images/I/614l-+dfoYL._AC_SL1200_.jpg"></img>
-    <Card.Header as="h5">Echo Show 10 (3rd Gen) | HD smart display with motion and Alexa | Charcoal</Card.Header>
-      
-  
-      <Button variant="success" className="connect">Click to learn more </Button>
-      </Card> */}
-      {/* <Card style={{ width: '28rem' }}>
-      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71iEZty7r2L._AC_SX679_.jpg" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-
-    <Card style={{ width: '28rem' }}>
-      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71iEZty7r2L._AC_SX679_.jpg" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card> */}
-      
-      
-    </div>
-
-    <br/>
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Button variant="success"><Animation /></Button>
-      </div>
-      <br/>
-      
-      <br/>
-<div style={{ display: 'flex', justifyContent: 'center' }}>
-      <ImageList sx={{ width: 390, height: 450 }} cols={3} variant="woven" rowHeight={164}>
-      {itemData2.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-            alt={item.title}
-            loading="lazy"
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
-    </div>
-
-    
-  
-      <hr/>
-
-      {/* <div class="row">
-  <div class="column">
-    <img src="https://m.media-amazon.com/images/I/61LTZxSAhpL._AC_SL1000_.jpg" alt="Snow" style="width:100%"> </img>
-  </div>
-  <div class="column">
-    <img src="img_forest.jpg" alt="Forest" style="width:100%"> </img>
-  </div>
-  <div class="column">
-    <img src="img_mountains.jpg" alt="Mountains" style="width:100%"> </img>
-  </div>
-</div> */}
-{/* <Box
-      sx={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        '& > :not(style)': {
-          m: 1,
-          width: 128,
-          height: 128,
-        },
-      }}
-    >
-      <Paper elevation={0} />
-      <Paper />
-      <Paper elevation={3} />
-    </Box> */}
-
-
-
-
-
-
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Button variant="success"><Animation /></Button>
-      </div>
-      <br />
-      <div style ={{display: 'flex', justifyContent: 'center' }}>
-   <Card style={{ width: '48rem' }}>
-      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91y1S6m0+JS._AC_SL1500_.jpg" />
-      <Card.Body>
-        <Card.Title>MerryColor Pillow</Card.Title>
-        <Card.Text>
-          
-Merrycolor Boho Lumbar Throw Pillow Cover 12x20
-        </Card.Text>
-      </Card.Body>
-     
-      <Card.Body>
-     
-      </Card.Body>
-    </Card>
-    </div>
-    {/* <Button variant="success"><h1>10-50% off all Items!!!!🤯</h1></Button> */}
-  <br/>
-    <div style ={{display: 'flex', justifyContent: 'center' }}>
-    
-   <Button variant="success"><Animation /></Button> 
-    </div>
-    <hr/>
-    
-<div style={{ display: 'flex', justifyContent: 'center' }}>
-    <ImageList sx={{ width: 390, height: 450 }}  cols={3} gap={8}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}?w=161&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
-            alt={item.title}
-            loading="lazy"
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
-    </div>
- 
-      <br/>
-      {/* <Card>
-    <img src="https://m.media-amazon.com/images/I/71aARXewm6L._AC_SL1500_.jpg" width="220px"  height="120px"></img>
-    <Card.Header as="h5">Echo Show 10 (3rd Gen) | HD smart display with motion and Alexa | Charcoal</Card.Header> */}
-      
-  
-      {/* <Button variant="success" className="connect">Click to learn more </Button>
-      </Card> */}
       <div>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <div>
-      <Stack
-        direction={{ xs: 'column', sm: 'row' }}
-        spacing={{ xs: 1, sm: 2, md: 4 }}
-      >
-        <Item> <img
-          className="first-image" 
-          src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71ZPHI10awL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
-          alt="Third slide"
-        /></Item>
-        <Item><img src="https://m.media-amazon.com/images/I/511WjJ8gjwL.jpg" width="190px" height="190px" /></Item>
-        <Item>Item 3</Item>
-      </Stack>
-    </div>
-    </div>
-    <br/>
-      <br/>
+        <Card className="home-container text-center">
+          <Card.Body>
+            <Card.Text>
+              <h1>Play like a pro with our premium gaming gear!</h1>
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                
+              </div>
+            </Card.Text>
+
+            <Carousel fade>
+              <Carousel.Item interval={2000}>
+                <img
+                  className="first-image"
+                  src="https://m.media-amazon.com/images/I/815NKi8l4kL._AC_SL1500_.jpg"
+                  alt="First slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="first-image"
+                  src="https://m.media-amazon.com/images/I/61Gel0RfLKL._AC_SX679_.jpg"
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="first-image"
+                  src="https://m.media-amazon.com/images/I/71wXQyxCENL._AC_SX679_.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="first-image"
+                  src="https://m.media-amazon.com/images/I/71duv9a2mqL._AC_SX679_.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="first-image"
+                  src="https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_SL1500_.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="first-image"
+                  src="https://m.media-amazon.com/images/I/61SZuCXn5hL._AC_SL1200_.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+            </Carousel>
+          </Card.Body>
+        </Card>
+        <br />
+
+        <br />
+
+        <Card>
+          <Card.Body>
+            <h1>Featured Products</h1>
+          </Card.Body>
+        </Card>
+
+        <div>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <div></div>
+          </div>
+        </div>
+        <br></br>
 
   
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <Button variant="success"><Animation /></Button>
-      </div>
-      <marquee direction="up" style={{ display: 'flex', justifyContent: 'center',  borderRadius: '50%' }}>
-      <img
-            width="171"
-            height="180"
-            alt="171x180"
-            src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F312b1033-01d7-4b1c-a075-64ca0c79b05c%2FOlayinka_Fakanbi.jpg?id=a5b8ac40-ed54-464d-9702-7dd5c24a0e22&table=block&spaceId=e2735e9b-8fe9-4c16-bdc1-be142cd1014e&width=2000&userId=1c56301b-4ffe-419f-b2c0-5424d42c657c&cache=v2"
-          />
-      </marquee>
-
-
-    </div>
-    <br></br>
-   
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <Button variant="success"><Animation /></Button>
-      </div>
-   
-    <hr/>
-<marquee direction="left"> 
-
-<img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/bcc3ac778d99441f9e736b800f5a79fd80ef8bbe1e620e6d690a369ef6fc928c._UY500_UX667_RI_V_TTW_SX658_.jpg" width="190px" height="190px"></img>
-
-<img src="https://m.media-amazon.com/images/I/511WjJ8gjwL.jpg" width="190px" height="190px"></img>
-<img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/5ca7154c02b0f7da7e0eaad7162c44a0a88299e56e2a9fc205ef1fb246988458._UY500_UX667_RI_V_TTW_SX532_.jpg" width="190px" height="190px"></img>
-<img src="https://m.media-amazon.com/images/I/51YWDJl1bkL.jpg" width="190px" height="190px"></img>
-<img src="https://m.media-amazon.com/images/I/51Mc--F6zGL.jpg" width="190px" height="190px"></img>
- {/* <img src="https://m.media-amazon.com/images/I/71oxAUe02WL._AC_SX679_.jpg" width="190px" height="190px"></img> 
-<img src="https://m.media-amazon.com/images/I/81sAVGJu8ZL._AC_SX679_.jpg" width="190px" height="190px"></img>
-<img src="https://m.media-amazon.com/images/I/71L08j1yhSL._AC_SX679_.jpg" width="190px" height="190px"></img>  */}
-
-
-
-</marquee>
-<hr></hr>
- {/* <br/> */}
- <br/>
-
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Button variant="success"><Animation /></Button>
-      </div>
-    <hr></hr>
-   <div className="container">
-   <div>
-  
-      <br />
-    
-   </div>
-
-
-   </div>
-   <hr></hr>
-   <div style={{ display: 'flex', justifyContent: 'center' }}>
-   <Button variant="success"><Animation /></Button>
-      </div>
-      <hr/>
-<div style ={{display: 'flex', justifyContent: 'center' }}>
-   <Card style={{ width: '28rem' }}>
-      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/81c7cWWOycL._AC_SL1500_.jpg" />
-      <Card.Body>
-        <Card.Title>Queen Size Platform Bed Frame</Card.Title>
-        <Card.Text>
-        Fabric Upholstered Headboard and Wooden Slats Support
-        </Card.Text>
-      </Card.Body>
+        <div className="container">
+          <div>
+            <br />
+          </div>
+        </div>
       
-      <Card.Body>
-        <Card.Link href="https://amzn.to/3ZALVva"><Button variant="success">Learn More</Button></Card.Link>
-        <Card.Link href="#">TOP🔝</Card.Link>
-      </Card.Body>
-    </Card>
-    </div>
-   <Card className="text-center">
-      {/* <Card.Header><Button variant="success">Shop Smart, Shop Ahead 🤩!</Button></Card.Header> */}
-      <Card.Body>
-        {/* <Card.Title><Button variant="success"><Animation /></Button></Card.Title> */}
-        <h2>Trending Now</h2>
-        <hr/>
-        <Card.Text>
-        <Carousel fade>
-      <Carousel.Item interval={2000}>
-        <img
-          className="first-image" 
-          src="https://m.media-amazon.com/images/I/718RFxZmX9L._SL1000_.jpg"
-          alt="First slide"
-        />
-        
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="first-image" 
-          src="https://img.freepik.com/free-photo/grilled-chicken-wooden-board-potato-tomato-pepper-chili-sauce-side-view_141793-3130.jpg"
-          alt="Second slide"
-        />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="first-image" 
-          src="https://img.freepik.com/free-photo/grilled-lamb-tomato-pepper-potato-rosemary-sauces-side-view_141793-3743.jpg?t=st=1675670297~exp=1675670897~hmac=401bf98ac7a930367b29c8acb99c9d098677a2c229a61eb235837907615d3cbb"
-          alt="Third slide"
-        />
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <Card style={{ width: "28rem" }}>
+            <Card.Img
+              variant="top"
+              src="https://m.media-amazon.com/images/I/61SZuCXn5hL._AC_SL1200_.jpg"
+            />
+            <Card.Body>
+              <Card.Title>$19,386.38</Card.Title>
+              <Card.Text>
+              YUYTIN Super Deluxe Racing Executive Office Cockpit Gaming Station Video Gaming Chair
+              </Card.Text>
+            </Card.Body>
 
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="first-image" 
-          src="https://img.freepik.com/premium-photo/red-yellow-mug-with-mulled-wine-fruits-spices-are-all-around-wooden-table-yellow-lights-garlands-are-burning_427967-521.jpg"
-          alt="Third slide"
-        />
+            <Card.Body>
+              <Card.Link href="https://amzn.to/3ZALVva">
+                <Button variant="success">Learn More</Button>
+              </Card.Link>
+              <Card.Link href="#">TOP🔝</Card.Link>
+            </Card.Body>
+          </Card>
+        </div>
+        <Card className="text-center">
+          <Card.Body>
+            
+            <h2>Trending Now</h2>
+          
+            <Card.Text>
+              <Carousel fade>
+                <Carousel.Item interval={2000}>
+                  <img
+                    className="first-image"
+                    src="https://m.media-amazon.com/images/I/71duv9a2mqL._AC_SX679_.jpg"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="first-image"
+                    src="https://m.media-amazon.com/images/I/81SoE0g+uqL._AC_SX679_.jpg"
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="first-image"
+                    src="https://m.media-amazon.com/images/I/71S-pQNQyIL._AC_SX679_.jpg"
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="first-image"
+                    src="https://m.media-amazon.com/images/I/51fgMLstK5L._AC_.jpg"
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="first-image"
+                    src="https://m.media-amazon.com/images/I/51mgmdj5heL._AC_SL1200_.jpg"
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              </Carousel>
+            </Card.Text>
+            <Button variant="success">
+              <a href="https://amzn.to/3ypXAkY">
+                <h3>Explore</h3>
+              </a>
+            </Button>
+          </Card.Body>
+          <Card.Footer className="text-muted">12 days ago</Card.Footer>
+        </Card>
 
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="first-image" 
-          src="https://img.freepik.com/free-photo/young-beautiful-couple-woman-kissing-man-sitting-table-with-cups-tea-happy-love-christmas-decorated-room-with-christmas-tree-background_141793-42497.jpg"
-          alt="Third slide"
-        />
-
-      </Carousel.Item>
-    </Carousel>
-        </Card.Text>
-        <Button variant="success"><a href="https://amzn.to/3ypXAkY"><h3>Explore</h3></a></Button>
-      </Card.Body>
-      <Card.Footer className="text-muted">12 days ago</Card.Footer>
-    </Card>
-
-    
-    
-    
-
-   
-   
-    <div>
-      
-      <Card>
-       
-        
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Card.Title><Button variant="success"><Animation /></Button></Card.Title>
+        <div>
+          <Card>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Card.Link href="#">
+              <Button variant="success">TOP🔝</Button>
+            </Card.Link>
+          </div>
+        </div>
+        <hr></hr>
       </div>
-      <Card.Link href="#"><Button variant="success">TOP🔝</Button></Card.Link>
-    </div>
-    <hr></hr>
-    
-  
-    </div>
     </>
   );
 }
-const itemData = [
-  {
-    img: 'https://m.media-amazon.com/images/I/81bZ-ZaQb9L._AC_SX679_.jpg',
-    title: 'Tide Pods',
-  },
-  {
-    img: 'https://m.media-amazon.com/images/I/61gaNdRj0OL._SL1500_.jpg',
-    title: 'BWater Wipes',
-  },
-  {
-    img: 'https://m.media-amazon.com/images/I/71c3wsV98rL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
-    title: 'Baby Wipes',
-  },
-  {
-    img: 'https://m.media-amazon.com/images/I/91edFRbvyIL._AC_UY436_FMwebp_QL65_.jpg',
-    title: 'Coffee',
-  },
-  {
-    img: 'https://m.media-amazon.com/images/I/41q91ld1d6L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg',
-    title: 'Hats',
-  },
-  {
-    img: 'https://m.media-amazon.com/images/I/51lGq+i-BKL._SY344_BO1,204,203,200_.jpg',
-    title: 'Honey',
-  },
-  {
-    img: 'https://m.media-amazon.com/images/I/61aQPrW-+rL._AC_UL640_QL65_.jpg',
-    title: 'Basketball',
-  },
-  {
-    img: 'https://m.media-amazon.com/images/I/61S+-V9lowL._AC_UY436_QL65_.jpg',
-    title: 'Fern',
-  },
-  {
-    img: 'https://m.media-amazon.com/images/I/71h37mxNQmL._AC_UY436_FMwebp_QL65_.jpg',
-    title: 'Mushrooms',
-  },
-  {
-    img: 'https://m.media-amazon.com/images/I/41ZjUOH6nRL._AC_UL640_FMwebp_QL65_.jpg',
-    title: 'Tomato basil',
-  },
-  {
-    img: 'https://m.media-amazon.com/images/I/71S1Cyt9QhL._AC_UL640_FMwebp_QL65_.jpg',
-    title: 'Sea star',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-    title: 'Bike',
-  },
-];
-const itemData2 = [
-  {
-    img: 'https://images.unsplash.com/photo-1549388604-817d15aa0110',
-    title: 'Bed',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1563298723-dcfebaa392e3',
-    title: 'Kitchen',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6',
-    title: 'Sink',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1525097487452-6278ff080c31',
-    title: 'Books',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1574180045827-681f8a1a9622',
-    title: 'Chairs',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62',
-    title: 'Candle',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1530731141654-5993c3016c77',
-    title: 'Laptop',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61',
-    title: 'Doors',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7',
-    title: 'Coffee',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee',
-    title: 'Storage',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4',
-    title: 'Coffee table',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1588436706487-9d55d73a39e3',
-    title: 'Blinds',
-  },
-];
 
 
 export default Home;
