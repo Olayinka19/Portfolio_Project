@@ -348,7 +348,10 @@ function Home() {
     </Box>
     <br/>
     <br/>
-    <Carousel fade>
+    
+
+              <div style={{ display: "flex", justifyContent: "center" }}>
+              <Carousel fade>
                 <Carousel.Item interval={200}>
                   <img
                     className="first-image first-container"
@@ -384,6 +387,14 @@ function Home() {
                   />
                 </Carousel.Item>
               </Carousel>
+            
+          </div>
+
+
+
+
+
+
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Card.Link href="#">
               {/* <Button variant="outlined">TOP🔝</Button> */}
