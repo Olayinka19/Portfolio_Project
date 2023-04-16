@@ -33,9 +33,9 @@ function Mice() {
     <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
         <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61NrAZHeuCL._AC_SX679_.jpg" /></Item>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_pulsefire_haste_2_wireless_black_angle_2_1512x.jpg?v=1678907837" /></Item>
           <div style={{ display: "flex", justifyContent: "center" }}>
-          <Button color="secondary"><a href="https://amzn.to/3UGWGe5">-22% $45.04</a></Button>
+          <Button color="secondary"><a href="https://amzn.to/43DV2hg">-21% $39.30</a></Button>
               {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
 
           </div>
@@ -57,9 +57,9 @@ function Mice() {
 
 
         <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_quadcast_02_side_1512x.jpg?v=1678907138" /></Item>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_pulsefire_haste_itachi_red_1_main_1512x.jpg?v=1678907530" /></Item>
           <div style={{ display: "flex", justifyContent: "center" }}>
-          <Button color="secondary"><a href="https://amzn.to/43Dz5ze">-10% $126.50</a></Button>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-mice/products/hyperx-pulsefire-haste-itachi-editon-gaming-mouse?variant=42893329957021">$59.99 $29.99</a></Button>
               {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
 
           </div>
@@ -80,9 +80,9 @@ function Mice() {
         </Grid>
 
         <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_procast_2_turn_1512x.jpg?v=1678908093" /></Item>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_pulsefire_surge_2_angled_back_1512x.jpg?v=1678907440" /></Item>
           <div style={{ display: "flex", justifyContent: "center" }}>
-          <Button color="secondary"><a href="https://hyperx.com/collections/microphones/products/hyperx-procast-professional-xlr-microphone?variant=42994462785693">$249.99</a></Button>
+          <Button color="secondary"><a href="https://amzn.to/3A3eYgc">$54.99</a></Button>
               {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
 
           </div>
@@ -103,9 +103,9 @@ function Mice() {
         </Grid>
 
         <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_duocast_2_side_1512x.jpg?v=1678908024" /></Item>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_pulsefire_core_white_pink_1_main_1512x.jpg?v=1678907873" /></Item>
           <div style={{ display: "flex", justifyContent: "center" }}>
-          <Button color="secondary"><a href="https://hyperx.com/collections/microphones/products/hyperx-duocast-usb-microphone?variant=42587052703901">$99.99 $89.99</a></Button>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-mice/products/hyperx-pulsefire-core-gaming-mouse?variant=41077932720285">$29.99</a></Button>
               {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
 
           </div>

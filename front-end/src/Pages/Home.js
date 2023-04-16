@@ -216,7 +216,7 @@ function Home() {
         width={210}
         height={118}
       />
-       <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/young-couple-playing-video-game-indoors_23-2148969293.jpg?w=1800&t=st=1681602474~exp=1681603074~hmac=2a886f9225a8ce8c57dae9a51c256edcf71156d412d3396b4a6a855bdd71ec9a" /></Item>
+       <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-vector/vintage-badge-hand-holding-joystick-vector-illustration-round-label-with-gamepad_74855-11224.jpg?w=1380&t=st=1681627155~exp=1681627755~hmac=bdc2eae7a5e6d89121776cb0cfbee8b23a32b79a0d033432a5eaa8a3a2514354" /></Item>
       <Skeleton
         sx={{ bgcolor: 'grey.900' }}
         variant="rectangular"
@@ -272,8 +272,8 @@ function Home() {
       <Accordion.Item eventKey="0">
         <Accordion.Header><Div>{"BLOG"}</Div></Accordion.Header>
         <Accordion.Body>
-        <Button variant="primary" onClick={handleShow}>
-        Learn more
+        <Button variant="secondary" onClick={handleShow}>
+        <img src = "https://img.freepik.com/free-vector/detailed-esports-gaming-logo_79603-1792.jpg?w=1380&t=st=1681628574~exp=1681629174~hmac=5c36fd3f3bb178c8348c56cb3986c1fbd94a61593011a840f028df138ca45b97" width="45px" height="45px"></img> Click Me!
       </Button>
 
       <Offcanvas show={show} onHide={handleClose}>

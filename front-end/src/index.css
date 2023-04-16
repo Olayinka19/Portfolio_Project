@@ -294,7 +294,7 @@ h1 {
   background: #ffffff;
 }
 .background {
-  background: linear-gradient(132deg, #11a14b, #588157, #3a5a40, #0c7e51 , #344e41);
+  background: linear-gradient(132deg, #01087B, #E40015, #C4C4FE, #000616 , #000211);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
@@ -315,13 +315,13 @@ h1 {
   top: 0; 
   width: 50px; 
   height: 80px; 
-  background: #06d6a0; 
+  background: #5B5CFA; 
   border-radius: 50px 50px 0 0; 
   transform: rotate(-45deg); 
   transform-origin: 0 100%;
   width: 14px;
   height: 14px;
-  border: solid 1px #2f19d1;
+  border: solid 1px #E2F6FF;
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
   animation: cube 12s ease-in forwards infinite;
@@ -331,7 +331,7 @@ h1 {
   -o-border-radius: 50%;
 }
 .cube:nth-child(2n) {
-  border-color: #13711d ;
+  border-color: #A00791 ;
 }
 .cube:nth-child(2) {
   animation-delay: 2s;
