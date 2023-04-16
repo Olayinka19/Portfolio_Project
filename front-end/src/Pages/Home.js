@@ -333,7 +333,22 @@ function Home() {
           <Item><img width="350px" height="220px" alt="First slide" src="https://cdn-icons-png.flaticon.com/512/98/98937.png?w=1380&t=st=1681606467~exp=1681607067~hmac=5e5afc830471298c496fc722fee1772d972b288a2984f217f34dc105003ad336" /></Item>
         </Grid>
 
-        <Carousel fade>
+        
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/premium-vector/doodle-comic-explosion-cartoon-hand-drawn-comic-speech-bubbles-with-text-sale-isolated-white-background-web-posters-banners-concept-design-vector-illustration_36380-1395.jpg?w=1380" /></Item>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-vector/pack-money-sketches_23-2147631757.jpg?w=1380&t=st=1681607358~exp=1681607958~hmac=505a34e16208a401fded545da0b270ceb287b31e6ef1d3318c49feb6ed730bfd" /></Item>
+
+        </Grid>
+
+      </Grid>
+    </Box>
+    <br/>
+    <br/>
+    <Carousel fade>
                 <Carousel.Item interval={200}>
                   <img
                     className="first-image first-container"
@@ -369,20 +384,6 @@ function Home() {
                   />
                 </Carousel.Item>
               </Carousel>
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/premium-vector/doodle-comic-explosion-cartoon-hand-drawn-comic-speech-bubbles-with-text-sale-isolated-white-background-web-posters-banners-concept-design-vector-illustration_36380-1395.jpg?w=1380" /></Item>
-        </Grid>
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-vector/pack-money-sketches_23-2147631757.jpg?w=1380&t=st=1681607358~exp=1681607958~hmac=505a34e16208a401fded545da0b270ceb287b31e6ef1d3318c49feb6ed730bfd" /></Item>
-
-        </Grid>
-
-      </Grid>
-    </Box>
-    <br/>
-    <br/>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Card.Link href="#">
               {/* <Button variant="outlined">TOP🔝</Button> */}
