@@ -100,7 +100,7 @@ export default function NavBar() {
                   <Link to="/About"><img src="https://img.freepik.com/free-vector/skull-gaming-with-joy-stick-emblem-modern-style_32991-492.jpg?w=1380&t=st=1681627996~exp=1681628596~hmac=9e73ddbd6115e121f92669fbc702fd0a653b67611cb4c384a04ce775f757d5fc" alt="First slide" width="35px" height="35px"/><Button variant="secondary">Explore</Button></Link>
                   <NavDropdown.Divider />
                   <NavDropdown
-                    title="Other Categories"
+                    title="Other Products"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
                    
