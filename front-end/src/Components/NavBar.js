@@ -15,6 +15,9 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Ahead6 from './Images/Ahead6.png'
 import Ahead from './Images/Ahead.png'
 import logo6 from './Images/logo6.png'
+import Avatar from '@mui/material/Avatar';
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
 
 
 
@@ -33,10 +36,18 @@ export default function NavBar() {
     // <header>
 
     <>
+   
             {[false].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+        <Navbar key={expand} bg="light" expand={expand} className="mb-3" sticky="top">
+        
           <Container fluid>
             <Navbar.Brand href="/"><img width="120px" height="50px" src={Ahead} alt="React Logo" /></Navbar.Brand>
+            <Stack direction="row" spacing={1}>
+  
+      <Chip
+        avatar={<Avatar alt="Natacha" src={user && user.photoURL} />}
+      />
+    </Stack>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

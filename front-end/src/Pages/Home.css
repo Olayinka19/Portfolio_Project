@@ -27,8 +27,8 @@
 
 
 .home-container {
-    background-color: hsla(150, 7%, 73%, 0.939);
-    background-image: url('https://m.media-amazon.com/images/I/81JpvluTFwL._AC_SX679_.jpg');
+    background-color: hsla(147, 5%, 56%, 0.939);
+    /* background-image: url('https://img.freepik.com/free-photo/view-neon-illuminated-gaming-desk-setup-with-keyboard_23-2149529380.jpg?w=1800&t=st=1681339230~exp=1681339830~hmac=e767173831e7bb4a9a29d011fdd98b68897cf58d2575f51fdfb0cba61ab0bced'); */
     font-size: 30px;
     color: white!important;
     align-items: center!important;
