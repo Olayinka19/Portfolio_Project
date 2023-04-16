@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import { Button } from "react-bootstrap";
 // import Button from '@mui/material/Button';
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
+import Button from '@mui/material/Button';
 // import Button from '@mui/material/Button';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -86,11 +87,18 @@ export default function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Link to="/"><Button variant="success">Home</Button></Link>
+                  <Link to="/"><img src = "https://cdn-icons-png.flaticon.com/512/759/759400.png?w=1380&t=st=1681618963~exp=1681619563~hmac=5c60a674eb96dfa21e036f66785a41dfbbe829173db8c7450253ba220956fc83" width="35px" height="35px"></img><Button variant="error">Home</Button></Link>
                   <hr/>
-                  <Link to="/About"><Button variant="success">Explore</Button></Link>
+                  <Link to="/Headsets"><img src = "https://cdn-icons-png.flaticon.com/512/647/647833.png?w=1380&t=st=1681618614~exp=1681619214~hmac=0b26871c3532b484fa7e1d21ef6503b53000323221e02fbe75a42e0957f3b0c5" width="35px" height="35px"></img><Button variant="secondary">Headsets</Button></Link>
+                  <NavDropdown.Divider />
+                  <Link to="/Keyboards"><img src="https://cdn-icons-png.flaticon.com/512/329/329815.png?w=1060&t=st=1681597742~exp=1681598342~hmac=dd6729fcad0e434168343a780a1327d5b41403ab66e41735a3d15ef476ee5035" alt="First slide" width="35px" height="35px"/><Button variant="secondary">Keyboards</Button></Link>
+                  <NavDropdown.Divider />
+                  <Link to="/Microphones"><img src="https://cdn-icons-png.flaticon.com/512/96/96824.png?w=1380&t=st=1681621286~exp=1681621886~hmac=d83ed86f0019c462b04beb73ba95b44a7cbab44fb6749ba7c35e9c533182a868" alt="First slide" width="35px" height="35px"/><Button variant="secondary">Microphones</Button></Link>
+                  <NavDropdown.Divider />
+                  <Link to="/Mice"><img src="https://cdn-icons-png.flaticon.com/512/141/141052.png?w=1380&t=st=1681622633~exp=1681623233~hmac=aa0dce8ce7b3399d9e60711acd3a6c5fae5a82915af02853fbcaa997aedb4718" alt="First slide" width="35px" height="35px"/><Button variant="secondary">Mice</Button></Link>
+                  <NavDropdown.Divider />
                   <NavDropdown
-                    title="Categories"
+                    title="Other Categories"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
                    
@@ -110,6 +118,10 @@ export default function NavBar() {
                     <Link to="/Gaming"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2780/2780137.png" width="45px" height="45px"></img>Gaming</Button></Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
+                    <NavDropdown.Item>
+                    <Link to="/Gaming"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2780/2780137.png" width="45px" height="45px"></img>Gaming</Button></Link>
+                    </NavDropdown.Item>
+                    
                     <NavDropdown.Item>
                     <Link to="/SmartHome"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/7733/7733361.png" width="45px" height="45px"></img>Smart Home</Button></Link>
                     </NavDropdown.Item>
@@ -190,16 +202,16 @@ export default function NavBar() {
                   <Link to="/Electronics"><Button variant="outlined">Electronics</Button></Link>
                   <hr/> */}
                   {user && user.displayName ? (
-        <Button onClick={handleSignOut} variant="success">LogOut</Button>
+        <Button onClick={handleSignOut} variant="secondary">LogOut</Button>
       ) : (
-        <Link to='/signin'><Button variant="success">Log In</Button></Link>
+        <Link to='/signin'><Button variant="error">Log In</Button></Link>
       )}
                   <NavDropdown
                     title="Account Settings"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
                   <img src="https://img.freepik.com/premium-vector/human-symbol-3d-icon-user-business-symbology-website-profile_593228-130.jpg?w=1380" width="45px" height="45px"></img>
-                    <NavDropdown.Item ><Link to="/Account">Account</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/Account">My Account</Link></NavDropdown.Item>
                     <NavDropdown.Item>
                     <Link to="/Profile">Profile</Link>
                     </NavDropdown.Item>

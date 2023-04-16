@@ -39,6 +39,10 @@ import Mobile_devices from "./Components/Mobile_devices";
 import Networking_devices from "./Components/Networking_devices";
 import Home_devices from "./Components/Home_devices";
 import Audio_videos from "./Components/Audio_videos";
+import Headsets from "./Pages/Headsets";
+import Keyboards from "./Pages/Keyboards"
+import Microphones from "./Components/Microphones";
+import Mice from "./Pages/Mice";
 // import Food from "./Components/Food";
 
 function App() {
@@ -79,6 +83,11 @@ function App() {
         <Route path="/Software" element={<Software/>} />
         <Route path="/Mobile_devices" element={<Mobile_devices/>} />
         <Route path="/Computers" element={<Computers/>} />
+        <Route path="/Headsets" element={<Headsets/>} />
+        <Route path="/Keyboards" element={<Keyboards/>} />
+        <Route path="/Microphones" element={<Microphones/>} />
+        <Route path="/Mice" element={<Mice/>} />
+        
         {/* <Route path="/Food" element={<Food />} /> */}
       
         <Route path="*" element={<FourOFour />} />

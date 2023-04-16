@@ -26,6 +26,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
+import { Link } from "react-router-dom";
 
 // import CardGroup from 'react-bootstrap/CardGroup';
 
@@ -128,7 +129,7 @@ function Home() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>HEADSETS</Accordion.Header>
         <Accordion.Body>
-          <h4>LINK TO HEADSET PAGE</h4>
+        <Link to="/Headsets"><Button variant="secondary"> Headsets <img src = "https://cdn-icons-png.flaticon.com/512/647/647833.png?w=1380&t=st=1681618614~exp=1681619214~hmac=0b26871c3532b484fa7e1d21ef6503b53000323221e02fbe75a42e0957f3b0c5" width="35px" height="35px"></img></Button></Link>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
@@ -138,9 +139,9 @@ function Home() {
           <Item><img width="350px" height="220px" src="https://img.freepik.com/free-photo/gradient-illuminated-neon-gaming-desk-setup-with-keyboard_23-2149529405.jpg?w=1800&t=st=1681598520~exp=1681599120~hmac=e1602699b8c13824649ce521ebadb25be1e43146bb42410a0b5cee270a1e4310"  alt="First slide"/></Item>
           <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
-        <Accordion.Header><img src="https://cdn-icons-png.flaticon.com/512/329/329815.png?w=1060&t=st=1681597742~exp=1681598342~hmac=dd6729fcad0e434168343a780a1327d5b41403ab66e41735a3d15ef476ee5035" alt="First slide" width="25px" height="25px"/> KEYBOARDS</Accordion.Header>
+        <Accordion.Header> KEYBOARDS</Accordion.Header>
         <Accordion.Body>
-          <h4>LINK TO HEADSET PAGE</h4>
+        <Link to="/Keyboards"><Button variant="secondary"> Keyboards <img src="https://cdn-icons-png.flaticon.com/512/329/329815.png?w=1060&t=st=1681597742~exp=1681598342~hmac=dd6729fcad0e434168343a780a1327d5b41403ab66e41735a3d15ef476ee5035" alt="First slide" width="35px" height="35px"/></Button></Link>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
@@ -153,7 +154,7 @@ function Home() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>MICROPHONES</Accordion.Header>
         <Accordion.Body>
-          <h4>LINK TO HEADSET PAGE</h4>
+        <Link to="/Keyboards"><Button variant="secondary"> Microphones <img src="https://cdn-icons-png.flaticon.com/512/96/96824.png?w=1380&t=st=1681621286~exp=1681621886~hmac=d83ed86f0019c462b04beb73ba95b44a7cbab44fb6749ba7c35e9c533182a868" alt="First slide" width="35px" height="35px"/></Button></Link>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
@@ -164,7 +165,7 @@ function Home() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>MICE</Accordion.Header>
         <Accordion.Body>
-          <h4>LINK TO HEADSET PAGE</h4>
+        <Link to="/Mice"><Button variant="secondary"> Mice <img src="https://cdn-icons-png.flaticon.com/512/141/141052.png?w=1380&t=st=1681622633~exp=1681623233~hmac=aa0dce8ce7b3399d9e60711acd3a6c5fae5a82915af02853fbcaa997aedb4718" alt="First slide" width="35px" height="35px"/></Button></Link>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
@@ -277,10 +278,25 @@ function Home() {
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title> <img src = "https://cdn-icons-png.flaticon.com/512/40/40021.png?w=1380&t=st=1681624041~exp=1681624641~hmac=20439082c3d9180dfd26dd06a7c1f1ff007aaf1ca8b50eadcec58e8b31d723b2" width="35px" height="35px"></img> fellow gamers!</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-         
+        
+
+Are you looking for high-quality gaming equipment at discounted prices? Look no further than our Amazon discount gaming equipment website! We have everything you need to take your gaming experience to the next level without breaking the bank.
+
+
+          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/girl-playing-videogame-laptop_23-2148963899.jpg?w=2000&t=st=1681623328~exp=1681623928~hmac=c752ee478eba7f8d79b40793b26aad11957be451c4fbe0b82da9c46c72fd3cfe" /></Item>
+        
+From top-of-the-line gaming keyboards and mice to immersive headsets and high-performance graphics cards, we've got you covered. Whether you're a seasoned pro or just starting out, we have something for every gamer.
+<Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/close-up-gamer-using-rgb-keyboard-mouse-online-competition_482257-497.jpg?w=2000&t=st=1681623783~exp=1681624383~hmac=b83f3d391888aab31483a014be794adf1a2ad0b5984e3f339cc53777f60b6188" /></Item>
+At our website, we understand that gaming can be an expensive hobby. That's why we work hard to bring you the best deals and discounts on the latest gaming gear. 
+You don't have to sacrifice quality for affordability when you shop with us.
+<Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/professional-esport-gamer-playing-game-with-gaming-controller_53876-102992.jpg?w=2000&t=st=1681623535~exp=1681624135~hmac=9fe00a598fd0f44ba470b008dea248074d37d86fd0dd86cb531c735931312924" /></Item>
+We pride ourselves on our exceptional customer service and our commitment to providing you with the best possible shopping experience. Our website is easy to navigate, and our knowledgeable staff is always available to answer any questions you may have.
+
+<Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/international-couple-playing-video-games_1157-29087.jpg?w=2000&t=st=1681623840~exp=1681624440~hmac=3369244d0e2fbbd25d36bfcb0691dc4c5d0eb81b8b3a6c2bef94a7485e1f030f" /></Item>
+Happy gaming, and happy shopping!
         </Offcanvas.Body>
       </Offcanvas>
         </Accordion.Body>
