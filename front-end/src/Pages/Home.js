@@ -7,7 +7,8 @@ import Button from "react-bootstrap/Button";
 import { Card } from "react-bootstrap";
 // import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-// import Animation from "../Components/Animation";
+import Animation from "../Components/Animation";
+// import 'animate.css';
 // import Col from "react-bootstrap/Col";
 // import Row from "react-bootstrap/Row";
 import ImageList from "@mui/material/ImageList";
@@ -27,6 +28,10 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import { Link } from "react-router-dom";
+import Rating from '@mui/material/Rating';
+import Stack from '@mui/material/Stack';
+// import FavoriteIcon from '@mui/icons-material/Favorite';
+// import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 // import CardGroup from 'react-bootstrap/CardGroup';
 
@@ -46,6 +51,14 @@ function Home() {
     textAlign: 'center',
     color: theme.palette.text.secondary,
   }));
+  // const StyledRating = styled(Rating)({
+  //   '& .MuiRating-iconFilled': {
+  //     color: '#ff6d75',
+  //   },
+  //   '& .MuiRating-iconHover': {
+  //     color: '#ff3d47',
+  //   },
+  // });
 
   const Div = styled('div')(({ theme }) => ({
     ...theme.typography.button,
@@ -117,7 +130,8 @@ function Home() {
  
         <Card>
           <Card.Body>
-          <p className="pro" > <Badge bg="secondary"><h1>Top Categories</h1></Badge></p>
+          {/* <p className="pro" > <Badge bg="secondary"><h1>Top Categories</h1> </Badge></p> */}
+          <Animation />
           </Card.Body>
         </Card>
         
@@ -129,7 +143,7 @@ function Home() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>HEADSETS</Accordion.Header>
         <Accordion.Body>
-        <Link to="/Headsets"><Button variant="secondary"> Headsets <img src = "https://cdn-icons-png.flaticon.com/512/647/647833.png?w=1380&t=st=1681618614~exp=1681619214~hmac=0b26871c3532b484fa7e1d21ef6503b53000323221e02fbe75a42e0957f3b0c5" width="35px" height="35px"></img></Button></Link>
+        <Link to="/Headsets"><Button variant="secondary"> <img src = "https://cdn-icons-png.flaticon.com/512/647/647833.png?w=1380&t=st=1681618614~exp=1681619214~hmac=0b26871c3532b484fa7e1d21ef6503b53000323221e02fbe75a42e0957f3b0c5" width="35px" height="35px"></img></Button></Link>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
@@ -141,7 +155,7 @@ function Home() {
       <Accordion.Item eventKey="0">
         <Accordion.Header> KEYBOARDS</Accordion.Header>
         <Accordion.Body>
-        <Link to="/Keyboards"><Button variant="secondary"> Keyboards <img src="https://cdn-icons-png.flaticon.com/512/329/329815.png?w=1060&t=st=1681597742~exp=1681598342~hmac=dd6729fcad0e434168343a780a1327d5b41403ab66e41735a3d15ef476ee5035" alt="First slide" width="35px" height="35px"/></Button></Link>
+        <Link to="/Keyboards"><Button variant="secondary"> <img src="https://cdn-icons-png.flaticon.com/512/329/329815.png?w=1060&t=st=1681597742~exp=1681598342~hmac=dd6729fcad0e434168343a780a1327d5b41403ab66e41735a3d15ef476ee5035" alt="First slide" width="35px" height="35px"/></Button></Link>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
@@ -154,7 +168,7 @@ function Home() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>MICROPHONES</Accordion.Header>
         <Accordion.Body>
-        <Link to="/Keyboards"><Button variant="secondary"> Microphones <img src="https://cdn-icons-png.flaticon.com/512/96/96824.png?w=1380&t=st=1681621286~exp=1681621886~hmac=d83ed86f0019c462b04beb73ba95b44a7cbab44fb6749ba7c35e9c533182a868" alt="First slide" width="35px" height="35px"/></Button></Link>
+        <Link to="/Keyboards"><Button variant="secondary"> <img src="https://cdn-icons-png.flaticon.com/512/96/96824.png?w=1380&t=st=1681621286~exp=1681621886~hmac=d83ed86f0019c462b04beb73ba95b44a7cbab44fb6749ba7c35e9c533182a868" alt="First slide" width="35px" height="35px"/></Button></Link>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
@@ -165,7 +179,7 @@ function Home() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>MICE</Accordion.Header>
         <Accordion.Body>
-        <Link to="/Mice"><Button variant="secondary"> Mice <img src="https://cdn-icons-png.flaticon.com/512/141/141052.png?w=1380&t=st=1681622633~exp=1681623233~hmac=aa0dce8ce7b3399d9e60711acd3a6c5fae5a82915af02853fbcaa997aedb4718" alt="First slide" width="35px" height="35px"/></Button></Link>
+        <Link to="/Mice"><Button variant="secondary"> <img src="https://cdn-icons-png.flaticon.com/512/141/141052.png?w=1380&t=st=1681622633~exp=1681623233~hmac=aa0dce8ce7b3399d9e60711acd3a6c5fae5a82915af02853fbcaa997aedb4718" alt="First slide" width="35px" height="35px"/></Button></Link>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
@@ -256,6 +270,29 @@ function Home() {
       </Grid>
     </Box>
 
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_armada_25_fhd_gaming_monitor_g_sync_2_main_no_arm_1512x.jpg?v=1678907555" /></Item>
+        
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_rubber_keycaps_pink_us_1_angled_1512x.jpg?v=1678908070" /></Item>
+        
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_pc_extension_cable_4_poles_to_dual_3.5mm_20_1_1728x.jpg?v=1678907503" /></Item>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_solocast_white_5_angled_1512x.jpg?v=1678907630" /></Item>
+
+        </Grid>
+
+      </Grid>
+    </Box>
 
 
             {/* ==================== */}
@@ -273,7 +310,7 @@ function Home() {
         <Accordion.Header><Div>{"BLOG"}</Div></Accordion.Header>
         <Accordion.Body>
         <Button variant="secondary" onClick={handleShow}>
-        <img src = "https://img.freepik.com/free-vector/detailed-esports-gaming-logo_79603-1792.jpg?w=1380&t=st=1681628574~exp=1681629174~hmac=5c36fd3f3bb178c8348c56cb3986c1fbd94a61593011a840f028df138ca45b97" width="45px" height="45px"></img> Click Me!
+        <img src = "https://img.freepik.com/free-vector/detailed-esports-gaming-logo_79603-1792.jpg?w=1380&t=st=1681628574~exp=1681629174~hmac=5c36fd3f3bb178c8348c56cb3986c1fbd94a61593011a840f028df138ca45b97" width="45px" height="45px"></img> LEARN MORE
       </Button>
 
       <Offcanvas show={show} onHide={handleClose}>
@@ -367,7 +404,7 @@ Happy gaming, and happy shopping!
     
 
               <div style={{ display: "flex", justifyContent: "center" }}>
-              <Carousel fade>
+              {/* <Carousel fade>
                 <Carousel.Item interval={200}>
                   <img
                     className="first-image first-container"
@@ -402,7 +439,7 @@ Happy gaming, and happy shopping!
                     alt="Third slide"
                   />
                 </Carousel.Item>
-              </Carousel>
+              </Carousel> */}
             
           </div>
 
