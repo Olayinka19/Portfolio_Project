@@ -27,11 +27,11 @@
 
 
 .home-container {
-    background-color: hsla(147, 5%, 56%, 0.939);
-    background-image: url('https://img.freepik.com/free-photo/view-illuminated-neon-gaming-keyboard-setup-controller_23-2149529367.jpg?w=2000&t=st=1681615776~exp=1681616376~hmac=ea4238f70122224c410d1d8c77a260c452266643fcc7ae437817dc4931abd544');
+    /* background-image: url('https://img.freepik.com/free-photo/view-illuminated-neon-gaming-keyboard-setup-controller_23-2149529367.jpg?w=2000&t=st=1681615776~exp=1681616376~hmac=ea4238f70122224c410d1d8c77a260c452266643fcc7ae437817dc4931abd544'); */
     font-size: 30px;
     color: white!important;
     align-items: center!important;
+    background-color: #2F2440;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .card-image {

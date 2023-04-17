@@ -269,6 +269,31 @@ body {
     flex-direction: row;
 }
 }
+.EmailSubscription {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.EmailSubscription input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.EmailSubscription button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 /* ======================= */
 .bg {
@@ -445,6 +470,12 @@ h1 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  }
+
+  .footer-p-tags{
+    font-size: medium;
+    display: flex;
+    justify-content: center;
   }
 
 .anime {

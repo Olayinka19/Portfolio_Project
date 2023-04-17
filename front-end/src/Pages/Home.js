@@ -215,7 +215,7 @@ function Home() {
         <br/>
             <Box
       sx={{
-        bgcolor: '#919B95',
+        bgcolor: '#00053C',
         p: 8,
         width: '100%',
         display: 'flex',
@@ -223,16 +223,10 @@ function Home() {
       }}
       
     >
-      <Skeleton
-        sx={{ bgcolor: 'grey.900' }}
-        color = "white"
-        variant="rectangular"
-        width={210}
-        height={118}
-      />
+     
        <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-vector/vintage-badge-hand-holding-joystick-vector-illustration-round-label-with-gamepad_74855-11224.jpg?w=1380&t=st=1681627155~exp=1681627755~hmac=bdc2eae7a5e6d89121776cb0cfbee8b23a32b79a0d033432a5eaa8a3a2514354" /></Item>
       <Skeleton
-        sx={{ bgcolor: 'grey.900' }}
+        sx={{ bgcolor: 'black.900' }}
         variant="rectangular"
         width={210}
         height={118}
@@ -343,11 +337,20 @@ Happy gaming, and happy shopping!
         </Card>
         <br/>
         <br/>
+        <marquee direction="right">
+        <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="190px" height="190px" alt="First slide" src="https://cdn-icons-png.flaticon.com/512/44/44265.png?w=1380&t=st=1681606400~exp=1681607000~hmac=93d16def9e7b788a5954be76a9a56d295f497fc357b793b09c2b587f2a8c539a" /></Item>
+        </Grid>
+      </Grid>
+    </Box>
+    </marquee>
         {/* <br/> */}
         <div>
         <Box
       sx={{
-        bgcolor: 'black',
+        bgcolor: '#004B72',
         color: 'white',
         p: 8,
         width: '100%',
@@ -356,13 +359,7 @@ Happy gaming, and happy shopping!
       }}
       
     >
-      {/* <Skeleton
-        sx={{ bgcolor: 'grey.900' }}
-        color = "white"
-        variant="rectangular"
-        width={210}
-        height={118}
-      /> */}
+     
       
   <h3>Calling all gamers! Grab your favorite snacks and settle in for an all-night gaming marathon with our amazing discount on gaming equipment. Get ready to dominate the game and have some serious fun!</h3>
       {/* <Skeleton
@@ -376,29 +373,7 @@ Happy gaming, and happy shopping!
 
         <br/>
         <br/>
-        <Box sx={{ flexGrow: 2 }}>
-      <Grid container spacing={3}>
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn-icons-png.flaticon.com/512/44/44265.png?w=1380&t=st=1681606400~exp=1681607000~hmac=93d16def9e7b788a5954be76a9a56d295f497fc357b793b09c2b587f2a8c539a" /></Item>
-        </Grid>
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn-icons-png.flaticon.com/512/98/98937.png?w=1380&t=st=1681606467~exp=1681607067~hmac=5e5afc830471298c496fc722fee1772d972b288a2984f217f34dc105003ad336" /></Item>
-        </Grid>
-
-        
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/premium-vector/doodle-comic-explosion-cartoon-hand-drawn-comic-speech-bubbles-with-text-sale-isolated-white-background-web-posters-banners-concept-design-vector-illustration_36380-1395.jpg?w=1380" /></Item>
-        </Grid>
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-vector/pack-money-sketches_23-2147631757.jpg?w=1380&t=st=1681607358~exp=1681607958~hmac=505a34e16208a401fded545da0b270ceb287b31e6ef1d3318c49feb6ed730bfd" /></Item>
-
-        </Grid>
-
-      </Grid>
-    </Box>
+    
     <br/>
     <br/>
     

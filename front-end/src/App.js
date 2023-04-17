@@ -43,6 +43,7 @@ import Headsets from "./Pages/Headsets";
 import Keyboards from "./Pages/Keyboards"
 import Microphones from "./Components/Microphones";
 import Mice from "./Pages/Mice";
+import EmailSubscription from "./Components/EmailSubscription";
 // import Food from "./Components/Food";
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
         <Route path="/Keyboards" element={<Keyboards/>} />
         <Route path="/Microphones" element={<Microphones/>} />
         <Route path="/Mice" element={<Mice/>} />
+        <Route path="/EmailSubscription" element={<EmailSubscription/>} />
         
         {/* <Route path="/Food" element={<Food />} /> */}
       
@@ -95,6 +97,16 @@ function App() {
       
     </main>
         </AuthContextProvider>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <Footer />
   </Router>
   );
