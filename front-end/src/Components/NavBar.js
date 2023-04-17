@@ -51,7 +51,7 @@ export default function NavBar() {
       />
 
 {user && user.displayName ? (
-        <Button onClick={handleSignOut} variant="secondary">LogOut</Button>
+        <Button onClick={handleSignOut} variant="outlined">LogOut</Button>
       ) : (
         <Link to='/signin'><Button variant="secondary">Log In</Button></Link>
       )}

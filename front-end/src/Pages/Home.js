@@ -74,7 +74,7 @@ function Home() {
         <Card className="home-container text-center">
           <Card.Body>
             <Card.Text>
-              <h1>Get your game on with the best gear at unbeatable prices - shop now and save big!</h1>
+              <h1>Unleash the Ultimate Gaming Experience with Our Top-Rated Amazon Deals!</h1>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 
               </div>
@@ -247,29 +247,37 @@ function Home() {
             <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
         <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_quadcast_02_side_1512x.jpg?v=1678907138" /></Item>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_quadcast_02_side_1512x.jpg?v=1678907138" />
+          
+          <p>Get great sound whether you’re connecting to a PC, PS4™, PS5™, or Mac®.</p>
+          </Item>
         </Grid>
 
         <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_wireless_2_main_dongle_1512x.jpg?v=1678907740" /></Item>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_wireless_2_main_dongle_1512x.jpg?v=1678907740" />
+          <p>The HyperX Cloud Stinger™ 2 Core is the essential entry-level PlayStation headset at an affordable price.</p>
+          </Item>
         </Grid>
 
         <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_alloy_core_rgb_us_1_main_1512x.jpg?v=1678907503" /></Item>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_alloy_core_rgb_us_1_main_1512x.jpg?v=1678907503" />
+          <p>RGB™ is ideal for gamers looking to enhance their keyboard’s style and performance without breaking the bank.</p></Item>
         </Grid>
 
         <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_clutch_gladiate_6l366aa_angle_2_1512x.jpg?v=1679679081" /></Item>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_clutch_gladiate_6l366aa_angle_2_1512x.jpg?v=1679679081" />
+          <p>This officially licensed wired Xbox controller features dual trigger locks and remappable rear buttons.</p></Item>
 
         </Grid>
 
       </Grid>
     </Box>
 
-    <Box sx={{ flexGrow: 2 }}>
+    {/* <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_armada_25_fhd_gaming_monitor_g_sync_2_main_no_arm_1512x.jpg?v=1678907555" /></Item>
+          
         
         </Grid>
 
@@ -283,12 +291,15 @@ function Home() {
         </Grid>
 
         <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_solocast_white_5_angled_1512x.jpg?v=1678907630" /></Item>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_solocast_white_5_angled_1512x.jpg?v=1678907630" />
+          
+          <p>The built-in mount adapter is highly versatile and can accommodate 3/8-inch and 5/8-inch threads, ensuring compatibility with a wide range of boom arms or mic stands.</p>
+          </Item>
 
         </Grid>
 
       </Grid>
-    </Box>
+    </Box> */}
 
 
             {/* ==================== */}
@@ -382,6 +393,8 @@ Happy gaming, and happy shopping!
     
     <br/>
         <br/>
+
+        
               <div style={{ display: "flex", justifyContent: "center" }}>
               {/* <Carousel fade>
                 <Carousel.Item interval={200}>

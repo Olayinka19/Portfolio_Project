@@ -25,7 +25,8 @@ const Footer = () => (
   <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
         <Grid md={3}>
-          <Item> SUPPORT</Item>
+        <div></div>
+          <h6> SUPPORT</h6>
           <p className="footer-p-tags">Live Chat</p>
           <p className="footer-p-tags">Tutorial & guides</p>
           <p className="footer-p-tags">Shipping Information</p>
@@ -34,7 +35,7 @@ const Footer = () => (
         </Grid>
 
         <Grid md={3}>
-          <Item> COMPANY INFORMATION</Item>
+          <h6> COMPANY INFORMATION </h6>
           <p className="footer-p-tags">About Us</p>
           <p className="footer-p-tags">Team</p>
           <p className="footer-p-tags">Awards and Recognition</p>
@@ -44,7 +45,7 @@ const Footer = () => (
         </Grid>
 
         <Grid md={3}>
-          <Item> GENERAL INFORMATION</Item>
+          <h6> GENERAL INFORMATION</h6>
           <p className="footer-p-tags">Web Privacy Policy</p>
           <p className="footer-p-tags">Cookies settings</p>
           <p className="footer-p-tags">Recycling</p>
@@ -56,7 +57,7 @@ const Footer = () => (
         <Grid md={3}>
           <EmailSubscription/>
           <p><Checkbox {...label} /> Yes, I want to receive emails products, news and more from Aheadshopping.</p>
-          <Button type="submit" variant="primary">Subscribe</Button>
+          <Button type="submit" variant="outlined">Subscribe</Button>
         </Grid>
 
 
