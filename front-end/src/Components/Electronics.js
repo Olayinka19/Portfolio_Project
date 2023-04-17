@@ -1,94 +1,261 @@
 import React from 'react'
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
-// import Button from '@mui/material/Button';
-import Button from "react-bootstrap/Button";
-import Animation from "../Components/Animation";
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Unstable_Grid2';
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import Rating from '@mui/material/Rating';
+import { Link } from "react-router-dom";
+import Badge from 'react-bootstrap/Badge';
+import Button from '@mui/material/Button';
+// import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
+import ButtonBase from '@mui/material/ButtonBase';
+// import Rating from '@mui/material/Rating';
+
 function Electronics() {
+    const [value, setValue] = React.useState(4);
+    const Item = styled(Paper)(({ theme }) => ({
+        // backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        ...theme.typography.body2,
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+      }));
   return (
     <div>
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
-      </div>
-    
-    <CardGroup>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/61FgnIyZjGL.__AC_SX300_SY300_QL70_FMwebp_.jpg" />
-        <Card.Body>
-          <Card.Title>Hand Warmer</Card.Title>
-          <Card.Text>
-          Hand Warmer Rechargeable, MKG 10000mAh Electric Handwarmers, 15 Hours Long Lasting
-          </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3INQawx"><b>$17.99 </b><span font-size="5px"><del>49.98</del></span></a></Button>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+              {/* <Button variant="outlined">TOP🔝</Button> */}
+              <h4>Electronics</h4>
 
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 35 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/61NbD2D7CoL._AC_SX679_.jpg" />
-        <Card.Body>
-          <Card.Title>Cleaner Kit for Airpod</Card.Title>
-          <Card.Text>
-          Airpods Pro Cleaning Pen,Multi-Function Cleaner Kit Soft Brush for Phone Charging Port,Earbuds,Earpods
-          </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3IQwsjZ"><b>$9.99 </b><span font-size="5px"><del>19.99</del></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 20 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71f3vagRcYL._AC_SX679_.jpg" />
-        <Card.Body>
-          <Card.Title>Mini Portable Charger 5000mAh Power Bank</Card.Title>
-          <Card.Text>
-          LCD Display Battery Pack Compatible with Android Phone/Samsung Galaxy S22,S21/Note/Moto/LG/Pixel /Nexus/OnePlus 9 etc
-          </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3SN1kGC"><b>$19.95 </b><span font-size="5px"><del>23.95</del></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 13 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/715H8NhPyNL._AC_SX679_.jpg" />
-        <Card.Body>
-          <Card.Title>Charging Station for Multiple Devices</Card.Title>
-          <Card.Text>
-          Charger Organizer with Watch Bracket Equipped for iPhone iPad Android Tablet Watch and Other Electronics(6 Cables Included)
-          </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3mvT1Te"><b>$31.99 </b><span font-size="5px"></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 13 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/61KOV34oYNL._AC_SX679_.jpg" />
-        <Card.Body>
-          <Card.Title>Acupuncture-Pen Electronic-Pain-Relief</Card.Title>
-          <Card.Text>
-          
-          Therapy Merídiān-Energy-Pulse-Massage-Pen 5-in-1 USB-Energy-Pen-Pain-Relief-Tools Gifts-for-Women-and-Men          </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3ZdxaP7"><b>$23.97 </b><span font-size="5px"><del>26.97</del></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 13 mins ago</small>
-        </Card.Footer>
-      </Card>
-    </CardGroup>
-    <hr/>
-        <Card.Link href="#" style={{ display: 'flex', justifyContent: 'center' }} ><Button className='top-container' variant="success" >TOP🔝</Button></Card.Link>
-        <hr/>
-    
-    
-    
-    
+          </div>
+    <br />
+    <br />
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71tDhEbyPRL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/41teBan">-50% $49.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61q-1NZLcBL._AC_SL1000_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">-38% $61.85</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/714yy-QPysL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/41vVA7f">-30% $139.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71K8FIB10vL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3oh6CyU">$39.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+      </Grid>
+    </Box>
+
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61flgQb9s1L._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3ojok4C">$49.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_wireless_2_main_dongle_1512x.jpg?v=1678907740" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">$63.95</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_ttt_2_side_1512x.jpg?v=1678907440" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">$109.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71EHw68EScL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3oaTuet">-20% $23.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+
+        </Grid>
+
+      </Grid>
+    </Box>
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61flgQb9s1L._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3ojok4C">$49.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_wireless_2_main_dongle_1512x.jpg?v=1678907740" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">$63.95</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_ttt_2_side_1512x.jpg?v=1678907440" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">$109.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71EHw68EScL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3oaTuet">-20% $23.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+
+        </Grid>
+
+      </Grid>
+    </Box>
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61flgQb9s1L._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3ojok4C">$49.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_wireless_2_main_dongle_1512x.jpg?v=1678907740" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">$63.95</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_ttt_2_side_1512x.jpg?v=1678907440" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">$109.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71EHw68EScL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3oaTuet">-20% $23.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+
+        </Grid>
+
+      </Grid>
+    </Box>
     </div>
-    
   )
 }
 
-export default Electronics
+export default Electronics;

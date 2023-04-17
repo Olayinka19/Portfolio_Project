@@ -49,6 +49,12 @@ export default function NavBar() {
       <Chip
         avatar={<Avatar alt="Natacha" src={user && user.photoURL} />}
       />
+
+{user && user.displayName ? (
+        <Button onClick={handleSignOut} variant="secondary">LogOut</Button>
+      ) : (
+        <Link to='/signin'><Button variant="secondary">Log In</Button></Link>
+      )}
     </Stack>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -127,7 +133,7 @@ export default function NavBar() {
                     </NavDropdown.Item>
                     
                     <NavDropdown.Item>
-                    <Link to="/SmartHome"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/7733/7733361.png" width="45px" height="45px"></img>Smart Home</Button></Link>
+                    
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>

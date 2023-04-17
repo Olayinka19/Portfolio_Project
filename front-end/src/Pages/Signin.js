@@ -14,6 +14,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { Link } from "react-router-dom";
+import Badge from 'react-bootstrap/Badge';
 
 const Signin = () => {
   const { googleSignIn, user } = UserAuth();
@@ -51,10 +52,10 @@ const Signin = () => {
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-vector/detailed-esports-gaming-logo_79603-1792.jpg?w=1380&t=st=1681628574~exp=1681629174~hmac=5c36fd3f3bb178c8348c56cb3986c1fbd94a61593011a840f028df138ca45b97" /></Item>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Button variant="success"><GoogleButton onClick={handleGoogleSignIn} /></Button>
+      
       </div>
-          
-
+      <Button variant="contained"><GoogleButton onClick={handleGoogleSignIn} /></Button>
+      {/* <p className="pro" > <Badge bg="secondary"><h3></h3></Badge></p> */}
         </Grid>
 
       </Grid>

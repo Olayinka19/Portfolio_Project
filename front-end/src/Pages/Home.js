@@ -30,6 +30,8 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { Link } from "react-router-dom";
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
+
+
 // import FavoriteIcon from '@mui/icons-material/Favorite';
 // import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
@@ -72,7 +74,7 @@ function Home() {
         <Card className="home-container text-center">
           <Card.Body>
             <Card.Text>
-              <h1>Play like a pro with our premium gaming gear!</h1>
+              <h1>Get your game on with the best gear at unbeatable prices - shop now and save big!</h1>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 
               </div>
@@ -209,7 +211,7 @@ function Home() {
           <Card.Body>
         
             
-            <code>With 10 - 50% Discount!!</code>
+            <h2>10 - 50% off!!</h2>
             <br/>
         <br/>
         <br/>
@@ -240,7 +242,7 @@ function Home() {
             
             <br />
       <br />
-      <p className="pro" > <Badge bg="secondary"><h3>Take advantage of our discount!!</h3></Badge></p>
+      <p className="pro" > <Badge bg="secondary"><h3>SALES ENDING SOON!!</h3></Badge></p>
       
             <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
@@ -377,7 +379,9 @@ Happy gaming, and happy shopping!
     <br/>
     <br/>
     
-
+    
+    <br/>
+        <br/>
               <div style={{ display: "flex", justifyContent: "center" }}>
               {/* <Carousel fade>
                 <Carousel.Item interval={200}>

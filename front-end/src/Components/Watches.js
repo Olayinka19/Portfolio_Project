@@ -1,64 +1,136 @@
 import React from 'react'
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Unstable_Grid2';
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import Rating from '@mui/material/Rating';
+import { Link } from "react-router-dom";
+import Badge from 'react-bootstrap/Badge';
+import Button from '@mui/material/Button';
+// import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
+import ButtonBase from '@mui/material/ButtonBase';
+// import Rating from '@mui/material/Rating';
 
 function Watches() {
-    const products = [
-        {
-          id: 1,
-          name: 'Earthen Bottle',
-          href: '#',
-          price: '$48',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
-          imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-        },
-        {
-          id: 2,
-          name: 'Nomad Tumbler',
-          href: '#',
-          price: '$35',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
-          imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-        },
-        {
-          id: 3,
-          name: 'Focus Paper Refill',
-          href: '#',
-          price: '$89',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
-          imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-        },
-        {
-          id: 4,
-          name: 'Machined Mechanical Pencil',
-          href: '#',
-          price: '$35',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg',
-          imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-        },
-        // More products...
-      ]
+    const [value, setValue] = React.useState(4);
+    const Item = styled(Paper)(({ theme }) => ({
+        // backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        ...theme.typography.body2,
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+      }));
   return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-m py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="sr-only">Products</h2>
+    <div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+              {/* <Button variant="outlined">TOP🔝</Button> */}
+              <h4>Watches</h4>
 
-        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-          {products.map((product) => (
-            <a key={product.id} href={product.href} className="group">
-              <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-                <img
-                  src={product.imageSrc}
-                  alt={product.imageAlt}
-                  className="h-full w-full object-cover object-center group-hover:opacity-75"
-                />
-              </div>
-              <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-              <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
-            </a>
-          ))}
-        </div>
-      </div>
+          </div>
+    <br />
+    <br />
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71tDhEbyPRL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/41teBan">-50% $49.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61q-1NZLcBL._AC_SL1000_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">-38% $61.85</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/714yy-QPysL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/41vVA7f">-30% $139.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71K8FIB10vL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3oh6CyU">$39.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+      </Grid>
+    </Box>
+
+    
     </div>
   )
 }
 
-export default Watches
+export default Watches;

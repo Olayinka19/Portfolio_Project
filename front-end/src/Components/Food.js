@@ -1,226 +1,261 @@
 import React from 'react'
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import Button from "react-bootstrap/Button";
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
-import Animation from "../Components/Animation";
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Unstable_Grid2';
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import Rating from '@mui/material/Rating';
+import { Link } from "react-router-dom";
+import Badge from 'react-bootstrap/Badge';
+import Button from '@mui/material/Button';
+// import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
+import ButtonBase from '@mui/material/ButtonBase';
+// import Rating from '@mui/material/Rating';
 
 function Food() {
+    const [value, setValue] = React.useState(4);
+    const Item = styled(Paper)(({ theme }) => ({
+        // backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        ...theme.typography.body2,
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+      }));
   return (
     <div>
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
-      </div>
-    <ImageList sx={{ width: 390, height: 450 }} cols={3} variant="woven" rowHeight={164}>
-    {foodData.map((item) => (
-      <ImageListItem key={item.img}>
-        <img
-          src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-          srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-          alt={item.title}
-          loading="lazy"
-        />
-      </ImageListItem>
-    ))}
-  </ImageList>
-  <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Animation />
-      </div>
-  <CardGroup>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/81yXzWK7MOL._AC_UL640_FMwebp_QL65_.jpg" />
-        <Card.Body>
-          <Card.Title>Vegan Rice</Card.Title>
-          <Card.Text>
-          Hand Warmer Foods Organic Quinoa, Vegan.
-          </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3ZmivRS"><b>$8.15 </b><span font-size="5px"></span></a></Button>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+              {/* <Button variant="outlined">TOP🔝</Button> */}
+              <h4>Food</h4>
 
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 35 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91hj+c7OLpL._SL1500_.jpg" />
-        <Card.Body>
-          <Card.Title>Welch's Fruit Snacks</Card.Title>
-          <Card.Text>
-          Berries 'n Cherries, Gluten Free, Bulk Pack, 0.9 Ounce (Pack of 40)
-          </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3IQwsjZ"><b>$8.48 </b><span font-size="5px"></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 20 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/81mABE1sNhL._SL1500_.jpg" />
-        <Card.Body>
-          <Card.Title>Lay's Potato Chip</Card.Title>
-          <Card.Text>
-          Variety Pack, 1 Ounce (Pack of 40)
-          </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3F0EMfQ"><b>$21.86 </b><span font-size="5px"></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 13 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/41gl-9qjJbS._SX300_SY300_QL70_FMwebp_.jpg" />
-        <Card.Body>
-          <Card.Title>Charging Station for Multiple Devices</Card.Title>
-          <Card.Text>
-          Charger Organizer with Watch Bracket Equipped for iPhone iPad Android Tablet Watch and Other Electronics(6 Cables Included)
-          </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3IRNkqu"><b>$7.99 </b><span font-size="5px"></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 13 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/51WqvrUBrFL._SX300_SY300_QL70_FMwebp_.jpg" />
-        <Card.Body>
-          <Card.Title>Quaker Instant Oatmeal</Card.Title>
-          <Card.Text>
-          
-          4 Flavor Variety Pack, Individual Packets, 48 Count          </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3yctOA0"><b>$18.20 </b><span font-size="5px"><del>34.99</del></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 43 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/911XLyCu1RL._SX679_.jpg" />
-        <Card.Body>
-          <Card.Title>Acupuncture-Pen Electronic-Pain-Relief</Card.Title>
-          <Card.Text>
-          
-          Therapy Merídiān-Energy-Pulse-Massage-Pen 5-in-1 USB-Energy-Pen-Pain-Relief-Tools Gifts-for-Women-and-Men          </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3kSoGOA"><b>$19.49 </b><span font-size="5px"><del>34.99</del></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 13 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/51WqvrUBrFL._SX300_SY300_QL70_FMwebp_.jpg" />
-        <Card.Body>
-          <Card.Title>Acupuncture-Pen Electronic-Pain-Relief</Card.Title>
-          <Card.Text>
-          
-          Therapy Merídiān-Energy-Pulse-Massage-Pen 5-in-1 USB-Energy-Pen-Pain-Relief-Tools Gifts-for-Women-and-Men          </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/41P6l5G"><b>$18.29 </b><span font-size="5px"></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 13 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/81Z0eLtu3AL._SL1500_.jpg" />
-        <Card.Body>
-          <Card.Title>Glico Pocky</Card.Title>
-          <Card.Text>
-          
-          Strawberry Cream Covered Biscuit Sticks (9 Individual Bags), 3.81 oz        </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3yb5crs"><b>$6.38 </b><span font-size="5px"></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 13 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91MgJeQzJQL._SX679_.jpg" />
-        <Card.Body>
-          <Card.Title>Fla-Vor-Ice Popsicle</Card.Title>
-          <Card.Text>
-          
-          Variety Pack of 1.5 Oz Freezer Bars, Assorted Flavors, 100 Count        </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3ycvcmc"><b>$10.24 </b><span font-size="5px"></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 13 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91WaSA+gQGL._SY879_.jpg" />
-        <Card.Body>
-          <Card.Title>Indomie</Card.Title>
-          <Card.Text>
-          
-          Variety Pack - 6 Flavors in 1 Case (30 Bags)         </Card.Text>
-          <Button variant="success"><a href="https://amzn.to/3ZtyHAH"><b>$30.99 </b><span font-size="5px"></span></a></Button>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 13 mins ago</small>
-        </Card.Footer>
-      </Card>
-    </CardGroup>
+          </div>
+    <br />
+    <br />
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71tDhEbyPRL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/41teBan">-50% $49.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
 
 
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61q-1NZLcBL._AC_SL1000_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">-38% $61.85</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
 
-    <hr/>
-        <Card.Link href="#" style={{ display: 'flex', justifyContent: 'center' }} ><Button className='top-container' variant="success" >TOP🔝</Button></Card.Link>
-        <hr/>
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
 
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/714yy-QPysL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/41vVA7f">-30% $139.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71K8FIB10vL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3oh6CyU">$39.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+      </Grid>
+    </Box>
+
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61flgQb9s1L._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3ojok4C">$49.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_wireless_2_main_dongle_1512x.jpg?v=1678907740" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">$63.95</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_ttt_2_side_1512x.jpg?v=1678907440" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">$109.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71EHw68EScL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3oaTuet">-20% $23.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+
+        </Grid>
+
+      </Grid>
+    </Box>
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61flgQb9s1L._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3ojok4C">$49.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_wireless_2_main_dongle_1512x.jpg?v=1678907740" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">$63.95</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_ttt_2_side_1512x.jpg?v=1678907440" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">$109.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71EHw68EScL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3oaTuet">-20% $23.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+
+        </Grid>
+
+      </Grid>
+    </Box>
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61flgQb9s1L._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3ojok4C">$49.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_wireless_2_main_dongle_1512x.jpg?v=1678907740" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">$63.95</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_ttt_2_side_1512x.jpg?v=1678907440" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">$109.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71EHw68EScL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3oaTuet">-20% $23.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+
+        </Grid>
+
+      </Grid>
+    </Box>
     </div>
-    
   )
-  
 }
-const foodData = [
-    {
-      img: 'https://m.media-amazon.com/images/I/81zuIAbB5DL._SY879_.jpg',
-      title: 'Tide Pods',
-    },
-    {
-      img: 'https://m.media-amazon.com/images/I/71lljnlIUNL._AC_UL640_FMwebp_QL65_.jpg',
-      title: 'BWater Wipes',
-    },
-    {
-      img: 'https://m.media-amazon.com/images/I/71+EI2Xi6EL._AC_UL640_FMwebp_QL65_.jpg',
-      title: 'Baby Wipes',
-    },
-    {
-      img: 'https://m.media-amazon.com/images/I/817x89Wnc5S._AC_UL640_FMwebp_QL65_.jpg',
-      title: 'Coffee',
-    },
-    {
-      img: 'https://m.media-amazon.com/images/I/61jcgCyiUQL._SL1000_.jpg',
-      title: 'Hats',
-    },
-    {
-      img: 'https://m.media-amazon.com/images/I/51RskrlwRGL._SL1080_.jpg',
-      title: 'Honey',
-    },
-    {
-      img: 'https://m.media-amazon.com/images/I/81mABE1sNhL._AC_UL640_FMwebp_QL65_.jpg',
-      title: 'Basketball',
-    },
-    {
-      img: 'https://m.media-amazon.com/images/I/71Qjhi9dZzL._AC_UL640_FMwebp_QL65_.jpg',
-      title: 'Fern',
-    },
-    {
-      img: 'https://m.media-amazon.com/images/I/81yXzWK7MOL._SX679_.jpg',
-      title: 'Mushrooms',
-    },
-    {
-      img: 'https://m.media-amazon.com/images/I/91hihzGc8aL._AC_UL640_FMwebp_QL65_.jpg',
-      title: 'Tomato basil',
-    },
-    {
-      img: 'https://m.media-amazon.com/images/I/81SCalI51YL._AC_UL640_FMwebp_QL65_.jpg',
-      title: 'Sea star',
-    },
-    {
-      img: 'https://m.media-amazon.com/images/I/81RxevEXqIL._SL1500_.jpg',
-      title: 'Bike',
-    },
-  ];
 
-export default Food
+export default Food;

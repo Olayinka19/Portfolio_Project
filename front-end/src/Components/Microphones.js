@@ -128,6 +128,297 @@ function Microphones() {
       </Grid>
     </Box>
 
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61NrAZHeuCL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3UGWGe5">-22% $45.04</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_quadcast_02_side_1512x.jpg?v=1678907138" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/43Dz5ze">-10% $126.50</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_procast_2_turn_1512x.jpg?v=1678908093" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/microphones/products/hyperx-procast-professional-xlr-microphone?variant=42994462785693">$249.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_duocast_2_side_1512x.jpg?v=1678908024" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/microphones/products/hyperx-duocast-usb-microphone?variant=42587052703901">$99.99 $89.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+      </Grid>
+    </Box>
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61NrAZHeuCL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3UGWGe5">-22% $45.04</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_quadcast_02_side_1512x.jpg?v=1678907138" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/43Dz5ze">-10% $126.50</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_procast_2_turn_1512x.jpg?v=1678908093" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/microphones/products/hyperx-procast-professional-xlr-microphone?variant=42994462785693">$249.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_duocast_2_side_1512x.jpg?v=1678908024" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/microphones/products/hyperx-duocast-usb-microphone?variant=42587052703901">$99.99 $89.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+      </Grid>
+    </Box>
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61NrAZHeuCL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3UGWGe5">-22% $45.04</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_quadcast_02_side_1512x.jpg?v=1678907138" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/43Dz5ze">-10% $126.50</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_procast_2_turn_1512x.jpg?v=1678908093" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/microphones/products/hyperx-procast-professional-xlr-microphone?variant=42994462785693">$249.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_duocast_2_side_1512x.jpg?v=1678908024" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/microphones/products/hyperx-duocast-usb-microphone?variant=42587052703901">$99.99 $89.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Likes</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+      </Grid>
+    </Box>
     
     </div>
   )

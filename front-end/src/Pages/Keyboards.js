@@ -44,7 +44,7 @@ function Keyboards() {
         '& > legend': { mt: 2 },
       }}
     >
-      <Typography component="legend">Likes</Typography>
+      {/* <Typography component="legend"></Typography> */}
       <Rating
         name="simple-controlled"
         value={value}
@@ -68,7 +68,202 @@ function Keyboards() {
         '& > legend': { mt: 2 },
       }}
     >
-      <Typography component="legend">Likes</Typography>
+      {/* <Typography component="legend"></Typography> */}
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/714yy-QPysL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/41vVA7f">-30% $139.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      {/* <Typography component="legend"></Typography> */}
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71K8FIB10vL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3oh6CyU">$39.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      {/* <Typography component="legend"></Typography> */}
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+      </Grid>
+    </Box>
+
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71tDhEbyPRL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/41teBan">-50% $49.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      {/* <Typography component="legend"></Typography> */}
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61q-1NZLcBL._AC_SL1000_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">-38% $61.85</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      {/* <Typography component="legend"></Typography> */}
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/714yy-QPysL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/41vVA7f">-30% $139.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      {/* <Typography component="legend"></Typography> */}
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71K8FIB10vL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3oh6CyU">$39.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      {/* <Typography component="legend"></Typography> */}
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+      </Grid>
+    </Box>
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71tDhEbyPRL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/41teBan">-50% $49.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      {/* <Typography component="legend"></Typography> */}
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61q-1NZLcBL._AC_SL1000_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">-38% $61.85</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      {/* <Typography component="legend"></Typography> */}
       <Rating
         name="simple-controlled"
         value={value}
@@ -114,7 +309,7 @@ function Keyboards() {
         '& > legend': { mt: 2 },
       }}
     >
-      <Typography component="legend">Likes</Typography>
+      {/* <Typography component="legend"></Typography> */}
       <Rating
         name="simple-controlled"
         value={value}
@@ -127,8 +322,103 @@ function Keyboards() {
 
       </Grid>
     </Box>
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71tDhEbyPRL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/41teBan">-50% $49.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
 
-    
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      {/* <Typography component="legend"></Typography> */}
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/61q-1NZLcBL._AC_SL1000_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://hyperx.com/collections/gaming-headsets/products/hyperx-cloud-alpha?variant=41031691239581">-38% $61.85</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      {/* <Typography component="legend"></Typography> */}
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/714yy-QPysL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/41vVA7f">-30% $139.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      {/* <Typography component="legend"></Typography> */}
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://m.media-amazon.com/images/I/71K8FIB10vL._AC_SX679_.jpg" /></Item>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <Button color="secondary"><a href="https://amzn.to/3oh6CyU">$39.99</a></Button>
+              {/* <Button variant="secondary"><a href="https://amzn.to/3ojok4C">-17% $19.98 </a></Button> */}
+
+          </div>
+          <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      {/* <Typography component="legend"></Typography> */}
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+    </Box>
+        </Grid>
+
+      </Grid>
+    </Box>
     </div>
   )
 }
