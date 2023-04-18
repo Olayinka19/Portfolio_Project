@@ -52,6 +52,10 @@ const Signin = () => {
           <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/premium-photo/excited-happy-woman-playing-videogames-console-while-celebrating-match-victory-happy-joyful-young-adult-person-enjoying-competitive-game-win-while-standing-blue-background_482257-43255.jpg" />
           <br/>
           <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <div style={{ display: "flex", justifyContent: "center" }}>
           <GoogleButton onClick={handleGoogleSignIn} />
           </div>

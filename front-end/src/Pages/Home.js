@@ -30,7 +30,16 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { Link } from "react-router-dom";
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
+// import Typography from '@material-ui/core/Typography';
+// import Pagination from '@material-ui/lab/Pagination';
 
+// import { makeStyles, useTheme } from '@material-ui/core/styles';
+// import MobileStepper from '@material-ui/core/MobileStepper';
+// import Paper from '@material-ui/core/Paper';
+// import Typography from '@material-ui/core/Typography';
+// import Button from '@material-ui/core/Button';
+// import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
+// import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 // import FavoriteIcon from '@mui/icons-material/Favorite';
 // import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -74,7 +83,7 @@ function Home() {
         <Card className="home-container text-center">
           <Card.Body>
             <Card.Text>
-              <h1>Unleash the Ultimate Gaming Experience with Our Top-Rated Amazon Deals</h1>
+              <h3>Unleash the Ultimate Gaming Experience with Our Top-Rated Amazon Deals</h3>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 
               </div>
@@ -207,11 +216,24 @@ function Home() {
         </Grid>
       </Grid>
     </Box>
+
+    <br/>
+    {/* <Card>
+      <Card.Header>Featured</Card.Header>
+      <Card.Body>
+        <Card.Title>Special title treatment</Card.Title>
+        <Card.Text>
+          With supporting text below as a natural lead-in to additional content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card> */}
+    <br />
         <Card className="text-center">
           <Card.Body>
         
             
-            <h2>10 - 50% off!!</h2>
+            <h2>Get 10 - 50% off!!</h2>
             <br/>
         <br/>
         <br/>
@@ -250,23 +272,31 @@ function Home() {
           <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_quadcast_02_side_1512x.jpg?v=1678907138" />
           
           <p>Get great sound whether you’re connecting to a PC, PS4™, PS5™, or Mac®.</p>
+          <Badge bg="secondary"><h4>Learn More</h4></Badge>
           </Item>
         </Grid>
 
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_wireless_2_main_dongle_1512x.jpg?v=1678907740" />
           <p>The HyperX Cloud Stinger™ 2 Core is the essential entry-level PlayStation headset at an affordable price.</p>
+          <Badge bg="secondary"><h4>Learn More</h4></Badge>
           </Item>
         </Grid>
 
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_alloy_core_rgb_us_1_main_1512x.jpg?v=1678907503" />
-          <p>RGB™ is ideal for gamers looking to enhance their keyboard’s style and performance without breaking the bank.</p></Item>
+          <p>RGB™ is ideal for gamers looking to enhance their keyboard’s style and performance without breaking the bank.</p>
+          <Badge bg="secondary"><h4>Rearn More</h4></Badge>
+          </Item>
         </Grid>
 
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_clutch_gladiate_6l366aa_angle_2_1512x.jpg?v=1679679081" />
-          <p>This officially licensed wired Xbox controller features dual trigger locks and remappable rear buttons.</p></Item>
+          <p>This officially licensed wired Xbox controller features dual trigger locks and remappable rear buttons.</p>
+          <Badge bg="secondary"><h4>Rearn More</h4></Badge>
+          </Item>
+          <br/>
+          
 
         </Grid>
 
@@ -308,9 +338,7 @@ function Home() {
               <br/>
         <br/>
             <Button variant="outlined">
-              <a href="/">
-                <h3>Unlock your true gaming potential with our top-of-the-line equipment </h3>
-              </a>
+                <h3>AheadShopping BLOG </h3>
             </Button>
             <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
@@ -393,7 +421,7 @@ Happy gaming, and happy shopping!
     
     <br/>
         <br/>
-
+      
         
               <div style={{ display: "flex", justifyContent: "center" }}>
               {/* <Carousel fade>
