@@ -15,6 +15,7 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { Link } from "react-router-dom";
 import Badge from 'react-bootstrap/Badge';
+import Alert from 'react-bootstrap/Alert';
 
 const Signin = () => {
   const { googleSignIn, user } = UserAuth();
@@ -37,32 +38,41 @@ const Signin = () => {
 
   useEffect(() => {
     if (user !== null) {
-      navigate('/about');
+      navigate('/');
+      window.alert("Congratulations! You have successfully signed in✅")
     }
   }, [user]);
 
   return (
-    <div className='p-2'>
-            <div className="container">
-  
-    <div className="border border-dark">
+    <div >
+           
       {/* <h1>Sign in</h1> */}
-  <Box sx={{ flexGrow: 2 }}>
+    <Grid md={3}>
+    <h1></h1>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/premium-photo/excited-happy-woman-playing-videogames-console-while-celebrating-match-victory-happy-joyful-young-adult-person-enjoying-competitive-game-win-while-standing-blue-background_482257-43255.jpg" />
+          <br/>
+          <br/>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+          <GoogleButton onClick={handleGoogleSignIn} />
+          </div>
+          </Item>
+        </Grid>
+  {/* <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-vector/detailed-esports-gaming-logo_79603-1792.jpg?w=1380&t=st=1681628574~exp=1681629174~hmac=5c36fd3f3bb178c8348c56cb3986c1fbd94a61593011a840f028df138ca45b97" /></Item>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
       
       </div>
-      <Button variant="contained"><GoogleButton onClick={handleGoogleSignIn} /></Button>
-      {/* <p className="pro" > <Badge bg="secondary"><h3></h3></Badge></p> */}
+      
+      <p className="pro" > <Badge bg="secondary"><h3></h3></Badge></p>
         </Grid>
 
       </Grid>
-    </Box>
+    </Box> */}
 
-    </div>
-    </div>
+  
+
     </div>
   );
 };

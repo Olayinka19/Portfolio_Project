@@ -13,7 +13,7 @@ import Container from "react-bootstrap/Container";
 import { UserAuth } from "../Context/AuthContext";
 // import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import Ahead6 from './Images/Ahead6.png'
+import new2 from './Images/new2.png'
 import Ahead from './Images/Ahead.png'
 import AheadSh from './Images/AheadSh.png'
 import logo6 from './Images/logo6.png'
@@ -53,7 +53,7 @@ export default function NavBar() {
 {user && user.displayName ? (
         <Button onClick={handleSignOut} variant="outlined">LogOut</Button>
       ) : (
-        <Link to='/signin'><Button variant="secondary">Log In</Button></Link>
+        <Link to='/signin'><Button variant="outlined">Log In</Button></Link>
       )}
     </Stack>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -83,10 +83,10 @@ export default function NavBar() {
                     ) : (
                       <Link to="/">
                         <img
-                          src={Ahead6}
-                          width="65px"
-                          height="40px"
-                          border-radius= "17px"
+                          src={new2}
+                          width="45px"
+                          height="45px"
+                          border-radius= "50%"
                         ></img>{" "}
                       </Link>
                     )}
@@ -212,15 +212,15 @@ export default function NavBar() {
                   <Link to="/Electronics"><Button variant="outlined">Electronics</Button></Link>
                   <hr/> */}
                   {user && user.displayName ? (
-        <Button onClick={handleSignOut} variant="secondary">LogOut</Button>
+        <Button onClick={handleSignOut} variant="outlined">LogOut</Button>
       ) : (
-        <Link to='/signin'><Button variant="error">Log In</Button></Link>
+        <Link to='/signin'><Button variant="outlined">Log In</Button></Link>
       )}
-                  <NavDropdown
-                    title="Account Settings"
+      <img src="https://img.freepik.com/free-icon/user_318-931840.jpg?size=626&ext=jpg" width="35px" height="35px"></img><NavDropdown
+                    title="My Account"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                  <img src="https://img.freepik.com/premium-vector/human-symbol-3d-icon-user-business-symbology-website-profile_593228-130.jpg?w=1380" width="45px" height="45px"></img>
+        
                     <NavDropdown.Item ><Link to="/Account">My Account</Link></NavDropdown.Item>
                     <NavDropdown.Item>
                     <Link to="/Profile">Profile</Link>
