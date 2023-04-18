@@ -74,7 +74,7 @@ function Home() {
         <Card className="home-container text-center">
           <Card.Body>
             <Card.Text>
-              <h1>Unleash the Ultimate Gaming Experience with Our Top-Rated 💃🏻Amazon Deals🕺🏻</h1>
+              <h1>Unleash the Ultimate Gaming Experience with Our Top-Rated Amazon Deals</h1>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 
               </div>
