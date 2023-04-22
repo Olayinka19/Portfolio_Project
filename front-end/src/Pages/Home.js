@@ -30,6 +30,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { Link } from "react-router-dom";
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
+// import Modal from '@mui/material/Modal';
 // import Typography from '@material-ui/core/Typography';
 // import Pagination from '@material-ui/lab/Pagination';
 
@@ -142,16 +143,20 @@ function Home() {
         <Card>
           <Card.Body>
           {/* <p className="pro" > <Badge bg="secondary"><h1>Top Categories</h1> </Badge></p> */}
-          <Animation />
+          {/* <Animation /> */}
+          <div className="category" style={{ display: "flex", justifyContent: "center" }}>
+          <Button variant="outlined">Top Categories</Button>
+          </div>
+          
           </Card.Body>
         </Card>
         
         <br />
         <br />
-        
+
         <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
-        <Grid md={3}>
+        <Grid md={4}>
           <Item><img width="350px" height="220px" src="https://img.freepik.com/free-photo/pro-streamer-sitting-gaming-chair-talking-with-players-using-professional-micorphone-playing-space-shooter-video-game-during-online-tournament-cyber-man-discussing-streaming-chat_482257-12604.jpg?w=2000&t=st=1681597958~exp=1681598558~hmac=3e5587511ab709b25347d849ad8ff22ef9ffa06fb1c56776cb26777b02eb76ec" alt="First slide" /></Item>
           <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
@@ -163,19 +168,21 @@ function Home() {
     </Accordion>
         </Grid>
 
-        <Grid md={3}>
+        <Grid md={4}>
           <Item><img width="350px" height="220px" src="https://img.freepik.com/free-photo/gradient-illuminated-neon-gaming-desk-setup-with-keyboard_23-2149529405.jpg?w=1800&t=st=1681598520~exp=1681599120~hmac=e1602699b8c13824649ce521ebadb25be1e43146bb42410a0b5cee270a1e4310"  alt="First slide"/></Item>
           <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header> KEYBOARDS</Accordion.Header>
         <Accordion.Body>
-        <Link to="/Keyboards"><Button variant="secondary"> <img src="https://cdn-icons-png.flaticon.com/512/329/329815.png?w=1060&t=st=1681597742~exp=1681598342~hmac=dd6729fcad0e434168343a780a1327d5b41403ab66e41735a3d15ef476ee5035" alt="First slide" width="35px" height="35px"/></Button></Link>
+        <div className="image-content">
+        <Link to="/Keyboards"><Button variant="secondary"> <img  src="https://cdn-icons-png.flaticon.com/512/329/329815.png?w=1060&t=st=1681597742~exp=1681598342~hmac=dd6729fcad0e434168343a780a1327d5b41403ab66e41735a3d15ef476ee5035" alt="First slide" width="35px" height="35px"/></Button></Link>
+        </div>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
   
         </Grid>
-        <Grid md={3}>
+        <Grid md={4}>
   
           <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/diverse-team-influencers-creating-channel-content-podcast-filming-vlog-social-media-modern-man-woman-recording-episode-show-camera-live-broadcasting-conversation_482257-48354.jpg?w=1800&t=st=1681598033~exp=1681598633~hmac=39a7fefaab9722f2a95b4ecc5ab8a14514f3acadb1c5455efd7bbaa49b77fdd7" /></Item>
           <Accordion defaultActiveKey="0">
@@ -187,7 +194,8 @@ function Home() {
       </Accordion.Item>
     </Accordion>
         </Grid>
-        <Grid md={3}>
+        
+        {/* <Grid md={6}>
         <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/view-neon-illuminated-gaming-desk-setup-with-keyboard_23-2149529362.jpg?w=1800&t=st=1681605177~exp=1681605777~hmac=6d50cbf04f84535ab3837d2265c7e75de0d5542640a5c6fa904d10ace66e1da2" /></Item>
           <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
@@ -197,7 +205,7 @@ function Home() {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Box>
         <br/>
@@ -221,6 +229,8 @@ function Home() {
     </Box>
 
     <br/>
+    <br />
+    
     {/* <Card>
       <Card.Header>Featured</Card.Header>
       <Card.Body>
@@ -235,7 +245,6 @@ function Home() {
         <Card className="text-center">
           <Card.Body>
         
-            
             <h2>Get 10 - 50% off!!</h2>
             <br/>
         <br/>
@@ -258,8 +267,7 @@ function Home() {
         width={210}
         height={118}
       />
-
-      
+  
   
     </Box>
           
