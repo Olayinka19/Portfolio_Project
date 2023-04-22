@@ -30,6 +30,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { Link } from "react-router-dom";
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
+// import obj from './Images/obj.mp4'
 // import Modal from '@mui/material/Modal';
 // import Typography from '@material-ui/core/Typography';
 // import Pagination from '@material-ui/lab/Pagination';
@@ -179,7 +180,7 @@ function Home() {
         <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
         <Grid md={4}>
-          <Item><img width="350px" height="220px" src="https://img.freepik.com/free-photo/pro-streamer-sitting-gaming-chair-talking-with-players-using-professional-micorphone-playing-space-shooter-video-game-during-online-tournament-cyber-man-discussing-streaming-chat_482257-12604.jpg?w=2000&t=st=1681597958~exp=1681598558~hmac=3e5587511ab709b25347d849ad8ff22ef9ffa06fb1c56776cb26777b02eb76ec" alt="First slide" /></Item>
+          <Item><img width="350px" height="220px" src="https://images.pexels.com/photos/9072371/pexels-photo-9072371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="First slide" /></Item>
           <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>HEADSETS</Accordion.Header>
@@ -191,7 +192,7 @@ function Home() {
         </Grid>
 
         <Grid md={4}>
-          <Item><img width="350px" height="220px" src="https://img.freepik.com/free-photo/gradient-illuminated-neon-gaming-desk-setup-with-keyboard_23-2149529405.jpg?w=1800&t=st=1681598520~exp=1681599120~hmac=e1602699b8c13824649ce521ebadb25be1e43146bb42410a0b5cee270a1e4310"  alt="First slide"/></Item>
+          <Item><img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/></Item>
           <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header> KEYBOARDS</Accordion.Header>
@@ -206,7 +207,7 @@ function Home() {
         </Grid>
         <Grid md={4}>
   
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/diverse-team-influencers-creating-channel-content-podcast-filming-vlog-social-media-modern-man-woman-recording-episode-show-camera-live-broadcasting-conversation_482257-48354.jpg?w=1800&t=st=1681598033~exp=1681598633~hmac=39a7fefaab9722f2a95b4ecc5ab8a14514f3acadb1c5455efd7bbaa49b77fdd7" /></Item>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://images.pexels.com/photos/7720712/pexels-photo-7720712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /></Item>
           <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>MICROPHONES</Accordion.Header>
@@ -232,6 +233,8 @@ function Home() {
     </Box>
         <br/>
         <br/>
+
+        <iframe className="first-image" src="https://player.vimeo.com/video/549791635" name="iframe_a"  title="Iframe Example"></iframe>
         <br/>
 
   
@@ -242,7 +245,7 @@ function Home() {
           <Item><img width="350px" height="220px" alt="First slide" src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /></Item>
         </Grid>
         <Grid item xs={6}>
-          <Item><img width="100%" height="220px" alt="First slide" src="https://images.pexels.com/photos/3248143/pexels-photo-3248143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /></Item>
+          <Item><img width="100%" height="220px" alt="First slide" src="https://images.pexels.com/photos/7046705/pexels-photo-7046705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /></Item>
         </Grid>
         <Grid item xs>
           <Item><img width="100%" height="220px" alt="First slide" src="https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /> </Item>
@@ -298,6 +301,7 @@ function Home() {
             
             
             <br />
+            <iframe className="first-image" src="https://player.vimeo.com/video/549791164" name="iframe_a"  title="Iframe Example"></iframe>
       <br />
       <p className="pro" > <Badge bg="secondary"><h3>SALES ENDING SOON!!</h3></Badge></p>
       
@@ -307,28 +311,28 @@ function Home() {
           <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_quadcast_02_side_1512x.jpg?v=1678907138" />
           
           <p>Get great sound whether you’re connecting to a PC, PS4™, PS5™, or Mac®.</p>
-          <Badge bg="secondary"><h4>Learn More</h4></Badge>
+          {/* <Badge bg="secondary"><h4>Learn More</h4></Badge> */}
           </Item>
         </Grid>
 
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_wireless_2_main_dongle_1512x.jpg?v=1678907740" />
           <p>The HyperX Cloud Stinger™ 2 Core is the essential entry-level PlayStation headset at an affordable price.</p>
-          <Badge bg="secondary"><h4>Learn More</h4></Badge>
+          {/* <Badge bg="secondary"><h4>Learn More</h4></Badge> */}
           </Item>
         </Grid>
 
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_alloy_core_rgb_us_1_main_1512x.jpg?v=1678907503" />
           <p>RGB™ is ideal for gamers looking to enhance their keyboard’s style and performance without breaking the bank.</p>
-          <Badge bg="secondary"><h4>Rearn More</h4></Badge>
+          {/* <Badge bg="secondary"><h4>Rearn More</h4></Badge> */}
           </Item>
         </Grid>
 
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_clutch_gladiate_6l366aa_angle_2_1512x.jpg?v=1679679081" />
           <p>This officially licensed wired Xbox controller features dual trigger locks and remappable rear buttons.</p>
-          <Badge bg="secondary"><h4>Rearn More</h4></Badge>
+          {/* <Badge bg="secondary"><h4>Rearn More</h4></Badge> */}
           </Item>
           <br/>
           
@@ -371,6 +375,8 @@ function Home() {
   
     
               <br/>
+
+              <iframe className="first-image" src="https://player.vimeo.com/video/549791206" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
         <br/>
             <Button variant="outlined">
                 <h3>AheadShopping BLOG </h3>
@@ -502,7 +508,37 @@ Happy gaming, and happy shopping!
 
 
 
+          {/* <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item>
+          <iframe src="https://player.vimeo.com/video/401026451" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+          </Item>
+        </Grid>
 
+        <Grid md={3}>
+          <Item>
+          <iframe src="https://player.vimeo.com/video/549791806" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+          </Item>
+        </Grid>
+
+        <Grid md={3}>
+          <Item>
+          <iframe src="https://player.vimeo.com/video/557964126" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+          </Item>
+        </Grid>
+
+        <Grid md={3}>
+          <Item>
+          <iframe src="https://player.vimeo.com/video/541992516" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+          </Item>
+          <br/>
+          
+
+        </Grid>
+
+      </Grid>
+    </Box> */}
 
 
           <div style={{ display: "flex", justifyContent: "center" }}>
