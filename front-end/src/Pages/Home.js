@@ -168,7 +168,7 @@ function Home() {
           {/* <p className="pro" > <Badge bg="secondary"><h1>Top Categories</h1> </Badge></p> */}
           {/* <Animation /> */}
           <div className="category" style={{ display: "flex", justifyContent: "center" }}>
-          <Button variant="outlined">Top Categories</Button>
+          <Button variant="outlined"><h3>Top Categories</h3></Button>
           </div>
           
           </Card.Body>
@@ -270,7 +270,7 @@ function Home() {
         <Card className="text-center">
           <Card.Body>
         
-            <h2>Get 10 - 50% off!!</h2>
+            <h3>Get 10 - 50% off!!</h3>
             <br/>
         <br/>
         <br/>
@@ -324,7 +324,7 @@ function Home() {
 
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_alloy_core_rgb_us_1_main_1512x.jpg?v=1678907503" />
-          <p>RGB™ is ideal for gamers looking to enhance their keyboard’s style and performance without breaking the bank.</p>
+          <p>RGB™ is ideal for gamers looking to enhance their keyboard’s style and performance without spendint alot.</p>
           {/* <Badge bg="secondary"><h4>Rearn More</h4></Badge> */}
           </Item>
         </Grid>
@@ -544,7 +544,7 @@ Happy gaming, and happy shopping!
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Card.Link href="#">
               {/* <Button variant="outlined">TOP🔝</Button> */}
-              <Badge bg="secondary"><h3>Top🔝</h3></Badge>
+              <Badge bg="secondary"><h3>Back To Top</h3></Badge>
             </Card.Link>
           </div>
         </div>
