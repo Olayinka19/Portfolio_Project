@@ -91,45 +91,67 @@ function Home() {
             </Card.Text>
 
             <Carousel fade>
-              <Carousel.Item interval={2000}>
+            <Carousel.Item>
                 <img
                   className="first-image"
-                  src="https://img.freepik.com/free-photo/gaming-setup-with-headphones-still-life_23-2149829129.jpg?w=826&t=st=1681598210~exp=1681598810~hmac=2c308d784b69a824abd6daf4841b1dcb3d7dd5f802ea5c8829b9350856b020b0"
+                  src="https://images.pexels.com/photos/7862590/pexels-photo-7862590.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+            <Carousel.Item>
+                <img
+                  className="first-image"
+                  src="https://images.pexels.com/photos/7848992/pexels-photo-7848992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item interval={2000}>
+
+                <img
+                  className="first-image"
+                  src="https://images.pexels.com/photos/7776225/pexels-photo-7776225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="First slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="first-image"
-                  src="https://img.freepik.com/free-photo/recording-new-song-attractive-singer-is-singing-new-audio-material_613910-13188.jpg?w=1800&t=st=1681598162~exp=1681598762~hmac=4a7aeb8e72f206b8c57aad7a36a0c17bb7b7397c2f78a04e3e417d533785c028"
+                  src="https://images.pexels.com/photos/4009604/pexels-photo-4009604.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="first-image"
+                  src="https://images.pexels.com/photos/5698398/pexels-photo-5698398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Second slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="first-image"
-                  src="https://img.freepik.com/free-photo/gamer-streaming-online-videogames-professional-powerful-computer-with-green-screen-mock-up-chroma-key-display-streamer-playing-space-shooter-game-isolated-desktop-holding-wireles-controller_482257-12629.jpg?w=2000&t=st=1681598266~exp=1681598866~hmac=9c9e308d18801cf1c8a3cba01fcd6d77435eb89fdf34b3fe5ab65f688da3a0bc"
+                  src="https://images.pexels.com/photos/1038916/pexels-photo-1038916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Third slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="first-image"
-                  src="https://img.freepik.com/free-photo/woman-using-video-games-play-stream-online-computer-streamer-broadcasting-gameplay-live-with-chat-monitor-using-headphones-microphone-player-streaming-gaming_482257-27671.jpg?w=1800&t=st=1681598302~exp=1681598902~hmac=53954ea66da720f865c4d6c26562adbacb8daae020090f9ab7481814f00ae511"
+                  src="https://images.pexels.com/photos/12718618/pexels-photo-12718618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Third slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="first-image"
-                  src="https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_SL1500_.jpg"
+                  src="https://images.pexels.com/photos/6498310/pexels-photo-6498310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Third slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="first-image"
-                  src="https://img.freepik.com/free-photo/view-illuminated-neon-gaming-keyboard-setup-controller_23-2149529367.jpg?w=1800&t=st=1681598378~exp=1681598978~hmac=bb6c1fbab6a84e07de2e191d84e4822e8ccf82771519324df658fcdf79077cd1"
+                  src="https://images.pexels.com/photos/6498302/pexels-photo-6498302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Third slide"
                 />
               </Carousel.Item>
@@ -217,13 +239,13 @@ function Home() {
         <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid item xs="auto">
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/high-angle-controllers-headphones_23-2149829136.jpg?w=1800&t=st=1681599080~exp=1681599680~hmac=4c84c2d995960c3a3cb1bca2f78fb71c605f53e992beeaa590c118df457610c3" /></Item>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /></Item>
         </Grid>
         <Grid item xs={6}>
-          <Item><img width="100%" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/high-angle-man-with-virtual-headset_23-2148405676.jpg?w=1800&t=st=1681599178~exp=1681599778~hmac=6b01bc0d3e196b197e7bc5f2a23b19c2dd552f54c691fb9796174dd80d320001" /></Item>
+          <Item><img width="100%" height="220px" alt="First slide" src="https://images.pexels.com/photos/3248143/pexels-photo-3248143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /></Item>
         </Grid>
         <Grid item xs>
-          <Item><img width="100%" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/high-angle-controller-vr-glasses_23-2149829130.jpg?w=1800&t=st=1681599397~exp=1681599997~hmac=4785ce5323706fa2ac1eafc8b5dd3ccec2df3f25e1ce9ef552eb9c7c5e4476f1" /> </Item>
+          <Item><img width="100%" height="220px" alt="First slide" src="https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /> </Item>
         </Grid>
       </Grid>
     </Box>
