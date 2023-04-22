@@ -146,6 +146,9 @@ function Home() {
           </Card.Body>
         </Card>
         
+        <br />
+        <br />
+        
         <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
         <Grid md={3}>
@@ -240,7 +243,7 @@ function Home() {
             <Box
       sx={{
         bgcolor: '#00053C',
-        p: 8,
+        p: 6,
         width: '100%',
         display: 'flex',
         justifyContent: 'center',
@@ -248,13 +251,15 @@ function Home() {
       
     >
      
-       <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-vector/vintage-badge-hand-holding-joystick-vector-illustration-round-label-with-gamepad_74855-11224.jpg?w=1380&t=st=1681627155~exp=1681627755~hmac=bdc2eae7a5e6d89121776cb0cfbee8b23a32b79a0d033432a5eaa8a3a2514354" /></Item>
+       <Item><img width="350px" height="220px" alt="First slide" src="https://static.wixstatic.com/media/fcd429_169abd10d5f443cfae2afa4a0b95e8c9~mv2.gif" /></Item>
       <Skeleton
         sx={{ bgcolor: 'black.900' }}
         variant="rectangular"
         width={210}
         height={118}
       />
+
+      
   
     </Box>
           
@@ -401,6 +406,7 @@ Happy gaming, and happy shopping!
       
     >
      
+     
       
   <h3>Calling all gamers! Grab your favorite snacks and settle in for an all-night gaming marathon with our amazing discount on gaming equipment. Get ready to dominate the game and have some serious fun!</h3>
       {/* <Skeleton
@@ -424,6 +430,7 @@ Happy gaming, and happy shopping!
       
         
               <div style={{ display: "flex", justifyContent: "center" }}>
+              
               {/* <Carousel fade>
                 <Carousel.Item interval={200}>
                   <img

@@ -20,6 +20,8 @@ import logo6 from './Images/logo6.png'
 import Avatar from '@mui/material/Avatar';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 
 
@@ -27,6 +29,14 @@ export default function NavBar() {
 
 
   const {user, logOut} = UserAuth();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   const handleSignOut = async () => {
     try {
       await logOut()
@@ -46,9 +56,36 @@ export default function NavBar() {
             <Navbar.Brand href="/"><img width="120px" height="50px" src={AheadSh} alt="React Logo" /></Navbar.Brand>
             <Stack direction="row" spacing={1}>
   
-      <Chip
+      {/* <Chip
+        avatar={<Avatar alt="Natacha" src={user && user.photoURL} />}
+      /> */}
+      <div>
+<Button
+        id="basic-button"
+        aria-controls={open ? 'basic-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick}
+      >
+         <Chip
         avatar={<Avatar alt="Natacha" src={user && user.photoURL} />}
       />
+      </Button>
+      <Menu
+        id="basic-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        MenuListProps={{
+          'aria-labelledby': 'basic-button',
+        }}
+      >
+        <MenuItem onClick={handleClose}><Link to="/Profile">Profile</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/Account">My Account</Link></MenuItem>
+        <MenuItem onClick={handleSignOut}>Logout</MenuItem>
+      </Menu>
+    </div>
+
 
 {user && user.displayName ? (
         <Button onClick={handleSignOut} variant="outlined">LogOut</Button>
