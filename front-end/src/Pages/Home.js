@@ -1,26 +1,17 @@
 import { React, useState } from "react";
-// import "animate.css";
 import "./Home.css";
 import Accordion from "react-bootstrap/Accordion";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import { Card } from "react-bootstrap";
-// import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Animation from "../Components/Animation";
-// import 'animate.css';
-// import Col from "react-bootstrap/Col";
-// import Row from "react-bootstrap/Row";
 import ImageList from "@mui/material/ImageList";
 import Badge from 'react-bootstrap/Badge';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-// import Image from 'react-bootstrap/Image';
-// import Row from 'react-bootstrap/Row';
 import Skeleton from '@mui/material/Skeleton';
-// import PropTypes from 'prop-types';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
@@ -30,30 +21,55 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { Link } from "react-router-dom";
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
-// import obj from './Images/obj.mp4'
-// import Modal from '@mui/material/Modal';
-// import Typography from '@material-ui/core/Typography';
-// import Pagination from '@material-ui/lab/Pagination';
-
-// import { makeStyles, useTheme } from '@material-ui/core/styles';
-// import MobileStepper from '@material-ui/core/MobileStepper';
-// import Paper from '@material-ui/core/Paper';
-// import Typography from '@material-ui/core/Typography';
-// import Button from '@material-ui/core/Button';
-// import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
-// import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
-
-// import FavoriteIcon from '@mui/icons-material/Favorite';
-// import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-
-// import CardGroup from 'react-bootstrap/CardGroup';
-
-
+import { MessageBox } from 'react-chat-elements';
+import { ChatItem } from 'react-chat-elements';
+import PaymentSlip from "./PaymentSlip";
+import Cart from './Cart';
+import SnackbarContent from '@mui/material/SnackbarContent';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+// import Olayinka from "../assets/Olayinka.mp4";
+// import ola from "../assets/ola.jpeg";
+import Video from "../Components/Video";
+// import { Stack, Box, Container } from "@mui/system";
+// import ImageFeed from "./ImageFeed";
+// import "./Feed.css"
+// import homepage from "../assets/homepage.mp4"
 const API = process.env.REACT_APP_API_URL;
 
 
 function Home() {
+/* The above code is written in JavaScript and is using React hooks. It defines two state variables
+using the `useState` hook: `show` and `cartList`. `show` is a boolean value that is initially set to
+`false`. `cartList` is an array of objects that represent items in a shopping cart. Each object has
+an `id`, `name`, and `price` property. The `setCartList` function can be used to update the
+`cartList` state variable. */
+  /* The above code is written in JavaScript and it is defining a state variable called "show" using
+  the useState hook. The initial value of "show" is set to false. The code is also defining a
+  function called "setShow" which can be used to update the value of "show". */
   const [show, setShow] = useState(false);
+
+  const action = (
+    <Button color="secondary" size="small">
+      lorem ipsum dolorem
+    </Button>
+  );
+
+  const bull = (
+    <Box
+      component="span"
+      sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+    >
+      •
+    </Box>
+  );
+
+  const [cartList, setCartList] = useState([
+    { id: 1, name: 'Item 1', price: 10 },
+    { id: 2, name: 'Item 2', price: 20 },
+    { id: 3, name: 'Item 3', price: 30 },
+  ]);
+
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -64,6 +80,11 @@ function Home() {
     textAlign: 'center',
     color: theme.palette.text.secondary,
   }));
+
+  const removeFromCart = (itemId) => {
+    const updatedCart = cartList.filter((item) => item.id !== itemId);
+    setCartList(updatedCart);
+  };
   // const StyledRating = styled(Rating)({
   //   '& .MuiRating-iconFilled': {
   //     color: '#ff6d75',
@@ -73,6 +94,11 @@ function Home() {
   //   },
   // });
 
+  /* The above code is using the styled-components library in JavaScript to create a new component
+  called `Div`. The component is styled using the `theme` object, which is passed as a prop. The
+  styling includes applying the `button` typography style from the theme, setting the background
+  color to the paper color from the theme's palette, and adding padding using the `spacing` value
+  from the theme. */
   const Div = styled('div')(({ theme }) => ({
     ...theme.typography.button,
     backgroundColor: theme.palette.background.paper,
@@ -81,8 +107,16 @@ function Home() {
 
   return (
     <>
-      <div>
-        <Card className="home-container text-center">
+    {/* Animated Div  */}
+
+
+
+    {/* Animated end */}
+    
+      <div className="center">
+    
+      {/* This is the beginnning of the Scroller page */}
+        <Card className="home-container text-center"> 
           <Card.Body>
             <Card.Text>
               <h3>Unleash the Ultimate Gaming Experience with Our Top-Rated Amazon Deals</h3>
@@ -160,112 +194,197 @@ function Home() {
           </Card.Body>
         </Card>
         <br />
+        {/* This is the former Slider Show Last Code end */}
+        <div className="sample p-7">
+        <div className="sample-item"><img width="350px" height="220px" src="https://images.pexels.com/photos/9072371/pexels-photo-9072371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="First slide" />
+        
+        </div>
+        -
+
+        <div className="sample-item"><img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/></div>
+        
+        <div className="sample-item">
+        <img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/>
+        </div>
+        {/* <div>
+        <img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/>
+        </div> */}
+
+        </div>
 
         <br />
- 
-        <Card>
+        <Skeleton
+  sx={{ bgcolor: 'grey.900' }}
+  variant="rectangular"
+  width={210}
+  height={118}
+/>
+<Skeleton
+  sx={{ bgcolor: 'grey.900' }}
+  variant="rectangular"
+  width={210}
+  height={118}
+/>
+<Animation />
+
+        <code>New Season</code>
+               <div className="arrival">
+                FEATURED PRODUCTS
+               </div>
+        {/* <Card>
           <Card.Body>
           {/* <p className="pro" > <Badge bg="secondary"><h1>Top Categories</h1> </Badge></p> */}
           {/* <Animation /> */}
-          <div className="category" style={{ display: "flex", justifyContent: "center" }}>
-          <Button variant="outlined"><h3>Top Categories</h3></Button>
+        
+          {/* <div className="category" style={{ display: "flex", justifyContent: "center" }}>
           </div>
           
           </Card.Body>
-        </Card>
+        </Card> */} 
         
         <br />
-        <br />
-
+        <div className="sample p-7">
         <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
-        <Grid md={4}>
-          <Item><img width="350px" height="220px" src="https://images.pexels.com/photos/9072371/pexels-photo-9072371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="First slide" /></Item>
-          <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>HEADSETS</Accordion.Header>
-        <Accordion.Body>
-        <Link to="/Headsets"><Button variant="secondary"> <img src = "https://cdn-icons-png.flaticon.com/512/647/647833.png?w=1380&t=st=1681618614~exp=1681619214~hmac=0b26871c3532b484fa7e1d21ef6503b53000323221e02fbe75a42e0957f3b0c5" width="35px" height="35px"></img></Button></Link>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/smiley-people-playing-videogame-side-view_23-2149349995.jpg?t=st=1681598378~exp=1681598978~hmac=c620e5ac3a8c5b911ed3acb77c08ba0bf9734934c40dd09cb0b0b454185dbf4f" /></Item>
+          <Stack spacing={2} sx={{ maxWidth: 600 }}>
+      <SnackbarContent message="I love snacks." action={action} />
+      <SnackbarContent
+        message={
+          'I love candy. I love cookies. I love cupcakes. \
+          I love cheesecake. I love chocolate.'
+        }
+      />
+      </Stack>
         </Grid>
 
-        <Grid md={4}>
-          <Item><img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/></Item>
-          <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header> KEYBOARDS</Accordion.Header>
-        <Accordion.Body>
-        <div className="image-content">
-        <Link to="/Keyboards"><Button variant="secondary"> <img  src="https://cdn-icons-png.flaticon.com/512/329/329815.png?w=1060&t=st=1681597742~exp=1681598342~hmac=dd6729fcad0e434168343a780a1327d5b41403ab66e41735a3d15ef476ee5035" alt="First slide" width="35px" height="35px"/></Button></Link>
-        </div>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-  
+        {/* <Stack spacing={2} sx={{ maxWidth: 600 }}>
+      <SnackbarContent message="I love snacks." action={action} />
+      <SnackbarContent
+        message={
+          'I love candy. I love cookies. I love cupcakes. \
+          I love cheesecake. I love chocolate.'
+        }
+      />
+      </Stack> */}
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/premium-photo/winning-side-view-excited-african-guy-male-professional-gamer-wearing-headphones-celebrating-success-while-participating-esport-tournament-people-playing-online-video-game_386167-10371.jpg" /></Item>
+          <Stack spacing={2} sx={{ maxWidth: 600 }}>
+      <SnackbarContent message="I love snacks." action={action} />
+      <SnackbarContent
+        message={
+          'I love candy. I love cookies. I love cupcakes. \
+          I love cheesecake. I love chocolate.'
+        }
+      />
+      </Stack>
         </Grid>
-        <Grid md={4}>
-  
-          <Item><img width="350px" height="220px" alt="First slide" src="https://images.pexels.com/photos/7720712/pexels-photo-7720712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /></Item>
-          <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>MICROPHONES</Accordion.Header>
-        <Accordion.Body>
-        <Link to="/Keyboards"><Button variant="secondary"> <img src="https://cdn-icons-png.flaticon.com/512/96/96824.png?w=1380&t=st=1681621286~exp=1681621886~hmac=d83ed86f0019c462b04beb73ba95b44a7cbab44fb6749ba7c35e9c533182a868" alt="First slide" width="35px" height="35px"/></Button></Link>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-        </Grid>
+
         
-        {/* <Grid md={6}>
-        <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/view-neon-illuminated-gaming-desk-setup-with-keyboard_23-2149529362.jpg?w=1800&t=st=1681605177~exp=1681605777~hmac=6d50cbf04f84535ab3837d2265c7e75de0d5542640a5c6fa904d10ace66e1da2" /></Item>
-          <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>MICE</Accordion.Header>
-        <Accordion.Body>
-        <Link to="/Mice"><Button variant="secondary"> <img src="https://cdn-icons-png.flaticon.com/512/141/141052.png?w=1380&t=st=1681622633~exp=1681623233~hmac=aa0dce8ce7b3399d9e60711acd3a6c5fae5a82915af02853fbcaa997aedb4718" alt="First slide" width="35px" height="35px"/></Button></Link>
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-        </Grid> */}
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/smiley-man-wearing-vr-glasses-medium-shot_23-2149350043.jpg?t=st=1681598378~exp=1681598978~hmac=a05eaea10743a68086395df9a283e29249c871f5d0ee2c7be27d6427a39bdcef" /></Item>
+          <Stack spacing={2} sx={{ maxWidth: 600 }}>
+      <SnackbarContent message="I love snacks." action={action} />
+      <SnackbarContent
+        message={
+          'I love candy. I love cookies. I love cupcakes. \
+          I love cheesecake. I love chocolate.'
+        }
+      />
+      </Stack>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/back-view-man-winning-videogame_23-2149350002.jpg?t=st=1681598378~exp=1681598978~hmac=703a647c901d0ba376a92586bdfe556ba0aef68904fdfb2c16f62649eb9bff57" /></Item>
+
+        </Grid>
+
+      </Grid>
+      <div>
+      <Stack spacing={2} sx={{ maxWidth: 600 }}>
+      <SnackbarContent message="I love snacks." action={action} />
+      <SnackbarContent
+        message={
+          'I love candy. I love cookies. I love cupcakes. \
+          I love cheesecake. I love chocolate.'
+        }
+      />
+      <SnackbarContent
+        message="I love candy. I love cookies. I love cupcakes."
+        action={action}
+      />
+      <SnackbarContent
+        message={
+          'I love candy. I love cookies. I love cupcakes. \
+          I love cheesecake. I love chocolate.'
+        }
+        action={action}
+      />
+    </Stack>
+    </div>
+    </Box>
+
+    <Box sx={{ flexGrow: 2 }}>
+      <Grid container spacing={3}>
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/young-adult-enjoying-playing-video-game_23-2149250008.jpg?t=st=1681598378~exp=1681598978~hmac=13120da7ce13abb166987b354167c6a29634b15b006ba6546f5931d2f9506aab" /></Item>
+          <Stack spacing={2} sx={{ maxWidth: 600 }}>
+      <SnackbarContent message="I love snacks." action={action} />
+      <SnackbarContent
+        message={
+          'I love candy. I love cookies. I love cupcakes. \
+          I love cheesecake. I love chocolate.'
+        }
+      />
+      </Stack>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/professional-esport-gamer-playing-game-with-gaming-controller_53876-102992.jpg?w=2000&t=st=1681627551~exp=1681628151~hmac=d61e37e14871cebae79444dd08843e3295cd3ff938c173078c607c63e0fdde28" /></Item>
+          <Stack spacing={2} sx={{ maxWidth: 600 }}>
+      <SnackbarContent message="I love snacks." action={action} />
+      <SnackbarContent
+        message={
+          'I love candy. I love cookies. I love cupcakes. \
+          I love cheesecake. I love chocolate.'
+        }
+      />
+      </Stack>
+        </Grid>
+
+        
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/portrait-man-playing-video-games-with-controller_482257-31364.jpg?w=2000&t=st=1681627464~exp=1681628064~hmac=5a439ca8f7a05076f9da5cc223da28a07141867899b7e52e2f9a363301ce2b1b" /></Item>
+        </Grid>
+
+        <Grid md={3}>
+          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/girl-playing-videogame-laptop_23-2148963899.jpg?w=2000&t=st=1681627438~exp=1681628038~hmac=ccaa5c1cdd12585008f6d8ced019a9e0239fcf91f4c0682510654107289e48bd" /></Item>
+
+        </Grid>
+
       </Grid>
     </Box>
-        <br/>
-        <br/>
+    </div>
+        <br />
+     
 
-        <iframe className="first-image" src="https://player.vimeo.com/video/549791635" name="iframe_a"  title="Iframe Example"></iframe>
+       
         <br/>
+        <br/>
+      
 
   
   <p className="pro" > <Badge bg="secondary"><h3>Gear up, game on! </h3></Badge></p>
-        <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={3}>
-        <Grid item xs="auto">
-          <Item><img width="350px" height="220px" alt="First slide" src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /></Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item><img width="100%" height="220px" alt="First slide" src="https://images.pexels.com/photos/7046705/pexels-photo-7046705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /></Item>
-        </Grid>
-        <Grid item xs>
-          <Item><img width="100%" height="220px" alt="First slide" src="https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /> </Item>
-        </Grid>
-      </Grid>
-    </Box>
+       
 
     <br/>
+   
     <br />
     
-    {/* <Card>
-      <Card.Header>Featured</Card.Header>
-      <Card.Body>
-        <Card.Title>Special title treatment</Card.Title>
-        <Card.Text>
-          With supporting text below as a natural lead-in to additional content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card> */}
     <br />
         <Card className="text-center">
           <Card.Body>
@@ -274,36 +393,16 @@ function Home() {
             <br/>
         <br/>
         <br/>
-            <Box
-      sx={{
-        bgcolor: '#00053C',
-        p: 6,
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-      }}
-      
-    >
-     
-       <Item><img width="350px" height="220px" alt="First slide" src="https://static.wixstatic.com/media/fcd429_169abd10d5f443cfae2afa4a0b95e8c9~mv2.gif" /></Item>
-      <Skeleton
-        sx={{ bgcolor: 'black.900' }}
-        variant="rectangular"
-        width={210}
-        height={118}
-      />
-  
-  
-    </Box>
+
           
             {/* <Image width="250px" height="200px" src="https://m.media-amazon.com/images/I/71OmWj29nUL._AC_SL1500_.jpg" fluid /> */}
 
             
             
             <br />
-            <iframe className="first-image" src="https://player.vimeo.com/video/549791164" name="iframe_a"  title="Iframe Example"></iframe>
+          
       <br />
-      <p className="pro" > <Badge bg="secondary"><h3>SALES ENDING SOON!!</h3></Badge></p>
+      <p className="pro" > <h3>PORTFOLIO PROJECTS</h3></p>
       
             <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
@@ -342,41 +441,35 @@ function Home() {
       </Grid>
     </Box>
 
-    {/* <Box sx={{ flexGrow: 2 }}>
-      <Grid container spacing={3}>
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_armada_25_fhd_gaming_monitor_g_sync_2_main_no_arm_1512x.jpg?v=1678907555" /></Item>
-          
-        
-        </Grid>
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_rubber_keycaps_pink_us_1_angled_1512x.jpg?v=1678908070" /></Item>
-        
-        </Grid>
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_pc_extension_cable_4_poles_to_dual_3.5mm_20_1_1728x.jpg?v=1678907503" /></Item>
-        </Grid>
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_solocast_white_5_angled_1512x.jpg?v=1678907630" />
-          
-          <p>The built-in mount adapter is highly versatile and can accommodate 3/8-inch and 5/8-inch threads, ensuring compatibility with a wide range of boom arms or mic stands.</p>
-          </Item>
-
-        </Grid>
-
-      </Grid>
-    </Box> */}
-
 
             {/* ==================== */}
   
     
               <br/>
 
-              <iframe className="first-image" src="https://player.vimeo.com/video/549791206" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+              <Card sx={{ minWidth: 275 }}>
+      <CardContent>
+        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        The Artificial Intelligence Explorer
+        </Typography>
+        <Typography variant="h5" component="div">
+        Ahead AI Blog and Podcast 
+        </Typography>
+        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+          adjective
+        </Typography>
+        <Typography variant="body2">
+          well meaning and kindly.
+          <br />
+          {'"a benevolent smile"'}
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <Button variant="secondary" onClick={handleShow}>
+        <img src = "https://img.freepik.com/free-vector/detailed-esports-gaming-logo_79603-1792.jpg?w=1380&t=st=1681628574~exp=1681629174~hmac=5c36fd3f3bb178c8348c56cb3986c1fbd94a61593011a840f028df138ca45b97" width="45px" height="45px"></img> LEARN MORE
+      </Button>
+      </CardActions>
+    </Card>
         <br/>
             <Button variant="outlined">
                 <h3>AheadShopping BLOG </h3>
@@ -419,126 +512,10 @@ Happy gaming, and happy shopping!
         </Card>
         <br/>
         <br/>
-        <marquee direction="right">
-        <Box sx={{ flexGrow: 2 }}>
-      <Grid container spacing={3}>
-        <Grid md={3}>
-          <Item><img width="190px" height="190px" alt="First slide" src="https://cdn-icons-png.flaticon.com/512/44/44265.png?w=1380&t=st=1681606400~exp=1681607000~hmac=93d16def9e7b788a5954be76a9a56d295f497fc357b793b09c2b587f2a8c539a" /></Item>
-        </Grid>
-      </Grid>
-    </Box>
-    </marquee>
-        {/* <br/> */}
+      
         <div>
-        <Box
-      sx={{
-        bgcolor: '#004B72',
-        color: 'white',
-        p: 8,
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-      }}
-      
-    >
-     
-     
-      
-  <h3>Calling all gamers! Grab your favorite snacks and settle in for an all-night gaming marathon with our amazing discount on gaming equipment. Get ready to dominate the game and have some serious fun!</h3>
-      {/* <Skeleton
-        sx={{ bgcolor: 'grey.900' }}
-        variant="rectangular"
-        width={210}
-        height={118}
-      /> */}
-  
-    </Box>
-
-        <br/>
-        <br/>
-    
-    <br/>
-    <br/>
-    
-    
-    <br/>
-        <br/>
-      
         
-              <div style={{ display: "flex", justifyContent: "center" }}>
-              
-              {/* <Carousel fade>
-                <Carousel.Item interval={200}>
-                  <img
-                    className="first-image first-container"
-                    src="https://img.freepik.com/free-vector/hand-drawn-game-streamer-concept-elements_23-2148997474.jpg?w=1380&t=st=1681607804~exp=1681608404~hmac=a88e615b7b24320fa4ccd4e7d2df629cb17173ed3aa90420c095aefc61e7080e"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="first-image"
-                    src="https://img.freepik.com/free-vector/virtual-reality-equipment_23-2148786275.jpg?w=1380&t=st=1681607831~exp=1681608431~hmac=102e571a1a42c565f9d11fb3ef731756d87531a1eacb365350a8fa6d07b8530d"
-                    alt="Second slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="first-image"
-                    src="https://img.freepik.com/free-vector/cyber-sport-pro-gamer-equipment-accessory-set-excited-young-man-headset-with-mic-playing-streaming-video-game-match-console-sitting-front-television-screen_575670-1334.jpg?w=1800&t=st=1681607734~exp=1681608334~hmac=8603454730a7c99ac3e8807ed9c9424db2df0185a882f71bc4c28bce3020eb2c"
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="first-image"
-                    src="https://img.freepik.com/premium-vector/black-speaker-sound-system-sets_545728-65.jpg?w=1380"
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="first-image"
-                    src="https://img.freepik.com/free-vector/computer-accessories-peripheral-black-icons-set-isolated-vector-illustration_1284-2744.jpg?w=1380&t=st=1681608109~exp=1681608709~hmac=e4c168b130b924aefc8d2172e01d2d2e03fb6e6cec510021287fc8610d2b4049"
-                    alt="Third slide"
-                  />
-                </Carousel.Item>
-              </Carousel> */}
-            
-          </div>
-
-
-
-          {/* <Box sx={{ flexGrow: 2 }}>
-      <Grid container spacing={3}>
-        <Grid md={3}>
-          <Item>
-          <iframe src="https://player.vimeo.com/video/401026451" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
-          </Item>
-        </Grid>
-
-        <Grid md={3}>
-          <Item>
-          <iframe src="https://player.vimeo.com/video/549791806" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
-          </Item>
-        </Grid>
-
-        <Grid md={3}>
-          <Item>
-          <iframe src="https://player.vimeo.com/video/557964126" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
-          </Item>
-        </Grid>
-
-        <Grid md={3}>
-          <Item>
-          <iframe src="https://player.vimeo.com/video/541992516" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
-          </Item>
-          <br/>
-          
-
-        </Grid>
-
-      </Grid>
-    </Box> */}
+     
 
 
           <div style={{ display: "flex", justifyContent: "center" }}>

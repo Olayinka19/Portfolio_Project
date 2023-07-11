@@ -45,6 +45,10 @@ import Microphones from "./Components/Microphones";
 import Mice from "./Pages/Mice";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import EmailSubscription from "./Components/EmailSubscription";
+import Messagebox from "./Pages/Messagebox";
+import PaymentSlip from "./Pages/PaymentSlip"
+import Cart from "./Pages/Cart";
+import Video from "./Components/Video";
 // import Food from "./Components/Food";
 
 function App() {
@@ -89,6 +93,9 @@ function App() {
         <Route path="/Keyboards" element={<Keyboards/>} />
         <Route path="/Microphones" element={<Microphones/>} />
         <Route path="/Mice" element={<Mice/>} />
+        <Route path="/Cart" element={<Cart/>} />
+        <Route path="/PaymentSlip" element={<PaymentSlip/>} />
+        <Route path="/Messagebox" element={<Messagebox/>} />
         <Route path="/ProtectedRoute" element={<ProtectedRoute/>} />
         <Route path="/EmailSubscription" element={<EmailSubscription/>} />
         

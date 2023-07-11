@@ -1,6 +1,32 @@
  body { 
    /* margin: 5px;  */
-   background-color: hsl(0, 0%, 94%);
+   /* background-color: hsl(0, 0%, 94%); */
+   background-color: #000000;
+   /* --primary-100:#FF5722;
+   --primary-200:#000000;
+   --primary-300:#000000;
+   --accent-100:#4CAF50;
+   --accent-200:#005100;
+   --text-100:#FFFFFF;
+   --text-200:#fff6f6;
+   --bg-100:#F9A825;
+   --bg-200:#504f4e;
+   --bg-300:#c17900; */
+
+   /* --primary-100:#2563eb;
+   --primary-200:#598EF3;
+   --primary-300:#D3E6FE;
+   --accent-100:#d946ef;
+   --accent-200:#fae8ff;
+   --text-100:#cbd5e1;
+   --text-200:#94a3b8;
+   --bg-100:#1e293b;
+   --bg-200:#334155;
+   --bg-300:#475569; */
+     
+     
+   /* color: #598EF3; */
+   /* background-image: url("https://images.pexels.com/photos/7862515/pexels-photo-7862515.jpeg?auto=compress&cs=tinysrgb&w=1600"); */
  } 
 /* .img {
   display: block;
@@ -242,10 +268,25 @@ body {
         height: 250px;
         /* align-items: stretch; */
     }
+    .header-img{
+    
+    
+    }
     .categories-container{
       display:flex;
       /* padding: 0px; */
     }
+    .equipments{
+      box-sizing: border-box;  
+      position: absolute;
+  width: 164px;
+  height: 40px;
+  left: 29px;
+  top: 165px;
+  background: #eeeceb;
+  border: 1px solid #000000;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
     
     .image-container{
       border-radius: 17px;

@@ -6,13 +6,13 @@ function Animation() {
     const styles = useSpring({
       loop: true,
       to: [
-        { opacity: 7, color: 'white' },
-        { opacity: 1, color: '#76b469' },
+        { opacity: 4, color: 'gold' },
+        { opacity: 1, color: 'white' },
       ],
       from: { opacity: 0, color: 'white' },
     })
     // ...
-    return <animated.div style={styles}><p className="pro" > <Badge bg="secondary"><h1>Top Categories</h1> </Badge></p></animated.div>
+    return <animated.div style={styles}><h1 className="pro">FEATURED PRODUCTS</h1> </animated.div>
   }
 
 

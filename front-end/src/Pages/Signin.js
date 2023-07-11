@@ -16,6 +16,7 @@ import Paper from '@mui/material/Paper';
 import { Link } from "react-router-dom";
 import Badge from 'react-bootstrap/Badge';
 import Alert from 'react-bootstrap/Alert';
+import Home from './Home';
 
 const Signin = () => {
   const { googleSignIn, user } = UserAuth();
@@ -35,7 +36,8 @@ const Signin = () => {
       console.log(error);
     }
   };
-
+  // { user ? <Home/> : <Signin/> }
+ 
   useEffect(() => {
     if (user !== null) {
       navigate('/');

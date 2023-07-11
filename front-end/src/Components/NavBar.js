@@ -1,17 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { Button } from "react-bootstrap";
-// import Button from '@mui/material/Button';
-// import Button from "react-bootstrap/Button";
+
 import Button from '@mui/material/Button';
-// import Button from '@mui/material/Button';
+
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { NavDropdown } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import { UserAuth } from "../Context/AuthContext";
-// import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import new2 from './Images/new2.png'
 import Ahead from './Images/Ahead.png'
@@ -19,6 +17,7 @@ import AheadSh from './Images/AheadSh.png'
 import logo6 from './Images/logo6.png'
 import Avatar from '@mui/material/Avatar';
 import Chip from '@mui/material/Chip';
+// import Cart from "./Components/Cart";
 import Stack from '@mui/material/Stack';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -70,6 +69,7 @@ export default function NavBar() {
          <Chip
         avatar={<Avatar alt="Natacha" src={user && user.photoURL} />}
       />
+    
       </Button>
       <Menu
         id="basic-menu"
@@ -141,7 +141,7 @@ export default function NavBar() {
                   <NavDropdown.Divider />
                   <Link to="/Mice"><img src="https://cdn-icons-png.flaticon.com/512/141/141052.png?w=1380&t=st=1681622633~exp=1681623233~hmac=aa0dce8ce7b3399d9e60711acd3a6c5fae5a82915af02853fbcaa997aedb4718" alt="First slide" width="35px" height="35px"/><Button variant="secondary">Gaming Mice</Button></Link>
                   <NavDropdown.Divider />
-                  <Link to="/About"><img src="https://img.freepik.com/free-vector/skull-gaming-with-joy-stick-emblem-modern-style_32991-492.jpg?w=1380&t=st=1681627996~exp=1681628596~hmac=9e73ddbd6115e121f92669fbc702fd0a653b67611cb4c384a04ce775f757d5fc" alt="First slide" width="35px" height="35px"/><Button variant="secondary">Explore</Button></Link>
+                  <Link to="/About"><img src="https://img.freepik.com/free-vector/skull-gaming-with-joy-stick-emblem-modern-style_32991-492.jpg?w=1380&t=st=1681627996~exp=1681628596~hmac=9e73ddbd6115e121f92669fbc702fd0a653b67611cb4c384a04ce775f757d5fc" alt="First slide" width="35px" height="35px"/><Button variant="secondary">Portfolio</Button></Link>
                   <NavDropdown.Divider />
                   <Link to="/Developer"> <img src="https://img.freepik.com/free-vector/coding-round-composition_1284-40752.jpg?w=1060&t=st=1678332608~exp=1678333208~hmac=bcc617f8837143a1bb138a33c7c3481d81510689b16f5afc0f765a1066578b5d" width="45px" height="45px"></img><Button variant="secondary">Developer</Button></Link>
     
