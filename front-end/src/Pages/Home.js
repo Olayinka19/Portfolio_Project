@@ -229,7 +229,7 @@ an `id`, `name`, and `price` property. The `setCartList` function can be used to
 
         <code>New Season</code>
                <div className="arrival">
-                FEATURED PRODUCTS
+                FEATURED <span className="featured">PRODUCTS</span>
                </div>
         {/* <Card>
           <Card.Body>
@@ -516,8 +516,6 @@ Happy gaming, and happy shopping!
       
         <div>
         
-     
-
 
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Card.Link href="#">
