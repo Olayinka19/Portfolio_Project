@@ -21,7 +21,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { Link } from "react-router-dom";
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
-import { MessageBox } from 'react-chat-elements';
+// import { MessageBox } from 'react-chat-elements';
 import { ChatItem } from 'react-chat-elements';
 import PaymentSlip from "./PaymentSlip";
 import Cart from './Cart';
@@ -511,6 +511,7 @@ Happy gaming, and happy shopping!
           </Card.Body>
         </Card>
         <br/>
+        
         <br/>
       
         <div>
