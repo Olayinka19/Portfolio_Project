@@ -186,7 +186,7 @@ function Home() {
           </Card.Body>
         </Card>
         <br />
-        {/* This is the former Slider Show Last Code end */}
+       
         <div className="sample p-7">
         <div className="sample-item"><img width="350px" height="220px" src="https://images.pexels.com/photos/9072371/pexels-photo-9072371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="First slide" />
         
