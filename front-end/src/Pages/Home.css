@@ -156,6 +156,10 @@ border: 1px solid #000000;
     display: table;
   }
 
+  .portfolio{
+    padding: 40px;
+  }
+
 .sample {
     display:flex;
   overflow: auto;

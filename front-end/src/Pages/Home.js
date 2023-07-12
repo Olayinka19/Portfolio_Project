@@ -31,6 +31,9 @@ import CardContent from '@mui/material/CardContent';
 // import Olayinka from "../assets/Olayinka.mp4";
 // import ola from "../assets/ola.jpeg";
 import Video from "../Components/Video";
+import nft from "../assets/nft.png";
+import Pawster from "../assets/Pawster.png";
+import connect from "../assets/connect.png";
 // import { Stack, Box, Container } from "@mui/system";
 // import ImageFeed from "./ImageFeed";
 // import "./Feed.css"
@@ -39,14 +42,7 @@ const API = process.env.REACT_APP_API_URL;
 
 
 function Home() {
-/* The above code is written in JavaScript and is using React hooks. It defines two state variables
-using the `useState` hook: `show` and `cartList`. `show` is a boolean value that is initially set to
-`false`. `cartList` is an array of objects that represent items in a shopping cart. Each object has
-an `id`, `name`, and `price` property. The `setCartList` function can be used to update the
-`cartList` state variable. */
-  /* The above code is written in JavaScript and it is defining a state variable called "show" using
-  the useState hook. The initial value of "show" is set to false. The code is also defining a
-  function called "setShow" which can be used to update the value of "show". */
+
   const [show, setShow] = useState(false);
 
   const action = (
@@ -94,11 +90,6 @@ an `id`, `name`, and `price` property. The `setCartList` function can be used to
   //   },
   // });
 
-  /* The above code is using the styled-components library in JavaScript to create a new component
-  called `Div`. The component is styled using the `theme` object, which is passed as a prop. The
-  styling includes applying the `button` typography style from the theme, setting the background
-  color to the paper color from the theme's palette, and adding padding using the `spacing` value
-  from the theme. */
   const Div = styled('div')(({ theme }) => ({
     ...theme.typography.button,
     backgroundColor: theme.palette.background.paper,
@@ -115,7 +106,8 @@ an `id`, `name`, and `price` property. The `setCartList` function can be used to
     
       <div className="center">
     
-      {/* This is the beginnning of the Scroller page */}
+     
+
         <Card className="home-container text-center"> 
           <Card.Body>
             <Card.Text>
@@ -378,6 +370,7 @@ an `id`, `name`, and `price` property. The `setCartList` function can be used to
       
 
   
+        
   <p className="pro" > <Badge bg="secondary"><h3>Gear up, game on! </h3></Badge></p>
        
 
@@ -403,45 +396,56 @@ an `id`, `name`, and `price` property. The `setCartList` function can be used to
           
       <br />
       <p className="pro" > <h3>PORTFOLIO PROJECTS</h3></p>
-      
+      <Video />
+      <div className="portfolio p-7" >
             <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_quadcast_02_side_1512x.jpg?v=1678907138" />
+        <Grid md={4}>
           
-          <p>Get great sound whether you’re connecting to a PC, PS4™, PS5™, or Mac®.</p>
           {/* <Badge bg="secondary"><h4>Learn More</h4></Badge> */}
+          <Item><img width="250px" height="220px" alt="First slide" src={Pawster} />
           </Item>
+         
+ <a href="https://ola-pawster.netlify.app/" target="_blank" >
+ Ola-Pawster
+          </a>
+
+            
         </Grid>
 
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_cloud_alpha_wireless_2_main_dongle_1512x.jpg?v=1678907740" />
-          <p>The HyperX Cloud Stinger™ 2 Core is the essential entry-level PlayStation headset at an affordable price.</p>
-          {/* <Badge bg="secondary"><h4>Learn More</h4></Badge> */}
+        <Grid md={4}>
+          <Item><img width="250px" height="220px" alt="First slide" src={nft} />
           </Item>
+          <a href="https://heartfelt-gumdrop-4d1ee2.netlify.app/" target="_blank" >
+ NFT-Review
+          </a>
         </Grid>
 
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_alloy_core_rgb_us_1_main_1512x.jpg?v=1678907503" />
-          <p>RGB™ is ideal for gamers looking to enhance their keyboard’s style and performance without spendint alot.</p>
+        <Grid md={4}>
+          <Item><img width="250px" height="220px" alt="First slide" src={connect} />
+          
           {/* <Badge bg="secondary"><h4>Rearn More</h4></Badge> */}
           </Item>
+          <a href="https://masonmei.wixsite.com/pursuitconnect/post/faho-blog" target="_blank" >
+ Pursuit Connect
+          </a>
         </Grid>
 
-        <Grid md={3}>
+        {/* <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://cdn.shopify.com/s/files/1/0561/8345/5901/products/hyperx_clutch_gladiate_6l366aa_angle_2_1512x.jpg?v=1679679081" />
           <p>This officially licensed wired Xbox controller features dual trigger locks and remappable rear buttons.</p>
-          {/* <Badge bg="secondary"><h4>Rearn More</h4></Badge> */}
+         
           </Item>
           <br/>
           
 
-        </Grid>
+        </Grid> */}
 
       </Grid>
     </Box>
+    </div>
 
-
+  
             {/* ==================== */}
   
     
@@ -453,21 +457,30 @@ an `id`, `name`, and `price` property. The `setCartList` function can be used to
         The Artificial Intelligence Explorer
         </Typography>
         <Typography variant="h5" component="div">
-        Ahead AI Blog and Podcast 
+        AI Blog & Spotify Podcast 
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
+          Stay Tuned!
         </Typography>
         <Typography variant="body2">
-          well meaning and kindly.
+        <Button variant="primary" onClick={handleShow}>
+        <img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pigeonsandplanes.com%2Fimages%2Fc_crop%2Ch_920%2Cw_1227%2Cx_313%2Cy_0%2Fc_limit%2Cf_auto%2Cfl_lossy%2Cq_auto%2Cw_1100%2Fryd9nmid8thz3xe4vda8%2Fspotify-logo&f=1&nofb=1&ipt=ab5e44ba2dc7e4460e0de2a98b14e5d62323fda3004736df01e9ecd45bb22b17&ipo=images" width="45px" height="45px">
+        
+        </img> 
+        
+          <a href="https://masonmei.wixsite.com/pursuitconnect/post/faho-blog " >Podcast Blog</a>
+  
+      </Button>
           <br />
-          {'"a benevolent smile"'}
+          {'"The AI Explorer"'}
+          
         </Typography>
       </CardContent>
       <CardActions>
-      <Button variant="secondary" onClick={handleShow}>
-        <img src = "https://img.freepik.com/free-vector/detailed-esports-gaming-logo_79603-1792.jpg?w=1380&t=st=1681628574~exp=1681629174~hmac=5c36fd3f3bb178c8348c56cb3986c1fbd94a61593011a840f028df138ca45b97" width="45px" height="45px"></img> LEARN MORE
-      </Button>
+      <div>
+        
+      </div>
+      
       </CardActions>
     </Card>
         <br/>
@@ -478,7 +491,7 @@ an `id`, `name`, and `price` property. The `setCartList` function can be used to
       <Accordion.Item eventKey="0">
         <Accordion.Header><Div>{"BLOG"}</Div></Accordion.Header>
         <Accordion.Body>
-        <Button variant="secondary" onClick={handleShow}>
+        <Button variant="primary" onClick={handleShow}>
         <img src = "https://img.freepik.com/free-vector/detailed-esports-gaming-logo_79603-1792.jpg?w=1380&t=st=1681628574~exp=1681629174~hmac=5c36fd3f3bb178c8348c56cb3986c1fbd94a61593011a840f028df138ca45b97" width="45px" height="45px"></img> LEARN MORE
       </Button>
 
@@ -511,7 +524,7 @@ Happy gaming, and happy shopping!
           </Card.Body>
         </Card>
         <br/>
-        
+        {/* <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/1n92hYPiFQ0efcCtrF" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/1n92hYPiFQ0efcCtrF"></a></p> */}
         <br/>
       
         <div>
@@ -520,7 +533,7 @@ Happy gaming, and happy shopping!
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Card.Link href="#">
               {/* <Button variant="outlined">TOP🔝</Button> */}
-              <Badge bg="secondary"><h3>Back To Top</h3></Badge>
+              <Badge bg="primary"><h3>Back To Top</h3></Badge>
             </Card.Link>
           </div>
         </div>
