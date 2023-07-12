@@ -111,7 +111,7 @@ function Home() {
         <Card className="home-container text-center"> 
           <Card.Body>
             <Card.Text>
-              <h3>Unleash the Ultimate Gaming Experience with Our Top-Rated Amazon Deals</h3>
+              {/* <h3>Unleash the Ultimate Gaming Experience with Our Top-Rated Amazon Deals</h3> */}
               <div style={{ display: "flex", justifyContent: "center" }}>
                 
               </div>
@@ -220,9 +220,13 @@ function Home() {
 <Animation />
 
         <code>New Season</code>
-               <div className="arrival">
+               <div style={{ display: "flex", justifyContent: "center" }} className="arrival">
+              
                 FEATURED <span className="featured">PRODUCTS</span>
                </div>
+               <div style={{ display: "flex", justifyContent: "center" }}>
+                
+                </div>
         {/* <Card>
           <Card.Body>
           {/* <p className="pro" > <Badge bg="secondary"><h1>Top Categories</h1> </Badge></p> */}
@@ -240,15 +244,7 @@ function Home() {
       <Grid container spacing={3}>
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/smiley-people-playing-videogame-side-view_23-2149349995.jpg?t=st=1681598378~exp=1681598978~hmac=c620e5ac3a8c5b911ed3acb77c08ba0bf9734934c40dd09cb0b0b454185dbf4f" /></Item>
-          <Stack spacing={2} sx={{ maxWidth: 600 }}>
-      <SnackbarContent message="I love snacks." action={action} />
-      <SnackbarContent
-        message={
-          'I love candy. I love cookies. I love cupcakes. \
-          I love cheesecake. I love chocolate.'
-        }
-      />
-      </Stack>
+        
         </Grid>
 
         {/* <Stack spacing={2} sx={{ maxWidth: 600 }}>
@@ -263,30 +259,15 @@ function Home() {
 
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/premium-photo/winning-side-view-excited-african-guy-male-professional-gamer-wearing-headphones-celebrating-success-while-participating-esport-tournament-people-playing-online-video-game_386167-10371.jpg" /></Item>
-          <Stack spacing={2} sx={{ maxWidth: 600 }}>
-      <SnackbarContent message="I love snacks." action={action} />
-      <SnackbarContent
-        message={
-          'I love candy. I love cookies. I love cupcakes. \
-          I love cheesecake. I love chocolate.'
-        }
-      />
-      </Stack>
+          
+     
         </Grid>
 
         
 
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/smiley-man-wearing-vr-glasses-medium-shot_23-2149350043.jpg?t=st=1681598378~exp=1681598978~hmac=a05eaea10743a68086395df9a283e29249c871f5d0ee2c7be27d6427a39bdcef" /></Item>
-          <Stack spacing={2} sx={{ maxWidth: 600 }}>
-      <SnackbarContent message="I love snacks." action={action} />
-      <SnackbarContent
-        message={
-          'I love candy. I love cookies. I love cupcakes. \
-          I love cheesecake. I love chocolate.'
-        }
-      />
-      </Stack>
+        
         </Grid>
 
         <Grid md={3}>
@@ -296,70 +277,11 @@ function Home() {
 
       </Grid>
       <div>
-      <Stack spacing={2} sx={{ maxWidth: 600 }}>
-      <SnackbarContent message="I love snacks." action={action} />
-      <SnackbarContent
-        message={
-          'I love candy. I love cookies. I love cupcakes. \
-          I love cheesecake. I love chocolate.'
-        }
-      />
-      <SnackbarContent
-        message="I love candy. I love cookies. I love cupcakes."
-        action={action}
-      />
-      <SnackbarContent
-        message={
-          'I love candy. I love cookies. I love cupcakes. \
-          I love cheesecake. I love chocolate.'
-        }
-        action={action}
-      />
-    </Stack>
+   
     </div>
     </Box>
 
-    <Box sx={{ flexGrow: 2 }}>
-      <Grid container spacing={3}>
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/young-adult-enjoying-playing-video-game_23-2149250008.jpg?t=st=1681598378~exp=1681598978~hmac=13120da7ce13abb166987b354167c6a29634b15b006ba6546f5931d2f9506aab" /></Item>
-          <Stack spacing={2} sx={{ maxWidth: 600 }}>
-      <SnackbarContent message="I love snacks." action={action} />
-      <SnackbarContent
-        message={
-          'I love candy. I love cookies. I love cupcakes. \
-          I love cheesecake. I love chocolate.'
-        }
-      />
-      </Stack>
-        </Grid>
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/professional-esport-gamer-playing-game-with-gaming-controller_53876-102992.jpg?w=2000&t=st=1681627551~exp=1681628151~hmac=d61e37e14871cebae79444dd08843e3295cd3ff938c173078c607c63e0fdde28" /></Item>
-          <Stack spacing={2} sx={{ maxWidth: 600 }}>
-      <SnackbarContent message="I love snacks." action={action} />
-      <SnackbarContent
-        message={
-          'I love candy. I love cookies. I love cupcakes. \
-          I love cheesecake. I love chocolate.'
-        }
-      />
-      </Stack>
-        </Grid>
-
-        
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/portrait-man-playing-video-games-with-controller_482257-31364.jpg?w=2000&t=st=1681627464~exp=1681628064~hmac=5a439ca8f7a05076f9da5cc223da28a07141867899b7e52e2f9a363301ce2b1b" /></Item>
-        </Grid>
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/girl-playing-videogame-laptop_23-2148963899.jpg?w=2000&t=st=1681627438~exp=1681628038~hmac=ccaa5c1cdd12585008f6d8ced019a9e0239fcf91f4c0682510654107289e48bd" /></Item>
-
-        </Grid>
-
-      </Grid>
-    </Box>
+   
     </div>
         <br />
      
