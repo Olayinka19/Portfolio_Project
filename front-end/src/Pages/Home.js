@@ -33,7 +33,9 @@ import CardContent from '@mui/material/CardContent';
 import Video from "../Components/Video";
 import nft from "../assets/nft.png";
 import Pawster from "../assets/Pawster.png";
+import DeeperRacer from "../assets/DeepRacer.mp4";
 import connect from "../assets/connect.png";
+import TextField from '@mui/material/TextField';
 // import { Stack, Box, Container } from "@mui/system";
 // import ImageFeed from "./ImageFeed";
 // import "./Feed.css"
@@ -111,7 +113,7 @@ function Home() {
         <Card className="home-container text-center"> 
           <Card.Body>
             <Card.Text>
-              {/* <h3>Unleash the Ultimate Gaming Experience with Our Top-Rated Amazon Deals</h3> */}
+              <h3>Unleash the Ultimate Gaming Experience with Our Top-Rated Amazon Deals</h3>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 
               </div>
@@ -186,8 +188,60 @@ function Home() {
           </Card.Body>
         </Card>
         <br />
+        <div >
+        <div className="polaroid">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd1.awsstatic.com%2Fdeepracer%2FSilverstone%2FDeepRacer_Chrome_Small_rgb.aa9b2a3bee64dae2d593ebf74133277b2811a42e.png&f=1&nofb=1&ipt=9d801eadd170102ac3c3d33dacbea690dec53f6af15820d0fe33d34800fe7ed3&ipo=images" alt="Norway" width="100%"></img>
+<div class="polaroid-container">
+    <h4>AWS DeepRacer Competition</h4>
+  </div>
+</div>
+<div className="sample-item-container" style={{ display: 'flex', justifyContent: 'center' }}>
+        <h4>AWS DeepRacer Student is a place for high school and college-enrolled learners around the globe to develop machine learning (ML) skills. It provides access to educational material, the optional AWS AI & ML Scholarship program, and the opportunity to train and test reinforcement learning (RL) models for the AWS DeepRacer Student League. To get started, see the topics in the Are you a first-time AWS DeepRacer Student user? section.</h4>
+        </div>
+
+
+        </div>
+        <Video />
        
-        <div className="sample p-7">
+        <div className="sample p-7" >
+        <div className="sample-item"><img width="550px" height="320px" src="https://images.pexels.com/photos/9072371/pexels-photo-9072371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="First slide" />
+        </div>
+        <div className="sample-item-container" style={{ display: 'flex', justifyContent: 'center' }}>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+        </div>
+        <div className="sample-item"><img width="350px" height="220px" src="https://images.pexels.com/photos/9072371/pexels-photo-9072371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="First slide" />
+        
+        </div>
+        -
+
+        <div style={{ display: 'flex', justifyContent: 'center' }} className="sample-item">
+        <Box
+      sx={{
+        width: 500,
+        maxWidth: '100%',
+      }}
+    >
+      <TextField fullWidth label="AI Explorer Podcast" id="fullWidth" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+      
+    </Box>
+        </div>
+        
+        <div className="sample-item-container" style={{ display: 'flex', justifyContent: 'center' }}>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+        </div>
+        {/* <div>
+        <img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/>
+        </div> */}
+
+        </div>
+
+        <br />
+        
+        <div>
+
+        </div>
+        <div>
+            <div className="sample p-7">
         <div className="sample-item"><img width="350px" height="220px" src="https://images.pexels.com/photos/9072371/pexels-photo-9072371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="First slide" />
         
         </div>
@@ -203,8 +257,31 @@ function Home() {
         </div> */}
 
         </div>
+        <br/>
+            <div className="sample p-7">
+        <div className="sample-item"><img width="350px" height="220px" src="https://images.pexels.com/photos/9072371/pexels-photo-9072371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="First slide" />
+        
+        </div>
+        -
 
-        <br />
+        <div className="sample-item"><img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/></div>
+        
+        <div className="sample-item">
+        <img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/>
+        </div>
+        {/* <div>
+        <img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/>
+        </div> */}
+
+        </div>
+        </div>
+        <br/>
+        <div className="homepage-container">
+        <span className="img-homepage-container">
+          <img src="http://placehold" />
+        </span>
+
+        </div>
         <Skeleton
   sx={{ bgcolor: 'grey.900' }}
   variant="rectangular"
@@ -217,13 +294,40 @@ function Home() {
   width={210}
   height={118}
 />
+<h1>
+  Sample Image Text
+</h1>
+
+<div className="polaroid">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd1.awsstatic.com%2Fdeepracer%2FSilverstone%2FDeepRacer_Chrome_Small_rgb.aa9b2a3bee64dae2d593ebf74133277b2811a42e.png&f=1&nofb=1&ipt=9d801eadd170102ac3c3d33dacbea690dec53f6af15820d0fe33d34800fe7ed3&ipo=images" alt="Norway" width="100%"></img>
+<div class="polaroid-container">
+    <h4>AWS DeepRacer Competition</h4>
+  </div>
+</div>
+
+<div className="card-container">
+<div className="card-text">
+  <div className="header-text">
+    <h4><a href="https://student.deepracer.com/leaderboard/arn%3Aaws%3Adeepracer%3A%3A%3Aleaderboard%2Ff425dfc2-c6b0-4102-ad35-c2c28a1cbd17"><Button>My Racing Rank</Button></a></h4>
+  </div>
+
+  <div class="text-container">
+    <p>July 1, 2023</p>
+  </div>
+</div>
+</div>
+
+<div className="second-cont">
+          <h3>aws</h3>
+</div>
+
 <Animation />
 
         <code>New Season</code>
-               <div style={{ display: "flex", justifyContent: "center" }} className="arrival">
+               {/* <div style={{ display: "flex", justifyContent: "center" }} className="arrival">
               
                 FEATURED <span className="featured">PRODUCTS</span>
-               </div>
+               </div> */}
                <div style={{ display: "flex", justifyContent: "center" }}>
                 
                 </div>
@@ -318,6 +422,7 @@ function Home() {
           
       <br />
       <p className="pro" > <h3>PORTFOLIO PROJECTS</h3></p>
+      <h3>Hello Guys, here is a brief introduction about my porfolio project and a video of my technical and soft skills.</h3>
       <Video />
       <div className="portfolio p-7" >
             <Box sx={{ flexGrow: 2 }}>
@@ -446,12 +551,12 @@ Happy gaming, and happy shopping!
           </Card.Body>
         </Card>
         <br/>
-        {/* <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/1n92hYPiFQ0efcCtrF" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/1n92hYPiFQ0efcCtrF"></a></p> */}
+       <div>
+
+       </div>
         <br/>
       
         <div>
-        
-
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Card.Link href="#">
               {/* <Button variant="outlined">TOP🔝</Button> */}

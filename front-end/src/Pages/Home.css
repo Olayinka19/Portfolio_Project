@@ -9,6 +9,18 @@
     background-color: #4b4b4b;
 } */
 
+.sample-item-1{
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px;
+}
+
+
+
+
+
 .first-img{
     position: absolute;
 left: 24.17%;
@@ -160,10 +172,45 @@ border: 1px solid #000000;
     padding: 40px;
   }
 
+  div.polaroid{
+    width: 350px;
+    
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  }
+
+  div.polaroid-container {
+    padding: 10px;
+  }
+  div.card-text {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+  div.second-cont{
+    display: grid;
+    width:"250px";
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  div.header-text {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+  }
+  div.text-container {
+    padding: 10px;
+  }
+  
+  div.container {
+    padding: 10px;
+  }
 .sample {
     display:flex;
   overflow: auto;
   flex-wrap: wrap;
+  text-align: center;
   padding:10px;
   scroll-snap-type: x mandatory;
     
@@ -174,9 +221,9 @@ border: 1px solid #000000;
 
 .sample .sample-item {
     flex-shrink:0;
- flex-grow:1;
+ flex-grow:2;
  scroll-snap-align: start;
- margin: 25px ;
+ margin: 75px ;
 }
   
 @tailwind base;
