@@ -48,6 +48,7 @@ import EmailSubscription from "./Components/EmailSubscription";
 import Messagebox from "./Pages/Messagebox";
 import PaymentSlip from "./Pages/PaymentSlip"
 import Cart from "./Pages/Cart";
+import UFO_Video from "./Components/UFO_Video";
 import Video from "./Components/Video";
 // import Food from "./Components/Food";
 
@@ -59,6 +60,7 @@ function App() {
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/UFO_Video" element={<UFO_Video />} />
         {/* <Route path="/Portfolios" element={<Index />} /> */}
         <Route path="/PortfoliosDetails" element={<PortfolioDetails />} />
         <Route path="/FlexConnect" element={<FlexConn />} />

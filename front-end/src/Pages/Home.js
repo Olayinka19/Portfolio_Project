@@ -28,6 +28,7 @@ import Cart from './Cart';
 import SnackbarContent from '@mui/material/SnackbarContent';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+import UFO_Video from "../Components/UFO_Video";
 // import Olayinka from "../assets/Olayinka.mp4";
 // import ola from "../assets/ola.jpeg";
 import Video from "../Components/Video";
@@ -113,7 +114,7 @@ function Home() {
         <Card className="home-container text-center"> 
           <Card.Body>
             <Card.Text>
-              <h3>Unleash the Ultimate Gaming Experience with Our Top-Rated Amazon Deals</h3>
+              <h3>Here's my Software Engineering Portfolio Projects and Podcast</h3>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 
               </div>
@@ -189,27 +190,30 @@ function Home() {
         </Card>
         <br />
         <div >
-        <div className="polaroid">
+     
+<div className="sample-item-container" style={{ display: 'flex', justifyContent: 'center' }}>
+<div className="polaroid">
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd1.awsstatic.com%2Fdeepracer%2FSilverstone%2FDeepRacer_Chrome_Small_rgb.aa9b2a3bee64dae2d593ebf74133277b2811a42e.png&f=1&nofb=1&ipt=9d801eadd170102ac3c3d33dacbea690dec53f6af15820d0fe33d34800fe7ed3&ipo=images" alt="Norway" width="100%"></img>
 <div class="polaroid-container">
-    <h4>AWS DeepRacer Competition</h4>
+    
   </div>
 </div>
-<div className="sample-item-container" style={{ display: 'flex', justifyContent: 'center' }}>
-        <h4>AWS DeepRacer Student is a place for high school and college-enrolled learners around the globe to develop machine learning (ML) skills. It provides access to educational material, the optional AWS AI & ML Scholarship program, and the opportunity to train and test reinforcement learning (RL) models for the AWS DeepRacer Student League. To get started, see the topics in the Are you a first-time AWS DeepRacer Student user? section.</h4>
+       
         </div>
 
 
         </div>
+        <br/>
+        <br/>
         <Video />
        
         <div className="sample p-7" >
-        <div className="sample-item"><img width="550px" height="320px" src="https://images.pexels.com/photos/9072371/pexels-photo-9072371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="First slide" />
+        <div className="sample-item"><iframe src="https://podcasters.spotify.com/pod/show/olayinka-fakanbi/embed/episodes/The-AI-Explorer-e26b765" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
         </div>
         <div className="sample-item-container" style={{ display: 'flex', justifyContent: 'center' }}>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+        {/* <h2>Welcome to the AI Explorer Podcast! Join us on a thrilling journey through the exciting world of artificial intelligence. Engaging discussions, fascinating guests, and mind-expanding insights await! Tune in now!.</h2> */}
         </div>
-        <div className="sample-item"><img width="350px" height="220px" src="https://images.pexels.com/photos/9072371/pexels-photo-9072371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="First slide" />
+        <div className="sample-item"><img width="350px" height="220px" src="https://static.wixstatic.com/media/fcd429_169abd10d5f443cfae2afa4a0b95e8c9~mv2.gif" alt="First slide" />
         
         </div>
         -
@@ -227,7 +231,7 @@ function Home() {
         </div>
         
         <div className="sample-item-container" style={{ display: 'flex', justifyContent: 'center' }}>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+        {/* <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et .</h2> */}
         </div>
         {/* <div>
         <img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/>
@@ -242,15 +246,15 @@ function Home() {
         </div>
         <div>
             <div className="sample p-7">
-        <div className="sample-item"><img width="350px" height="220px" src="https://images.pexels.com/photos/9072371/pexels-photo-9072371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="First slide" />
+        <div className="sample-item"><img width="350px" height="220px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd1.awsstatic.com%2Fdeepracer%2FSilverstone%2FDeepRacer_Chrome_Small_rgb.aa9b2a3bee64dae2d593ebf74133277b2811a42e.png&f=1&nofb=1&ipt=9d801eadd170102ac3c3d33dacbea690dec53f6af15820d0fe33d34800fe7ed3&ipo=images" alt="First slide" />
         
         </div>
         -
 
-        <div className="sample-item"><img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/></div>
+        <div className="sample-item"><img width="350px" height="220px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FcsR4l4P1vT4%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=97296e21eb310351ea8c59739e143f27bb1900f240e725655d9758b895218f0e&ipo=images"  alt="First slide"/></div>
         
         <div className="sample-item">
-        <img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/>
+        <img width="350px" height="220px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpythonawesome.com%2Fcontent%2Fimages%2Fsize%2Fw960%2F2021%2F09%2FRealtime-Face-Anti-Spoofing-Detection.jpg&f=1&nofb=1&ipt=f3d91600a679ae831544f8a5cd6a47e4b5f3f1ad55bb502043cf92131754f236&ipo=images"  alt="First slide"/>
         </div>
         {/* <div>
         <img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/>
@@ -259,16 +263,17 @@ function Home() {
         </div>
         <br/>
             <div className="sample p-7">
-        <div className="sample-item"><img width="350px" height="220px" src="https://images.pexels.com/photos/9072371/pexels-photo-9072371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="First slide" />
+        <div className="sample-item"><img width="350px" height="220px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpublic-files.gumroad.com%2Fvariants%2Frpkm39y1m3jzlxufroqp7fkwdw3u%2F3298c3eb001bbed90f1d616da66708480096a0a1b6e81bd4f8a2d6e9b831d301&f=1&nofb=1&ipt=bccf5053a4afaa9bcb0b38416b180616b8d7f2ad9636ca97dcdc2271c3cac55d&ipo=images" alt="First slide" />
         
+        </div>
+        <div className="sample-item">
+        <img width="350px" height="220px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmeethub.bnext.com.tw%2Fwp-content%2Fuploads%2F2021%2F12%2FMeta-%25E5%2590%2591%25E7%2594%25A8%25E6%2588%25B6%25E9%2596%258B%25E6%2594%25BE%25E4%25BA%2586-Spark-AR-Go-%25E6%25B8%25AC%25E8%25A9%25A6%25E7%2589%2588%25E6%259C%25AC.jpg&f=1&nofb=1&ipt=235f90d03c22662a4a49ebabb46bd749af4a8a110a1516569b9b4181f0af18f7&ipo=images"  alt="First slide"/>
         </div>
         -
 
-        <div className="sample-item"><img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/></div>
+        <div className="sample-item"><img width="350px" height="220px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdigitalpress.fra1.cdn.digitaloceanspaces.com%2Febxq6f0%2F2022%2F11%2F02.jpeg&f=1&nofb=1&ipt=0a0377acae380e8cd776a461a90a67c3f965cf792132bb74f010f129d3601079&ipo=images"  alt="First slide"/></div>
         
-        <div className="sample-item">
-        <img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/>
-        </div>
+        
         {/* <div>
         <img width="350px" height="220px" src="https://images.pexels.com/photos/7046716/pexels-photo-7046716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"  alt="First slide"/>
         </div> */}
@@ -277,12 +282,12 @@ function Home() {
         </div>
         <br/>
         <div className="homepage-container">
-        <span className="img-homepage-container">
+        {/* <span className="img-homepage-container">
           <img src="http://placehold" />
-        </span>
+        </span> */}
 
         </div>
-        <Skeleton
+        {/* <Skeleton
   sx={{ bgcolor: 'grey.900' }}
   variant="rectangular"
   width={210}
@@ -293,26 +298,25 @@ function Home() {
   variant="rectangular"
   width={210}
   height={118}
-/>
+/> */}
 <h1>
-  Sample Image Text
+  Meta AR Spark UFO_3D Project 
 </h1>
+<UFO_Video />
 
 <div className="polaroid">
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd1.awsstatic.com%2Fdeepracer%2FSilverstone%2FDeepRacer_Chrome_Small_rgb.aa9b2a3bee64dae2d593ebf74133277b2811a42e.png&f=1&nofb=1&ipt=9d801eadd170102ac3c3d33dacbea690dec53f6af15820d0fe33d34800fe7ed3&ipo=images" alt="Norway" width="100%"></img>
-<div class="polaroid-container">
-    <h4>AWS DeepRacer Competition</h4>
-  </div>
+
 </div>
 
 <div className="card-container">
 <div className="card-text">
   <div className="header-text">
-    <h4><a href="https://student.deepracer.com/leaderboard/arn%3Aaws%3Adeepracer%3A%3A%3Aleaderboard%2Ff425dfc2-c6b0-4102-ad35-c2c28a1cbd17"><Button>My Racing Rank</Button></a></h4>
+    <h4><a href="https://student.deepracer.com/leaderboard/arn%3Aaws%3Adeepracer%3A%3A%3Aleaderboard%2Ff425dfc2-c6b0-4102-ad35-c2c28a1cbd17"><Button>Try Effect on Facebook and Instagram</Button></a></h4>
   </div>
 
   <div class="text-container">
-    <p>July 1, 2023</p>
+    <p>Meta AR Spark</p>
+    
   </div>
 </div>
 </div>
@@ -328,65 +332,7 @@ function Home() {
               
                 FEATURED <span className="featured">PRODUCTS</span>
                </div> */}
-               <div style={{ display: "flex", justifyContent: "center" }}>
-                
-                </div>
-        {/* <Card>
-          <Card.Body>
-          {/* <p className="pro" > <Badge bg="secondary"><h1>Top Categories</h1> </Badge></p> */}
-          {/* <Animation /> */}
-        
-          {/* <div className="category" style={{ display: "flex", justifyContent: "center" }}>
-          </div>
-          
-          </Card.Body>
-        </Card> */} 
-        
-        <br />
-        <div className="sample p-7">
-        <Box sx={{ flexGrow: 2 }}>
-      <Grid container spacing={3}>
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/smiley-people-playing-videogame-side-view_23-2149349995.jpg?t=st=1681598378~exp=1681598978~hmac=c620e5ac3a8c5b911ed3acb77c08ba0bf9734934c40dd09cb0b0b454185dbf4f" /></Item>
-        
-        </Grid>
-
-        {/* <Stack spacing={2} sx={{ maxWidth: 600 }}>
-      <SnackbarContent message="I love snacks." action={action} />
-      <SnackbarContent
-        message={
-          'I love candy. I love cookies. I love cupcakes. \
-          I love cheesecake. I love chocolate.'
-        }
-      />
-      </Stack> */}
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/premium-photo/winning-side-view-excited-african-guy-male-professional-gamer-wearing-headphones-celebrating-success-while-participating-esport-tournament-people-playing-online-video-game_386167-10371.jpg" /></Item>
-          
-     
-        </Grid>
-
-        
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/smiley-man-wearing-vr-glasses-medium-shot_23-2149350043.jpg?t=st=1681598378~exp=1681598978~hmac=a05eaea10743a68086395df9a283e29249c871f5d0ee2c7be27d6427a39bdcef" /></Item>
-        
-        </Grid>
-
-        <Grid md={3}>
-          <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/back-view-man-winning-videogame_23-2149350002.jpg?t=st=1681598378~exp=1681598978~hmac=703a647c901d0ba376a92586bdfe556ba0aef68904fdfb2c16f62649eb9bff57" /></Item>
-
-        </Grid>
-
-      </Grid>
-      <div>
-   
-    </div>
-    </Box>
-
-   
-    </div>
+              
         <br />
      
 
@@ -481,7 +427,7 @@ function Home() {
               <Card sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        The Artificial Intelligence Explorer
+       7 ChatGPT Prompts to ace your next interview
         </Typography>
         <Typography variant="h5" component="div">
         AI Blog & Spotify Podcast 
@@ -495,7 +441,7 @@ function Home() {
         
         </img> 
         
-          <a href="https://masonmei.wixsite.com/pursuitconnect/post/faho-blog " >Podcast Blog</a>
+          <a href="https://masonmei.wixsite.com/pursuitconnect/post/faho-blog " >ChatGPT Prompt</a>
   
       </Button>
           <br />
