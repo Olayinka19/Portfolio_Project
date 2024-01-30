@@ -1,0 +1,15 @@
+User:
+  columns:
+    name: 0
+    age: 0
+    username: 1
+    password: 1
+    firstname: 1
+    surname: 1
+  relations:
+    roles: 1
+    accessTokens: 1
+
+AccessToken: 1
+
+Role: 1

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState} from 'react';
 import Button from 'react-bootstrap/Button';
+import { Card } from 'react-bootstrap';
+import Animation from "../Components/Animation";
 // import './Flex.css';
 
 function FlexConnect() {
@@ -19,7 +21,7 @@ function FlexConnect() {
     
 
     <div >
-      <h1>{!currentAccount? "Connect your Wallet" : <p>WalletID: {currentAccount}</p>}</h1>
+      <h1>{!currentAccount? "Connect your Wallet" : <p>WalletID: {currentAccount}</p>}</h1><br></br>
       <br></br>
       <Button variant="success" onClick={connectWallet} className="connect">Connect</Button>
     </div>

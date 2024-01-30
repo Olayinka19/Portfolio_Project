@@ -1,0 +1,7 @@
+User:
+  relations:
+    companies: 1
+
+AccessToken: 0
+
+Company: 1

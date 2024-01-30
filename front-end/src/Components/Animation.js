@@ -1,17 +1,18 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
+import Badge from 'react-bootstrap/Badge';
 
 function Animation() {
     const styles = useSpring({
       loop: true,
       to: [
-        { opacity: 7, color: 'gold' },
-        { opacity: 1, color: '#76b469' },
+        { opacity: 4, color: 'gold' },
+        { opacity: 1, color: 'white' },
       ],
       from: { opacity: 0, color: 'white' },
     })
     // ...
-    return <animated.div style={styles}><h1>Olayinka.Fakanbi</h1></animated.div>
+    return <animated.div style={styles}><h1 className="pro">FEATURED PRODUCTS</h1> </animated.div>
   }
 
 

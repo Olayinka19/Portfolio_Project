@@ -1,17 +1,24 @@
 import React from 'react'
 import { Form } from 'react-bootstrap';
-import Button from 'react-bootstrap';
+// import Button from 'react-bootstrap';
 import './Profile.css';
+import { useState } from 'react';
+import Animation from "../Components/Animation";
+
 
 function Profile() {
+    const [file, setFile] = useState();
+    function handleChange(e) {
+        console.log(e.target.files);
+        // console.log(e.target.files);
+        setFile(URL.createObjectURL(e.target.files[0]));
+    }
+
   return (
     <div className='profile'>
-    <h1>Edit Your </h1>
-    <h1>Web3 Profile</h1>
+    {/* <h1>Edit Your </h1> */}
+    <h1>Your Profile</h1>
     <div className='profile__content'>
-    {/* <img className=""
-    src="" width="160" height="130" alt="image">
-    </img> */}
 
     <h3 className='pof'>Profile</h3>
     <form>
@@ -19,29 +26,30 @@ function Profile() {
     <h5 id="displaypicchange">
       Displaypic Change
     </h5>
+<<<<<<< HEAD
     <img className="displaypic" src="http://" ></img>
     <input className="uploader" type="file" name="file" ></input>
+=======
+  <div>
+  <img className="displaypic" src={file} alt="pfp" /> 
+  </div>
+   
+    <input className="uploader" type="file" name="file" onChange={handleChange}></input>
+>>>>>>> origin/main
 
     <h5 className='pof'>Update Profile Avatar</h5>
     </form>
 
     <h4 className='rank'>
         <span className="rank-item">Rank</span>
-        <span class="bg-primary rounded-pill">69</span>
+        <span className="bg-primary rounded-pill">69</span>
     </h4>
     <ul className="list-group">
         <li className="list-group-item d-flex justify-content-between">
             
         </li>
     </ul>
-    <div className="text-success">
-    <h4 className="">
-        NFT
-    </h4>
-    <h5>PASSPORT</h5>
-    <h5>ID</h5>
-
-    </div>
+  
  <h4 className='mb-3 d-flex justify-content-end'>Profile Information</h4>
 
     <Form>
@@ -78,11 +86,6 @@ function Profile() {
 
           <hr className='my-hr'/>
 
-          <div className="row d-flex">
-            <div className="col-md-6">
-                <h3 className='mb-2'>Personal Wallet</h3>
-            </div>
-          </div>
           <input className='form-control' placeholder='place new wallet' id="newwallet" required>
 
           </input>
@@ -91,32 +94,24 @@ function Profile() {
           Update Wallet
 
           </button>
-            <p className='lead'>
-                Remeber your wallet is tied to your NFT, If you update your wallet, your NFT passport will be automatically updated! Both items are required for access. Once your NFT has been updated, please re-login using your new wallet.
-            </p>
+          
 
             <h5 id="walletsuccess" />
             <div className="col-lg-4">
                 <div className="row mb-1">
                     <div className="col-md-3">
-                        <img width="60px" heigth="60px" className="img-fluid" src="https://img.icons8.com/plasticine/512/png.png" />
+                        <img width="60px" alt="pfp" heigth="60px" className="img-fluid" src="https://img.icons8.com/plasticine/512/png.png" />
 
                     </div>
                 </div>
             </div>
-            <div className="col-lg-4">
-                <h4 className="mb-2">Balance</h4>
-                <h3 className="mt-1"></h3>
-            </div>
-            <label className="">Internal Wallet</label>
-            <h5>Transfer NFT to Personal Wallet</h5>
-            <button className="btn btn-secondary mt-2">
-                Transfer N2DR
-            </button>
-            <h6 id="displayransfer" />
+            
+    
+            
+            {/* <h6 id="displayransfer" /> */}
 
 
-          <hr className='my-hr'/>
+          {/* <hr className='my-hr'/> */}
 
             
     </Form>

@@ -1,0 +1,89 @@
+Department:
+  columns:
+    name:
+      type: string
+      default: test
+    code: string
+  relations:
+    employees:
+      entity: Employee
+      toMany: true
+      inverse: department
+
+Employee:
+  columns:
+    firstname: string
+    surname: string
+  relations:
+    department:
+      entity: Department
+      inverse: employees
+    collegues:
+      entity: Employee
+      toMany: true
+      inverse: collegues
+  indexes:
+    name:
+      columns:
+        - firstname
+        - surname
+
+Client:
+  columns:
+    name: string
+  relations:
+    contacts:
+      entity: Employee
+      type: manyToMany
+      inverse: clients
+  indexes:
+    test:
+      unique: true
+      column: name
+    test2: name
+
+
+Instance:
+  columns:
+    hash:
+      type: string
+      unique: true
+  relations:
+    databases:
+      entity: Database
+      toMany: true
+      inverse: instance
+
+Database:
+  columns:
+    url: string
+  relations:
+    instance:
+      entity: Instance
+      inverse: databases
+    endPoints:
+      entity: EndPoint
+      toMany: true
+      inverse: database
+    schemas:
+      entity: Schema
+      toMany: true
+      inverse: databases
+
+EndPoint:
+  columns:
+    url: string
+  relations:
+    database:
+      entity: Database
+      inverse: endPoints
+
+Schema:
+  columns:
+    configJSON: text
+    version: string
+  relations:
+    databases:
+      entity: Database
+      toMany: true
+      inverse: schemas

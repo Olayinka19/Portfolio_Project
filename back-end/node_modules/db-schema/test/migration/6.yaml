@@ -1,0 +1,33 @@
+User:
+  columns:
+    username: string
+    password: string
+    firstname: string
+    surname: string
+  relations:
+    roles:
+      entity: Role
+      toMany: true
+      inverse: users
+    accessTokens:
+      entity: AccessToken
+      toMany: true
+      inverse: user
+
+AccessToken:
+  columns:
+    token: string
+    expire: date
+  relations:
+    user:
+      entity: User
+      inverse: accessTokens
+
+Role:
+  columns:
+    name: string
+  relations:
+    users:
+      entity: User
+      toMany: true
+      inverse: roles

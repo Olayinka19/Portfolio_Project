@@ -1,0 +1,9 @@
+User:
+  columns:
+    birthdate: 0
+    age: 1
+  relations:
+    companies: 0
+    parent: 0
+
+Company: 0

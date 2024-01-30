@@ -1,0 +1,4 @@
+User:
+  columns:
+    name: string
+    age: double

@@ -1,0 +1,20 @@
+User:
+  columns:
+    name: string
+    birthdate: date
+  relations:
+    parent:
+      entity: User
+    companies:
+      entity: Company
+      toMany: true
+      inverse: users
+
+Company:
+  columns:
+    name: string
+  relations:
+    users:
+      entity: User
+      toMany: true
+      inverse: companies

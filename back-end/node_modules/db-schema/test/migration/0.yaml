@@ -1,0 +1,4 @@
+User:
+  columns:
+    _name: string
+    age: integer

@@ -1,23 +1,20 @@
 {
-  "name": "back-end",
+  "name": "portfolio-project",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "db:seed": "psql -U postgres -f db/seed.sql",
+    "db:init": "psql -U postgres -f db/schema.sql"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Olayinka Fakanbi",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "db-schema": "^0.2.8",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "pg-promise": "^10.12.0"
-  },
-  "devDependencies": {
-    "db-seed": "^1.2.0"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "pg-promise": "^11.0.2"
   }
 }

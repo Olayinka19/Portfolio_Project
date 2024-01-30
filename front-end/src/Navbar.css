@@ -1,0 +1,9 @@
+.displayname{
+    color:white!important;
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

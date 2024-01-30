@@ -1,6 +1,7 @@
 import React from 'react'
 import FlexConnect from '../Components/FlexConnect';
 import Spinner from 'react-bootstrap/Spinner';
+// import './FlexConn.css';
 
 function FlexConn() {
   return (

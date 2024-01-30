@@ -1,0 +1,5 @@
+User:
+  columns:
+    _name: name
+
+AccessToken: 1

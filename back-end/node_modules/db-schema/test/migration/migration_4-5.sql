@@ -1,0 +1,5 @@
+ALTER TABLE `user` DROP COLUMN `birthdate`;
+ALTER TABLE `user` ADD COLUMN `age` double NULL DEFAULT NULL;
+DROP TABLE IF EXISTS `user_companies`;
+ALTER TABLE `user` DROP COLUMN `parent_id` int(11) NULL DEFAULT NULL;
+DROP TABLE IF EXISTS `company`;

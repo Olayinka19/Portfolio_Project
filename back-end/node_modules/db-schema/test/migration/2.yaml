@@ -1,0 +1,16 @@
+User:
+  columns:
+    name: string
+    birthdate: date
+  relations:
+    tokens:
+      entity: AccessToken
+      toMany: true
+      inverse: user
+
+AccessToken:
+  columns:
+    token: string
+  relations:
+    user:
+      entity: User

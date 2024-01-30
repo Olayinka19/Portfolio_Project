@@ -1,13 +1,13 @@
-import React from 'react'
-import About from '../Components/About'
+// import React from 'react'
+// import About from '../Components/About'
 
-function AboutPage() {
-  return (
-    <div>
-      <About />
+// function AboutPage() {
+//   return (
+//     <div>
+//       <About />
       
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default AboutPage
+// export default AboutPage

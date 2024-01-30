@@ -1,0 +1,2 @@
+ALTER TABLE `user` DROP COLUMN `age`;
+ALTER TABLE `user` ADD COLUMN `birthdate` datetime NULL DEFAULT NULL;
