@@ -142,17 +142,11 @@ header {
  align-items: center;
 }
 .profile {
-<<<<<<< HEAD
  /* background-image: url('https://theawesomedaily.com/wp-content/uploads/2018/07/cool-background-2-1.jpg'); */
   background-size: cover;
   background-color: #4e4b4b;
   
   background-position: center;
-=======
- /* background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.entrepreneur.com%2Fcontent%2F3x2%2F2000%2F1661266965-shutterstock-2144631851.jpg&f=1&nofb=1&ipt=ebcb035da714baf9d88a8c5caabe617d577d0b612b253a2fa60a6e9d72e4e014&ipo=images'); */
-  /* background-size: cover; */
-  /* background-position: center; */
->>>>>>> origin/main
   /* background-repeat: no-repeat; */
   width: 100%;
   
