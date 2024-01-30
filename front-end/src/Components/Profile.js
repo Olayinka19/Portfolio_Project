@@ -20,7 +20,7 @@ function Profile() {
       Displaypic Change
     </h5>
     <img className="displaypic" src="http://" ></img>
-    <input className="uploader" type="file" name="file"></input>
+    <input className="uploader" type="file" name="file" ></input>
 
     <h5 className='pof'>Update Profile Avatar</h5>
     </form>
