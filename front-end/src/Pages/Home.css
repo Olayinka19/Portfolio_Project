@@ -18,8 +18,38 @@
 }
 
 
-
-
+.intro2{
+  width: auto;
+  height:auto;
+  border: 3px solid transparent !important;
+  /* background-color: white; */
+ padding:20px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ flex-grow: 4;
+ flex-wrap: wrap;
+ row-gap: 45px;
+ column-gap: 20px;
+}
+.port-2{
+  width: 400px;
+  height:410px;
+  border: 3px solid transparent;
+  padding: 20px 20px;
+  border-radius:12px; 
+  color: white;
+  background-color: #333333;
+}
+h1{
+  color: white;
+  .text-container {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-gap: 20px;
+      align-items: center;
+  }
+}
 
 .first-img{
     position: absolute;

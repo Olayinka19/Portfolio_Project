@@ -23,6 +23,7 @@ function About() {
    
     <div>
    {/* <h1>Connect Your Wallet</h1> */}
+   
    <div className="container-fluid">
     <div className="background">
        <div className="cube"></div>
@@ -45,10 +46,40 @@ function About() {
       <div style={{ display: 'flex', justifyContent: 'center' }}>
       {/* <Animation /> */}
       </div>
-      <h3> Get Your Game On, and Show Us What You've Got: It's Time to Play and Have a Blast
+      <h3> OlaFolio gaming Competition 2024
 </h3>
-<Link to="/"><img src = "https://cdn-icons-png.flaticon.com/512/759/759400.png?w=1380&t=st=1681618963~exp=1681619563~hmac=5c60a674eb96dfa21e036f66785a41dfbbe829173db8c7450253ba220956fc83" width="35px" height="35px"></img><Button variant="error">Home</Button></Link>
-<Box sx={{ flexGrow: 2 }}>
+<div className="intro2">
+    <div className="port-2">
+  <img className="pfp1" alt="pfp" src="https://images.pexels.com/photos/6498302/pexels-photo-6498302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="350px" height="290px"></img>
+          <p>The Rise of AI Programmers</p>
+          {/* <p>As artificial intelligence (AI) continues to advance, there has been a growing discourse surrounding the role of human programmers.</p> */}
+          {/* <br/> */}
+    
+  </div>
+  <div className="port-2">
+  <img className="pfp1" alt="pfp" src="https://images.pexels.com/photos/6498302/pexels-photo-6498302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="350px" height="290px"></img>
+          <p>The Rise of AI Programmers</p>
+          {/* <p>As artificial intelligence (AI) continues to advance, there has been a growing discourse surrounding the role of human programmers.</p> */}
+          {/* <br/> */}
+   
+  </div>
+  <div className="port-2">
+  <img className="pfp1" alt="pfp" src="https://images.pexels.com/photos/6498302/pexels-photo-6498302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="350px" height="290px"></img>
+          <p>The Rise of AI Programmers</p>
+          {/* <p>As artificial intelligence (AI) continues to advance, there has been a growing discourse surrounding the role of human programmers.</p> */}
+          {/* <br/> */}
+         
+  </div>
+ 
+
+
+
+
+
+    </div>
+  
+{/* <Link to="/"><img src = "https://cdn-icons-png.flaticon.com/512/759/759400.png?w=1380&t=st=1681618963~exp=1681619563~hmac=5c60a674eb96dfa21e036f66785a41dfbbe829173db8c7450253ba220956fc83" width="35px" height="35px"></img><Button variant="error">Home</Button></Link> */}
+{/* <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/smiley-people-playing-videogame-side-view_23-2149349995.jpg?t=st=1681598378~exp=1681598978~hmac=c620e5ac3a8c5b911ed3acb77c08ba0bf9734934c40dd09cb0b0b454185dbf4f" /></Item>
@@ -70,9 +101,9 @@ function About() {
         </Grid>
 
       </Grid>
-    </Box>
+    </Box> */}
 
-    <Box sx={{ flexGrow: 2 }}>
+    {/* <Box sx={{ flexGrow: 2 }}>
       <Grid container spacing={3}>
         <Grid md={3}>
           <Item><img width="350px" height="220px" alt="First slide" src="https://img.freepik.com/free-photo/young-adult-enjoying-playing-video-game_23-2149250008.jpg?t=st=1681598378~exp=1681598978~hmac=13120da7ce13abb166987b354167c6a29634b15b006ba6546f5931d2f9506aab" /></Item>
@@ -94,117 +125,12 @@ function About() {
         </Grid>
 
       </Grid>
-    </Box>
-    
-{/* <Accordion>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Apple AirPods Pro <img src="https://cdn-icons-png.flaticon.com/512/9452/9452499.png" width="40px" height="40px"></img></Accordion.Header>
-        <Accordion.Body>
-        It's no surprise that the Apple AirPods Pro are at the top of our list. These wireless earbuds are a hit with both Apple fans and tech enthusiasts alike. The AirPods Pro offer noise cancellation, a comfortable fit, and impressive sound quality. They're also water-resistant, making them perfect for working out or taking calls on the go.
-        <img src="https://m.media-amazon.com/images/I/71lj9Fdeq0L._AC_SL1500_.jpg" alt="pfp" width="180px" height="180px"></img>
-        <Button><a href="https://amzn.to/3kysmET" target="_blank" rel="noopener">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Ring Video Doorbell <img src="https://cdn-icons-png.flaticon.com/512/1333/1333342.png" width="40px" height="40px" alt="pfp"></img></Accordion.Header>
-        <Accordion.Body>
-        The Ring Video Doorbell has become a popular choice for homeowners looking to enhance their home security. This device allows you to see and talk to visitors at your front door from anywhere, using your smartphone. The Ring Video Doorbell also features motion detection and can send alerts to your phone, giving you peace of mind while you're away from home.
-        <img src="https://m.media-amazon.com/images/I/51Sh7ug8F-L._SL1000_.jpg" width="120px" height="120px"></img>
-        <Button><a href="https://amzn.to/3EEwpGs" target="_blank" rel="noopener">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="2">
-        <Accordion.Header>Bose QuietComfort 35 II<img src="https://cdn-icons-png.flaticon.com/512/6190/6190871.png" width="40px" height="40px"></img></Accordion.Header>
-        <Accordion.Body>
-        The Ring Video Doorbell has become a popular choice for homeowners looking to enhance their home security. This device allows you to see and talk to visitors at your front door from anywhere, using your smartphone. The Ring Video Doorbell also features motion detection and can send alerts to your phone, giving you peace of mind while you're away from home.
-        <img src="https://m.media-amazon.com/images/I/71+iQZU-dVL._AC_SY300_SX300_.jpg" width="120px" height="120px"></img>
-        <Button><a href="https://amzn.to/3EEwpGs" target="_blank" rel="noopener">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="3">
-        <Accordion.Header>Samsung Galaxy Watch 3<img src="https://cdn-icons-png.flaticon.com/512/8488/8488889.png" width="40px" height="40px"></img></Accordion.Header>
-        <Accordion.Body>
-        The Samsung Galaxy Watch 3 is a sleek and stylish smartwatch that offers a range of features, including fitness tracking, heart rate monitoring, and sleep tracking. It also allows you to receive notifications and make calls, all from your wrist.
-        <img src="https://m.media-amazon.com/images/I/818MAcfvjPL._AC_SL1500_.jpg" width="120px" height="120px"></img>
-        <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="4">
-        <Accordion.Header>Logitech C920s HD Pro Webcam<img src="https://cdn-icons-png.flaticon.com/512/3037/3037951.png" width="40px" height="40px"></img></Accordion.Header>
-        <Accordion.Body>
-        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
-        <img src="https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SX679_.jpg" width="120px" height="120px"></img>
-        <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="5">
-        <Accordion.Header>VMSTR 8 Pack Travel Vacuum Storage Bags<img src="https://m.media-amazon.com/images/I/71yiv-PTFbL._AC_SL1500_.jpg" width="40px" height="40px"></img></Accordion.Header>
-        <Accordion.Body>
-        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
-        <img src="https://m.media-amazon.com/images/I/71yiv-PTFbL._AC_SL1500_.jpg" width="120px" height="120px"></img>
-        <Button><a href="https://amzn.to/3ZT4KtH" target="_blank" rel="noopener">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item>
-      {/* <Accordion.Item eventKey="4">
-        <Accordion.Header>Logitech C920s HD Pro Webcam<img src="https://cdn-icons-png.flaticon.com/512/3037/3037951.png" width="40px" height="40px"></img></Accordion.Header>
-        <Accordion.Body>
-        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
-        <img src="https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SX679_.jpg" width="120px" height="120px"></img>
-        <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="4">
-        <Accordion.Header>Logitech C920s HD Pro Webcam<img src="https://cdn-icons-png.flaticon.com/512/3037/3037951.png" width="40px" height="40px"></img></Accordion.Header>
-        <Accordion.Body>
-        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
-        <img src="https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SX679_.jpg" width="120px" height="120px"></img>
-        <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="4">
-        <Accordion.Header>Logitech C920s HD Pro Webcam<img src="https://cdn-icons-png.flaticon.com/512/3037/3037951.png" width="40px" height="40px"></img></Accordion.Header>
-        <Accordion.Body>
-        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
-        <img src="https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SX679_.jpg" width="120px" height="120px"></img>
-        <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="4">
-        <Accordion.Header>Logitech C920s HD Pro Webcam<img src="https://cdn-icons-png.flaticon.com/512/3037/3037951.png" width="40px" height="40px"></img></Accordion.Header>
-        <Accordion.Body>
-        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
-        <img src="https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SX679_.jpg" width="120px" height="120px"></img>
-        <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="4">
-        <Accordion.Header>Logitech C920s HD Pro Webcam<img src="https://cdn-icons-png.flaticon.com/512/3037/3037951.png" width="40px" height="40px"></img></Accordion.Header>
-        <Accordion.Body>
-        As more people are working from home or attending virtual meetings, the Logitech C920s HD Pro Webcam has become a popular choice for high-quality video conferencing. It offers 1080p HD video, automatic light correction, and a built-in privacy shutter.
-        <img src="https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SX679_.jpg" width="120px" height="120px"></img>
-        <Button><a href="https://amzn.to/3knce9m" target="_blank" rel="noopener">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item> */}
-      {/* <Accordion.Item eventKey="5">
-        <Accordion.Header>Sonos One<img src="https://cdn-icons-png.flaticon.com/512/3162/3162383.png" width="40px" height="40px"></img></Accordion.Header>
-        <Accordion.Body>
-        The Sonos One (Gen 2) is a smart speaker that offers exceptional sound quality and compatibility with popular voice assistants, including Amazon Alexa and Google Assistant. It also allows you to stream music and podcasts from a variety of sources, including Spotify, Apple Music, and more.
-        <img src="https://m.media-amazon.com/images/I/71dJ0HXTD0L._AC_SX679_.jpg" width="120px" height="120px"></img>
-        <Button><a href="https://amzn.to/3knce9m" target="_blank">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="6">
-        <Accordion.Header>Sonos One<img src="https://cdn-icons-png.flaticon.com/512/3162/3162383.png" width="40px" height="40px"></img></Accordion.Header>
-        <Accordion.Body>
-        The Sonos One (Gen 2) is a smart speaker that offers exceptional sound quality and compatibility with popular voice assistants, including Amazon Alexa and Google Assistant. It also allows you to stream music and podcasts from a variety of sources, including Spotify, Apple Music, and more.
-        <img src="https://m.media-amazon.com/images/I/71dJ0HXTD0L._AC_SX679_.jpg" width="120px" height="120px"></img>
-        <Button><a href="https://amzn.to/3knce9m" target="_blank">Learn More</a></Button>
-        </Accordion.Body>
-      </Accordion.Item> */}
-    {/* </Accordion> */} 
+    </Box> */}
     
 
-    <Link to="/"><img src = "https://cdn-icons-png.flaticon.com/512/759/759400.png?w=1380&t=st=1681618963~exp=1681619563~hmac=5c60a674eb96dfa21e036f66785a41dfbbe829173db8c7450253ba220956fc83" width="35px" height="35px"></img><Button variant="error">Home</Button></Link>
+    
+
+    {/* <Link to="/"><img src = "https://cdn-icons-png.flaticon.com/512/759/759400.png?w=1380&t=st=1681618963~exp=1681619563~hmac=5c60a674eb96dfa21e036f66785a41dfbbe829173db8c7450253ba220956fc83" width="35px" height="35px"></img><Button variant="error">Home</Button></Link> */}
    
         </div>
       </section>

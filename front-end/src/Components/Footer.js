@@ -38,8 +38,8 @@ const Footer = () => (
           <h6> COMPANY INFORMATION </h6>
           <p className="footer-p-tags">About Us</p>
           <p className="footer-p-tags">Team</p>
-          <p className="footer-p-tags">Awards and Recognition</p>
-          <p className="footer-p-tags">AheadShopping Blog</p>
+          <p className="footer-p-tags">Gaming Competition</p>
+          <p className="footer-p-tags">OlaFolio Blog</p>
           <p className="footer-p-tags">Careers</p>
           <p className="footer-p-tags">Partners</p>
         </Grid>
@@ -56,7 +56,7 @@ const Footer = () => (
 
         <Grid md={3}>
           <EmailSubscription/>
-          <p><Checkbox {...label} /> Yes, I want to receive emails products, news and more from Aheadshopping.</p>
+          <p><Checkbox {...label} /> Subscribe to OlaFolio Newsletter</p>
           <Button type="submit" variant="outlined">Subscribe</Button>
         </Grid>
 
@@ -82,7 +82,7 @@ const Footer = () => (
    
     </div>
     <p style={{ textAlign: 'center', fontSize: '14px', marginTop: '20px' }}>
-      &copy; {new Date().getFullYear()} Ahead Shopping | All rights reserved
+      &copy; {new Date().getFullYear()} OlaFolio Electronics | All rights reserved
     </p>
   </footer>
 );

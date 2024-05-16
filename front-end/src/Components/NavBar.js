@@ -52,7 +52,7 @@ export default function NavBar() {
         <Navbar key={expand} bg="light" expand={expand} className="mb-3" sticky="top">
         
           <Container fluid>
-            <Navbar.Brand href="/"><img width="120px" height="50px" src={AheadSh} alt="React Logo" /></Navbar.Brand>
+            <Navbar.Brand href="/">OlaFolio</Navbar.Brand>
             <Stack direction="row" spacing={1}>
   
       {/* <Chip
@@ -80,7 +80,7 @@ export default function NavBar() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}><Link to="/Profile">Profile</Link></MenuItem>
+        {/* <MenuItem onClick={handleClose}><Link to="/Profile">Profile</Link></MenuItem> */}
         <MenuItem onClick={handleClose}><Link to="/Account">My Account</Link></MenuItem>
         <MenuItem onClick={handleSignOut}>Logout</MenuItem>
       </Menu>
@@ -141,11 +141,8 @@ export default function NavBar() {
                   <NavDropdown.Divider />
                   <Link to="/Mice"><img src="https://cdn-icons-png.flaticon.com/512/141/141052.png?w=1380&t=st=1681622633~exp=1681623233~hmac=aa0dce8ce7b3399d9e60711acd3a6c5fae5a82915af02853fbcaa997aedb4718" alt="First slide" width="35px" height="35px"/><Button variant="secondary">Gaming Mice</Button></Link>
                   <NavDropdown.Divider />
-                  <Link to="/About"><img src="https://img.freepik.com/free-vector/skull-gaming-with-joy-stick-emblem-modern-style_32991-492.jpg?w=1380&t=st=1681627996~exp=1681628596~hmac=9e73ddbd6115e121f92669fbc702fd0a653b67611cb4c384a04ce775f757d5fc" alt="First slide" width="35px" height="35px"/><Button variant="secondary">Portfolio</Button></Link>
+                  <Link to="/About"><img src="https://img.freepik.com/free-vector/skull-gaming-with-joy-stick-emblem-modern-style_32991-492.jpg?w=1380&t=st=1681627996~exp=1681628596~hmac=9e73ddbd6115e121f92669fbc702fd0a653b67611cb4c384a04ce775f757d5fc" alt="First slide" width="35px" height="35px"/><Button variant="secondary">Competition</Button></Link>
                   <NavDropdown.Divider />
-                  <Link to="/Developer"> <img src="https://img.freepik.com/free-vector/coding-round-composition_1284-40752.jpg?w=1060&t=st=1678332608~exp=1678333208~hmac=bcc617f8837143a1bb138a33c7c3481d81510689b16f5afc0f765a1066578b5d" width="45px" height="45px"></img><Button variant="secondary">Developer</Button></Link>
-    
-                    <NavDropdown.Divider />
                   <NavDropdown
                     title="Other Products"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -154,40 +151,37 @@ export default function NavBar() {
                 
                     
                     <NavDropdown.Item>
-                    <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2821/2821610.png" width="45px" height="45px"></img>Computers</Button></Link>
+                    <Link to="/Computers"><img src="https://cdn-icons-png.flaticon.com/512/2821/2821610.png" width="45px" height="45px"></img></Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                    <Link to="/Audio_videos"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/8445/8445561.png" width="45px" height="45px"></img>Audio Video</Button></Link>
+                    <Link to="/Audio_videos"><img src="https://cdn-icons-png.flaticon.com/512/8445/8445561.png" width="45px" height="45px"></img></Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                    <Link to="/Gaming"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2780/2780137.png" width="45px" height="45px"></img>Gaming</Button></Link>
+                    <Link to="/Gaming"><img src="https://cdn-icons-png.flaticon.com/512/2780/2780137.png" width="45px" height="45px"></img></Link>
                     </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item>
-                    <Link to="/Gaming"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2780/2780137.png" width="45px" height="45px"></img>Gaming</Button></Link>
-                    </NavDropdown.Item>
+    
                     
                     <NavDropdown.Item>
                     
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                    <Link to="/Home_devices"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/3979/3979810.png" width="45px" height="45px"></img>Home devices</Button></Link>
+                    <Link to="/Home_devices"><img src="https://cdn-icons-png.flaticon.com/512/3979/3979810.png" width="45px" height="45px"></img></Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item>
-                    <Link to="/Mobile_devices"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2274/2274713.png" width="45px" height="45px"></img>Mobile devices</Button></Link>
+                    <Link to="/Mobile_devices"><img src="https://cdn-icons-png.flaticon.com/512/2274/2274713.png" width="45px" height="45px"></img></Link>
                     </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item>
+                    {/* <NavDropdown.Divider /> */}
+                    {/* <NavDropdown.Item>
                     <Link to="/Software"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/3950/3950815.png" width="45px" height="45px"></img>Software</Button></Link>
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item>
+                    </NavDropdown.Item> */}
+                    {/* <NavDropdown.Divider /> */}
+                    {/* <NavDropdown.Item>
                     <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/4029/4029235.png" width="45px" height="45px"></img>Wrist Watch</Button></Link>
-                    </NavDropdown.Item>
+                    </NavDropdown.Item> */}
                     {/* <NavDropdown.Item>
                     <Link to="/Computers"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" width="45px" height="45px"></img>Computers</Button></Link>
                     </NavDropdown.Item>
@@ -203,17 +197,17 @@ export default function NavBar() {
                     {/* <NavDropdown.Item>
                     <Link to="/Food"><Button variant="outlined"><img src=" https://img.freepik.com/free-vector/flat-background-with-double-burger-tasty-ingredients_23-2147635675.jpg?w=1060&t=st=1678332132~exp=1678332732~hmac=7fd25af3c65efc62882ff3150a57df02d16e3792cafa70d4a069397841481fdf" width="45px" height="45px"></img>Food</Button></Link>
                     </NavDropdown.Item> */}
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item>
+                    {/* <NavDropdown.Divider /> */}
+                    {/* <NavDropdown.Item>
                     <Link to="/Electronics"><Button variant="outlined"><img src="https://img.freepik.com/premium-psd/3d-render-low-poly-compute-4k-resolution_517414-5.jpg?w=1060" width="45px" height="45px"></img>Electronics</Button></Link>
-                    </NavDropdown.Item>
+                    </NavDropdown.Item> */}
                     {/* <NavDropdown.Item>
                     <Link to="/Bags"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/58/58047.png?w=1380&t=st=1678335615~exp=1678336215~hmac=fdd0e95503de02f7a5d86fa247aec79ea548b7df8099a0c8320f798d4e5cff7f" width="45px" height="45px"></img>Bags</Button></Link>
                     </NavDropdown.Item> */}
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item>
+                    {/* <NavDropdown.Divider /> */}
+                    {/* <NavDropdown.Item>
                     <Link to="/Education_office"><Button variant="outlined"><img src="https://img.freepik.com/free-vector/isometric-building-white-background_1308-92994.jpg?w=1060&t=st=1678336001~exp=1678336601~hmac=100c333e0e8cc099f258290b54cdd4ef9ec194d49b320133963b6f8ffe0f4e3e" width="45px" height="45px"></img>Education_Office</Button></Link>
-                    </NavDropdown.Item>
+                    </NavDropdown.Item> */}
                     {/* <NavDropdown.Item>
                     <Link to="/Health_beauty"><Button variant="outlined"><img src="https://cdn-icons-png.flaticon.com/512/107/107780.png?w=1380&t=st=1678336344~exp=1678336944~hmac=ea28fccd1f594bc6451d92787534aa41e728df5310911f004a998f87676b915c" width="45px" height="45px"></img>Health , Beauty & Hair</Button></Link>
                     </NavDropdown.Item> */}
@@ -235,8 +229,8 @@ export default function NavBar() {
                     <NavDropdown.Item>
                     <Link to="/Electronics"><Button variant="outlined"><img src="https://img.freepik.com/premium-psd/3d-render-low-poly-compute-4k-resolution_517414-5.jpg?w=1060" width="45px" height="45px"></img>Electronics</Button></Link>
                     </NavDropdown.Item> */}
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item ><Link to="/Kitchen"><img src="https://img.freepik.com/free-vector/casserole-pot_1284-11444.jpg?w=1060&t=st=1678332411~exp=1678333011~hmac=08540d0ce9eea7b3102ff22b10f0740f5288eab590d021c936e30b7b6b94438a" width="45px" height="45px"></img>kitchen & Utensils</Link></NavDropdown.Item> 
+                    {/* <NavDropdown.Divider /> */}
+                    {/* <NavDropdown.Item ><Link to="/Kitchen"><img src="https://img.freepik.com/free-vector/casserole-pot_1284-11444.jpg?w=1060&t=st=1678332411~exp=1678333011~hmac=08540d0ce9eea7b3102ff22b10f0740f5288eab590d021c936e30b7b6b94438a" width="45px" height="45px"></img>kitchen & Utensils</Link></NavDropdown.Item>  */}
                   </NavDropdown>
                   {/* <Link to="/Food"><Button variant="outlined">Food</Button></Link>
                   <hr/>
@@ -259,9 +253,6 @@ export default function NavBar() {
                   >
         
                     <NavDropdown.Item ><Link to="/Account">My Account</Link></NavDropdown.Item>
-                    <NavDropdown.Item>
-                    <Link to="/Profile">Profile</Link>
-                    </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action5">
                       Settings
