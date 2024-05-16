@@ -107,10 +107,10 @@ function Home() {
     
      
 
-        <Card className="home-container text-center"> 
+        <Card className=" text-center"> 
           <Card.Body>
             <Card.Text>
-              <h3>Explore the latest in electronics and technology with OlaFolio Electronics.</h3>
+              {/* <h3>Explore the latest in electronics and technology with OlaFolio Electronics.</h3> */}
               <div style={{ display: "flex", justifyContent: "center" }}>
                 
               </div>
